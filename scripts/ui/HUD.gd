@@ -63,34 +63,43 @@ const _MAP_PX_H: int = 144 # minimap display height (192 * 896/1193 ≈ 144)
 
 # Zone overlay colors for minimap fallback (pixel-space)
 const _ZONE_COLORS: Dictionary = {
-	"main_office": Color(0.10, 0.18, 0.36, 0.55),
-	"amenity": Color(0.10, 0.28, 0.18, 0.55),
-	"library": Color(0.26, 0.12, 0.34, 0.55),
-	"reception": Color(0.30, 0.18, 0.10, 0.55),
-	"facilities": Color(0.20, 0.20, 0.14, 0.55),
-	"outdoor": Color(0.12, 0.28, 0.12, 0.40),
-	"parking": Color(0.14, 0.14, 0.18, 0.40),
+	"engineering":       Color(0.10, 0.18, 0.36, 0.55),
+	"design_studio":     Color(0.12, 0.28, 0.12, 0.40),
+	"amenity":           Color(0.10, 0.28, 0.18, 0.55),
+	"library":           Color(0.26, 0.12, 0.34, 0.55),
+	"collab_hub":        Color(0.18, 0.22, 0.36, 0.55),
+	"facilities":        Color(0.20, 0.20, 0.14, 0.55),
+	"data_lab":          Color(0.14, 0.14, 0.26, 0.55),
+	"reception":         Color(0.30, 0.18, 0.10, 0.55),
+	"innovation_corner": Color(0.28, 0.22, 0.10, 0.55),
+	"marketing_hub":     Color(0.14, 0.14, 0.18, 0.40),
 }
 
-# Zone pixel-space rects — matches ZPS_Layout_Campus.png (1193×896 px)
+# Zone pixel-space rects — must match _zones in Campus.gd (1193×896 px)
 const _ZONE_RECTS: Dictionary = {
-	"main_office": Rect2(15, 340, 470, 540),
-	"amenity": Rect2(455, 20, 500, 350),
-	"library": Rect2(490, 215, 255, 180),
-	"reception": Rect2(765, 420, 285, 250),
-	"facilities": Rect2(860, 15, 325, 190),
-	"outdoor": Rect2(10, 10, 375, 315),
-	"parking": Rect2(960, 200, 225, 460),
+	"engineering":       Rect2(15,   340, 460, 535),
+	"design_studio":     Rect2(15,   20,  435, 315),
+	"amenity":           Rect2(460,  20,  300, 190),
+	"library":           Rect2(460,  215, 295, 145),
+	"collab_hub":        Rect2(460,  370, 300, 505),
+	"facilities":        Rect2(760,  15,  420, 190),
+	"data_lab":          Rect2(760,  210, 420, 205),
+	"reception":         Rect2(760,  420, 280, 250),
+	"innovation_corner": Rect2(1045, 420, 135, 250),
+	"marketing_hub":     Rect2(760,  675, 420, 200),
 }
 
 const _ZONE_DISPLAY_NAMES: Dictionary = {
-	"main_office": "Main Office",
-	"amenity": "Amenity Center",
-	"library": "Library",
-	"reception": "Reception & Innovation",
-	"facilities": "Facilities & Logistics",
-	"outdoor": "Outdoor Campus",
-	"parking": "Parking",
+	"engineering":       "Engineering Floor",
+	"design_studio":     "Design & Product Studio",
+	"amenity":           "Amenity Center",
+	"library":           "Library & Research",
+	"collab_hub":        "Collaboration Hub",
+	"facilities":        "Facilities & Logistics",
+	"data_lab":          "Data Lab",
+	"reception":         "Reception & Innovation",
+	"innovation_corner": "Innovation Corner",
+	"marketing_hub":     "Marketing Hub",
 }
 
 func _ready() -> void:
@@ -1725,7 +1734,25 @@ void fragment() {
 	var border_mat = ShaderMaterial.new(); border_mat.shader = border_shader
 	av_border.material = border_mat
 	av_frame.add_child(av_border)
+
+	# Clickable overlay — click avatar → close profile & open Avatar Maker
+	var av_click_btn = Button.new()
+	av_click_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
+	av_click_btn.flat = true
+	av_click_btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+	av_click_btn.tooltip_text = "Click để tạo Avatar mới"
+	av_click_btn.pressed.connect(func():
+		_toggle_char_profile()
+		_toggle_avatar_customizer()
+	)
+	av_frame.add_child(av_click_btn)
+
+	# "Edit" hint label below avatar
+	var edit_hint = _make_label("[ Tạo Avatar ]", 8, Color(0.65, 0.52, 0.20))
+	edit_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	edit_hint.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	left.add_child(av_frame)
+	left.add_child(edit_hint)
 
 	# Full name (shown only in profile)
 	var name_lbl = _make_label(PlayerData.display_name, 12, Color(0.95, 0.90, 0.70), true)
