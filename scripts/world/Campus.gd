@@ -84,7 +84,13 @@ func _ready() -> void:
 	_show_login_dialog()
 
 
+## Set to false to show the real login dialog (EmployeeID + DevSecret).
+const AUTO_LOGIN := true
+
 func _show_login_dialog() -> void:
+	if AUTO_LOGIN:
+		_on_login_skipped()
+		return
 	var dialog: CanvasLayer = load("res://scripts/ui/LoginDialog.gd").new()
 	dialog.name = "LoginDialog"
 	add_child(dialog)
