@@ -43,6 +43,7 @@ var _workspace_tabs: TabContainer = null
 var web_chat_panel: Control = null
 var _web_is_platform: bool = false
 var _web_chat_iframe_created: bool = false
+var _chat_box: Control = null # desktop chat panel box (for slide animation)
 
 # ── Online roster ──
 var _roster_panel: Control = null
@@ -55,41 +56,41 @@ var _emote_menu: Control = null
 var _emote_toast_stack: VBoxContainer = null
 
 # ── Minimap layout constants (mirrors ZPS_Layout_Campus.png 1193×896 px) ──
-const _MINIMAP_W: int = 1193  # world pixels (map width)
-const _MINIMAP_H: int = 896   # world pixels (map height)
-const _MAP_PX_W: int = 192    # minimap display width in UI pixels
-const _MAP_PX_H: int = 144    # minimap display height (192 * 896/1193 ≈ 144)
+const _MINIMAP_W: int = 1193 # world pixels (map width)
+const _MINIMAP_H: int = 896 # world pixels (map height)
+const _MAP_PX_W: int = 192 # minimap display width in UI pixels
+const _MAP_PX_H: int = 144 # minimap display height (192 * 896/1193 ≈ 144)
 
 # Zone overlay colors for minimap fallback (pixel-space)
 const _ZONE_COLORS: Dictionary = {
 	"main_office": Color(0.10, 0.18, 0.36, 0.55),
-	"amenity":     Color(0.10, 0.28, 0.18, 0.55),
-	"library":     Color(0.26, 0.12, 0.34, 0.55),
-	"reception":   Color(0.30, 0.18, 0.10, 0.55),
-	"facilities":  Color(0.20, 0.20, 0.14, 0.55),
-	"outdoor":     Color(0.12, 0.28, 0.12, 0.40),
-	"parking":     Color(0.14, 0.14, 0.18, 0.40),
+	"amenity": Color(0.10, 0.28, 0.18, 0.55),
+	"library": Color(0.26, 0.12, 0.34, 0.55),
+	"reception": Color(0.30, 0.18, 0.10, 0.55),
+	"facilities": Color(0.20, 0.20, 0.14, 0.55),
+	"outdoor": Color(0.12, 0.28, 0.12, 0.40),
+	"parking": Color(0.14, 0.14, 0.18, 0.40),
 }
 
 # Zone pixel-space rects — matches ZPS_Layout_Campus.png (1193×896 px)
 const _ZONE_RECTS: Dictionary = {
-	"main_office": Rect2(15,  340, 470, 540),
-	"amenity":     Rect2(455, 20,  500, 350),
-	"library":     Rect2(490, 215, 255, 180),
-	"reception":   Rect2(765, 420, 285, 250),
-	"facilities":  Rect2(860, 15,  325, 190),
-	"outdoor":     Rect2(10,  10,  375, 315),
-	"parking":     Rect2(960, 200, 225, 460),
+	"main_office": Rect2(15, 340, 470, 540),
+	"amenity": Rect2(455, 20, 500, 350),
+	"library": Rect2(490, 215, 255, 180),
+	"reception": Rect2(765, 420, 285, 250),
+	"facilities": Rect2(860, 15, 325, 190),
+	"outdoor": Rect2(10, 10, 375, 315),
+	"parking": Rect2(960, 200, 225, 460),
 }
 
 const _ZONE_DISPLAY_NAMES: Dictionary = {
 	"main_office": "Main Office",
-	"amenity":     "Amenity Center",
-	"library":     "Library",
-	"reception":   "Reception & Innovation",
-	"facilities":  "Facilities & Logistics",
-	"outdoor":     "Outdoor Campus",
-	"parking":     "Parking",
+	"amenity": "Amenity Center",
+	"library": "Library",
+	"reception": "Reception & Innovation",
+	"facilities": "Facilities & Logistics",
+	"outdoor": "Outdoor Campus",
+	"parking": "Parking",
 }
 
 func _ready() -> void:
@@ -100,7 +101,7 @@ func _ready() -> void:
 	GameManager.notification_received.connect(_on_notification)
 	GameManager.avatar_updated.connect(func(_id, _cfg): _update_player_card())
 	GameManager.room_booked.connect(func(room_id, slot, _b):
-		_on_notification("Phong %s dat luc %s ✓" % [room_id, slot], "success")
+		_on_notification("Phong %s dat luc %s [v]" % [room_id, slot], "success")
 	)
 	AIAgent.response_ready.connect(_on_ai_response)
 	AIAgent.response_error.connect(_on_ai_error)
@@ -130,7 +131,7 @@ func _build_ui() -> void:
 	_build_emote_toast_area()
 
 # ── Player card (top-left) ──
-var _pc_portrait: TextureRect = null  # portrait slot trong player card
+var _pc_portrait: TextureRect = null # portrait slot trong player card
 
 func _build_player_card() -> void:
 	player_card = PanelContainer.new()
@@ -190,9 +191,9 @@ func _build_zone_indicator() -> void:
 	style.content_margin_left = 10; style.content_margin_right = 10
 	style.content_margin_top = 5; style.content_margin_bottom = 5
 	container.add_theme_stylebox_override("panel", style)
-	container.position = Vector2(12, 0)   # y set in _process after player card laid out
+	container.position = Vector2(12, 0) # y set in _process after player card laid out
 
-	_zone_label = _make_label("📍 Office", 10, Color(0.75, 0.88, 1.0))
+	_zone_label = _make_label("Office", 10, Color(0.75, 0.88, 1.0))
 	container.add_child(_zone_label)
 	container.name = "ZoneIndicator"
 	add_child(container)
@@ -379,7 +380,7 @@ func _build_ai_chat_bar() -> void:
 	toggle_anchor.offset_left = -52; toggle_anchor.offset_right = -8
 	toggle_anchor.offset_top = 8; toggle_anchor.offset_bottom = 40
 	var toggle_btn = Button.new()
-	toggle_btn.text = "🤖"
+	toggle_btn.text = "[AI]"
 	toggle_btn.size = Vector2(44, 32)
 	var ts = StyleBoxFlat.new()
 	ts.bg_color = Color(0.10, 0.10, 0.22, 0.92)
@@ -401,7 +402,7 @@ func _build_ai_chat_bar() -> void:
 	_ai_bar_panel.offset_left = -300; _ai_bar_panel.offset_right = 0
 	_ai_bar_panel.offset_top = 46; _ai_bar_panel.offset_bottom = -200
 	_ai_bar_panel.visible = false
-	_ai_bar_panel.mouse_filter = Control.MOUSE_FILTER_STOP  # block click-through
+	_ai_bar_panel.mouse_filter = Control.MOUSE_FILTER_STOP # block click-through
 
 	var bg = PanelContainer.new()
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -418,7 +419,7 @@ func _build_ai_chat_bar() -> void:
 	col.add_theme_constant_override("separation", 6)
 
 	# Title
-	col.add_child(_make_label("🤖  ZPS AI Assistant", 11, Color(0.7, 0.8, 1.0), true))
+	col.add_child(_make_label("[AI] ZPS AI Assistant", 11, Color(0.7, 0.8, 1.0), true))
 	col.add_child(HSeparator.new())
 
 	# Quick actions
@@ -469,7 +470,7 @@ func _build_ai_chat_bar() -> void:
 	col.add_child(inp_row)
 
 	# API key note
-	var api_note = _make_label("🟢 Claude API: connected (claude-haiku-4-5)", 8, Color(0.4, 0.8, 0.5))
+	var api_note = _make_label(" Claude API: connected (claude-haiku-4-5)", 8, Color(0.4, 0.8, 0.5))
 	api_note.name = "APIKeyNote"
 	col.add_child(api_note)
 
@@ -479,7 +480,7 @@ func _build_ai_chat_bar() -> void:
 
 	# System welcome message
 	_ai_log_msg("AI Assistant đã sẵn sàng. Bạn cần giúp gì?", false)
-	_ai_log_msg("💡 Thử: 'Tìm Hiếu PT', 'Tạo task mới', 'Xem sprint hiện tại'", false)
+	_ai_log_msg(" Thử: 'Tìm Hiếu PT', 'Tạo task mới', 'Xem sprint hiện tại'", false)
 
 func _ai_log_msg(text: String, is_user: bool) -> void:
 	if _ai_bar_log == null: return
@@ -501,7 +502,7 @@ func _on_ai_response(response: String, context_id: String) -> void:
 
 func _on_ai_error(error: String, context_id: String) -> void:
 	if not context_id.begins_with("workspace_"): return
-	_ai_log_msg("⚠ " + error, false)
+	_ai_log_msg("[!] " + error, false)
 
 func _ai_quick_action(action: String) -> void:
 	match action:
@@ -536,11 +537,15 @@ func _build_web_chat_panel() -> void:
 	web_chat_panel.mouse_filter = Control.MOUSE_FILTER_STOP
 	web_chat_panel.visible = false
 
-	# Semi-transparent backdrop
+	# Semi-transparent backdrop — captures clicks outside the chat panel
 	var backdrop := ColorRect.new()
 	backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
 	backdrop.color = Color(0.0, 0.0, 0.0, 0.45)
-	backdrop.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	backdrop.mouse_filter = Control.MOUSE_FILTER_STOP
+	backdrop.gui_input.connect(func(e: InputEvent):
+		if e is InputEventMouseButton and e.button_index == MOUSE_BUTTON_LEFT and e.pressed:
+			_close_web_chat_slide()
+	)
 	web_chat_panel.add_child(backdrop)
 
 	# Desktop fallback: shown only when NOT web export
@@ -548,7 +553,7 @@ func _build_web_chat_panel() -> void:
 		var box := PanelContainer.new()
 		box.anchor_left = 1.0; box.anchor_right = 1.0
 		box.anchor_top = 0.0; box.anchor_bottom = 1.0
-		box.offset_left = -380; box.offset_right = 0
+		box.offset_left = 0; box.offset_right = 0 # start off-screen (right), animated on open
 		var style := StyleBoxFlat.new()
 		style.bg_color = Color(0.08, 0.10, 0.18, 0.96)
 		style.set_corner_radius_all(0)
@@ -562,10 +567,11 @@ func _build_web_chat_panel() -> void:
 		lbl.set_anchors_preset(Control.PRESET_FULL_RECT)
 		box.add_child(lbl)
 		web_chat_panel.add_child(box)
+		_chat_box = box
 
 	add_child(web_chat_panel)
 
-	# Toggle button — placed left of the 🤖 AI button
+	# Toggle button — placed left of the [AI] AI button
 	var anchor := Control.new()
 	anchor.anchor_left = 1.0; anchor.anchor_right = 1.0
 	anchor.anchor_top = 0.0; anchor.anchor_bottom = 0.0
@@ -573,7 +579,7 @@ func _build_web_chat_panel() -> void:
 	anchor.offset_top = 8; anchor.offset_bottom = 40
 
 	var btn := Button.new()
-	btn.text = "💬"
+	btn.text = ""
 	btn.size = Vector2(44, 32)
 	var bs := StyleBoxFlat.new()
 	bs.bg_color = Color(0.10, 0.14, 0.22, 0.92)
@@ -623,8 +629,8 @@ func _create_workspace_panel_inline() -> Control:
 
 	# Header
 	var header = HBoxContainer.new()
-	var title = _make_label("🏢  Workspace Panel", 16, Color(0.9, 0.8, 0.5), true)
-	var close_btn = Button.new(); close_btn.text = "✕"
+	var title = _make_label(" Workspace Panel", 16, Color(0.9, 0.8, 0.5), true)
+	var close_btn = Button.new(); close_btn.text = "X"
 	close_btn.pressed.connect(func(): _toggle_workspace_panel())
 	header.add_child(title)
 	header.add_spacer(false)
@@ -647,12 +653,12 @@ func _create_workspace_panel_inline() -> Control:
 
 	# ── Tab 1: Sprint ──
 	var sprint_tab = _build_sprint_tab()
-	sprint_tab.name = "⚔ Sprint"
+	sprint_tab.name = " Sprint"
 	tabs.add_child(sprint_tab)
 
 	# ── Tab 2: AI Assistant ──
 	var ai_tab = _build_ai_tab()
-	ai_tab.name = "🤖 AI Hỏi Đáp"
+	ai_tab.name = "[AI] AI Hỏi Đáp"
 	tabs.add_child(ai_tab)
 
 	# ── Tab 3: My Tasks ──
@@ -707,7 +713,7 @@ func _build_book_room_tab() -> VBoxContainer:
 			if HttpManager.jwt_token.is_empty():
 				# Offline fallback
 				var ok := GameManager.book_room(room_id, slot_opt.get_item_text(slot_opt.selected), PlayerData.player_id)
-				result_lbl.text = "✓ Đã đặt %s!" % room["name"] if ok else "✗ Slot đã bị đặt rồi!"
+				result_lbl.text = "[v] Đã đặt %s!" % room["name"] if ok else "[x] Slot đã bị đặt rồi!"
 				result_lbl.add_theme_color_override("font_color", Color.GREEN if ok else Color(1.0, 0.4, 0.4))
 				return
 
@@ -724,14 +730,14 @@ func _build_book_room_tab() -> VBoxContainer:
 					if endpoint != ep:
 						return
 					if data is Dictionary and (data as Dictionary).get("success", false):
-						result_lbl.text = "✓ Đã đặt %s lúc %s!" % [room["name"], payload["time_slot"]]
+						result_lbl.text = "[v] Đã đặt %s lúc %s!" % [room["name"], payload["time_slot"]]
 						result_lbl.add_theme_color_override("font_color", Color.GREEN)
-						GameManager.notify("Phòng %s đã đặt lúc %s ✓" % [room["name"], payload["time_slot"]], "success")
+						GameManager.notify("Phòng %s đã đặt lúc %s [v]" % [room["name"], payload["time_slot"]], "success")
 					else:
 						var err_msg: String = ""
 						if data is Dictionary:
 							err_msg = (data as Dictionary).get("error", "Lỗi không xác định")
-						result_lbl.text = "✗ %s" % err_msg
+						result_lbl.text = "[x] %s" % err_msg
 						result_lbl.add_theme_color_override("font_color", Color(1.0, 0.4, 0.4)),
 				CONNECT_ONE_SHOT
 			)
@@ -739,7 +745,7 @@ func _build_book_room_tab() -> VBoxContainer:
 				func(endpoint: String, msg: String):
 					if endpoint != ep:
 						return
-					result_lbl.text = "✗ Lỗi đặt phòng: %s" % msg
+					result_lbl.text = "[x] Lỗi đặt phòng: %s" % msg
 					result_lbl.add_theme_color_override("font_color", Color(1.0, 0.4, 0.4)),
 				CONNECT_ONE_SHOT
 			)
@@ -798,7 +804,7 @@ func _build_leave_tab() -> VBoxContainer:
 				"dates": "%s → %s" % [from_date.text, to_date.text],
 				"reason": reason.text,
 			})
-			result_lbl.text = "✓ Đơn đã gửi (offline)! HR sẽ xét duyệt trong 24h."
+			result_lbl.text = "[v] Đơn đã gửi (offline)! HR sẽ xét duyệt trong 24h."
 			result_lbl.add_theme_color_override("font_color", Color.GREEN)
 			submit.disabled = false
 			return
@@ -813,14 +819,14 @@ func _build_leave_tab() -> VBoxContainer:
 		var on_resp := func(endpoint: String, _data: Variant) -> void:
 			if endpoint != "tasks":
 				return
-			result_lbl.text = "✓ Đơn đã gửi! HR sẽ xét duyệt trong 24h."
+			result_lbl.text = "[v] Đơn đã gửi! HR sẽ xét duyệt trong 24h."
 			result_lbl.add_theme_color_override("font_color", Color.GREEN)
 			submit.disabled = false
 
 		var on_err := func(endpoint: String, msg: String) -> void:
 			if endpoint != "tasks":
 				return
-			result_lbl.text = "✗ Lỗi gửi đơn: %s" % msg
+			result_lbl.text = "[x] Lỗi gửi đơn: %s" % msg
 			result_lbl.add_theme_color_override("font_color", Color(1.0, 0.4, 0.4))
 			submit.disabled = false
 
@@ -839,7 +845,7 @@ func _build_sprint_tab() -> VBoxContainer:
 		var s = StyleBoxFlat.new(); s.bg_color = Color(0.12, 0.15, 0.22); s.set_corner_radius_all(8)
 		card.add_theme_stylebox_override("panel", s)
 		var cv = VBoxContainer.new()
-		cv.add_child(_make_label("⚔ " + sprint.get("name", "?"), 12, Color.WHITE, true))
+		cv.add_child(_make_label(" " + sprint.get("name", "?"), 12, Color.WHITE, true))
 		cv.add_child(_make_label("%s · %s" % [sprint.get("team","?"), sprint.get("deadline","?")], 10, Color(0.6,0.6,0.6)))
 		var pb = ProgressBar.new(); pb.value = sprint.get("progress", 0.0) * 100
 		pb.custom_minimum_size.y = 14; cv.add_child(pb)
@@ -857,7 +863,7 @@ func _build_ai_tab() -> VBoxContainer:
 	tab.add_child(resp)
 	var input = LineEdit.new(); input.placeholder_text = "Vd: Phòng Alpha còn trống không?"
 	input.text_submitted.connect(func(q):
-		resp.text = "💬 Đang hỏi AI..."; resp.modulate = Color.WHITE
+		resp.text = " Đang hỏi AI..."; resp.modulate = Color.WHITE
 		AIAgent.ask_workspace_assistant(q)
 		input.clear()
 	)
@@ -934,9 +940,9 @@ func _build_task_tab() -> VBoxContainer:
 			var status_val: String = task.get("status", "todo")
 			var status_color := Color(0.6, 0.6, 0.6)
 			match status_val:
-				"todo":         status_color = Color(0.7, 0.7, 0.35)
-				"in-progress":  status_color = Color(0.3, 0.7, 1.0)
-				"done":         status_color = Color(0.3, 0.9, 0.3)
+				"todo": status_color = Color(0.7, 0.7, 0.35)
+				"in-progress": status_color = Color(0.3, 0.7, 1.0)
+				"done": status_color = Color(0.3, 0.9, 0.3)
 			var status_dot := _make_label("●", 12, status_color)
 			row.add_child(status_dot)
 
@@ -949,16 +955,16 @@ func _build_task_tab() -> VBoxContainer:
 			var toggle_btn := Button.new()
 			toggle_btn.custom_minimum_size = Vector2(80, 0)
 			match status_val:
-				"todo":        toggle_btn.text = "▶ Bắt đầu"
-				"in-progress": toggle_btn.text = "✓ Xong"
-				"done":        toggle_btn.text = "↩ Mở lại"
+				"todo": toggle_btn.text = "▶ Bắt đầu"
+				"in-progress": toggle_btn.text = "[v] Xong"
+				"done": toggle_btn.text = "↩ Mở lại"
 
 			var task_id: String = task.get("id", "")
 			var next_status := "in-progress"
 			match status_val:
-				"todo":        next_status = "in-progress"
+				"todo": next_status = "in-progress"
 				"in-progress": next_status = "done"
-				"done":        next_status = "todo"
+				"done": next_status = "todo"
 
 			toggle_btn.pressed.connect(func():
 				toggle_btn.disabled = true
@@ -984,7 +990,7 @@ func _build_task_tab() -> VBoxContainer:
 	on_tasks_error = func(endpoint: String, msg: String) -> void:
 		if endpoint != "tasks":
 			return
-		status_lbl.text = "✗ Lỗi tải task: %s" % msg
+		status_lbl.text = "[x] Lỗi tải task: %s" % msg
 
 	HttpManager.response_received.connect(on_tasks_loaded)
 	HttpManager.error.connect(on_tasks_error)
@@ -1019,9 +1025,9 @@ func _build_avatar_customizer() -> void:
 	var vbox = VBoxContainer.new()
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var hdr = HBoxContainer.new()
-	hdr.add_child(_make_label("🎮  Avatar Customizer", 15, Color(0.9,0.8,0.5), true))
+	hdr.add_child(_make_label("Avatar Customizer", 15, Color(0.9,0.8,0.5), true))
 	hdr.add_spacer(false)
-	var close_btn = Button.new(); close_btn.text = "✕"
+	var close_btn = Button.new(); close_btn.text = "X"
 	close_btn.pressed.connect(func(): _toggle_avatar_customizer())
 	hdr.add_child(close_btn)
 	vbox.add_child(hdr)
@@ -1041,7 +1047,7 @@ func _build_avatar_customizer() -> void:
 		var btn = Button.new(); btn.text = outfit["name"]
 		if outfit["id"] == PlayerData.current_outfit:
 			btn.disabled = true; btn.modulate = Color(0.5, 1.0, 0.5)
-		var oid: String = outfit["id"]  # capture tại thời điểm tạo, không bị override bởi vòng lặp
+		var oid: String = outfit["id"] # capture tại thời điểm tạo, không bị override bởi vòng lặp
 		btn.pressed.connect(func():
 			PlayerData.set_outfit_for_today(oid)
 			outfit_today.text = "Hiện tại: " + PlayerData.current_outfit.replace("_"," ").capitalize()
@@ -1052,7 +1058,7 @@ func _build_avatar_customizer() -> void:
 
 	vbox.add_child(HSeparator.new())
 	# AI Agent settings
-	vbox.add_child(_make_label("🤖 AI Agent (khi bạn offline):", 11, Color(0.8,0.8,0.9)))
+	vbox.add_child(_make_label("[AI] AI Agent (khi bạn offline):", 11, Color(0.8,0.8,0.9)))
 	var ai_toggle = CheckButton.new(); ai_toggle.text = "Bật AI Agent"
 	ai_toggle.button_pressed = PlayerData.ai_agent_enabled
 	ai_toggle.toggled.connect(func(v): PlayerData.ai_agent_enabled = v; PlayerData.save_data())
@@ -1064,7 +1070,7 @@ func _build_avatar_customizer() -> void:
 	ctx.placeholder_text = "Vd: Mình đang lead sprint này, thường online 9am-6pm..."
 	vbox.add_child(ctx)
 
-	var save_btn = Button.new(); save_btn.text = "💾  Lưu Avatar"
+	var save_btn = Button.new(); save_btn.text = "Lưu Avatar"
 	save_btn.pressed.connect(func():
 		PlayerData.set_ai_context(ctx.text)
 		GameManager.notify("Avatar đã lưu!", "success")
@@ -1074,7 +1080,7 @@ func _build_avatar_customizer() -> void:
 	vbox.add_child(HSeparator.new())
 
 	# ── AI Portrait section ──
-	vbox.add_child(_make_label("🎨 AI Portrait (ảnh đại diện):", 11, Color(0.8, 0.8, 0.9)))
+	vbox.add_child(_make_label("AI Portrait (ảnh đại diện):", 11, Color(0.8, 0.8, 0.9)))
 	var portrait_hint = _make_label("Upload ảnh thật → AI tạo avatar Chibi/Anime/3D Pixar", 9, Color(0.5, 0.5, 0.5))
 	portrait_hint.autowrap_mode = TextServer.AUTOWRAP_WORD
 	vbox.add_child(portrait_hint)
@@ -1156,7 +1162,7 @@ func _build_interaction_dialog() -> void:
 	name_col.add_child(emp_name_lbl); name_col.add_child(emp_meta); name_col.add_child(emp_task)
 	hdr.add_child(name_col)
 
-	var close_btn = Button.new(); close_btn.text = "✕"
+	var close_btn = Button.new(); close_btn.text = "X"
 	var close_style = StyleBoxFlat.new()
 	close_style.bg_color = Color(0.3, 0.1, 0.1, 0.8); close_style.set_corner_radius_all(6)
 	close_btn.add_theme_stylebox_override("normal", close_style)
@@ -1247,8 +1253,8 @@ func _add_chat_msg(parent: VBoxContainer, sender: String, message: String, is_pl
 	var s = StyleBoxFlat.new()
 	s.bg_color = Color(0.18, 0.32, 0.58) if is_player else Color(0.18, 0.18, 0.28)
 	s.set_corner_radius_all(10)
-	s.corner_radius_top_left    = 4 if is_player else 10
-	s.corner_radius_top_right   = 10 if is_player else 4
+	s.corner_radius_top_left = 4 if is_player else 10
+	s.corner_radius_top_right = 10 if is_player else 4
 	s.content_margin_left = 10; s.content_margin_right = 10
 	s.content_margin_top = 6; s.content_margin_bottom = 6
 	bubble.add_theme_stylebox_override("panel", s)
@@ -1307,7 +1313,7 @@ func _update_zone_from_player() -> void:
 	if zone_id == _last_zone: return
 	_last_zone = zone_id
 	var display: String = _ZONE_DISPLAY_NAMES.get(zone_id, "Office")
-	_zone_label.text = "📍 " + display
+	_zone_label.text = "" + display
 
 func _local_get_zone(world_pos: Vector2) -> String:
 	# World is pixel space — check zones directly
@@ -1336,7 +1342,7 @@ func _refresh_sprint_label() -> void:
 	var pct: int = int(s.get("progress", 0.0) * 100)
 	var done: int = s.get("tasks_done", 0)
 	var total: int = s.get("tasks_total", 0)
-	_sprint_label.text = "%s   %d%%  (%d/%d tasks)   %s" % [
+	_sprint_label.text = "%s %d%% (%d/%d tasks) %s" % [
 		s.get("name", "Sprint"), pct, done, total, s.get("deadline", "")
 	]
 
@@ -1368,15 +1374,36 @@ func _toggle_avatar_customizer() -> void:
 
 func _toggle_web_chat_panel() -> void:
 	if web_chat_panel == null: return
-	var opening := not web_chat_panel.visible
-	web_chat_panel.visible = opening
-	if opening and _web_is_platform:
-		_web_chat_ensure_iframe()
-		_web_chat_set_visible(true)
-	elif not opening and _web_is_platform:
-		_web_chat_set_visible(false)
+	if web_chat_panel.visible:
+		_close_web_chat_slide()
+	else:
+		_open_web_chat_slide()
+
+func _open_web_chat_slide() -> void:
+	web_chat_panel.visible = true
 	if current_player_ref:
-		current_player_ref.set_busy(opening)
+		current_player_ref.set_busy(true)
+	if _web_is_platform:
+		_web_chat_ensure_iframe()
+		_web_chat_slide_in()
+	elif _chat_box:
+		# Desktop: slide in from off-screen right
+		_chat_box.offset_left = 0.0
+		var t := create_tween()
+		t.tween_property(_chat_box, "offset_left", -380.0, 0.22).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_QUAD)
+
+func _close_web_chat_slide() -> void:
+	if _web_is_platform:
+		_web_chat_slide_out()
+		await get_tree().create_timer(0.22).timeout
+	elif _chat_box:
+		# Desktop: slide out to right
+		var t := create_tween()
+		t.tween_property(_chat_box, "offset_left", 0.0, 0.20).set_ease(Tween.EASE_IN).set_trans(Tween.TRANS_QUAD)
+		await t.finished
+	web_chat_panel.visible = false
+	if current_player_ref:
+		current_player_ref.set_busy(false)
 
 func _web_chat_ensure_iframe() -> void:
 	if _web_chat_iframe_created: return
@@ -1405,6 +1432,35 @@ func _web_chat_set_visible(show: bool) -> void:
 		+ "if(f)f.style.display='" + display + "';"
 	)
 
+# Slide iframe in from right (CSS transition, fully hardcoded strings)
+func _web_chat_slide_in() -> void:
+	JavaScriptBridge.eval(
+		"(function(){"
+		+ "var f=document.getElementById('zps-chat-iframe');if(!f)return;"
+		+ "f.style.transition='none';"
+		+ "f.style.transform='translateX(380px)';"
+		+ "f.style.display='block';"
+		+ "requestAnimationFrame(function(){"
+		+ "requestAnimationFrame(function(){"
+		+ "f.style.transition='transform 0.22s ease-out';"
+		+ "f.style.transform='translateX(0)';"
+		+ "});});})();"
+	)
+
+# Slide iframe out to right (CSS transition, fully hardcoded strings)
+func _web_chat_slide_out() -> void:
+	JavaScriptBridge.eval(
+		"(function(){"
+		+ "var f=document.getElementById('zps-chat-iframe');if(!f)return;"
+		+ "f.style.transition='transform 0.2s ease-in';"
+		+ "f.style.transform='translateX(380px)';"
+		+ "setTimeout(function(){"
+		+ "f.style.display='none';"
+		+ "f.style.transform='';"
+		+ "f.style.transition='';"
+		+ "},210);})();"
+	)
+
 func show_employee_interaction(employee_data: Dictionary, emp_node: Node, player: Node) -> void:
 	current_employee_node = emp_node
 	current_player_ref = player
@@ -1426,7 +1482,7 @@ func show_employee_interaction(employee_data: Dictionary, emp_node: Node, player
 			if FileAccess.file_exists(abs_p):
 				var img := Image.load_from_file(abs_p)
 				if img: tex = ImageTexture.create_from_image(img)
-		av_tex.texture = tex   # null = blank colored circle fallback
+		av_tex.texture = tex # null = blank colored circle fallback
 
 	# ── Name / meta / task ──
 	var n: Node = p.get_node_or_null("VBoxContainer/HBoxContainer/VBoxContainer/EmpName")
@@ -1434,7 +1490,7 @@ func show_employee_interaction(employee_data: Dictionary, emp_node: Node, player
 	var m: Node = p.get_node_or_null("VBoxContainer/HBoxContainer/VBoxContainer/EmpMeta")
 	if m: m.text = "%s · %s" % [employee_data.get("title","?"), employee_data.get("department","?")]
 	var t: Node = p.get_node_or_null("VBoxContainer/HBoxContainer/VBoxContainer/EmpTask")
-	if t: t.text = "📌 " + employee_data.get("current_task","?")
+	if t: t.text = " " + employee_data.get("current_task","?")
 
 	# ── Chat history ──
 	var ch: Node = p.get_node_or_null("VBoxContainer/ScrollContainer/ChatHistory")
@@ -1481,7 +1537,7 @@ func _update_player_card() -> void:
 	pc_title.text = PlayerData.hr_title
 	pc_title.add_theme_color_override("font_color", Color(0.90, 0.75, 0.30))
 	pc_class.text = "Class: " + PlayerData.zps_class.capitalize()
-	pc_outfit.text = "👔 " + PlayerData.current_outfit.replace("_"," ").capitalize()
+	pc_outfit.text = "" + PlayerData.current_outfit.replace("_"," ").capitalize()
 	# Portrait: hien thi neu da co AI avatar
 	if _pc_portrait != null:
 		var tex := ProfilePicture.base64_to_texture(PlayerData.avatar_portrait_base64)
@@ -1505,8 +1561,8 @@ func _on_notification(message: String, type: String = "info") -> void:
 	s.set_corner_radius_all(7); s.set_border_width_all(1); s.border_color = Color(1,1,1,0.18)
 	s.content_margin_left = 12; s.content_margin_right = 12; s.content_margin_top = 7; s.content_margin_bottom = 7
 	panel.add_theme_stylebox_override("panel", s); panel.custom_minimum_size.x = 280
-	var icons = {"success":"✓","error":"✗","info":"i","achievement":"[+]"}
-	var lbl = _make_label("%s  %s" % [icons.get(type,"•"), message], 11, Color.WHITE)
+	var icons = {"success":"[v]","error":"[x]","info":"i","achievement":"[+]"}
+	var lbl = _make_label("%s %s" % [icons.get(type,"•"), message], 11, Color.WHITE)
 	lbl.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	panel.add_child(lbl); notification_stack.add_child(panel)
 	get_tree().create_timer(3.5).timeout.connect(func():
@@ -1572,7 +1628,7 @@ func _build_char_profile_panel() -> void:
 	var h_title = _make_label("PLAYER PROFILE", 13, Color(0.90, 0.75, 0.30), true)
 	h_title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header_row.add_child(h_title)
-	var close_btn = Button.new(); close_btn.text = "✕"; close_btn.flat = true
+	var close_btn = Button.new(); close_btn.text = "X"; close_btn.flat = true
 	close_btn.add_theme_color_override("font_color", Color(0.7, 0.7, 0.7))
 	close_btn.add_theme_font_size_override("font_size", 14)
 	close_btn.pressed.connect(_toggle_char_profile)
@@ -1697,11 +1753,11 @@ void fragment() {
 	# Status selector
 	left.add_child(_make_label("Trạng thái", 9, Color(0.55, 0.60, 0.70)))
 	var status_opt = OptionButton.new(); status_opt.name = "StatusOpt"
-	status_opt.add_item("🟢 Đang đi làm")
-	status_opt.add_item("🟡 Đang họp")
-	status_opt.add_item("🔴 Xin nghỉ phép")
-	status_opt.add_item("🔵 Work from home")
-	status_opt.add_item("⚪ Không xác định")
+	status_opt.add_item(" Đang đi làm")
+	status_opt.add_item("Đang họp")
+	status_opt.add_item("Xin nghỉ phép")
+	status_opt.add_item("Work from home")
+	status_opt.add_item(" Không xác định")
 	status_opt.add_theme_font_size_override("font_size", 10)
 	left.add_child(status_opt)
 
@@ -1755,7 +1811,7 @@ void fragment() {
 	skills_col.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	skills_col.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	top_row.add_child(skills_col)
-	skills_col.add_child(_make_label("⚡  SKILL KIT", 10, Color(0.65, 0.55, 0.95), true))
+	skills_col.add_child(_make_label(" SKILL KIT", 10, Color(0.65, 0.55, 0.95), true))
 	skills_col.add_child(_cp_section_sep())
 	var skills_data: Array = [
 		["Q", "GDScript / Godot 4", Color(0.35, 0.55, 0.95)],
@@ -1793,10 +1849,10 @@ void fragment() {
 	stats_col.add_child(_make_label("STATS / DIFFICULTY", 10, Color(0.95, 0.60, 0.30), true))
 	stats_col.add_child(_cp_section_sep())
 	var stats_data: Array = [
-		["Creativity",     5, 5],
-		["Leadership",     4, 5],
-		["Sys. Thinking",  5, 5],
-		["AI Adoption",    5, 5],
+		["Creativity", 5, 5],
+		["Leadership", 4, 5],
+		["Sys. Thinking", 5, 5],
+		["AI Adoption", 5, 5],
 	]
 	for st: Array in stats_data:
 		var st_row = HBoxContainer.new(); st_row.add_theme_constant_override("separation", 6)
@@ -1816,7 +1872,7 @@ void fragment() {
 	lore_col.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	lore_col.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	bot_row.add_child(lore_col)
-	lore_col.add_child(_make_label("📖  LORE", 10, Color(0.55, 0.80, 0.90), true))
+	lore_col.add_child(_make_label("LORE", 10, Color(0.55, 0.80, 0.90), true))
 	lore_col.add_child(_cp_section_sep())
 	var lore_text := "Wanderer of the wild."
 	var lore_lbl = _make_label(lore_text, 9, Color(0.72, 0.75, 0.80))
@@ -1850,10 +1906,17 @@ func register_player(player: Node) -> void:
 	_refresh_sprint_label()
 
 # ── Online roster panel ──────────────────────────────────────────────────────
+func _roster_short_name(full_name: String) -> String:
+	# Show only the part before @ (e.g. "sang.vk@vng.com.vn" → "sang.vk")
+	var at := full_name.find("@")
+	if at > 0:
+		return full_name.left(at)
+	return full_name
+
 func _build_roster_panel() -> void:
 	# Toggle button — top-right area
 	_roster_toggle_btn = Button.new()
-	_roster_toggle_btn.text = "👥 Online"
+	_roster_toggle_btn.text = "Online"
 	_roster_toggle_btn.position = Vector2(1100, 8)
 	_roster_toggle_btn.size = Vector2(90, 28)
 	_roster_toggle_btn.pressed.connect(_toggle_roster)
@@ -1890,21 +1953,36 @@ func _on_roster_update(_players: Array) -> void:
 func _refresh_roster() -> void:
 	for child in _roster_list.get_children():
 		child.queue_free()
-	var count = 0
+
+	# Always show self first (count starts at 1)
+	var self_row := HBoxContainer.new()
+	var self_dot := ColorRect.new()
+	self_dot.size = Vector2(8, 8)
+	self_dot.color = Color(0.2, 0.9, 0.2)
+	self_row.add_child(self_dot)
+	var self_lbl := Label.new()
+	self_lbl.text = " " + _roster_short_name(PlayerData.display_name) + " (bạn)"
+	self_lbl.add_theme_font_size_override("font_size", 10)
+	self_lbl.add_theme_color_override("font_color", Color(0.85, 1.0, 0.85))
+	self_row.add_child(self_lbl)
+	_roster_list.add_child(self_row)
+
+	var count := 1
 	for id in GameManager.remote_players:
 		var rp = GameManager.remote_players[id]
-		var row = HBoxContainer.new()
-		var dot = ColorRect.new()
+		var row := HBoxContainer.new()
+		var dot := ColorRect.new()
 		dot.size = Vector2(8, 8)
 		dot.color = Color(0.5, 0.5, 0.5) if rp.is_npc_mode else Color(0.2, 0.9, 0.2)
 		row.add_child(dot)
-		var lbl = Label.new()
-		lbl.text = " " + (rp.display_name if rp.display_name != "" else id)
+		var lbl := Label.new()
+		var name_raw: String = rp.display_name if rp.display_name != "" else id
+		lbl.text = " " + _roster_short_name(name_raw)
 		lbl.add_theme_font_size_override("font_size", 10)
 		row.add_child(lbl)
 		_roster_list.add_child(row)
 		count += 1
-	_roster_toggle_btn.text = "👥 Online (%d)" % count
+	_roster_toggle_btn.text = "Online (%d)" % count
 
 # ── Sprint 4: Emote Menu ─────────────────────────────────────────────────────
 
@@ -1950,13 +2028,13 @@ func _on_emote_toast(from_id: String, emote: String) -> void:
 
 func _emote_to_text(key: String) -> String:
 	match key:
-		"wave":     return "[Wave]"
+		"wave": return "[Wave]"
 		"thumbsup": return "[+1]"
-		"clap":     return "[Clap!]"
+		"clap": return "[Clap!]"
 		"question": return "[?]"
-		"think":    return "[...]"
-		"party":    return "[Party!]"
-		_:          return "[" + key + "]"
+		"think": return "[...]"
+		"party": return "[Party!]"
+		_: return "[" + key + "]"
 
 # ── Sprint 4: DM + Desk helpers ──────────────────────────────────────────────
 
@@ -2013,7 +2091,7 @@ func _show_remote_desk_view(player_id: String, layout: Array) -> void:
 	for i in 12:
 		var lbl := Label.new()
 		var item_id: String = layout[i] if i < layout.size() else ""
-		lbl.text = item_id.replace("_", " ").capitalize() if item_id != "" else "[  ]"
+		lbl.text = item_id.replace("_", " ").capitalize() if item_id != "" else "[ ]"
 		lbl.custom_minimum_size = Vector2(64, 48)
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		lbl.add_theme_font_size_override("font_size", 9)
@@ -2031,7 +2109,7 @@ func set_zone_hint(hint_key: String) -> void:
 	match hint_key:
 		"near_own_desk":
 			if not _zone_label.text.contains("[D]"):
-				_zone_label.text = _zone_label.text + "  [D] Desk Editor"
+				_zone_label.text = _zone_label.text + " [D] Desk Editor"
 		_:
-			var parts := _zone_label.text.split("  [D]")
+			var parts := _zone_label.text.split(" [D]")
 			_zone_label.text = parts[0]

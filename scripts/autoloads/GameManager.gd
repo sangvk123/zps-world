@@ -171,7 +171,7 @@ func _load_mock_data() -> void:
 			},
 			"workspace": {
 				"fake_chat": [
-					{"sender": "Hiếu PT", "msg": "Hey! Bạn đã chơi thử ZPS World chưa? 😄"},
+					{"sender": "Hiếu PT", "msg": "Hey! Ban da choi thu ZPS World chua?"},
 					{"sender": "Hiếu PT", "msg": "Mình đang cần review lại luồng onboarding — bạn có thể help không?"},
 					{"sender": "Hiếu PT", "msg": "Deadline Q2 roadmap là 15/4, nhớ update Jira nhé!"},
 					{"sender": "Hiếu PT", "msg": "Idea mới: thêm daily quest system vào ZPS World, align với OKR Q2."},

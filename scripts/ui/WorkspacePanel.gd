@@ -71,7 +71,7 @@ func _create_room_button(room_id: String, room: Dictionary) -> Button:
 	var btn = Button.new()
 	var schedule = room.get("schedule", [])
 	var booked_slots = schedule.map(func(s): return s["time"])
-	btn.text = "%s\n   Capacity: %d  |  Equipment: %s\n   Booked: %s" % [
+	btn.text = "%s\n Capacity: %d | Equipment: %s\n Booked: %s" % [
 		room["name"],
 		room.get("capacity", 0),
 		", ".join(room.get("equipment", [])),
@@ -101,12 +101,12 @@ func _populate_time_slots() -> void:
 func _on_book_room() -> void:
 	if selected_room_id.is_empty():
 		if is_instance_valid(book_result):
-			book_result.text = "⚠ Hãy chọn phòng trước!"
+			book_result.text = "[!] Hãy chọn phòng trước!"
 		return
 	var slot = TIME_SLOTS[time_slot_options.selected]
 	var success = GameManager.book_room(selected_room_id, slot, PlayerData.player_id)
 	if is_instance_valid(book_result):
-		book_result.text = "✓ Đã đặt thành công!" if success else "✗ Slot này đã được đặt!"
+		book_result.text = "[v] Đã đặt thành công!" if success else "[x] Slot này đã được đặt!"
 		book_result.modulate = Color.GREEN if success else Color.RED
 	_populate_room_list()
 
@@ -134,7 +134,7 @@ func _on_submit_leave() -> void:
 	}
 	GameManager.request_leave(leave_data)
 	if is_instance_valid(leave_result):
-		leave_result.text = "✓ Đơn xin nghỉ đã gửi! HR sẽ xét duyệt trong vòng 24h."
+		leave_result.text = "[v] Đơn xin nghỉ đã gửi! HR sẽ xét duyệt trong vòng 24h."
 		leave_result.modulate = Color.GREEN
 
 # ── Sprint View ──
@@ -188,7 +188,7 @@ func _on_ask_ai() -> void:
 	if question.is_empty():
 		return
 	if is_instance_valid(ai_response_label):
-		ai_response_label.text = "💬 Đang hỏi AI..."
+		ai_response_label.text = " Đang hỏi AI..."
 	AIAgent.ask_workspace_assistant(question)
 	ai_input.clear()
 

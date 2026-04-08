@@ -35,17 +35,17 @@ func open_for_employee(emp_data: Dictionary) -> void:
 		child.queue_free()
 
 	# Fill header
-	var name    := emp_data.get("name", "?")
-	var title   := emp_data.get("title", "?")
-	var dept    := emp_data.get("department", "?")
-	var online  := emp_data.get("is_online", false)
+	var name := emp_data.get("name", "?")
+	var title := emp_data.get("title", "?")
+	var dept := emp_data.get("department", "?")
+	var online := emp_data.get("is_online", false)
 
-	emp_name.text  = name
+	emp_name.text = name
 	emp_title.text = title
-	emp_dept.text  = dept
-	emp_status.text    = "🟢 Online" if online else "⚪ Offline — AI đang thay mặt"
+	emp_dept.text = dept
+	emp_status.text = " Online" if online else " Offline — AI đang thay mặt"
 	emp_status.modulate = Color.GREEN if online else Color(0.7, 0.7, 0.7)
-	current_task_label.text = "📌 " + emp_data.get("current_task", "?")
+	current_task_label.text = " " + emp_data.get("current_task", "?")
 
 	# Restore previous conversation history in the UI
 	if ConversationMemory.has_history(_conv_id):
@@ -88,7 +88,7 @@ func _on_ai_response(response: String, context_id: String) -> void:
 
 func _on_ai_error(error: String, _context_id: String) -> void:
 	_remove_typing_indicator()
-	_add_message("System", "⚠ Không thể kết nối AI: %s" % error, false)
+	_add_message("System", "[!] Không thể kết nối AI: %s" % error, false)
 
 func _add_message(sender: String, message: String, is_player: bool) -> void:
 	var container = HBoxContainer.new()
@@ -121,11 +121,11 @@ func _add_message(sender: String, message: String, is_player: bool) -> void:
 	bubble.add_child(vbox)
 
 	if is_player:
-		container.add_child(Control.new())  # spacer
+		container.add_child(Control.new()) # spacer
 		container.add_child(bubble)
 	else:
 		container.add_child(bubble)
-		container.add_child(Control.new())  # spacer
+		container.add_child(Control.new()) # spacer
 
 	chat_history.add_child(container)
 	# Scroll to bottom
@@ -137,7 +137,7 @@ func _add_message(sender: String, message: String, is_player: bool) -> void:
 func _show_typing_indicator() -> void:
 	var lbl = Label.new()
 	lbl.name = "TypingIndicator"
-	lbl.text = "💬 đang gõ..."
+	lbl.text = " đang gõ..."
 	lbl.add_theme_font_size_override("font_size", 10)
 	lbl.modulate = Color(0.6, 0.6, 0.6)
 	chat_history.add_child(lbl)
