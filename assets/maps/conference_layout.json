@@ -1,0 +1,145 @@
+{
+  "room_id": "conference",
+  "tileset": "1_Generic_16x16",
+  "cols": 24,
+  "rows": 18,
+  "floor": {
+    "pattern": "floor_wood_medium",
+    "fill_tile": [
+      4,
+      30
+    ],
+    "border_tiles": {
+      "tl": [
+        3,
+        30
+      ],
+      "tc": [
+        4,
+        30
+      ],
+      "tr": [
+        5,
+        30
+      ],
+      "ml": [
+        3,
+        30
+      ],
+      "mr": [
+        5,
+        30
+      ],
+      "bl": [
+        3,
+        31
+      ],
+      "bc": [
+        4,
+        31
+      ],
+      "br": [
+        5,
+        31
+      ]
+    }
+  },
+  "entities": [
+    {
+      "sprite": "desk_wood2",
+      "col": 4,
+      "row": 4,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood2",
+      "col": 4,
+      "row": 7,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood2",
+      "col": 4,
+      "row": 10,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 4,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 7,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 10,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 13,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 4,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 7,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 10,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 13,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 0,
+      "row": 0,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 21,
+      "row": 0,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 0,
+      "row": 15,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 21,
+      "row": 15,
+      "z": 2
+    },
+    {
+      "sprite": "tv_screen",
+      "col": 18,
+      "row": 7,
+      "z": 1
+    }
+  ]
+}

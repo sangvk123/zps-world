@@ -1,0 +1,10319 @@
+{
+  "tileset": "8_Gym_16x16.png",
+  "tile_size": 16,
+  "grid": [
+    16,
+    33
+  ],
+  "input_tiles": 443,
+  "total_sprites": 337,
+  "single_tile_count": 261,
+  "multi_sprite_count": 76,
+  "multi_sprites": [
+    {
+      "sprite_name": "gym_floor_wood",
+      "sprite_base": "gym_floor_wood",
+      "col": 5,
+      "row": 27,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        80,
+        432,
+        32,
+        32
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 27,
+          "name": "gym_floor_wood_left"
+        },
+        {
+          "col": 5,
+          "row": 28,
+          "name": "gym_floor_wood_mid"
+        },
+        {
+          "col": 6,
+          "row": 28,
+          "name": "gym_floor_wood_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_gray",
+      "sprite_base": "gym_wall_gray",
+      "col": 0,
+      "row": 12,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        192,
+        64,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 12,
+          "name": "gym_wall_gray_base_left"
+        },
+        {
+          "col": 1,
+          "row": 12,
+          "name": "gym_wall_gray_base_mid"
+        },
+        {
+          "col": 2,
+          "row": 12,
+          "name": "gym_wall_gray_base_right"
+        },
+        {
+          "col": 3,
+          "row": 12,
+          "name": "gym_wall_gray_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_swim_person",
+      "sprite_base": "pool_swim_person",
+      "col": 11,
+      "row": 21,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        336,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "person",
+        "pool",
+        "swimmer"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 21,
+          "name": "pool_swim_person_tl"
+        },
+        {
+          "col": 12,
+          "row": 21,
+          "name": "pool_swim_person_tr"
+        },
+        {
+          "col": 13,
+          "row": 21,
+          "name": "pool_swim_person_bl"
+        },
+        {
+          "col": 14,
+          "row": 21,
+          "name": "pool_swim_person_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red",
+      "sprite_base": "boxing_ring_floor_red",
+      "col": 0,
+      "row": 26,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        416,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 26,
+          "name": "boxing_ring_floor_red_left"
+        },
+        {
+          "col": 1,
+          "row": 26,
+          "name": "boxing_ring_floor_red_mid"
+        },
+        {
+          "col": 2,
+          "row": 26,
+          "name": "boxing_ring_floor_red_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope",
+      "sprite_base": "boxing_ring_rope",
+      "col": 2,
+      "row": 25,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        400,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 25,
+          "name": "boxing_ring_rope_left"
+        },
+        {
+          "col": 3,
+          "row": 25,
+          "name": "boxing_ring_rope_mid"
+        },
+        {
+          "col": 4,
+          "row": 25,
+          "name": "boxing_ring_rope_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_gray",
+      "sprite_base": "gym_floor_dark_gray",
+      "col": 0,
+      "row": 1,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        16,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "rubber",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 1,
+          "name": "gym_floor_dark_gray"
+        },
+        {
+          "col": 1,
+          "row": 1,
+          "name": "gym_floor_dark_gray_mid"
+        },
+        {
+          "col": 2,
+          "row": 1,
+          "name": "gym_floor_dark_gray_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_panel",
+      "sprite_base": "gym_floor_dark_panel",
+      "col": 3,
+      "row": 13,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        208,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 13,
+          "name": "gym_floor_dark_panel_left"
+        },
+        {
+          "col": 4,
+          "row": 13,
+          "name": "gym_floor_dark_panel_mid"
+        },
+        {
+          "col": 5,
+          "row": 13,
+          "name": "gym_floor_dark_panel_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_rubber",
+      "sprite_base": "gym_floor_dark_rubber",
+      "col": 0,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "rubber",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "gym_floor_dark_rubber_left"
+        },
+        {
+          "col": 1,
+          "row": 3,
+          "name": "gym_floor_dark_rubber_mid"
+        },
+        {
+          "col": 2,
+          "row": 3,
+          "name": "gym_floor_dark_rubber_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_green",
+      "sprite_base": "gym_floor_green",
+      "col": 1,
+      "row": 27,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        432,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 27,
+          "name": "gym_floor_green_left"
+        },
+        {
+          "col": 2,
+          "row": 27,
+          "name": "gym_floor_green_mid"
+        },
+        {
+          "col": 3,
+          "row": 27,
+          "name": "gym_floor_green_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_green_full",
+      "sprite_base": "gym_floor_green_full",
+      "col": 1,
+      "row": 28,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        448,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 28,
+          "name": "gym_floor_green_full_left"
+        },
+        {
+          "col": 2,
+          "row": 28,
+          "name": "gym_floor_green_full_mid"
+        },
+        {
+          "col": 3,
+          "row": 28,
+          "name": "gym_floor_green_full_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full",
+      "sprite_base": "gym_floor_wood_full",
+      "col": 6,
+      "row": 29,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        464,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 29,
+          "name": "gym_floor_wood_full_left"
+        },
+        {
+          "col": 7,
+          "row": 29,
+          "name": "gym_floor_wood_full_mid"
+        },
+        {
+          "col": 8,
+          "row": 29,
+          "name": "gym_floor_wood_full_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine",
+      "sprite_base": "gym_machine",
+      "col": 1,
+      "row": 32,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        512,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "frame",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 32,
+          "name": "gym_machine_frame_left"
+        },
+        {
+          "col": 2,
+          "row": 32,
+          "name": "gym_machine_frame_mid"
+        },
+        {
+          "col": 3,
+          "row": 32,
+          "name": "gym_machine_frame_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile",
+      "sprite_base": "gym_mat_red_tile",
+      "col": 11,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        48,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 3,
+          "name": "gym_mat_red_tile_left"
+        },
+        {
+          "col": 12,
+          "row": 3,
+          "name": "gym_mat_red_tile_mid"
+        },
+        {
+          "col": 13,
+          "row": 3,
+          "name": "gym_mat_red_tile_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_pull_up_bar",
+      "sprite_base": "gym_pull_up_bar",
+      "col": 5,
+      "row": 11,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        176,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "pullup",
+        "gym",
+        "bar"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 11,
+          "name": "gym_pull_up_bar_top"
+        },
+        {
+          "col": 6,
+          "row": 11,
+          "name": "gym_pull_up_bar_mid"
+        },
+        {
+          "col": 7,
+          "row": 11,
+          "name": "gym_pull_up_bar_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_v213",
+      "sprite_base": "gym_wall_dark",
+      "col": 0,
+      "row": 11,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        176,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 11,
+          "name": "gym_wall_dark_base_left"
+        },
+        {
+          "col": 1,
+          "row": 11,
+          "name": "gym_wall_dark_base_mid"
+        },
+        {
+          "col": 2,
+          "row": 11,
+          "name": "gym_wall_dark_base_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_pillar",
+      "sprite_base": "gym_wall_pillar",
+      "col": 11,
+      "row": 1,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        16,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "pillar",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 1,
+          "name": "gym_wall_pillar_left"
+        },
+        {
+          "col": 12,
+          "row": 1,
+          "name": "gym_wall_pillar_mid"
+        },
+        {
+          "col": 13,
+          "row": 1,
+          "name": "gym_wall_pillar_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_edge",
+      "sprite_base": "pool_edge",
+      "col": 3,
+      "row": 8,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        128,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "tile",
+        "pool",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 8,
+          "name": "pool_edge_top_left"
+        },
+        {
+          "col": 4,
+          "row": 8,
+          "name": "pool_edge_top_right"
+        },
+        {
+          "col": 5,
+          "row": 8,
+          "name": "pool_edge_top_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_striped_full",
+      "sprite_base": "pool_floor_striped_full",
+      "col": 0,
+      "row": 10,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        160,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "pool",
+        "striped"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 10,
+          "name": "pool_floor_striped_full_left"
+        },
+        {
+          "col": 1,
+          "row": 10,
+          "name": "pool_floor_striped_full_mid"
+        },
+        {
+          "col": 2,
+          "row": 10,
+          "name": "pool_floor_striped_full_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_tile",
+      "sprite_base": "pool_floor_tile",
+      "col": 0,
+      "row": 9,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        144,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 9,
+          "name": "pool_floor_tile_left"
+        },
+        {
+          "col": 1,
+          "row": 9,
+          "name": "pool_floor_tile_mid"
+        },
+        {
+          "col": 2,
+          "row": 9,
+          "name": "pool_floor_tile_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_tile_blue",
+      "sprite_base": "pool_floor_tile_blue",
+      "col": 10,
+      "row": 13,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        208,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "floor",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 13,
+          "name": "pool_floor_tile_blue_left"
+        },
+        {
+          "col": 11,
+          "row": 13,
+          "name": "pool_floor_tile_blue_mid"
+        },
+        {
+          "col": 12,
+          "row": 13,
+          "name": "pool_floor_tile_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_lane_divider",
+      "sprite_base": "pool_lane_divider",
+      "col": 0,
+      "row": 7,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        112,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "pool",
+        "lane",
+        "divider"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 7,
+          "name": "pool_lane_divider_left"
+        },
+        {
+          "col": 1,
+          "row": 7,
+          "name": "pool_lane_divider_mid"
+        },
+        {
+          "col": 2,
+          "row": 7,
+          "name": "pool_lane_divider_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_lane_rope",
+      "sprite_base": "pool_lane_rope",
+      "col": 5,
+      "row": 9,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        144,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rope",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 9,
+          "name": "pool_lane_rope_left"
+        },
+        {
+          "col": 6,
+          "row": 9,
+          "name": "pool_lane_rope_mid"
+        },
+        {
+          "col": 7,
+          "row": 9,
+          "name": "pool_lane_rope_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall",
+      "sprite_base": "pool_wall",
+      "col": 0,
+      "row": 23,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        368,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 23,
+          "name": "pool_wall_top_left"
+        },
+        {
+          "col": 1,
+          "row": 23,
+          "name": "pool_wall_top_mid"
+        },
+        {
+          "col": 2,
+          "row": 23,
+          "name": "pool_wall_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile",
+      "sprite_base": "pool_wall_tile",
+      "col": 8,
+      "row": 23,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        368,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 23,
+          "name": "pool_wall_tile_left"
+        },
+        {
+          "col": 9,
+          "row": 23,
+          "name": "pool_wall_tile_mid"
+        },
+        {
+          "col": 10,
+          "row": 23,
+          "name": "pool_wall_tile_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_deep",
+      "sprite_base": "pool_water_deep",
+      "col": 4,
+      "row": 7,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        112,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "deep"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 7,
+          "name": "pool_water_deep_left"
+        },
+        {
+          "col": 5,
+          "row": 7,
+          "name": "pool_water_deep_right"
+        },
+        {
+          "col": 6,
+          "row": 7,
+          "name": "pool_water_deep_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane",
+      "sprite_base": "pool_water_lane",
+      "col": 0,
+      "row": 21,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        336,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 21,
+          "name": "pool_water_lane_top_left"
+        },
+        {
+          "col": 1,
+          "row": 21,
+          "name": "pool_water_lane_top_mid"
+        },
+        {
+          "col": 2,
+          "row": 21,
+          "name": "pool_water_lane_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot",
+      "sprite_base": "pool_water_lane_bot",
+      "col": 0,
+      "row": 22,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        352,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 22,
+          "name": "pool_water_lane_bot_left"
+        },
+        {
+          "col": 1,
+          "row": 22,
+          "name": "pool_water_lane_bot_mid"
+        },
+        {
+          "col": 2,
+          "row": 22,
+          "name": "pool_water_lane_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_tile",
+      "sprite_base": "pool_water_tile",
+      "col": 2,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        96,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 6,
+          "name": "pool_water_tile_left"
+        },
+        {
+          "col": 3,
+          "row": 6,
+          "name": "pool_water_tile_mid"
+        },
+        {
+          "col": 4,
+          "row": 6,
+          "name": "pool_water_tile_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_dumbbell_rack",
+      "sprite_base": "barbell_dumbbell_rack",
+      "col": 8,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        48,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "dumbbell",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 3,
+          "name": "barbell_dumbbell_rack_top"
+        },
+        {
+          "col": 9,
+          "row": 3,
+          "name": "barbell_dumbbell_rack_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_horizontal",
+      "sprite_base": "barbell_horizontal",
+      "col": 9,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        0,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 0,
+          "name": "barbell_horizontal_left"
+        },
+        {
+          "col": 10,
+          "row": 0,
+          "name": "barbell_horizontal_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_rack_post",
+      "sprite_base": "barbell_rack_post",
+      "col": 5,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        32,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "rack",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 2,
+          "name": "barbell_rack_post_left"
+        },
+        {
+          "col": 6,
+          "row": 2,
+          "name": "barbell_rack_post_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ball_red",
+      "sprite_base": "boxing_ball_red",
+      "col": 7,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        32,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "boxing",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 2,
+          "name": "boxing_ball_red_top"
+        },
+        {
+          "col": 8,
+          "row": 2,
+          "name": "boxing_ball_red_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "exercise_ball_blue",
+      "sprite_base": "exercise_ball_blue",
+      "col": 7,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        0,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "blue",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 0,
+          "name": "exercise_ball_blue"
+        },
+        {
+          "col": 8,
+          "row": 0,
+          "name": "exercise_ball_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_barbell_horizontal_blue",
+      "sprite_base": "gym_barbell_horizontal_blue",
+      "col": 11,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        64,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "blue",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 4,
+          "name": "gym_barbell_horizontal_blue"
+        },
+        {
+          "col": 12,
+          "row": 4,
+          "name": "gym_barbell_horizontal_blue_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_barbell_horizontal_red",
+      "sprite_base": "gym_barbell_horizontal_red",
+      "col": 13,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        64,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "red",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 4,
+          "name": "gym_barbell_horizontal_red"
+        },
+        {
+          "col": 14,
+          "row": 4,
+          "name": "gym_barbell_horizontal_red_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_barbell_wall_mount",
+      "sprite_base": "gym_barbell_wall_mount",
+      "col": 4,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        480,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "mount",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 30,
+          "name": "gym_barbell_wall_mount_left"
+        },
+        {
+          "col": 5,
+          "row": 30,
+          "name": "gym_barbell_wall_mount_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_computer",
+      "sprite_base": "gym_computer",
+      "col": 8,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        480,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "computer",
+        "screen",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 30,
+          "name": "gym_computer_top_left"
+        },
+        {
+          "col": 9,
+          "row": 30,
+          "name": "gym_computer_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_computer_bot",
+      "sprite_base": "gym_computer_bot",
+      "col": 10,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        480,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "computer",
+        "screen",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 30,
+          "name": "gym_computer_bot_left"
+        },
+        {
+          "col": 11,
+          "row": 30,
+          "name": "gym_computer_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_dumbbell_rack",
+      "sprite_base": "gym_dumbbell_rack",
+      "col": 0,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        224,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "dumbbell",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 14,
+          "name": "gym_dumbbell_rack_top_left"
+        },
+        {
+          "col": 1,
+          "row": 14,
+          "name": "gym_dumbbell_rack_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_dumbbell_rack_bot",
+      "sprite_base": "gym_dumbbell_rack_bot",
+      "col": 2,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        224,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "dumbbell",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 14,
+          "name": "gym_dumbbell_rack_bot_left"
+        },
+        {
+          "col": 3,
+          "row": 14,
+          "name": "gym_dumbbell_rack_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_dumbbell_small",
+      "sprite_base": "gym_dumbbell_small",
+      "col": 9,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        32,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 2,
+          "name": "gym_dumbbell_small_left"
+        },
+        {
+          "col": 10,
+          "row": 2,
+          "name": "gym_dumbbell_small_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_tile_checker",
+      "sprite_base": "gym_floor_tile_checker",
+      "col": 9,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        64,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 4,
+          "name": "gym_floor_tile_checker_left"
+        },
+        {
+          "col": 10,
+          "row": 4,
+          "name": "gym_floor_tile_checker_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_v109",
+      "sprite_base": "gym_machine_cable",
+      "col": 6,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        256,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 16,
+          "name": "gym_machine_cable_top_left"
+        },
+        {
+          "col": 7,
+          "row": 16,
+          "name": "gym_machine_cable_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_v110",
+      "sprite_base": "gym_machine_cable",
+      "col": 4,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        496,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "frame",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 31,
+          "name": "gym_machine_cable_frame_left"
+        },
+        {
+          "col": 5,
+          "row": 31,
+          "name": "gym_machine_cable_frame_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_bot",
+      "sprite_base": "gym_machine_cable_bot",
+      "col": 8,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        256,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 16,
+          "name": "gym_machine_cable_bot_left"
+        },
+        {
+          "col": 9,
+          "row": 16,
+          "name": "gym_machine_cable_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_multi",
+      "sprite_base": "gym_machine_multi",
+      "col": 8,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        496,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "multi",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 31,
+          "name": "gym_machine_multi_top_left"
+        },
+        {
+          "col": 9,
+          "row": 31,
+          "name": "gym_machine_multi_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_multi_bot",
+      "sprite_base": "gym_machine_multi_bot",
+      "col": 10,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        496,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "multi",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 31,
+          "name": "gym_machine_multi_bot_left"
+        },
+        {
+          "col": 11,
+          "row": 31,
+          "name": "gym_machine_multi_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_pin",
+      "sprite_base": "gym_machine_weight_pin",
+      "col": 9,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        288,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "pin",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 18,
+          "name": "gym_machine_weight_pin_left"
+        },
+        {
+          "col": 10,
+          "row": 18,
+          "name": "gym_machine_weight_pin_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red",
+      "sprite_base": "gym_mat_red",
+      "col": 11,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        32,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 2,
+          "name": "gym_mat_red_left"
+        },
+        {
+          "col": 12,
+          "row": 2,
+          "name": "gym_mat_red_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_dark",
+      "sprite_base": "gym_mat_red_dark",
+      "col": 0,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        80,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 5,
+          "name": "gym_mat_red_dark_left"
+        },
+        {
+          "col": 1,
+          "row": 5,
+          "name": "gym_mat_red_dark_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_orb_robot",
+      "sprite_base": "gym_orb_robot",
+      "col": 14,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        496,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "orb",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 31,
+          "name": "gym_orb_robot_top_left"
+        },
+        {
+          "col": 15,
+          "row": 31,
+          "name": "gym_orb_robot_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_orb_robot_bot",
+      "sprite_base": "gym_orb_robot_bot",
+      "col": 10,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        512,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "orb",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 32,
+          "name": "gym_orb_robot_bot_left"
+        },
+        {
+          "col": 11,
+          "row": 32,
+          "name": "gym_orb_robot_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_orb_robot_ext",
+      "sprite_base": "gym_orb_robot_ext",
+      "col": 12,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        512,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "orb",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 32,
+          "name": "gym_orb_robot_ext_left"
+        },
+        {
+          "col": 13,
+          "row": 32,
+          "name": "gym_orb_robot_ext_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_pull_up_bar_hook",
+      "sprite_base": "gym_pull_up_bar_hook",
+      "col": 6,
+      "row": 15,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        240,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hook",
+        "gym",
+        "bar"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 15,
+          "name": "gym_pull_up_bar_hook_top"
+        },
+        {
+          "col": 7,
+          "row": 15,
+          "name": "gym_pull_up_bar_hook_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_robot",
+      "sprite_base": "gym_robot",
+      "col": 0,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        480,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 30,
+          "name": "gym_robot_top_left"
+        },
+        {
+          "col": 1,
+          "row": 30,
+          "name": "gym_robot_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_robot_bot",
+      "sprite_base": "gym_robot_bot",
+      "col": 0,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        496,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 31,
+          "name": "gym_robot_bot_left"
+        },
+        {
+          "col": 1,
+          "row": 31,
+          "name": "gym_robot_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_scoreboard",
+      "sprite_base": "gym_scoreboard",
+      "col": 9,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        304,
+        32,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "display",
+        "scoreboard",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 19,
+          "name": "gym_scoreboard_top_left"
+        },
+        {
+          "col": 10,
+          "row": 19,
+          "name": "gym_scoreboard_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_scoreboard_bot",
+      "sprite_base": "gym_scoreboard_bot",
+      "col": 9,
+      "row": 20,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        320,
+        32,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "display",
+        "scoreboard",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 20,
+          "name": "gym_scoreboard_bot_left"
+        },
+        {
+          "col": 10,
+          "row": 20,
+          "name": "gym_scoreboard_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_squat_rack",
+      "sprite_base": "gym_squat_rack",
+      "col": 12,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        224,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "squat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 14,
+          "name": "gym_squat_rack_top_left"
+        },
+        {
+          "col": 13,
+          "row": 14,
+          "name": "gym_squat_rack_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_dark",
+      "sprite_base": "gym_tire_dark",
+      "col": 10,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        80,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "obstacle",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 5,
+          "name": "gym_tire_dark_top_left"
+        },
+        {
+          "col": 11,
+          "row": 5,
+          "name": "gym_tire_dark_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_dark_bot",
+      "sprite_base": "gym_tire_dark_bot",
+      "col": 12,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        80,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "obstacle",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 5,
+          "name": "gym_tire_dark_bot_left"
+        },
+        {
+          "col": 13,
+          "row": 5,
+          "name": "gym_tire_dark_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_v189",
+      "sprite_base": "gym_tire_large",
+      "col": 0,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        96,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 6,
+          "name": "gym_tire_large_tl"
+        },
+        {
+          "col": 1,
+          "row": 6,
+          "name": "gym_tire_large_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_v190",
+      "sprite_base": "gym_tire_large",
+      "col": 7,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        96,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 6,
+          "name": "gym_tire_large_bl"
+        },
+        {
+          "col": 8,
+          "row": 6,
+          "name": "gym_tire_large_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack",
+      "sprite_base": "gym_tire_stack",
+      "col": 0,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stack",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 24,
+          "name": "gym_tire_stack_top_left"
+        },
+        {
+          "col": 1,
+          "row": 24,
+          "name": "gym_tire_stack_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_bot",
+      "sprite_base": "gym_tire_stack_bot",
+      "col": 2,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stack",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 24,
+          "name": "gym_tire_stack_bot_left"
+        },
+        {
+          "col": 3,
+          "row": 24,
+          "name": "gym_tire_stack_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_ext",
+      "sprite_base": "gym_tire_stack_ext",
+      "col": 4,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stack",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 24,
+          "name": "gym_tire_stack_ext_left"
+        },
+        {
+          "col": 5,
+          "row": 24,
+          "name": "gym_tire_stack_ext_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_ext2",
+      "sprite_base": "gym_tire_stack_ext2",
+      "col": 6,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stack",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 24,
+          "name": "gym_tire_stack_ext2_left"
+        },
+        {
+          "col": 7,
+          "row": 24,
+          "name": "gym_tire_stack_ext2_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_arch",
+      "sprite_base": "gym_wall_arch",
+      "col": 3,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        176,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "arch",
+        "wall",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 11,
+          "name": "gym_wall_arch_left"
+        },
+        {
+          "col": 4,
+          "row": 11,
+          "name": "gym_wall_arch_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_corner_bot",
+      "sprite_base": "gym_wall_dark_corner_bot",
+      "col": 0,
+      "row": 15,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        240,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "corner"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 15,
+          "name": "gym_wall_dark_corner_bot_left"
+        },
+        {
+          "col": 1,
+          "row": 15,
+          "name": "gym_wall_dark_corner_bot_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_panel",
+      "sprite_base": "gym_wall_dark_panel",
+      "col": 9,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        176,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "wall",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 11,
+          "name": "gym_wall_dark_panel_left"
+        },
+        {
+          "col": 10,
+          "row": 11,
+          "name": "gym_wall_dark_panel_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_white",
+      "sprite_base": "pool_float_ring_white",
+      "col": 8,
+      "row": 22,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        352,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 22,
+          "name": "pool_float_ring_white_left"
+        },
+        {
+          "col": 9,
+          "row": 22,
+          "name": "pool_float_ring_white_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_striped",
+      "sprite_base": "pool_floor_striped",
+      "col": 13,
+      "row": 9,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        144,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "pool",
+        "striped"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 9,
+          "name": "pool_floor_striped_left"
+        },
+        {
+          "col": 14,
+          "row": 9,
+          "name": "pool_floor_striped_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_ladder",
+      "sprite_base": "pool_ladder",
+      "col": 3,
+      "row": 9,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        144,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "pool",
+        "ladder",
+        "metal"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 9,
+          "name": "pool_ladder_top_left"
+        },
+        {
+          "col": 4,
+          "row": 9,
+          "name": "pool_ladder_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_blue",
+      "sprite_base": "pool_water_blue",
+      "col": 3,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        80,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 5,
+          "name": "pool_water_blue_mid"
+        },
+        {
+          "col": 4,
+          "row": 5,
+          "name": "pool_water_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_light_blue",
+      "sprite_base": "pool_water_light_blue",
+      "col": 1,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        128,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 8,
+          "name": "pool_water_light_blue_mid"
+        },
+        {
+          "col": 2,
+          "row": 8,
+          "name": "pool_water_light_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "punching_bag_red",
+      "sprite_base": "punching_bag_red",
+      "col": 5,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        16,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "punching",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 1,
+          "name": "punching_bag_red_top"
+        },
+        {
+          "col": 6,
+          "row": 1,
+          "name": "punching_bag_red_bottom"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "barbell_bench_press",
+      "sprite_base": "barbell_bench_press",
+      "col": 5,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "gym",
+        "bench"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 3,
+          "name": "barbell_bench_press_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_dumbbell_rack_bot",
+      "sprite_base": "barbell_dumbbell_rack_bot",
+      "col": 10,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "dumbbell",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 3,
+          "name": "barbell_dumbbell_rack_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_weight_bar",
+      "sprite_base": "barbell_weight_bar",
+      "col": 3,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "horizontal",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 3,
+          "name": "barbell_weight_bar"
+        }
+      ]
+    },
+    {
+      "sprite_name": "barbell_weight_bar2",
+      "sprite_base": "barbell_weight_bar2",
+      "col": 4,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "horizontal",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 3,
+          "name": "barbell_weight_bar2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_ball_blue",
+      "sprite_base": "boxing_ring_ball_blue",
+      "col": 1,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        400,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 25,
+          "name": "boxing_ring_ball_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_ball_red",
+      "sprite_base": "boxing_ring_ball_red",
+      "col": 0,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        400,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 25,
+          "name": "boxing_ring_ball_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext",
+      "sprite_base": "boxing_ring_floor_red_ext",
+      "col": 3,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext10",
+      "sprite_base": "boxing_ring_floor_red_ext10",
+      "col": 12,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext10"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext11",
+      "sprite_base": "boxing_ring_floor_red_ext11",
+      "col": 13,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext11"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext12",
+      "sprite_base": "boxing_ring_floor_red_ext12",
+      "col": 14,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext12"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext13",
+      "sprite_base": "boxing_ring_floor_red_ext13",
+      "col": 15,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext13"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext2",
+      "sprite_base": "boxing_ring_floor_red_ext2",
+      "col": 4,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext3",
+      "sprite_base": "boxing_ring_floor_red_ext3",
+      "col": 5,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext4",
+      "sprite_base": "boxing_ring_floor_red_ext4",
+      "col": 6,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext5",
+      "sprite_base": "boxing_ring_floor_red_ext5",
+      "col": 7,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext6",
+      "sprite_base": "boxing_ring_floor_red_ext6",
+      "col": 8,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext7",
+      "sprite_base": "boxing_ring_floor_red_ext7",
+      "col": 9,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext8",
+      "sprite_base": "boxing_ring_floor_red_ext8",
+      "col": 10,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_floor_red_ext9",
+      "sprite_base": "boxing_ring_floor_red_ext9",
+      "col": 11,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        416,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 26,
+          "name": "boxing_ring_floor_red_ext9"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext",
+      "sprite_base": "boxing_ring_rope_ext",
+      "col": 5,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 25,
+          "name": "boxing_ring_rope_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext10",
+      "sprite_base": "boxing_ring_rope_ext10",
+      "col": 14,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 25,
+          "name": "boxing_ring_rope_ext10"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext11",
+      "sprite_base": "boxing_ring_rope_ext11",
+      "col": 15,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 25,
+          "name": "boxing_ring_rope_ext11"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext2",
+      "sprite_base": "boxing_ring_rope_ext2",
+      "col": 6,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 25,
+          "name": "boxing_ring_rope_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext3",
+      "sprite_base": "boxing_ring_rope_ext3",
+      "col": 7,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 25,
+          "name": "boxing_ring_rope_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext4",
+      "sprite_base": "boxing_ring_rope_ext4",
+      "col": 8,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 25,
+          "name": "boxing_ring_rope_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext5",
+      "sprite_base": "boxing_ring_rope_ext5",
+      "col": 9,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 25,
+          "name": "boxing_ring_rope_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext6",
+      "sprite_base": "boxing_ring_rope_ext6",
+      "col": 10,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 25,
+          "name": "boxing_ring_rope_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext7",
+      "sprite_base": "boxing_ring_rope_ext7",
+      "col": 11,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 25,
+          "name": "boxing_ring_rope_ext7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext8",
+      "sprite_base": "boxing_ring_rope_ext8",
+      "col": 12,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 25,
+          "name": "boxing_ring_rope_ext8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_ring_rope_ext9",
+      "sprite_base": "boxing_ring_rope_ext9",
+      "col": 13,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "boxing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 25,
+          "name": "boxing_ring_rope_ext9"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dumbbell_small_silver",
+      "sprite_base": "dumbbell_small_silver",
+      "col": 9,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "small",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 9,
+          "name": "dumbbell_small_silver"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dumbbell_small_silver2",
+      "sprite_base": "dumbbell_small_silver2",
+      "col": 10,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "small",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 9,
+          "name": "dumbbell_small_silver2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym",
+      "sprite_base": "gym",
+      "col": 3,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "monitor",
+        "screen",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 30,
+          "name": "gym_monitor_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_barbell_wall_mount_ext",
+      "sprite_base": "gym_barbell_wall_mount_ext",
+      "col": 6,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "mount",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 30,
+          "name": "gym_barbell_wall_mount_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_barbell_wall_mount_ext2",
+      "sprite_base": "gym_barbell_wall_mount_ext2",
+      "col": 7,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "barbell",
+        "mount",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 30,
+          "name": "gym_barbell_wall_mount_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_bench_side_dark",
+      "sprite_base": "gym_bench_side_dark",
+      "col": 12,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        176,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "dark",
+        "gym",
+        "bench"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 11,
+          "name": "gym_bench_side_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_boxing_ball_red_bot2",
+      "sprite_base": "gym_boxing_ball_red_bot2",
+      "col": 9,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        240,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "boxing",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 15,
+          "name": "gym_boxing_ball_red_bot2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_boxing_ball_red_top2",
+      "sprite_base": "gym_boxing_ball_red_top2",
+      "col": 8,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        240,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "boxing",
+        "ball",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 15,
+          "name": "gym_boxing_ball_red_top2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_disc_weight_gray",
+      "sprite_base": "gym_disc_weight_gray",
+      "col": 8,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "disc",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 7,
+          "name": "gym_disc_weight_gray_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_disc_weight_gray2",
+      "sprite_base": "gym_disc_weight_gray2",
+      "col": 10,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "disc",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 7,
+          "name": "gym_disc_weight_gray2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_disc_weight_gray_bot",
+      "sprite_base": "gym_disc_weight_gray_bot",
+      "col": 9,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "disc",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 7,
+          "name": "gym_disc_weight_gray_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_door_gym",
+      "sprite_base": "gym_door_gym",
+      "col": 2,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        480,
+        16,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "door",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 30,
+          "name": "gym_door_gym_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_door_gym_bot",
+      "sprite_base": "gym_door_gym_bot",
+      "col": 2,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        496,
+        16,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "door",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 31,
+          "name": "gym_door_gym_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_dumbbell_rack_ext",
+      "sprite_base": "gym_dumbbell_rack_ext",
+      "col": 4,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "dumbbell",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 14,
+          "name": "gym_dumbbell_rack_ext_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_gray_ext",
+      "sprite_base": "gym_floor_dark_gray_ext",
+      "col": 4,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        16,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "rubber",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 1,
+          "name": "gym_floor_dark_gray_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_gray_wide",
+      "sprite_base": "gym_floor_dark_gray_wide",
+      "col": 3,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "rubber",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 1,
+          "name": "gym_floor_dark_gray_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_panel_ext",
+      "sprite_base": "gym_floor_dark_panel_ext",
+      "col": 6,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 13,
+          "name": "gym_floor_dark_panel_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_panel_ext2",
+      "sprite_base": "gym_floor_dark_panel_ext2",
+      "col": 7,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 13,
+          "name": "gym_floor_dark_panel_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_panel_ext3",
+      "sprite_base": "gym_floor_dark_panel_ext3",
+      "col": 8,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 13,
+          "name": "gym_floor_dark_panel_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_dark_panel_ext4",
+      "sprite_base": "gym_floor_dark_panel_ext4",
+      "col": 9,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 13,
+          "name": "gym_floor_dark_panel_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_gray_tile",
+      "sprite_base": "gym_floor_gray_tile",
+      "col": 0,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "gym_floor_gray_tile"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_gray_tile2",
+      "sprite_base": "gym_floor_gray_tile2",
+      "col": 1,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 2,
+          "name": "gym_floor_gray_tile2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_gray_tile3",
+      "sprite_base": "gym_floor_gray_tile3",
+      "col": 2,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 2,
+          "name": "gym_floor_gray_tile3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_gray_tile4",
+      "sprite_base": "gym_floor_gray_tile4",
+      "col": 3,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 2,
+          "name": "gym_floor_gray_tile4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_gray_tile5",
+      "sprite_base": "gym_floor_gray_tile5",
+      "col": 4,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 2,
+          "name": "gym_floor_gray_tile5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_green_ext",
+      "sprite_base": "gym_floor_green_ext",
+      "col": 4,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        432,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 27,
+          "name": "gym_floor_green_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_green_full_ext",
+      "sprite_base": "gym_floor_green_full_ext",
+      "col": 4,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 28,
+          "name": "gym_floor_green_full_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext",
+      "sprite_base": "gym_floor_wood_ext",
+      "col": 7,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 28,
+          "name": "gym_floor_wood_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext2",
+      "sprite_base": "gym_floor_wood_ext2",
+      "col": 8,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 28,
+          "name": "gym_floor_wood_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext3",
+      "sprite_base": "gym_floor_wood_ext3",
+      "col": 9,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 28,
+          "name": "gym_floor_wood_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext4",
+      "sprite_base": "gym_floor_wood_ext4",
+      "col": 10,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 28,
+          "name": "gym_floor_wood_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext5",
+      "sprite_base": "gym_floor_wood_ext5",
+      "col": 11,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 28,
+          "name": "gym_floor_wood_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext6",
+      "sprite_base": "gym_floor_wood_ext6",
+      "col": 12,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 28,
+          "name": "gym_floor_wood_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext7",
+      "sprite_base": "gym_floor_wood_ext7",
+      "col": 13,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 28,
+          "name": "gym_floor_wood_ext7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext8",
+      "sprite_base": "gym_floor_wood_ext8",
+      "col": 14,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 28,
+          "name": "gym_floor_wood_ext8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_ext9",
+      "sprite_base": "gym_floor_wood_ext9",
+      "col": 15,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        448,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 28,
+          "name": "gym_floor_wood_ext9"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full_ext",
+      "sprite_base": "gym_floor_wood_full_ext",
+      "col": 9,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        464,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 29,
+          "name": "gym_floor_wood_full_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full_ext2",
+      "sprite_base": "gym_floor_wood_full_ext2",
+      "col": 10,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        464,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 29,
+          "name": "gym_floor_wood_full_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full_ext3",
+      "sprite_base": "gym_floor_wood_full_ext3",
+      "col": 11,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        464,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 29,
+          "name": "gym_floor_wood_full_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full_ext4",
+      "sprite_base": "gym_floor_wood_full_ext4",
+      "col": 12,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        464,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 29,
+          "name": "gym_floor_wood_full_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_floor_wood_full_ext5",
+      "sprite_base": "gym_floor_wood_full_ext5",
+      "col": 13,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        464,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "wood",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 29,
+          "name": "gym_floor_wood_full_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_blue_small",
+      "sprite_base": "gym_hoverboard_blue_small",
+      "col": 12,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 30,
+          "name": "gym_hoverboard_blue_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_cyan",
+      "sprite_base": "gym_hoverboard_cyan",
+      "col": 14,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        464,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 29,
+          "name": "gym_hoverboard_cyan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_green",
+      "sprite_base": "gym_hoverboard_green",
+      "col": 15,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        464,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 29,
+          "name": "gym_hoverboard_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_pink_small",
+      "sprite_base": "gym_hoverboard_pink_small",
+      "col": 14,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 30,
+          "name": "gym_hoverboard_pink_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_red_small",
+      "sprite_base": "gym_hoverboard_red_small",
+      "col": 13,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 30,
+          "name": "gym_hoverboard_red_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_hoverboard_small_ext",
+      "sprite_base": "gym_hoverboard_small_ext",
+      "col": 15,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        480,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hoverboard",
+        "gadget",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 30,
+          "name": "gym_hoverboard_small_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_chest",
+      "sprite_base": "gym_locker_chest",
+      "col": 13,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "storage",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 7,
+          "name": "gym_locker_chest"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_gray_box",
+      "sprite_base": "gym_locker_gray_box",
+      "col": 15,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 5,
+          "name": "gym_locker_gray_box"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_gray_closed",
+      "sprite_base": "gym_locker_gray_closed",
+      "col": 11,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 7,
+          "name": "gym_locker_gray_closed"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_gray_open",
+      "sprite_base": "gym_locker_gray_open",
+      "col": 12,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 7,
+          "name": "gym_locker_gray_open"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_green",
+      "sprite_base": "gym_locker_green",
+      "col": 0,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 4,
+          "name": "gym_locker_green_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_green_bot",
+      "sprite_base": "gym_locker_green_bot",
+      "col": 1,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "green",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 4,
+          "name": "gym_locker_green_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_small_gray",
+      "sprite_base": "gym_locker_small_gray",
+      "col": 14,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "small",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 7,
+          "name": "gym_locker_small_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_locker_small_gray2",
+      "sprite_base": "gym_locker_small_gray2",
+      "col": 15,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "small",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 7,
+          "name": "gym_locker_small_gray2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_ext",
+      "sprite_base": "gym_machine_cable_ext",
+      "col": 10,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        256,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 16,
+          "name": "gym_machine_cable_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_ext2",
+      "sprite_base": "gym_machine_cable_ext2",
+      "col": 13,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        256,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 16,
+          "name": "gym_machine_cable_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_ext3",
+      "sprite_base": "gym_machine_cable_ext3",
+      "col": 14,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        256,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 16,
+          "name": "gym_machine_cable_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_frame_ext",
+      "sprite_base": "gym_machine_cable_frame_ext",
+      "col": 6,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        496,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "frame",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 31,
+          "name": "gym_machine_cable_frame_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_cable_frame_ext2",
+      "sprite_base": "gym_machine_cable_frame_ext2",
+      "col": 7,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        496,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "frame",
+        "gym",
+        "cable"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 31,
+          "name": "gym_machine_cable_frame_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_frame_ext",
+      "sprite_base": "gym_machine_frame_ext",
+      "col": 4,
+      "row": 32,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        512,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "frame",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 32,
+          "name": "gym_machine_frame_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_frame_ext2",
+      "sprite_base": "gym_machine_frame_ext2",
+      "col": 5,
+      "row": 32,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        512,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "frame",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 32,
+          "name": "gym_machine_frame_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill",
+      "sprite_base": "gym_machine_treadmill",
+      "col": 6,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 27,
+          "name": "gym_machine_treadmill_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_bot",
+      "sprite_base": "gym_machine_treadmill_bot",
+      "col": 7,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 27,
+          "name": "gym_machine_treadmill_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_bot2",
+      "sprite_base": "gym_machine_treadmill_bot2",
+      "col": 9,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 27,
+          "name": "gym_machine_treadmill_bot2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext",
+      "sprite_base": "gym_machine_treadmill_ext",
+      "col": 10,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext2",
+      "sprite_base": "gym_machine_treadmill_ext2",
+      "col": 11,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext3",
+      "sprite_base": "gym_machine_treadmill_ext3",
+      "col": 12,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext4",
+      "sprite_base": "gym_machine_treadmill_ext4",
+      "col": 13,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext5",
+      "sprite_base": "gym_machine_treadmill_ext5",
+      "col": 14,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_ext6",
+      "sprite_base": "gym_machine_treadmill_ext6",
+      "col": 15,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 27,
+          "name": "gym_machine_treadmill_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_treadmill_top2",
+      "sprite_base": "gym_machine_treadmill_top2",
+      "col": 8,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        432,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "treadmill",
+        "machine",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 27,
+          "name": "gym_machine_treadmill_top2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_stack_v132",
+      "sprite_base": "gym_machine_weight_stack",
+      "col": 6,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        272,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 17,
+          "name": "gym_machine_weight_stack_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_stack_v133",
+      "sprite_base": "gym_machine_weight_stack",
+      "col": 8,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        272,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 17,
+          "name": "gym_machine_weight_stack_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_stack_bot",
+      "sprite_base": "gym_machine_weight_stack_bot",
+      "col": 7,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        272,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 17,
+          "name": "gym_machine_weight_stack_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_stack_ext",
+      "sprite_base": "gym_machine_weight_stack_ext",
+      "col": 9,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        272,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 17,
+          "name": "gym_machine_weight_stack_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_machine_weight_stack_ext2",
+      "sprite_base": "gym_machine_weight_stack_ext2",
+      "col": 10,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        272,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 17,
+          "name": "gym_machine_weight_stack_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_ext",
+      "sprite_base": "gym_mat_red_ext",
+      "col": 13,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 2,
+          "name": "gym_mat_red_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_full",
+      "sprite_base": "gym_mat_red_full",
+      "col": 14,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 2,
+          "name": "gym_mat_red_full"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_full2",
+      "sprite_base": "gym_mat_red_full2",
+      "col": 15,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 2,
+          "name": "gym_mat_red_full2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_corner",
+      "sprite_base": "gym_mat_red_tile_corner",
+      "col": 14,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        48,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 3,
+          "name": "gym_mat_red_tile_corner"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_edge",
+      "sprite_base": "gym_mat_red_tile_edge",
+      "col": 15,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        48,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 3,
+          "name": "gym_mat_red_tile_edge"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_full",
+      "sprite_base": "gym_mat_red_tile_full",
+      "col": 2,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 4,
+          "name": "gym_mat_red_tile_full"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_full2",
+      "sprite_base": "gym_mat_red_tile_full2",
+      "col": 3,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 4,
+          "name": "gym_mat_red_tile_full2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_full3",
+      "sprite_base": "gym_mat_red_tile_full3",
+      "col": 4,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 4,
+          "name": "gym_mat_red_tile_full3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_full4",
+      "sprite_base": "gym_mat_red_tile_full4",
+      "col": 5,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 4,
+          "name": "gym_mat_red_tile_full4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_tile_full5",
+      "sprite_base": "gym_mat_red_tile_full5",
+      "col": 6,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "red",
+        "mat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 4,
+          "name": "gym_mat_red_tile_full5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_monitor_bot",
+      "sprite_base": "gym_monitor_bot",
+      "col": 3,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        496,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "monitor",
+        "screen",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 31,
+          "name": "gym_monitor_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_person_seated",
+      "sprite_base": "gym_person_seated",
+      "col": 15,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "person",
+        "seated",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 9,
+          "name": "gym_person_seated"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_pull_up_bar_bot",
+      "sprite_base": "gym_pull_up_bar_bot",
+      "col": 8,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        176,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "pullup",
+        "gym",
+        "bar"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 11,
+          "name": "gym_pull_up_bar_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_punching_bag_red_bot2",
+      "sprite_base": "gym_punching_bag_red_bot2",
+      "col": 8,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "punching",
+        "bag",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 14,
+          "name": "gym_punching_bag_red_bot2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_punching_bag_red_hook",
+      "sprite_base": "gym_punching_bag_red_hook",
+      "col": 6,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "punching",
+        "bag",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 14,
+          "name": "gym_punching_bag_red_hook"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_punching_bag_red_top2",
+      "sprite_base": "gym_punching_bag_red_top2",
+      "col": 7,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "punching",
+        "bag",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 14,
+          "name": "gym_punching_bag_red_top2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_robot_saucer",
+      "sprite_base": "gym_robot_saucer",
+      "col": 14,
+      "row": 32,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        512,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "saucer",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 32,
+          "name": "gym_robot_saucer_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_robot_saucer_bot",
+      "sprite_base": "gym_robot_saucer_bot",
+      "col": 15,
+      "row": 32,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        512,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "saucer",
+        "robot",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 32,
+          "name": "gym_robot_saucer_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_scoreboard_bot_ext",
+      "sprite_base": "gym_scoreboard_bot_ext",
+      "col": 11,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "display",
+        "scoreboard",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 20,
+          "name": "gym_scoreboard_bot_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_scoreboard_top_ext",
+      "sprite_base": "gym_scoreboard_top_ext",
+      "col": 11,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "display",
+        "scoreboard",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 19,
+          "name": "gym_scoreboard_top_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_shirt_blue",
+      "sprite_base": "gym_shirt_blue",
+      "col": 7,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "shirt",
+        "clothing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 5,
+          "name": "gym_shirt_blue_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_shirt_blue_bot",
+      "sprite_base": "gym_shirt_blue_bot",
+      "col": 8,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "shirt",
+        "clothing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 5,
+          "name": "gym_shirt_blue_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_shorts_blue",
+      "sprite_base": "gym_shorts_blue",
+      "col": 9,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "shorts",
+        "clothing",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 5,
+          "name": "gym_shorts_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_a",
+      "sprite_base": "gym_sign_random_text_a",
+      "col": 3,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 19,
+          "name": "gym_sign_random_text_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_b",
+      "sprite_base": "gym_sign_random_text_b",
+      "col": 4,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 19,
+          "name": "gym_sign_random_text_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_c",
+      "sprite_base": "gym_sign_random_text_c",
+      "col": 5,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 19,
+          "name": "gym_sign_random_text_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_d",
+      "sprite_base": "gym_sign_random_text_d",
+      "col": 6,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 19,
+          "name": "gym_sign_random_text_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_e",
+      "sprite_base": "gym_sign_random_text_e",
+      "col": 7,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 19,
+          "name": "gym_sign_random_text_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_f",
+      "sprite_base": "gym_sign_random_text_f",
+      "col": 8,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        304,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 19,
+          "name": "gym_sign_random_text_f"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_g",
+      "sprite_base": "gym_sign_random_text_g",
+      "col": 3,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 20,
+          "name": "gym_sign_random_text_g"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_h",
+      "sprite_base": "gym_sign_random_text_h",
+      "col": 4,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 20,
+          "name": "gym_sign_random_text_h"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_i",
+      "sprite_base": "gym_sign_random_text_i",
+      "col": 5,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 20,
+          "name": "gym_sign_random_text_i"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_j",
+      "sprite_base": "gym_sign_random_text_j",
+      "col": 6,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 20,
+          "name": "gym_sign_random_text_j"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_k",
+      "sprite_base": "gym_sign_random_text_k",
+      "col": 7,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 20,
+          "name": "gym_sign_random_text_k"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_sign_random_text_l",
+      "sprite_base": "gym_sign_random_text_l",
+      "col": 8,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        320,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "text",
+        "sign",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 20,
+          "name": "gym_sign_random_text_l"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_squat_rack_bot",
+      "sprite_base": "gym_squat_rack_bot",
+      "col": 14,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rack",
+        "squat",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 14,
+          "name": "gym_squat_rack_bot_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_dark_bot_left2",
+      "sprite_base": "gym_tire_dark_bot_left2",
+      "col": 14,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "obstacle",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 5,
+          "name": "gym_tire_dark_bot_left2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_bl2",
+      "sprite_base": "gym_tire_large_bl2",
+      "col": 9,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 6,
+          "name": "gym_tire_large_bl2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br2",
+      "sprite_base": "gym_tire_large_br2",
+      "col": 10,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 6,
+          "name": "gym_tire_large_br2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br3",
+      "sprite_base": "gym_tire_large_br3",
+      "col": 11,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 6,
+          "name": "gym_tire_large_br3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br4",
+      "sprite_base": "gym_tire_large_br4",
+      "col": 12,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 6,
+          "name": "gym_tire_large_br4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br5",
+      "sprite_base": "gym_tire_large_br5",
+      "col": 13,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 6,
+          "name": "gym_tire_large_br5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br6",
+      "sprite_base": "gym_tire_large_br6",
+      "col": 14,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 6,
+          "name": "gym_tire_large_br6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_large_br7",
+      "sprite_base": "gym_tire_large_br7",
+      "col": 15,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        96,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "large",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 6,
+          "name": "gym_tire_large_br7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single",
+      "sprite_base": "gym_tire_stack_single",
+      "col": 8,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 24,
+          "name": "gym_tire_stack_single"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single2",
+      "sprite_base": "gym_tire_stack_single2",
+      "col": 9,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 24,
+          "name": "gym_tire_stack_single2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single3",
+      "sprite_base": "gym_tire_stack_single3",
+      "col": 10,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 24,
+          "name": "gym_tire_stack_single3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single4",
+      "sprite_base": "gym_tire_stack_single4",
+      "col": 11,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 24,
+          "name": "gym_tire_stack_single4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single5",
+      "sprite_base": "gym_tire_stack_single5",
+      "col": 12,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 24,
+          "name": "gym_tire_stack_single5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single6",
+      "sprite_base": "gym_tire_stack_single6",
+      "col": 13,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 24,
+          "name": "gym_tire_stack_single6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single7",
+      "sprite_base": "gym_tire_stack_single7",
+      "col": 14,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 24,
+          "name": "gym_tire_stack_single7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_tire_stack_single8",
+      "sprite_base": "gym_tire_stack_single8",
+      "col": 15,
+      "row": 24,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        384,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "single",
+        "gym",
+        "tire"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 24,
+          "name": "gym_tire_stack_single8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_v211",
+      "sprite_base": "gym_wall_dark",
+      "col": 6,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        0,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "corner",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 0,
+          "name": "gym_wall_dark_top_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_v212",
+      "sprite_base": "gym_wall_dark",
+      "col": 7,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 1,
+          "name": "gym_wall_dark_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_base_ext",
+      "sprite_base": "gym_wall_dark_base_ext",
+      "col": 2,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 15,
+          "name": "gym_wall_dark_base_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_base_ext2",
+      "sprite_base": "gym_wall_dark_base_ext2",
+      "col": 3,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 15,
+          "name": "gym_wall_dark_base_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_base_ext3",
+      "sprite_base": "gym_wall_dark_base_ext3",
+      "col": 4,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 15,
+          "name": "gym_wall_dark_base_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_ext",
+      "sprite_base": "gym_wall_dark_ext",
+      "col": 10,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 15,
+          "name": "gym_wall_dark_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_ext2",
+      "sprite_base": "gym_wall_dark_ext2",
+      "col": 11,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 15,
+          "name": "gym_wall_dark_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_ext3",
+      "sprite_base": "gym_wall_dark_ext3",
+      "col": 12,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 15,
+          "name": "gym_wall_dark_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_ext4",
+      "sprite_base": "gym_wall_dark_ext4",
+      "col": 13,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 15,
+          "name": "gym_wall_dark_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_ext5",
+      "sprite_base": "gym_wall_dark_ext5",
+      "col": 14,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        240,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 15,
+          "name": "gym_wall_dark_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_mid2",
+      "sprite_base": "gym_wall_dark_mid2",
+      "col": 8,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 1,
+          "name": "gym_wall_dark_mid2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_mid3",
+      "sprite_base": "gym_wall_dark_mid3",
+      "col": 9,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 1,
+          "name": "gym_wall_dark_mid3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_dark_mid4",
+      "sprite_base": "gym_wall_dark_mid4",
+      "col": 10,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 1,
+          "name": "gym_wall_dark_mid4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_gray_mid2",
+      "sprite_base": "gym_wall_gray_mid2",
+      "col": 4,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        192,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "gray",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 12,
+          "name": "gym_wall_gray_mid2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_panel_light",
+      "sprite_base": "gym_wall_panel_light",
+      "col": 15,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        0,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "light",
+        "panel",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 0,
+          "name": "gym_wall_panel_light"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_pillar_end",
+      "sprite_base": "gym_wall_pillar_end",
+      "col": 15,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "pillar",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 1,
+          "name": "gym_wall_pillar_end"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_wall_pillar_right2",
+      "sprite_base": "gym_wall_pillar_right2",
+      "col": 14,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "pillar",
+        "gym",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 1,
+          "name": "gym_wall_pillar_right2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_dumbbell",
+      "sprite_base": "gym_weight_dumbbell",
+      "col": 9,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 14,
+          "name": "gym_weight_dumbbell_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_dumbbell_mid2",
+      "sprite_base": "gym_weight_dumbbell_mid2",
+      "col": 10,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 14,
+          "name": "gym_weight_dumbbell_mid2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_dumbbell_mid3",
+      "sprite_base": "gym_weight_dumbbell_mid3",
+      "col": 11,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        224,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "dumbbell",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 14,
+          "name": "gym_weight_dumbbell_mid3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_machine",
+      "sprite_base": "gym_weight_machine",
+      "col": 15,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        64,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "machine",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 4,
+          "name": "gym_weight_machine_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_plate_oval_dark",
+      "sprite_base": "gym_weight_plate_oval_dark",
+      "col": 2,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        464,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "plate",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 29,
+          "name": "gym_weight_plate_oval_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_weight_plate_oval_gray",
+      "sprite_base": "gym_weight_plate_oval_gray",
+      "col": 1,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        464,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "plate",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 29,
+          "name": "gym_weight_plate_oval_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_ball_red",
+      "sprite_base": "pool_ball_red",
+      "col": 8,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pool",
+        "ball",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 8,
+          "name": "pool_ball_red_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_ball_red_bot",
+      "sprite_base": "pool_ball_red_bot",
+      "col": 9,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pool",
+        "ball",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 8,
+          "name": "pool_ball_red_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_diving_board",
+      "sprite_base": "pool_diving_board",
+      "col": 9,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        192,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "board",
+        "pool",
+        "diving"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 12,
+          "name": "pool_diving_board_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_diving_board_bot",
+      "sprite_base": "pool_diving_board_bot",
+      "col": 10,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        192,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "board",
+        "pool",
+        "diving"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 12,
+          "name": "pool_diving_board_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_diving_board_ext",
+      "sprite_base": "pool_diving_board_ext",
+      "col": 11,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        192,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "board",
+        "pool",
+        "diving"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 12,
+          "name": "pool_diving_board_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_edge_top_ext",
+      "sprite_base": "pool_edge_top_ext",
+      "col": 7,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "tile",
+        "pool",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 8,
+          "name": "pool_edge_top_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_edge_top_wide",
+      "sprite_base": "pool_edge_top_wide",
+      "col": 6,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "tile",
+        "pool",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 8,
+          "name": "pool_edge_top_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_board",
+      "sprite_base": "pool_float_board",
+      "col": 7,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        192,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "board",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 12,
+          "name": "pool_float_board"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_board2",
+      "sprite_base": "pool_float_board2",
+      "col": 8,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        192,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "board",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 12,
+          "name": "pool_float_board2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_ext2",
+      "sprite_base": "pool_float_ring_ext2",
+      "col": 11,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 22,
+          "name": "pool_float_ring_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_ext3",
+      "sprite_base": "pool_float_ring_ext3",
+      "col": 12,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 22,
+          "name": "pool_float_ring_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_ext4",
+      "sprite_base": "pool_float_ring_ext4",
+      "col": 13,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 22,
+          "name": "pool_float_ring_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_ext5",
+      "sprite_base": "pool_float_ring_ext5",
+      "col": 14,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 22,
+          "name": "pool_float_ring_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_ext6",
+      "sprite_base": "pool_float_ring_ext6",
+      "col": 15,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 22,
+          "name": "pool_float_ring_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_float_ring_white_ext",
+      "sprite_base": "pool_float_ring_white_ext",
+      "col": 10,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        352,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "ring",
+        "float",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 22,
+          "name": "pool_float_ring_white_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile",
+      "sprite_base": "pool_floor_light_tile",
+      "col": 4,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 10,
+          "name": "pool_floor_light_tile"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile10",
+      "sprite_base": "pool_floor_light_tile10",
+      "col": 13,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 10,
+          "name": "pool_floor_light_tile10"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile11",
+      "sprite_base": "pool_floor_light_tile11",
+      "col": 14,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 10,
+          "name": "pool_floor_light_tile11"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile12",
+      "sprite_base": "pool_floor_light_tile12",
+      "col": 15,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 10,
+          "name": "pool_floor_light_tile12"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile2",
+      "sprite_base": "pool_floor_light_tile2",
+      "col": 5,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 10,
+          "name": "pool_floor_light_tile2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile3",
+      "sprite_base": "pool_floor_light_tile3",
+      "col": 6,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 10,
+          "name": "pool_floor_light_tile3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile4",
+      "sprite_base": "pool_floor_light_tile4",
+      "col": 7,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 10,
+          "name": "pool_floor_light_tile4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile5",
+      "sprite_base": "pool_floor_light_tile5",
+      "col": 8,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 10,
+          "name": "pool_floor_light_tile5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile6",
+      "sprite_base": "pool_floor_light_tile6",
+      "col": 9,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 10,
+          "name": "pool_floor_light_tile6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile7",
+      "sprite_base": "pool_floor_light_tile7",
+      "col": 10,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 10,
+          "name": "pool_floor_light_tile7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile8",
+      "sprite_base": "pool_floor_light_tile8",
+      "col": 11,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 10,
+          "name": "pool_floor_light_tile8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_light_tile9",
+      "sprite_base": "pool_floor_light_tile9",
+      "col": 12,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 10,
+          "name": "pool_floor_light_tile9"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_striped_ext",
+      "sprite_base": "pool_floor_striped_ext",
+      "col": 3,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "pool",
+        "striped"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 10,
+          "name": "pool_floor_striped_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_tile_blue_ext",
+      "sprite_base": "pool_floor_tile_blue_ext",
+      "col": 13,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "floor",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 13,
+          "name": "pool_floor_tile_blue_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_tile_blue_ext2",
+      "sprite_base": "pool_floor_tile_blue_ext2",
+      "col": 14,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "floor",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 13,
+          "name": "pool_floor_tile_blue_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_floor_tile_blue_ext3",
+      "sprite_base": "pool_floor_tile_blue_ext3",
+      "col": 15,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        208,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "floor",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 13,
+          "name": "pool_floor_tile_blue_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_goggles_swim",
+      "sprite_base": "pool_goggles_swim",
+      "col": 12,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pool",
+        "goggles",
+        "swim"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 12,
+          "name": "pool_goggles_swim"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_helmet_swim_cap",
+      "sprite_base": "pool_helmet_swim_cap",
+      "col": 5,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cap",
+        "pool",
+        "swim"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 12,
+          "name": "pool_helmet_swim_cap"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_helmet_swim_cap2",
+      "sprite_base": "pool_helmet_swim_cap2",
+      "col": 6,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cap",
+        "pool",
+        "swim"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 12,
+          "name": "pool_helmet_swim_cap2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_lane_divider_ext",
+      "sprite_base": "pool_lane_divider_ext",
+      "col": 3,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "pool",
+        "lane",
+        "divider"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 7,
+          "name": "pool_lane_divider_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_lane_rope_ext",
+      "sprite_base": "pool_lane_rope_ext",
+      "col": 8,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "rope",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 9,
+          "name": "pool_lane_rope_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_snorkel",
+      "sprite_base": "pool_snorkel",
+      "col": 13,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pool",
+        "swim",
+        "snorkel"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 12,
+          "name": "pool_snorkel"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_swim_person_ext",
+      "sprite_base": "pool_swim_person_ext",
+      "col": 15,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "person",
+        "pool",
+        "swimmer"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 21,
+          "name": "pool_swim_person_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_towel_blue",
+      "sprite_base": "pool_towel_blue",
+      "col": 14,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "blue",
+        "pool",
+        "towel"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 12,
+          "name": "pool_towel_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_towel_blue2",
+      "sprite_base": "pool_towel_blue2",
+      "col": 15,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "blue",
+        "pool",
+        "towel"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 12,
+          "name": "pool_towel_blue2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile_ext",
+      "sprite_base": "pool_wall_tile_ext",
+      "col": 11,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 23,
+          "name": "pool_wall_tile_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile_ext2",
+      "sprite_base": "pool_wall_tile_ext2",
+      "col": 12,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 23,
+          "name": "pool_wall_tile_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile_ext3",
+      "sprite_base": "pool_wall_tile_ext3",
+      "col": 13,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 23,
+          "name": "pool_wall_tile_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile_ext4",
+      "sprite_base": "pool_wall_tile_ext4",
+      "col": 14,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 23,
+          "name": "pool_wall_tile_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_tile_ext5",
+      "sprite_base": "pool_wall_tile_ext5",
+      "col": 15,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 23,
+          "name": "pool_wall_tile_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_top_ext",
+      "sprite_base": "pool_wall_top_ext",
+      "col": 3,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 23,
+          "name": "pool_wall_top_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_top_ext2",
+      "sprite_base": "pool_wall_top_ext2",
+      "col": 4,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 23,
+          "name": "pool_wall_top_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_top_ext3",
+      "sprite_base": "pool_wall_top_ext3",
+      "col": 5,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 23,
+          "name": "pool_wall_top_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_wall_top_ext4",
+      "sprite_base": "pool_wall_top_ext4",
+      "col": 6,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        368,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "tile",
+        "pool",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 23,
+          "name": "pool_wall_top_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_blue_deep_full",
+      "sprite_base": "pool_water_blue_deep_full",
+      "col": 10,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "deep"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 8,
+          "name": "pool_water_blue_deep_full"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_blue_ext",
+      "sprite_base": "pool_water_blue_ext",
+      "col": 6,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        80,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 5,
+          "name": "pool_water_blue_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_blue_full",
+      "sprite_base": "pool_water_blue_full",
+      "col": 2,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        80,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 5,
+          "name": "pool_water_blue_full"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_blue_wide",
+      "sprite_base": "pool_water_blue_wide",
+      "col": 5,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        80,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "blue",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 5,
+          "name": "pool_water_blue_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_deep_wide",
+      "sprite_base": "pool_water_deep_wide",
+      "col": 7,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "deep"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 7,
+          "name": "pool_water_deep_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot_ext",
+      "sprite_base": "pool_water_lane_bot_ext",
+      "col": 3,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        352,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 22,
+          "name": "pool_water_lane_bot_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot_ext2",
+      "sprite_base": "pool_water_lane_bot_ext2",
+      "col": 4,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        352,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 22,
+          "name": "pool_water_lane_bot_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot_ext3",
+      "sprite_base": "pool_water_lane_bot_ext3",
+      "col": 5,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        352,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 22,
+          "name": "pool_water_lane_bot_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot_ext4",
+      "sprite_base": "pool_water_lane_bot_ext4",
+      "col": 6,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        352,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 22,
+          "name": "pool_water_lane_bot_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_bot_ext5",
+      "sprite_base": "pool_water_lane_bot_ext5",
+      "col": 7,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        352,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 22,
+          "name": "pool_water_lane_bot_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext",
+      "sprite_base": "pool_water_lane_top_ext",
+      "col": 3,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 21,
+          "name": "pool_water_lane_top_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext2",
+      "sprite_base": "pool_water_lane_top_ext2",
+      "col": 4,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 21,
+          "name": "pool_water_lane_top_ext2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext3",
+      "sprite_base": "pool_water_lane_top_ext3",
+      "col": 5,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 21,
+          "name": "pool_water_lane_top_ext3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext4",
+      "sprite_base": "pool_water_lane_top_ext4",
+      "col": 6,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 21,
+          "name": "pool_water_lane_top_ext4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext5",
+      "sprite_base": "pool_water_lane_top_ext5",
+      "col": 7,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 21,
+          "name": "pool_water_lane_top_ext5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext6",
+      "sprite_base": "pool_water_lane_top_ext6",
+      "col": 8,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 21,
+          "name": "pool_water_lane_top_ext6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext7",
+      "sprite_base": "pool_water_lane_top_ext7",
+      "col": 9,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 21,
+          "name": "pool_water_lane_top_ext7"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_lane_top_ext8",
+      "sprite_base": "pool_water_lane_top_ext8",
+      "col": 10,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        336,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "lane"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 21,
+          "name": "pool_water_lane_top_ext8"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_light_blue_full",
+      "sprite_base": "pool_water_light_blue_full",
+      "col": 0,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "water",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 8,
+          "name": "pool_water_light_blue_full"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_tile_ext",
+      "sprite_base": "pool_water_tile_ext",
+      "col": 6,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        96,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 6,
+          "name": "pool_water_tile_ext"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_water_tile_wide",
+      "sprite_base": "pool_water_tile_wide",
+      "col": 5,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        96,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "water",
+        "pool"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 6,
+          "name": "pool_water_tile_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_window_v327",
+      "sprite_base": "pool_window",
+      "col": 12,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        128,
+        16,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 8,
+          "name": "pool_window_top_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_window_v328",
+      "sprite_base": "pool_window",
+      "col": 14,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        128,
+        16,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 8,
+          "name": "pool_window_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pool_window_side",
+      "sprite_base": "pool_window_side",
+      "col": 15,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        128,
+        16,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "pool",
+        "light"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 8,
+          "name": "pool_window_side"
+        }
+      ]
+    },
+    {
+      "sprite_name": "punching_bag",
+      "sprite_base": "punching_bag",
+      "col": 7,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "punching",
+        "bag",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 3,
+          "name": "punching_bag_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "weight_bench",
+      "sprite_base": "weight_bench",
+      "col": 11,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        144,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "weight",
+        "gym",
+        "bench"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 9,
+          "name": "weight_bench_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "weight_bench_bot",
+      "sprite_base": "weight_bench_bot",
+      "col": 12,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        144,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "weight",
+        "gym",
+        "bench"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 9,
+          "name": "weight_bench_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "weight_plate_large_red",
+      "sprite_base": "weight_plate_large_red",
+      "col": 7,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "plate",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "weight_plate_large_red_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "weight_plate_large_red_bot",
+      "sprite_base": "weight_plate_large_red_bot",
+      "col": 8,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        64,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "plate",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 4,
+          "name": "weight_plate_large_red_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "weight_plate_stack_green",
+      "sprite_base": "weight_plate_stack_green",
+      "col": 6,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "plate",
+        "weight",
+        "gym"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 3,
+          "name": "weight_plate_stack_green"
+        }
+      ]
+    }
+  ]
+}

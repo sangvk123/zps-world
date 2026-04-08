@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://office_001"]
+
+[ext_resource type="Script" path="res://scripts/world/Office.gd" id="1_office"]
+
+[node name="Office" type="Node2D"]
+script = ExtResource("1_office")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = null
+format = 2
+
+[node name="Spawns" type="Node2D" parent="."]
+
+[node name="PlayerSpawn" type="Marker2D" parent="Spawns"]
+position = Vector2(96, 80)
+
+[node name="Employees" type="Node2D" parent="."]
+
+[node name="Furniture" type="Node2D" parent="."]

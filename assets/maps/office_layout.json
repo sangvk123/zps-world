@@ -1,0 +1,277 @@
+{
+  "room_id": "office",
+  "tileset": "1_Generic_16x16",
+  "cols": 32,
+  "rows": 22,
+  "floor": {
+    "pattern": "floor_wood_natural",
+    "fill_tile": [
+      4,
+      35
+    ],
+    "border_tiles": {
+      "tl": [
+        0,
+        35
+      ],
+      "tc": [
+        1,
+        35
+      ],
+      "tr": [
+        2,
+        35
+      ],
+      "ml": [
+        3,
+        35
+      ],
+      "mr": [
+        5,
+        35
+      ],
+      "bl": [
+        6,
+        35
+      ],
+      "bc": [
+        7,
+        35
+      ],
+      "br": [
+        8,
+        35
+      ]
+    }
+  },
+  "entities": [
+    {
+      "sprite": "desk_wood",
+      "col": 1,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 5,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 9,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 13,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 1,
+      "row": 3,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 5,
+      "row": 3,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 9,
+      "row": 3,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_blue",
+      "col": 13,
+      "row": 3,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 1,
+      "row": 6,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 5,
+      "row": 6,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 9,
+      "row": 6,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 13,
+      "row": 6,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_gray",
+      "col": 1,
+      "row": 8,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_gray",
+      "col": 5,
+      "row": 8,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_gray",
+      "col": 9,
+      "row": 8,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_gray",
+      "col": 13,
+      "row": 8,
+      "z": 1
+    },
+    {
+      "sprite": "sofa_beige",
+      "col": 19,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "sofa_beige",
+      "col": 22,
+      "row": 2,
+      "z": 1
+    },
+    {
+      "sprite": "sofa_orange",
+      "col": 19,
+      "row": 5,
+      "z": 1
+    },
+    {
+      "sprite": "bookshelf_wood",
+      "col": 17,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "bookshelf_wood",
+      "col": 20,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "bookshelf_wood",
+      "col": 23,
+      "row": 1,
+      "z": 1
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 0,
+      "row": 0,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 29,
+      "row": 0,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 0,
+      "row": 19,
+      "z": 2
+    },
+    {
+      "sprite": "plant_tree3",
+      "col": 29,
+      "row": 19,
+      "z": 2
+    },
+    {
+      "sprite": "plant_potted",
+      "col": 16,
+      "row": 10,
+      "z": 2
+    },
+    {
+      "sprite": "plant_potted",
+      "col": 26,
+      "row": 8,
+      "z": 2
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 1,
+      "row": 11,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 5,
+      "row": 11,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 9,
+      "row": 11,
+      "z": 1
+    },
+    {
+      "sprite": "desk_wood",
+      "col": 13,
+      "row": 11,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_red",
+      "col": 1,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_red",
+      "col": 5,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_red",
+      "col": 9,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "chair_office_red",
+      "col": 13,
+      "row": 13,
+      "z": 1
+    },
+    {
+      "sprite": "tv_screen",
+      "col": 27,
+      "row": 12,
+      "z": 1
+    },
+    {
+      "sprite": "cabinet_wood",
+      "col": 27,
+      "row": 16,
+      "z": 1
+    }
+  ]
+}

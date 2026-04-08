@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://player_001"]
+
+[ext_resource type="Script" path="res://scripts/player/Player.gd" id="1_player"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_player")
+collision_layer = 2
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="Shadow" type="Sprite2D" parent="."]
+position = Vector2(0, 2)
+modulate = Color(0, 0, 0, 0.3)
+z_index = -1
+
+[node name="OutfitLayer" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="AccessoryLayer" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="CapeLayer" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+z_index = -1
+
+[node name="PetNode" type="Node2D" parent="."]
+position = Vector2(18, 0)
+
+[node name="AuraFeet" type="GPUParticles2D" parent="."]
+position = Vector2(0, 4)
+emitting = false
+amount = 12
+
+[node name="AuraBody" type="GPUParticles2D" parent="."]
+emitting = false
+amount = 24
+
+[node name="Nameplate" type="Label" parent="."]
+position = Vector2(-30, -36)
+size = Vector2(60, 14)
+horizontal_alignment = 1
+
+[node name="CallsignLabel" type="Label" parent="."]
+position = Vector2(-40, -48)
+size = Vector2(80, 12)
+horizontal_alignment = 1
+visible = false
+
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+
+[node name="ChatBubbleContainer" type="Control" parent="."]
+position = Vector2(-40, -72)
+size = Vector2(80, 40)

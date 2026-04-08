@@ -1,0 +1,103 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ZPS World"
+config/description="ZPS Virtual Office — Gamified Workspace Platform"
+run/main_scene="res://scenes/Campus.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+AIConfig="*res://scripts/autoloads/AIConfig.gd"
+GameManager="*res://scripts/autoloads/GameManager.gd"
+PlayerData="*res://scripts/autoloads/PlayerData.gd"
+ConversationMemory="*res://scripts/autoloads/ConversationMemory.gd"
+AIAgent="*res://scripts/autoloads/AIAgent.gd"
+NetworkManager="*res://scripts/autoloads/NetworkManager.gd"
+HttpManager="*res://scripts/autoloads/HttpManager.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="ZPS World"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ldtk-importer/plugin.cfg", "res://addons/limboai/plugin.cfg")
+
+[input]
+
+interact={
+"deadzone": 0.5,
+"events": [{
+"keycode": 69,
+"type": "InputEventKey"
+}]
+}
+toggle_chat={
+"deadzone": 0.5,
+"events": [{
+"keycode": 84,
+"type": "InputEventKey"
+}]
+}
+toggle_workspace={
+"deadzone": 0.5,
+"events": [{
+"keycode": 72,
+"type": "InputEventKey"
+}]
+}
+toggle_avatar={
+"deadzone": 0.5,
+"events": [{
+"keycode": 65,
+"shift_pressed": true,
+"type": "InputEventKey"
+}]
+}
+ui_desk_editor={
+"deadzone": 0.5,
+"events": [{
+"keycode": 68,
+"type": "InputEventKey"
+}]
+}
+
+[layer_names]
+
+2d_physics/layer_1="World"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="NPC"
+2d_physics/layer_4="Interactable"
+2d_physics/layer_5="Trigger"
+
+[physics]
+
+2d/default_gravity=0.0
+
+[gui]
+
+theme/default_font="res://assets/fonts/NotoSans-Regular.ttf"
+theme/default_font_size=14
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

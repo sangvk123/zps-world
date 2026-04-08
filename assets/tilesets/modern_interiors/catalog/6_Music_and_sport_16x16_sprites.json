@@ -1,0 +1,10568 @@
+{
+  "tileset": "6_Music_and_sport_16x16",
+  "tile_size": 16,
+  "grid": [
+    16,
+    48
+  ],
+  "input_tiles": 620,
+  "total_sprites": 324,
+  "single_tile_count": 195,
+  "multi_sprite_count": 129,
+  "multi_sprites": [
+    {
+      "sprite_name": "sport_mat_dark",
+      "sprite_base": "sport_mat_dark",
+      "col": 0,
+      "row": 24,
+      "w": 5,
+      "h": 2,
+      "tile_count": 6,
+      "density": 0.6,
+      "px_rect": [
+        0,
+        384,
+        80,
+        32
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 24,
+          "name": "sport_mat_dark_tl"
+        },
+        {
+          "col": 1,
+          "row": 24,
+          "name": "sport_mat_dark_tc"
+        },
+        {
+          "col": 2,
+          "row": 24,
+          "name": "sport_mat_dark_tr"
+        },
+        {
+          "col": 2,
+          "row": 25,
+          "name": "sport_mat_dark_bl"
+        },
+        {
+          "col": 3,
+          "row": 25,
+          "name": "sport_mat_dark_bc"
+        },
+        {
+          "col": 4,
+          "row": 25,
+          "name": "sport_mat_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_shop_tan",
+      "sprite_base": "music_shop_tan",
+      "col": 3,
+      "row": 38,
+      "w": 4,
+      "h": 2,
+      "tile_count": 5,
+      "density": 0.625,
+      "px_rect": [
+        48,
+        608,
+        64,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "shop",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 38,
+          "name": "music_shop_tan_tl"
+        },
+        {
+          "col": 3,
+          "row": 39,
+          "name": "music_shop_tan_tr"
+        },
+        {
+          "col": 4,
+          "row": 39,
+          "name": "music_shop_tan_bl"
+        },
+        {
+          "col": 5,
+          "row": 39,
+          "name": "music_shop_tan_bc"
+        },
+        {
+          "col": 6,
+          "row": 39,
+          "name": "music_shop_tan_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "balance_beam",
+      "sprite_base": "balance_beam",
+      "col": 0,
+      "row": 5,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        80,
+        96,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "gymnastics",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 5,
+          "name": "balance_beam_tl"
+        },
+        {
+          "col": 1,
+          "row": 5,
+          "name": "balance_beam_tc"
+        },
+        {
+          "col": 2,
+          "row": 5,
+          "name": "balance_beam_tr"
+        },
+        {
+          "col": 3,
+          "row": 5,
+          "name": "balance_beam_bl"
+        },
+        {
+          "col": 4,
+          "row": 5,
+          "name": "balance_beam_bc"
+        },
+        {
+          "col": 5,
+          "row": 5,
+          "name": "balance_beam_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_full",
+      "sprite_base": "drum_kit_full",
+      "col": 8,
+      "row": 33,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        528,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 33,
+          "name": "drum_kit_full_tl"
+        },
+        {
+          "col": 9,
+          "row": 33,
+          "name": "drum_kit_full_tc"
+        },
+        {
+          "col": 10,
+          "row": 33,
+          "name": "drum_kit_full_tr"
+        },
+        {
+          "col": 8,
+          "row": 34,
+          "name": "drum_kit_full_bl"
+        },
+        {
+          "col": 9,
+          "row": 34,
+          "name": "drum_kit_full_bc"
+        },
+        {
+          "col": 10,
+          "row": 34,
+          "name": "drum_kit_full_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_gold",
+      "sprite_base": "electric_guitar_gold",
+      "col": 12,
+      "row": 6,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        192,
+        96,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 6,
+          "name": "electric_guitar_gold_tl"
+        },
+        {
+          "col": 12,
+          "row": 7,
+          "name": "electric_guitar_gold_tr"
+        },
+        {
+          "col": 13,
+          "row": 7,
+          "name": "electric_guitar_gold_bl"
+        },
+        {
+          "col": 14,
+          "row": 7,
+          "name": "electric_guitar_gold_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "floor_tom_drum",
+      "sprite_base": "floor_tom_drum",
+      "col": 0,
+      "row": 42,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        0,
+        672,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 42,
+          "name": "floor_tom_drum_tl"
+        },
+        {
+          "col": 1,
+          "row": 42,
+          "name": "floor_tom_drum_tr"
+        },
+        {
+          "col": 1,
+          "row": 43,
+          "name": "floor_tom_drum_bl"
+        },
+        {
+          "col": 2,
+          "row": 43,
+          "name": "floor_tom_drum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "grand_piano",
+      "sprite_base": "grand_piano",
+      "col": 0,
+      "row": 14,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        224,
+        48,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 14,
+          "name": "grand_piano_tl"
+        },
+        {
+          "col": 1,
+          "row": 14,
+          "name": "grand_piano_tc"
+        },
+        {
+          "col": 2,
+          "row": 14,
+          "name": "grand_piano_tr"
+        },
+        {
+          "col": 0,
+          "row": 15,
+          "name": "grand_piano_bl"
+        },
+        {
+          "col": 1,
+          "row": 15,
+          "name": "grand_piano_bc"
+        },
+        {
+          "col": 2,
+          "row": 15,
+          "name": "grand_piano_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument_pedestal",
+      "sprite_base": "instrument_pedestal",
+      "col": 12,
+      "row": 46,
+      "w": 3,
+      "h": 2,
+      "tile_count": 5,
+      "density": 0.833,
+      "px_rect": [
+        192,
+        736,
+        48,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 46,
+          "name": "instrument_pedestal_tl"
+        },
+        {
+          "col": 13,
+          "row": 46,
+          "name": "instrument_pedestal_tr"
+        },
+        {
+          "col": 14,
+          "row": 46,
+          "name": "instrument_pedestal_br"
+        },
+        {
+          "col": 12,
+          "row": 47,
+          "name": "instrument_pedestal_bl"
+        },
+        {
+          "col": 13,
+          "row": 47,
+          "name": "instrument_pedestal_bc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_shop",
+      "sprite_base": "music_shop",
+      "col": 0,
+      "row": 35,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        560,
+        96,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "shop",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 35,
+          "name": "music_shop_tl"
+        },
+        {
+          "col": 1,
+          "row": 35,
+          "name": "music_shop_tc"
+        },
+        {
+          "col": 2,
+          "row": 35,
+          "name": "music_shop_tr"
+        },
+        {
+          "col": 3,
+          "row": 35,
+          "name": "music_shop_bl"
+        },
+        {
+          "col": 4,
+          "row": 35,
+          "name": "music_shop_bc"
+        },
+        {
+          "col": 5,
+          "row": 35,
+          "name": "music_shop_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_grand_alt",
+      "sprite_base": "piano_grand_alt",
+      "col": 10,
+      "row": 41,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        656,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 41,
+          "name": "piano_grand_alt_tl"
+        },
+        {
+          "col": 11,
+          "row": 41,
+          "name": "piano_grand_alt_tc"
+        },
+        {
+          "col": 12,
+          "row": 41,
+          "name": "piano_grand_alt_tr"
+        },
+        {
+          "col": 13,
+          "row": 41,
+          "name": "piano_grand_alt_bl"
+        },
+        {
+          "col": 14,
+          "row": 41,
+          "name": "piano_grand_alt_bc"
+        },
+        {
+          "col": 15,
+          "row": 41,
+          "name": "piano_grand_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_grand_upright",
+      "sprite_base": "piano_grand_upright",
+      "col": 4,
+      "row": 41,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        656,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 41,
+          "name": "piano_grand_upright_tl"
+        },
+        {
+          "col": 5,
+          "row": 41,
+          "name": "piano_grand_upright_tc"
+        },
+        {
+          "col": 6,
+          "row": 41,
+          "name": "piano_grand_upright_tr"
+        },
+        {
+          "col": 7,
+          "row": 41,
+          "name": "piano_grand_upright_bl"
+        },
+        {
+          "col": 8,
+          "row": 41,
+          "name": "piano_grand_upright_bc"
+        },
+        {
+          "col": 9,
+          "row": 41,
+          "name": "piano_grand_upright_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_organs",
+      "sprite_base": "piano_organs",
+      "col": 4,
+      "row": 42,
+      "w": 3,
+      "h": 2,
+      "tile_count": 5,
+      "density": 0.833,
+      "px_rect": [
+        64,
+        672,
+        48,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 42,
+          "name": "piano_organs_tl"
+        },
+        {
+          "col": 5,
+          "row": 42,
+          "name": "piano_organs_tc"
+        },
+        {
+          "col": 6,
+          "row": 42,
+          "name": "piano_organs_tr"
+        },
+        {
+          "col": 5,
+          "row": 43,
+          "name": "piano_organs_bl"
+        },
+        {
+          "col": 6,
+          "row": 43,
+          "name": "piano_organs_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_fighter",
+      "sprite_base": "robot_fighter",
+      "col": 3,
+      "row": 18,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        288,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "figure"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 18,
+          "name": "robot_fighter_tl"
+        },
+        {
+          "col": 4,
+          "row": 18,
+          "name": "robot_fighter_tc"
+        },
+        {
+          "col": 5,
+          "row": 18,
+          "name": "robot_fighter_tr"
+        },
+        {
+          "col": 3,
+          "row": 19,
+          "name": "robot_fighter_bl"
+        },
+        {
+          "col": 4,
+          "row": 19,
+          "name": "robot_fighter_bc"
+        },
+        {
+          "col": 5,
+          "row": 19,
+          "name": "robot_fighter_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_red_v191",
+      "sprite_base": "sport_mat_red",
+      "col": 10,
+      "row": 10,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        160,
+        48,
+        32
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 10,
+          "name": "sport_mat_red_tl"
+        },
+        {
+          "col": 11,
+          "row": 10,
+          "name": "sport_mat_red_tc"
+        },
+        {
+          "col": 12,
+          "row": 10,
+          "name": "sport_mat_red_tr"
+        },
+        {
+          "col": 10,
+          "row": 11,
+          "name": "sport_mat_red_bl"
+        },
+        {
+          "col": 11,
+          "row": 11,
+          "name": "sport_mat_red_bc"
+        },
+        {
+          "col": 12,
+          "row": 11,
+          "name": "sport_mat_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "taiko_stand",
+      "sprite_base": "taiko_stand",
+      "col": 8,
+      "row": 39,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        128,
+        624,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 39,
+          "name": "taiko_stand_tl"
+        },
+        {
+          "col": 9,
+          "row": 39,
+          "name": "taiko_stand_tc"
+        },
+        {
+          "col": 10,
+          "row": 39,
+          "name": "taiko_stand_tr"
+        },
+        {
+          "col": 10,
+          "row": 40,
+          "name": "taiko_stand_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_red",
+      "sprite_base": "upright_piano_red",
+      "col": 0,
+      "row": 11,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        176,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 11,
+          "name": "upright_piano_red_tl"
+        },
+        {
+          "col": 1,
+          "row": 11,
+          "name": "upright_piano_red_tc"
+        },
+        {
+          "col": 2,
+          "row": 11,
+          "name": "upright_piano_red_tr"
+        },
+        {
+          "col": 3,
+          "row": 11,
+          "name": "upright_piano_red_bl"
+        },
+        {
+          "col": 4,
+          "row": 11,
+          "name": "upright_piano_red_bc"
+        },
+        {
+          "col": 5,
+          "row": 11,
+          "name": "upright_piano_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wrestling_mat",
+      "sprite_base": "wrestling_mat",
+      "col": 11,
+      "row": 21,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        336,
+        48,
+        32
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 21,
+          "name": "wrestling_mat_tl"
+        },
+        {
+          "col": 12,
+          "row": 21,
+          "name": "wrestling_mat_tc"
+        },
+        {
+          "col": 13,
+          "row": 21,
+          "name": "wrestling_mat_tr"
+        },
+        {
+          "col": 11,
+          "row": 22,
+          "name": "wrestling_mat_bl"
+        },
+        {
+          "col": 12,
+          "row": 22,
+          "name": "wrestling_mat_bc"
+        },
+        {
+          "col": 13,
+          "row": 22,
+          "name": "wrestling_mat_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_armchair",
+      "sprite_base": "guitar_armchair",
+      "col": 10,
+      "row": 2,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        32,
+        80,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 2,
+          "name": "guitar_armchair_tl"
+        },
+        {
+          "col": 11,
+          "row": 2,
+          "name": "guitar_armchair_tc"
+        },
+        {
+          "col": 12,
+          "row": 2,
+          "name": "guitar_armchair_tr"
+        },
+        {
+          "col": 13,
+          "row": 2,
+          "name": "guitar_armchair_bl"
+        },
+        {
+          "col": 14,
+          "row": 2,
+          "name": "guitar_armchair_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_blue2",
+      "sprite_base": "gym_mat_blue2",
+      "col": 11,
+      "row": 39,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        624,
+        80,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 39,
+          "name": "gym_mat_blue2_tl"
+        },
+        {
+          "col": 12,
+          "row": 39,
+          "name": "gym_mat_blue2_tc"
+        },
+        {
+          "col": 13,
+          "row": 39,
+          "name": "gym_mat_blue2_tr"
+        },
+        {
+          "col": 14,
+          "row": 39,
+          "name": "gym_mat_blue2_bl"
+        },
+        {
+          "col": 15,
+          "row": 39,
+          "name": "gym_mat_blue2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_gray",
+      "sprite_base": "gym_mat_gray",
+      "col": 11,
+      "row": 36,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        576,
+        80,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 36,
+          "name": "gym_mat_gray_tl"
+        },
+        {
+          "col": 12,
+          "row": 36,
+          "name": "gym_mat_gray_tc"
+        },
+        {
+          "col": 13,
+          "row": 36,
+          "name": "gym_mat_gray_tr"
+        },
+        {
+          "col": 14,
+          "row": 36,
+          "name": "gym_mat_gray_bl"
+        },
+        {
+          "col": 15,
+          "row": 36,
+          "name": "gym_mat_gray_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_shop_red",
+      "sprite_base": "music_shop_red",
+      "col": 1,
+      "row": 38,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        608,
+        80,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "shop",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 38,
+          "name": "music_shop_red_tl"
+        },
+        {
+          "col": 2,
+          "row": 38,
+          "name": "music_shop_red_tc"
+        },
+        {
+          "col": 3,
+          "row": 38,
+          "name": "music_shop_red_tr"
+        },
+        {
+          "col": 4,
+          "row": 38,
+          "name": "music_shop_red_bl"
+        },
+        {
+          "col": 5,
+          "row": 38,
+          "name": "music_shop_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_purple",
+      "sprite_base": "synthesizer_purple",
+      "col": 0,
+      "row": 31,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        496,
+        80,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 31,
+          "name": "synthesizer_purple_tl"
+        },
+        {
+          "col": 1,
+          "row": 31,
+          "name": "synthesizer_purple_tc"
+        },
+        {
+          "col": 2,
+          "row": 31,
+          "name": "synthesizer_purple_tr"
+        },
+        {
+          "col": 3,
+          "row": 31,
+          "name": "synthesizer_purple_bl"
+        },
+        {
+          "col": 4,
+          "row": 31,
+          "name": "synthesizer_purple_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bass_guitar_blue",
+      "sprite_base": "bass_guitar_blue",
+      "col": 6,
+      "row": 33,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        528,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 33,
+          "name": "bass_guitar_blue_tl"
+        },
+        {
+          "col": 7,
+          "row": 33,
+          "name": "bass_guitar_blue_tr"
+        },
+        {
+          "col": 6,
+          "row": 34,
+          "name": "bass_guitar_blue_bl"
+        },
+        {
+          "col": 7,
+          "row": 34,
+          "name": "bass_guitar_blue_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bass_guitar_red",
+      "sprite_base": "bass_guitar_red",
+      "col": 0,
+      "row": 41,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        656,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 41,
+          "name": "bass_guitar_red_tl"
+        },
+        {
+          "col": 1,
+          "row": 41,
+          "name": "bass_guitar_red_tr"
+        },
+        {
+          "col": 2,
+          "row": 41,
+          "name": "bass_guitar_red_bl"
+        },
+        {
+          "col": 3,
+          "row": 41,
+          "name": "bass_guitar_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bass_guitar_strum",
+      "sprite_base": "bass_guitar_strum",
+      "col": 7,
+      "row": 42,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        672,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 42,
+          "name": "bass_guitar_strum_tl"
+        },
+        {
+          "col": 8,
+          "row": 42,
+          "name": "bass_guitar_strum_tr"
+        },
+        {
+          "col": 9,
+          "row": 42,
+          "name": "bass_guitar_strum_bl"
+        },
+        {
+          "col": 10,
+          "row": 42,
+          "name": "bass_guitar_strum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "blue_drum",
+      "sprite_base": "blue_drum",
+      "col": 12,
+      "row": 40,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        640,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 40,
+          "name": "blue_drum_tl"
+        },
+        {
+          "col": 13,
+          "row": 40,
+          "name": "blue_drum_tr"
+        },
+        {
+          "col": 14,
+          "row": 40,
+          "name": "blue_drum_bl"
+        },
+        {
+          "col": 15,
+          "row": 40,
+          "name": "blue_drum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_light",
+      "sprite_base": "bongo_light",
+      "col": 4,
+      "row": 40,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        640,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 40,
+          "name": "bongo_light_tl"
+        },
+        {
+          "col": 5,
+          "row": 40,
+          "name": "bongo_light_tr"
+        },
+        {
+          "col": 6,
+          "row": 40,
+          "name": "bongo_light_bl"
+        },
+        {
+          "col": 7,
+          "row": 40,
+          "name": "bongo_light_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "djembe_drum",
+      "sprite_base": "djembe_drum",
+      "col": 2,
+      "row": 13,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        208,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 13,
+          "name": "djembe_drum_tl"
+        },
+        {
+          "col": 3,
+          "row": 13,
+          "name": "djembe_drum_tr"
+        },
+        {
+          "col": 4,
+          "row": 13,
+          "name": "djembe_drum_bl"
+        },
+        {
+          "col": 5,
+          "row": 13,
+          "name": "djembe_drum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_tam",
+      "sprite_base": "drum_tam",
+      "col": 0,
+      "row": 40,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        640,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 40,
+          "name": "drum_tam_tl"
+        },
+        {
+          "col": 1,
+          "row": 40,
+          "name": "drum_tam_tr"
+        },
+        {
+          "col": 2,
+          "row": 40,
+          "name": "drum_tam_bl"
+        },
+        {
+          "col": 3,
+          "row": 40,
+          "name": "drum_tam_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "green_helmet",
+      "sprite_base": "green_helmet",
+      "col": 14,
+      "row": 24,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        384,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 24,
+          "name": "green_helmet_tl"
+        },
+        {
+          "col": 15,
+          "row": 24,
+          "name": "green_helmet_tr"
+        },
+        {
+          "col": 14,
+          "row": 25,
+          "name": "green_helmet_bl"
+        },
+        {
+          "col": 15,
+          "row": 25,
+          "name": "green_helmet_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_amp",
+      "sprite_base": "guitar_amp",
+      "col": 0,
+      "row": 8,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        128,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 8,
+          "name": "guitar_amp_tl"
+        },
+        {
+          "col": 1,
+          "row": 8,
+          "name": "guitar_amp_tr"
+        },
+        {
+          "col": 2,
+          "row": 8,
+          "name": "guitar_amp_bl"
+        },
+        {
+          "col": 3,
+          "row": 8,
+          "name": "guitar_amp_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_stand_dark",
+      "sprite_base": "guitar_stand_dark",
+      "col": 11,
+      "row": 3,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        48,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 3,
+          "name": "guitar_stand_dark_tl"
+        },
+        {
+          "col": 12,
+          "row": 3,
+          "name": "guitar_stand_dark_tr"
+        },
+        {
+          "col": 13,
+          "row": 3,
+          "name": "guitar_stand_dark_bl"
+        },
+        {
+          "col": 14,
+          "row": 3,
+          "name": "guitar_stand_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_beige",
+      "sprite_base": "gym_mat_beige",
+      "col": 11,
+      "row": 34,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        544,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 34,
+          "name": "gym_mat_beige_tl"
+        },
+        {
+          "col": 12,
+          "row": 34,
+          "name": "gym_mat_beige_tc"
+        },
+        {
+          "col": 13,
+          "row": 34,
+          "name": "gym_mat_beige_tr"
+        },
+        {
+          "col": 14,
+          "row": 34,
+          "name": "gym_mat_beige_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_blue",
+      "sprite_base": "gym_mat_blue",
+      "col": 2,
+      "row": 7,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        112,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 7,
+          "name": "gym_mat_blue_tl"
+        },
+        {
+          "col": 3,
+          "row": 7,
+          "name": "gym_mat_blue_tr"
+        },
+        {
+          "col": 4,
+          "row": 7,
+          "name": "gym_mat_blue_bl"
+        },
+        {
+          "col": 5,
+          "row": 7,
+          "name": "gym_mat_blue_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_plain",
+      "sprite_base": "gym_mat_plain",
+      "col": 11,
+      "row": 33,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        528,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 33,
+          "name": "gym_mat_plain_tl"
+        },
+        {
+          "col": 12,
+          "row": 33,
+          "name": "gym_mat_plain_tc"
+        },
+        {
+          "col": 13,
+          "row": 33,
+          "name": "gym_mat_plain_tr"
+        },
+        {
+          "col": 14,
+          "row": 33,
+          "name": "gym_mat_plain_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp",
+      "sprite_base": "harp",
+      "col": 13,
+      "row": 0,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        0,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "instrument",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 0,
+          "name": "harp_tl"
+        },
+        {
+          "col": 14,
+          "row": 0,
+          "name": "harp_tr"
+        },
+        {
+          "col": 13,
+          "row": 1,
+          "name": "harp_bl"
+        },
+        {
+          "col": 14,
+          "row": 1,
+          "name": "harp_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp_chair",
+      "sprite_base": "harp_chair",
+      "col": 7,
+      "row": 4,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "harp_chair_tl"
+        },
+        {
+          "col": 8,
+          "row": 4,
+          "name": "harp_chair_tr"
+        },
+        {
+          "col": 9,
+          "row": 4,
+          "name": "harp_chair_bl"
+        },
+        {
+          "col": 10,
+          "row": 4,
+          "name": "harp_chair_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp_chair_alt",
+      "sprite_base": "harp_chair_alt",
+      "col": 11,
+      "row": 4,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        64,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 4,
+          "name": "harp_chair_alt_tl"
+        },
+        {
+          "col": 12,
+          "row": 4,
+          "name": "harp_chair_alt_tr"
+        },
+        {
+          "col": 13,
+          "row": 4,
+          "name": "harp_chair_alt_bl"
+        },
+        {
+          "col": 14,
+          "row": 4,
+          "name": "harp_chair_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp_decorative",
+      "sprite_base": "harp_decorative",
+      "col": 1,
+      "row": 44,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        704,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "instrument",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 44,
+          "name": "harp_decorative_tl"
+        },
+        {
+          "col": 2,
+          "row": 44,
+          "name": "harp_decorative_tr"
+        },
+        {
+          "col": 3,
+          "row": 44,
+          "name": "harp_decorative_bl"
+        },
+        {
+          "col": 4,
+          "row": 44,
+          "name": "harp_decorative_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp_large",
+      "sprite_base": "harp_large",
+      "col": 14,
+      "row": 6,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        224,
+        96,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "instrument",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 6,
+          "name": "harp_large_tl"
+        },
+        {
+          "col": 15,
+          "row": 6,
+          "name": "harp_large_tr"
+        },
+        {
+          "col": 15,
+          "row": 7,
+          "name": "harp_large_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument",
+      "sprite_base": "instrument",
+      "col": 8,
+      "row": 45,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        720,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "instrument",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 45,
+          "name": "instrument_body_tl"
+        },
+        {
+          "col": 9,
+          "row": 45,
+          "name": "instrument_body_tr"
+        },
+        {
+          "col": 10,
+          "row": 45,
+          "name": "instrument_body_bl"
+        },
+        {
+          "col": 11,
+          "row": 45,
+          "name": "instrument_body_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_full",
+      "sprite_base": "microphone_stand_full",
+      "col": 0,
+      "row": 10,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        160,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 10,
+          "name": "microphone_stand_full_tl"
+        },
+        {
+          "col": 1,
+          "row": 10,
+          "name": "microphone_stand_full_tr"
+        },
+        {
+          "col": 2,
+          "row": 10,
+          "name": "microphone_stand_full_bl"
+        },
+        {
+          "col": 3,
+          "row": 10,
+          "name": "microphone_stand_full_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_stand",
+      "sprite_base": "music_stand",
+      "col": 0,
+      "row": 16,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        256,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 16,
+          "name": "music_stand_tl"
+        },
+        {
+          "col": 1,
+          "row": 16,
+          "name": "music_stand_tr"
+        },
+        {
+          "col": 2,
+          "row": 16,
+          "name": "music_stand_bl"
+        },
+        {
+          "col": 3,
+          "row": 16,
+          "name": "music_stand_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_stand_alt",
+      "sprite_base": "music_stand_alt",
+      "col": 4,
+      "row": 16,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        256,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 16,
+          "name": "music_stand_alt_tl"
+        },
+        {
+          "col": 5,
+          "row": 16,
+          "name": "music_stand_alt_tr"
+        },
+        {
+          "col": 6,
+          "row": 16,
+          "name": "music_stand_alt_bl"
+        },
+        {
+          "col": 7,
+          "row": 16,
+          "name": "music_stand_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_alt",
+      "sprite_base": "ping_pong_table_alt",
+      "col": 6,
+      "row": 27,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        432,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 27,
+          "name": "ping_pong_table_alt_tl"
+        },
+        {
+          "col": 7,
+          "row": 27,
+          "name": "ping_pong_table_alt_tr"
+        },
+        {
+          "col": 8,
+          "row": 27,
+          "name": "ping_pong_table_alt_bl"
+        },
+        {
+          "col": 9,
+          "row": 27,
+          "name": "ping_pong_table_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "speaker_cabinet",
+      "sprite_base": "speaker_cabinet",
+      "col": 6,
+      "row": 1,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        96,
+        16,
+        32,
+        32
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 1,
+          "name": "speaker_cabinet_tl"
+        },
+        {
+          "col": 7,
+          "row": 1,
+          "name": "speaker_cabinet_tr"
+        },
+        {
+          "col": 6,
+          "row": 2,
+          "name": "speaker_cabinet_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "speaker_guitar_amp",
+      "sprite_base": "speaker_guitar_amp",
+      "col": 10,
+      "row": 35,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        560,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 35,
+          "name": "speaker_guitar_amp_tl"
+        },
+        {
+          "col": 11,
+          "row": 35,
+          "name": "speaker_guitar_amp_tr"
+        },
+        {
+          "col": 12,
+          "row": 35,
+          "name": "speaker_guitar_amp_bl"
+        },
+        {
+          "col": 13,
+          "row": 35,
+          "name": "speaker_guitar_amp_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_dark2",
+      "sprite_base": "sport_mat_dark2",
+      "col": 5,
+      "row": 25,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        400,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 25,
+          "name": "sport_mat_dark2_tl"
+        },
+        {
+          "col": 6,
+          "row": 25,
+          "name": "sport_mat_dark2_tr"
+        },
+        {
+          "col": 7,
+          "row": 25,
+          "name": "sport_mat_dark2_bl"
+        },
+        {
+          "col": 8,
+          "row": 25,
+          "name": "sport_mat_dark2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_dark3",
+      "sprite_base": "sport_mat_dark3",
+      "col": 9,
+      "row": 25,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        400,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 25,
+          "name": "sport_mat_dark3_tl"
+        },
+        {
+          "col": 10,
+          "row": 25,
+          "name": "sport_mat_dark3_tr"
+        },
+        {
+          "col": 11,
+          "row": 25,
+          "name": "sport_mat_dark3_bl"
+        },
+        {
+          "col": 12,
+          "row": 25,
+          "name": "sport_mat_dark3_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_blue2",
+      "sprite_base": "synthesizer_blue2",
+      "col": 10,
+      "row": 32,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        512,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 32,
+          "name": "synthesizer_blue2_tl"
+        },
+        {
+          "col": 11,
+          "row": 32,
+          "name": "synthesizer_blue2_tr"
+        },
+        {
+          "col": 12,
+          "row": 32,
+          "name": "synthesizer_blue2_bl"
+        },
+        {
+          "col": 13,
+          "row": 32,
+          "name": "synthesizer_blue2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_dark",
+      "sprite_base": "synthesizer_dark",
+      "col": 6,
+      "row": 32,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        512,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 32,
+          "name": "synthesizer_dark_tl"
+        },
+        {
+          "col": 7,
+          "row": 32,
+          "name": "synthesizer_dark_tr"
+        },
+        {
+          "col": 8,
+          "row": 32,
+          "name": "synthesizer_dark_bl"
+        },
+        {
+          "col": 9,
+          "row": 32,
+          "name": "synthesizer_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_gray2",
+      "sprite_base": "synthesizer_gray2",
+      "col": 6,
+      "row": 37,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        592,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 37,
+          "name": "synthesizer_gray2_tl"
+        },
+        {
+          "col": 7,
+          "row": 37,
+          "name": "synthesizer_gray2_tr"
+        },
+        {
+          "col": 8,
+          "row": 37,
+          "name": "synthesizer_gray2_bl"
+        },
+        {
+          "col": 9,
+          "row": 37,
+          "name": "synthesizer_gray2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_gray3",
+      "sprite_base": "synthesizer_gray3",
+      "col": 10,
+      "row": 37,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        592,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 37,
+          "name": "synthesizer_gray3_tl"
+        },
+        {
+          "col": 11,
+          "row": 37,
+          "name": "synthesizer_gray3_tr"
+        },
+        {
+          "col": 12,
+          "row": 37,
+          "name": "synthesizer_gray3_bl"
+        },
+        {
+          "col": 13,
+          "row": 37,
+          "name": "synthesizer_gray3_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_orange",
+      "sprite_base": "synthesizer_orange",
+      "col": 1,
+      "row": 34,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        544,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 34,
+          "name": "synthesizer_orange_tl"
+        },
+        {
+          "col": 2,
+          "row": 34,
+          "name": "synthesizer_orange_tr"
+        },
+        {
+          "col": 3,
+          "row": 34,
+          "name": "synthesizer_orange_bl"
+        },
+        {
+          "col": 4,
+          "row": 34,
+          "name": "synthesizer_orange_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_red3",
+      "sprite_base": "synthesizer_red3",
+      "col": 2,
+      "row": 32,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        512,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 32,
+          "name": "synthesizer_red3_tl"
+        },
+        {
+          "col": 3,
+          "row": 32,
+          "name": "synthesizer_red3_tr"
+        },
+        {
+          "col": 4,
+          "row": 32,
+          "name": "synthesizer_red3_bl"
+        },
+        {
+          "col": 5,
+          "row": 32,
+          "name": "synthesizer_red3_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_red4",
+      "sprite_base": "synthesizer_red4",
+      "col": 2,
+      "row": 33,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        528,
+        64,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 33,
+          "name": "synthesizer_red4_tl"
+        },
+        {
+          "col": 3,
+          "row": 33,
+          "name": "synthesizer_red4_tr"
+        },
+        {
+          "col": 4,
+          "row": 33,
+          "name": "synthesizer_red4_bl"
+        },
+        {
+          "col": 5,
+          "row": 33,
+          "name": "synthesizer_red4_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "taiko_drum",
+      "sprite_base": "taiko_drum",
+      "col": 6,
+      "row": 35,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        560,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 35,
+          "name": "taiko_drum_tl"
+        },
+        {
+          "col": 7,
+          "row": 35,
+          "name": "taiko_drum_tr"
+        },
+        {
+          "col": 8,
+          "row": 35,
+          "name": "taiko_drum_bl"
+        },
+        {
+          "col": 9,
+          "row": 35,
+          "name": "taiko_drum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_v313",
+      "sprite_base": "upright_piano",
+      "col": 2,
+      "row": 1,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        16,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 1,
+          "name": "upright_piano_body_tl"
+        },
+        {
+          "col": 3,
+          "row": 1,
+          "name": "upright_piano_body_tr"
+        },
+        {
+          "col": 4,
+          "row": 1,
+          "name": "upright_piano_body_bl"
+        },
+        {
+          "col": 5,
+          "row": 1,
+          "name": "upright_piano_body_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_alt",
+      "sprite_base": "upright_piano_alt",
+      "col": 2,
+      "row": 3,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        48,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 3,
+          "name": "upright_piano_alt_tl"
+        },
+        {
+          "col": 3,
+          "row": 3,
+          "name": "upright_piano_alt_tr"
+        },
+        {
+          "col": 4,
+          "row": 3,
+          "name": "upright_piano_alt_bl"
+        },
+        {
+          "col": 5,
+          "row": 3,
+          "name": "upright_piano_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_keys",
+      "sprite_base": "upright_piano_keys",
+      "col": 0,
+      "row": 2,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "upright_piano_keys_tl"
+        },
+        {
+          "col": 1,
+          "row": 2,
+          "name": "upright_piano_keys_tr"
+        },
+        {
+          "col": 2,
+          "row": 2,
+          "name": "upright_piano_keys_bl"
+        },
+        {
+          "col": 3,
+          "row": 2,
+          "name": "upright_piano_keys_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "acoustic_guitar",
+      "sprite_base": "acoustic_guitar",
+      "col": 7,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        96,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 6,
+          "name": "acoustic_guitar_tl"
+        },
+        {
+          "col": 8,
+          "row": 6,
+          "name": "acoustic_guitar_tr"
+        },
+        {
+          "col": 9,
+          "row": 6,
+          "name": "acoustic_guitar_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cymbal_set",
+      "sprite_base": "cymbal_set",
+      "col": 1,
+      "row": 37,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        592,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 37,
+          "name": "cymbal_set_tl"
+        },
+        {
+          "col": 2,
+          "row": 37,
+          "name": "cymbal_set_tc"
+        },
+        {
+          "col": 3,
+          "row": 37,
+          "name": "cymbal_set_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_color_v37",
+      "sprite_base": "drum_kit_color",
+      "col": 8,
+      "row": 18,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        288,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 18,
+          "name": "drum_kit_color_tl"
+        },
+        {
+          "col": 9,
+          "row": 18,
+          "name": "drum_kit_color_tc"
+        },
+        {
+          "col": 10,
+          "row": 18,
+          "name": "drum_kit_color_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_pro_v44",
+      "sprite_base": "drum_kit_pro",
+      "col": 8,
+      "row": 36,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        576,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 36,
+          "name": "drum_kit_pro_tr"
+        },
+        {
+          "col": 9,
+          "row": 36,
+          "name": "drum_kit_pro_bc"
+        },
+        {
+          "col": 10,
+          "row": 36,
+          "name": "drum_kit_pro_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red2_v47",
+      "sprite_base": "drum_kit_red2",
+      "col": 8,
+      "row": 38,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        608,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 38,
+          "name": "drum_kit_red2_tl"
+        },
+        {
+          "col": 9,
+          "row": 38,
+          "name": "drum_kit_red2_tc"
+        },
+        {
+          "col": 10,
+          "row": 38,
+          "name": "drum_kit_red2_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_red_v65",
+      "sprite_base": "electric_guitar_red",
+      "col": 9,
+      "row": 7,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        112,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 7,
+          "name": "electric_guitar_red_tr"
+        },
+        {
+          "col": 10,
+          "row": 7,
+          "name": "electric_guitar_red_bl"
+        },
+        {
+          "col": 11,
+          "row": 7,
+          "name": "electric_guitar_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "harp_ornate",
+      "sprite_base": "harp_ornate",
+      "col": 13,
+      "row": 44,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        704,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "instrument",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 44,
+          "name": "harp_ornate_tl"
+        },
+        {
+          "col": 14,
+          "row": 44,
+          "name": "harp_ornate_tr"
+        },
+        {
+          "col": 15,
+          "row": 44,
+          "name": "harp_ornate_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument_stand_gold",
+      "sprite_base": "instrument_stand_gold",
+      "col": 12,
+      "row": 45,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        720,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 45,
+          "name": "instrument_stand_gold_tl"
+        },
+        {
+          "col": 13,
+          "row": 45,
+          "name": "instrument_stand_gold_tr"
+        },
+        {
+          "col": 14,
+          "row": 45,
+          "name": "instrument_stand_gold_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_shop_blue",
+      "sprite_base": "music_shop_blue",
+      "col": 0,
+      "row": 39,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        624,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "shop",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 39,
+          "name": "music_shop_blue_tl"
+        },
+        {
+          "col": 1,
+          "row": 39,
+          "name": "music_shop_blue_tc"
+        },
+        {
+          "col": 2,
+          "row": 39,
+          "name": "music_shop_blue_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_stand_speaker",
+      "sprite_base": "music_stand_speaker",
+      "col": 8,
+      "row": 16,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        256,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 16,
+          "name": "music_stand_speaker_tl"
+        },
+        {
+          "col": 9,
+          "row": 16,
+          "name": "music_stand_speaker_tr"
+        },
+        {
+          "col": 10,
+          "row": 16,
+          "name": "music_stand_speaker_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_v139",
+      "sprite_base": "ping_pong_table",
+      "col": 0,
+      "row": 26,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        416,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 26,
+          "name": "ping_pong_table_tl"
+        },
+        {
+          "col": 1,
+          "row": 26,
+          "name": "ping_pong_table_tc"
+        },
+        {
+          "col": 2,
+          "row": 26,
+          "name": "ping_pong_table_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_curtain",
+      "sprite_base": "stage_curtain",
+      "col": 3,
+      "row": 15,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        240,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "stage",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 15,
+          "name": "stage_curtain_tl"
+        },
+        {
+          "col": 4,
+          "row": 15,
+          "name": "stage_curtain_tr"
+        },
+        {
+          "col": 5,
+          "row": 15,
+          "name": "stage_curtain_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_red_v240",
+      "sprite_base": "synthesizer_red",
+      "col": 9,
+      "row": 17,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        272,
+        48,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 17,
+          "name": "synthesizer_red_tr"
+        },
+        {
+          "col": 10,
+          "row": 17,
+          "name": "synthesizer_red_bl"
+        },
+        {
+          "col": 11,
+          "row": 17,
+          "name": "synthesizer_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "treadmill",
+      "sprite_base": "treadmill",
+      "col": 6,
+      "row": 26,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        416,
+        48,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "sport",
+        "exercise"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 26,
+          "name": "treadmill_tl"
+        },
+        {
+          "col": 7,
+          "row": 26,
+          "name": "treadmill_tr"
+        },
+        {
+          "col": 8,
+          "row": 26,
+          "name": "treadmill_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy",
+      "sprite_base": "trophy",
+      "col": 4,
+      "row": 24,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        384,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 24,
+          "name": "trophy_shelf_left"
+        },
+        {
+          "col": 5,
+          "row": 24,
+          "name": "trophy_shelf_center"
+        },
+        {
+          "col": 6,
+          "row": 24,
+          "name": "trophy_shelf_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_cup_framed",
+      "sprite_base": "trophy_cup_framed",
+      "col": 0,
+      "row": 18,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        288,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 18,
+          "name": "trophy_cup_framed_tl"
+        },
+        {
+          "col": 1,
+          "row": 18,
+          "name": "trophy_cup_framed_tr"
+        },
+        {
+          "col": 2,
+          "row": 18,
+          "name": "trophy_cup_framed_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_shelf_alt",
+      "sprite_base": "trophy_shelf_alt",
+      "col": 7,
+      "row": 24,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        384,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 24,
+          "name": "trophy_shelf_alt_left"
+        },
+        {
+          "col": 8,
+          "row": 24,
+          "name": "trophy_shelf_alt_center"
+        },
+        {
+          "col": 9,
+          "row": 24,
+          "name": "trophy_shelf_alt_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_shelf_combo",
+      "sprite_base": "trophy_shelf_combo",
+      "col": 7,
+      "row": 28,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        448,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 28,
+          "name": "trophy_shelf_combo_tl"
+        },
+        {
+          "col": 8,
+          "row": 28,
+          "name": "trophy_shelf_combo_tr"
+        },
+        {
+          "col": 9,
+          "row": 28,
+          "name": "trophy_shelf_combo_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_shelf_wood_v297",
+      "sprite_base": "trophy_shelf_wood",
+      "col": 4,
+      "row": 28,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        448,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 28,
+          "name": "trophy_shelf_wood_bl"
+        },
+        {
+          "col": 5,
+          "row": 28,
+          "name": "trophy_shelf_wood_bc"
+        },
+        {
+          "col": 6,
+          "row": 28,
+          "name": "trophy_shelf_wood_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bass_guitar_red2",
+      "sprite_base": "bass_guitar_red2",
+      "col": 11,
+      "row": 42,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        672,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 42,
+          "name": "bass_guitar_red2_tl"
+        },
+        {
+          "col": 12,
+          "row": 42,
+          "name": "bass_guitar_red2_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bass_guitar_red3",
+      "sprite_base": "bass_guitar_red3",
+      "col": 7,
+      "row": 43,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        688,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 43,
+          "name": "bass_guitar_red3_tl"
+        },
+        {
+          "col": 8,
+          "row": 43,
+          "name": "bass_guitar_red3_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "blue_cheerleader",
+      "sprite_base": "blue_cheerleader",
+      "col": 14,
+      "row": 12,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        192,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "cheerleading"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 12,
+          "name": "blue_cheerleader_tl"
+        },
+        {
+          "col": 15,
+          "row": 12,
+          "name": "blue_cheerleader_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_color_v38",
+      "sprite_base": "drum_kit_color",
+      "col": 14,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        288,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 18,
+          "name": "drum_kit_color_bl"
+        },
+        {
+          "col": 15,
+          "row": 18,
+          "name": "drum_kit_color_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_pro_v43",
+      "sprite_base": "drum_kit_pro",
+      "col": 1,
+      "row": 36,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        576,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 36,
+          "name": "drum_kit_pro_tl"
+        },
+        {
+          "col": 2,
+          "row": 36,
+          "name": "drum_kit_pro_tc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red_v45",
+      "sprite_base": "drum_kit_red",
+      "col": 6,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        224,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 14,
+          "name": "drum_kit_red_tl"
+        },
+        {
+          "col": 7,
+          "row": 14,
+          "name": "drum_kit_red_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red_v46",
+      "sprite_base": "drum_kit_red",
+      "col": 10,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        224,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 14,
+          "name": "drum_kit_red_bl"
+        },
+        {
+          "col": 11,
+          "row": 14,
+          "name": "drum_kit_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red2_v48",
+      "sprite_base": "drum_kit_red2",
+      "col": 14,
+      "row": 38,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        608,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 38,
+          "name": "drum_kit_red2_bl"
+        },
+        {
+          "col": 15,
+          "row": 38,
+          "name": "drum_kit_red2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red_alt",
+      "sprite_base": "drum_kit_red_alt",
+      "col": 12,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        224,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 14,
+          "name": "drum_kit_red_alt_tl"
+        },
+        {
+          "col": 13,
+          "row": 14,
+          "name": "drum_kit_red_alt_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_set_tan_v53",
+      "sprite_base": "drum_set_tan",
+      "col": 4,
+      "row": 37,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        592,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 37,
+          "name": "drum_set_tan_tl"
+        },
+        {
+          "col": 5,
+          "row": 37,
+          "name": "drum_set_tan_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_set_tan_v54",
+      "sprite_base": "drum_set_tan",
+      "col": 14,
+      "row": 37,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        592,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 37,
+          "name": "drum_set_tan_bl"
+        },
+        {
+          "col": 15,
+          "row": 37,
+          "name": "drum_set_tan_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_snare",
+      "sprite_base": "drum_snare",
+      "col": 3,
+      "row": 43,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        688,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 43,
+          "name": "drum_snare_tl"
+        },
+        {
+          "col": 4,
+          "row": 43,
+          "name": "drum_snare_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_blue_v58",
+      "sprite_base": "electric_guitar_blue",
+      "col": 10,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        96,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 6,
+          "name": "electric_guitar_blue_tl"
+        },
+        {
+          "col": 11,
+          "row": 6,
+          "name": "electric_guitar_blue_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_blue_v59",
+      "sprite_base": "electric_guitar_blue",
+      "col": 7,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        112,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 7,
+          "name": "electric_guitar_blue_bl"
+        },
+        {
+          "col": 8,
+          "row": 7,
+          "name": "electric_guitar_blue_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_green_v63",
+      "sprite_base": "electric_guitar_green",
+      "col": 0,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        512,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 32,
+          "name": "electric_guitar_green_tl"
+        },
+        {
+          "col": 1,
+          "row": 32,
+          "name": "electric_guitar_green_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_amp_alt",
+      "sprite_base": "guitar_amp_alt",
+      "col": 4,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        128,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 8,
+          "name": "guitar_amp_alt_tl"
+        },
+        {
+          "col": 5,
+          "row": 8,
+          "name": "guitar_amp_alt_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_alt_v84",
+      "sprite_base": "gym_mat_alt",
+      "col": 4,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        96,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 6,
+          "name": "gym_mat_alt_tl"
+        },
+        {
+          "col": 5,
+          "row": 6,
+          "name": "gym_mat_alt_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_alt_v85",
+      "sprite_base": "gym_mat_alt",
+      "col": 0,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        112,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 7,
+          "name": "gym_mat_alt_bl"
+        },
+        {
+          "col": 1,
+          "row": 7,
+          "name": "gym_mat_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_purple_v92",
+      "sprite_base": "gym_mat_purple",
+      "col": 0,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        96,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 6,
+          "name": "gym_mat_purple_center"
+        },
+        {
+          "col": 1,
+          "row": 6,
+          "name": "gym_mat_purple_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_v93",
+      "sprite_base": "gym_mat_red",
+      "col": 13,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        80,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 5,
+          "name": "gym_mat_red_tl"
+        },
+        {
+          "col": 14,
+          "row": 5,
+          "name": "gym_mat_red_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_v94",
+      "sprite_base": "gym_mat_red",
+      "col": 2,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        96,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 6,
+          "name": "gym_mat_red_bl"
+        },
+        {
+          "col": 3,
+          "row": 6,
+          "name": "gym_mat_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_rolled",
+      "sprite_base": "gym_mat_rolled",
+      "col": 4,
+      "row": 10,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        160,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 10,
+          "name": "gym_mat_rolled_tl"
+        },
+        {
+          "col": 5,
+          "row": 10,
+          "name": "gym_mat_rolled_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mic_stand_tall",
+      "sprite_base": "mic_stand_tall",
+      "col": 0,
+      "row": 36,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        576,
+        16,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 36,
+          "name": "mic_stand_tall_tl"
+        },
+        {
+          "col": 0,
+          "row": 37,
+          "name": "mic_stand_tall_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mic_stand_vertical",
+      "sprite_base": "mic_stand_vertical",
+      "col": 7,
+      "row": 15,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        240,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 15,
+          "name": "mic_stand_vertical_top"
+        },
+        {
+          "col": 8,
+          "row": 15,
+          "name": "mic_stand_vertical_mid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_v131",
+      "sprite_base": "piano",
+      "col": 5,
+      "row": 44,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        704,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 44,
+          "name": "piano_legs_tl"
+        },
+        {
+          "col": 6,
+          "row": 44,
+          "name": "piano_legs_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_v132",
+      "sprite_base": "piano",
+      "col": 9,
+      "row": 44,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        704,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 44,
+          "name": "piano_legs_bl"
+        },
+        {
+          "col": 10,
+          "row": 44,
+          "name": "piano_legs_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_bench",
+      "sprite_base": "piano_bench",
+      "col": 0,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        16,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 1,
+          "name": "piano_bench_left"
+        },
+        {
+          "col": 1,
+          "row": 1,
+          "name": "piano_bench_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_v140",
+      "sprite_base": "ping_pong_table",
+      "col": 14,
+      "row": 26,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        416,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 26,
+          "name": "ping_pong_table_bl"
+        },
+        {
+          "col": 15,
+          "row": 26,
+          "name": "ping_pong_table_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_drum_v152",
+      "sprite_base": "red_drum",
+      "col": 0,
+      "row": 13,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        208,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 13,
+          "name": "red_drum_bl"
+        },
+        {
+          "col": 1,
+          "row": 13,
+          "name": "red_drum_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_drum_kit_v154",
+      "sprite_base": "red_drum_kit",
+      "col": 12,
+      "row": 13,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        208,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 13,
+          "name": "red_drum_kit_tr"
+        },
+        {
+          "col": 13,
+          "row": 13,
+          "name": "red_drum_kit_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_fighter_red",
+      "sprite_base": "robot_fighter_red",
+      "col": 6,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        304,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "figure"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 19,
+          "name": "robot_fighter_red_tl"
+        },
+        {
+          "col": 7,
+          "row": 19,
+          "name": "robot_fighter_red_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sheet_music",
+      "sprite_base": "sheet_music",
+      "col": 4,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        0,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "paper",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 0,
+          "name": "sheet_music_tl"
+        },
+        {
+          "col": 5,
+          "row": 0,
+          "name": "sheet_music_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "speaker_large_v165",
+      "sprite_base": "speaker_large",
+      "col": 15,
+      "row": 33,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        528,
+        16,
+        32
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 33,
+          "name": "speaker_large_top"
+        },
+        {
+          "col": 15,
+          "row": 34,
+          "name": "speaker_large_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_award_blue",
+      "sprite_base": "sport_award_blue",
+      "col": 14,
+      "row": 27,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        432,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 27,
+          "name": "sport_award_blue_tl"
+        },
+        {
+          "col": 15,
+          "row": 27,
+          "name": "sport_award_blue_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_award_green",
+      "sprite_base": "sport_award_green",
+      "col": 4,
+      "row": 27,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        432,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 27,
+          "name": "sport_award_green_tl"
+        },
+        {
+          "col": 5,
+          "row": 27,
+          "name": "sport_award_green_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_helmet_green",
+      "sprite_base": "sport_helmet_green",
+      "col": 11,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        128,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 8,
+          "name": "sport_helmet_green_tl"
+        },
+        {
+          "col": 12,
+          "row": 8,
+          "name": "sport_helmet_green_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_purple_v190",
+      "sprite_base": "sport_mat_purple",
+      "col": 13,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        176,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 11,
+          "name": "sport_mat_purple_center"
+        },
+        {
+          "col": 14,
+          "row": 11,
+          "name": "sport_mat_purple_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_red_v192",
+      "sprite_base": "sport_mat_red",
+      "col": 0,
+      "row": 25,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        400,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 25,
+          "name": "sport_mat_red_center"
+        },
+        {
+          "col": 1,
+          "row": 25,
+          "name": "sport_mat_red_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster",
+      "sprite_base": "sport_poster",
+      "col": 12,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        256,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 16,
+          "name": "sport_poster_left"
+        },
+        {
+          "col": 13,
+          "row": 16,
+          "name": "sport_poster_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_blue_v226",
+      "sprite_base": "synthesizer_blue",
+      "col": 1,
+      "row": 17,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        272,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 17,
+          "name": "synthesizer_blue_tl"
+        },
+        {
+          "col": 2,
+          "row": 17,
+          "name": "synthesizer_blue_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_blue_v227",
+      "sprite_base": "synthesizer_blue",
+      "col": 12,
+      "row": 17,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        272,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 17,
+          "name": "synthesizer_blue_bl"
+        },
+        {
+          "col": 13,
+          "row": 17,
+          "name": "synthesizer_blue_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_purple2_v235",
+      "sprite_base": "synthesizer_purple2",
+      "col": 14,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        512,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 32,
+          "name": "synthesizer_purple2_tl"
+        },
+        {
+          "col": 15,
+          "row": 32,
+          "name": "synthesizer_purple2_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_purple2_v236",
+      "sprite_base": "synthesizer_purple2",
+      "col": 0,
+      "row": 33,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        528,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 33,
+          "name": "synthesizer_purple2_bl"
+        },
+        {
+          "col": 1,
+          "row": 33,
+          "name": "synthesizer_purple2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_red2",
+      "sprite_base": "synthesizer_red2",
+      "col": 14,
+      "row": 17,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        272,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 17,
+          "name": "synthesizer_red2_tl"
+        },
+        {
+          "col": 15,
+          "row": 17,
+          "name": "synthesizer_red2_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_shelf_red",
+      "sprite_base": "trophy_shelf_red",
+      "col": 10,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 24,
+          "name": "trophy_shelf_red_left"
+        },
+        {
+          "col": 11,
+          "row": 24,
+          "name": "trophy_shelf_red_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_shelf_wood_v296",
+      "sprite_base": "trophy_shelf_wood",
+      "col": 0,
+      "row": 28,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        448,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 28,
+          "name": "trophy_shelf_wood_tl"
+        },
+        {
+          "col": 1,
+          "row": 28,
+          "name": "trophy_shelf_wood_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_v312",
+      "sprite_base": "upright_piano",
+      "col": 6,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        0,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 0,
+          "name": "upright_piano_top_tl"
+        },
+        {
+          "col": 7,
+          "row": 0,
+          "name": "upright_piano_top_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_full_v315",
+      "sprite_base": "upright_piano_full",
+      "col": 4,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        32,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 2,
+          "name": "upright_piano_full_tl"
+        },
+        {
+          "col": 5,
+          "row": 2,
+          "name": "upright_piano_full_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "upright_piano_full_v316",
+      "sprite_base": "upright_piano_full",
+      "col": 0,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "upright_piano_full_bl"
+        },
+        {
+          "col": 1,
+          "row": 3,
+          "name": "upright_piano_full_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wrestling_mat_purple",
+      "sprite_base": "wrestling_mat_purple",
+      "col": 1,
+      "row": 23,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        368,
+        32,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 23,
+          "name": "wrestling_mat_purple_tl"
+        },
+        {
+          "col": 2,
+          "row": 23,
+          "name": "wrestling_mat_purple_tc"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "anchor_decoration",
+      "sprite_base": "anchor_decoration",
+      "col": 14,
+      "row": 35,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        560,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "decor",
+        "other"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 35,
+          "name": "anchor_decoration"
+        }
+      ]
+    },
+    {
+      "sprite_name": "aqua_ball",
+      "sprite_base": "aqua_ball",
+      "col": 5,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 9,
+          "name": "aqua_ball"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_earth",
+      "sprite_base": "ball_earth",
+      "col": 10,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        688,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 43,
+          "name": "ball_earth"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_orange_planet",
+      "sprite_base": "ball_orange_planet",
+      "col": 13,
+      "row": 42,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        672,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 42,
+          "name": "ball_orange_planet"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_red_planet",
+      "sprite_base": "ball_red_planet",
+      "col": 14,
+      "row": 42,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        672,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 42,
+          "name": "ball_red_planet"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_tan",
+      "sprite_base": "ball_tan",
+      "col": 12,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        688,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 43,
+          "name": "ball_tan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_tan2",
+      "sprite_base": "ball_tan2",
+      "col": 13,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        688,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 43,
+          "name": "ball_tan2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_tan3",
+      "sprite_base": "ball_tan3",
+      "col": 14,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        688,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 43,
+          "name": "ball_tan3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ball_tan4",
+      "sprite_base": "ball_tan4",
+      "col": 15,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        688,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 43,
+          "name": "ball_tan4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "basketball_ball",
+      "sprite_base": "basketball_ball",
+      "col": 2,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 9,
+          "name": "basketball_ball"
+        }
+      ]
+    },
+    {
+      "sprite_name": "basketball_hoop",
+      "sprite_base": "basketball_hoop",
+      "col": 0,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "sport",
+        "basketball"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 9,
+          "name": "basketball_hoop_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_dark",
+      "sprite_base": "bongo_dark",
+      "col": 8,
+      "row": 40,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        640,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 40,
+          "name": "bongo_dark_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_drum_beige",
+      "sprite_base": "bongo_drum_beige",
+      "col": 11,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 12,
+          "name": "bongo_drum_beige"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_drum_dark",
+      "sprite_base": "bongo_drum_dark",
+      "col": 12,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 12,
+          "name": "bongo_drum_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_drum_light",
+      "sprite_base": "bongo_drum_light",
+      "col": 10,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 12,
+          "name": "bongo_drum_light"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bongo_drum_tan",
+      "sprite_base": "bongo_drum_tan",
+      "col": 7,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 12,
+          "name": "bongo_drum_tan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_blue",
+      "sprite_base": "boxing_gloves_blue",
+      "col": 3,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 4,
+          "name": "boxing_gloves_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_gray",
+      "sprite_base": "boxing_gloves_gray",
+      "col": 0,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 4,
+          "name": "boxing_gloves_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_orange",
+      "sprite_base": "boxing_gloves_orange",
+      "col": 1,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 4,
+          "name": "boxing_gloves_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_red",
+      "sprite_base": "boxing_gloves_red",
+      "col": 4,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 4,
+          "name": "boxing_gloves_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_tan",
+      "sprite_base": "boxing_gloves_tan",
+      "col": 2,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 4,
+          "name": "boxing_gloves_tan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "boxing_gloves_yellow",
+      "sprite_base": "boxing_gloves_yellow",
+      "col": 5,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "boxing",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 4,
+          "name": "boxing_gloves_yellow"
+        }
+      ]
+    },
+    {
+      "sprite_name": "certificate",
+      "sprite_base": "certificate",
+      "col": 0,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 21,
+          "name": "certificate_frame"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cymbal_hat_v33",
+      "sprite_base": "cymbal_hat",
+      "col": 4,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 12,
+          "name": "cymbal_hat_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cymbal_hat_v34",
+      "sprite_base": "cymbal_hat",
+      "col": 6,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 12,
+          "name": "cymbal_hat_center"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_color_mc",
+      "sprite_base": "drum_kit_color_mc",
+      "col": 12,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 18,
+          "name": "drum_kit_color_mc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_color_ml",
+      "sprite_base": "drum_kit_color_ml",
+      "col": 11,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 18,
+          "name": "drum_kit_color_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_color_mr",
+      "sprite_base": "drum_kit_color_mr",
+      "col": 13,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 18,
+          "name": "drum_kit_color_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red2_mc",
+      "sprite_base": "drum_kit_red2_mc",
+      "col": 12,
+      "row": 38,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        608,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 38,
+          "name": "drum_kit_red2_mc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red2_ml",
+      "sprite_base": "drum_kit_red2_ml",
+      "col": 11,
+      "row": 38,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        608,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 38,
+          "name": "drum_kit_red2_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "drum_kit_red2_mr",
+      "sprite_base": "drum_kit_red2_mr",
+      "col": 13,
+      "row": 38,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        608,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 38,
+          "name": "drum_kit_red2_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_alt",
+      "sprite_base": "electric_guitar_alt",
+      "col": 13,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 31,
+          "name": "electric_guitar_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_blue_solo",
+      "sprite_base": "electric_guitar_blue_solo",
+      "col": 12,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 31,
+          "name": "electric_guitar_blue_solo"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_green_v62",
+      "sprite_base": "electric_guitar_green",
+      "col": 11,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 31,
+          "name": "electric_guitar_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_red_v64",
+      "sprite_base": "electric_guitar_red",
+      "col": 12,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 6,
+          "name": "electric_guitar_red_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "electric_guitar_red_stand",
+      "sprite_base": "electric_guitar_red_stand",
+      "col": 10,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 31,
+          "name": "electric_guitar_red_stand"
+        }
+      ]
+    },
+    {
+      "sprite_name": "floor_tom_drum_ml",
+      "sprite_base": "floor_tom_drum_ml",
+      "col": 2,
+      "row": 42,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        672,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 42,
+          "name": "floor_tom_drum_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "floor_tom_drum_mr",
+      "sprite_base": "floor_tom_drum_mr",
+      "col": 3,
+      "row": 42,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        672,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 42,
+          "name": "floor_tom_drum_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "globe_decoration",
+      "sprite_base": "globe_decoration",
+      "col": 15,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "world",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 8,
+          "name": "globe_decoration"
+        }
+      ]
+    },
+    {
+      "sprite_name": "grand_piano_mc",
+      "sprite_base": "grand_piano_mc",
+      "col": 4,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 14,
+          "name": "grand_piano_mc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "grand_piano_ml",
+      "sprite_base": "grand_piano_ml",
+      "col": 3,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 14,
+          "name": "grand_piano_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "grand_piano_mr",
+      "sprite_base": "grand_piano_mr",
+      "col": 5,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 14,
+          "name": "grand_piano_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_stand_blue",
+      "sprite_base": "guitar_stand_blue",
+      "col": 8,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 3,
+          "name": "guitar_stand_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_stand_gray",
+      "sprite_base": "guitar_stand_gray",
+      "col": 7,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 3,
+          "name": "guitar_stand_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_stand_red",
+      "sprite_base": "guitar_stand_red",
+      "col": 9,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 3,
+          "name": "guitar_stand_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "guitar_stand_yellow",
+      "sprite_base": "guitar_stand_yellow",
+      "col": 10,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        48,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "music",
+        "guitar"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 3,
+          "name": "guitar_stand_yellow"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_purple_v91",
+      "sprite_base": "gym_mat_purple",
+      "col": 15,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        80,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 5,
+          "name": "gym_mat_purple_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gym_mat_red_single",
+      "sprite_base": "gym_mat_red_single",
+      "col": 15,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        256,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 16,
+          "name": "gym_mat_red_single"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument_pedestal_br2",
+      "sprite_base": "instrument_pedestal_br2",
+      "col": 14,
+      "row": 47,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        752,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 47,
+          "name": "instrument_pedestal_br2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument_stand_small",
+      "sprite_base": "instrument_stand_small",
+      "col": 11,
+      "row": 44,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        704,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 44,
+          "name": "instrument_stand_small_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "instrument_stand_small_bot",
+      "sprite_base": "instrument_stand_small_bot",
+      "col": 12,
+      "row": 44,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        704,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 44,
+          "name": "instrument_stand_small_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "medal_framed",
+      "sprite_base": "medal_framed",
+      "col": 15,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 20,
+          "name": "medal_framed"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mic_cable_stand",
+      "sprite_base": "mic_cable_stand",
+      "col": 15,
+      "row": 35,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        560,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 35,
+          "name": "mic_cable_stand"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mic_stand_cable",
+      "sprite_base": "mic_stand_cable",
+      "col": 10,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        240,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 15,
+          "name": "mic_stand_cable"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mic_stand_vertical_bot",
+      "sprite_base": "mic_stand_vertical_bot",
+      "col": 9,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        240,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 15,
+          "name": "mic_stand_vertical_bot"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand",
+      "sprite_base": "microphone_stand",
+      "col": 7,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 5,
+          "name": "microphone_stand_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_base2_l",
+      "sprite_base": "microphone_stand_base2_l",
+      "col": 12,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 5,
+          "name": "microphone_stand_base2_l"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_base_l",
+      "sprite_base": "microphone_stand_base_l",
+      "col": 10,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 5,
+          "name": "microphone_stand_base_l"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_base_r",
+      "sprite_base": "microphone_stand_base_r",
+      "col": 11,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 5,
+          "name": "microphone_stand_base_r"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_pole",
+      "sprite_base": "microphone_stand_pole",
+      "col": 8,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 5,
+          "name": "microphone_stand_pole"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_pole2",
+      "sprite_base": "microphone_stand_pole2",
+      "col": 9,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        80,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 5,
+          "name": "microphone_stand_pole2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "microphone_stand_small",
+      "sprite_base": "microphone_stand_small",
+      "col": 8,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        160,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "microphone",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 10,
+          "name": "microphone_stand_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "nav_arrow_down",
+      "sprite_base": "nav_arrow_down",
+      "col": 8,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 30,
+          "name": "nav_arrow_down"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_legs_ml",
+      "sprite_base": "piano_legs_ml",
+      "col": 7,
+      "row": 44,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        704,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 44,
+          "name": "piano_legs_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_legs_mr",
+      "sprite_base": "piano_legs_mr",
+      "col": 8,
+      "row": 44,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        704,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piano",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 44,
+          "name": "piano_legs_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_mc",
+      "sprite_base": "ping_pong_table_mc",
+      "col": 4,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        416,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 26,
+          "name": "ping_pong_table_mc"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_ml",
+      "sprite_base": "ping_pong_table_ml",
+      "col": 3,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        416,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 26,
+          "name": "ping_pong_table_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_ml2",
+      "sprite_base": "ping_pong_table_ml2",
+      "col": 6,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        576,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 36,
+          "name": "ping_pong_table_ml2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_mr",
+      "sprite_base": "ping_pong_table_mr",
+      "col": 5,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        416,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 26,
+          "name": "ping_pong_table_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_mr2",
+      "sprite_base": "ping_pong_table_mr2",
+      "col": 7,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        576,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 36,
+          "name": "ping_pong_table_mr2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_tc2",
+      "sprite_base": "ping_pong_table_tc2",
+      "col": 4,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        576,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 36,
+          "name": "ping_pong_table_tc2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_tl2",
+      "sprite_base": "ping_pong_table_tl2",
+      "col": 3,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        576,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 36,
+          "name": "ping_pong_table_tl2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ping_pong_table_tr2",
+      "sprite_base": "ping_pong_table_tr2",
+      "col": 5,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        576,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table_tennis",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 36,
+          "name": "ping_pong_table_tr2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "planet_earth_ball",
+      "sprite_base": "planet_earth_ball",
+      "col": 9,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 9,
+          "name": "planet_earth_ball"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_drum_v151",
+      "sprite_base": "red_drum",
+      "col": 13,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 12,
+          "name": "red_drum_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_drum_kit_v153",
+      "sprite_base": "red_drum_kit",
+      "col": 10,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        208,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "drums",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 13,
+          "name": "red_drum_kit_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_fighter_ml",
+      "sprite_base": "robot_fighter_ml",
+      "col": 6,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "figure"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 18,
+          "name": "robot_fighter_ml"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_fighter_mr",
+      "sprite_base": "robot_fighter_mr",
+      "col": 7,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "figure"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 18,
+          "name": "robot_fighter_mr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_figure",
+      "sprite_base": "robot_figure",
+      "col": 15,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 9,
+          "name": "robot_figure"
+        }
+      ]
+    },
+    {
+      "sprite_name": "score_board_decoration",
+      "sprite_base": "score_board_decoration",
+      "col": 14,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        224,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 14,
+          "name": "score_board_decoration"
+        }
+      ]
+    },
+    {
+      "sprite_name": "soccer_ball",
+      "sprite_base": "soccer_ball",
+      "col": 3,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 9,
+          "name": "soccer_ball"
+        }
+      ]
+    },
+    {
+      "sprite_name": "speaker_large_v166",
+      "sprite_base": "speaker_large",
+      "col": 0,
+      "row": 34,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        544,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "audio",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 34,
+          "name": "speaker_large_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_bag_brown",
+      "sprite_base": "sport_bag_brown",
+      "col": 7,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "gear",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 9,
+          "name": "sport_bag_brown"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_bag_dark",
+      "sprite_base": "sport_bag_dark",
+      "col": 14,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "gear",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 9,
+          "name": "sport_bag_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_bag_orange",
+      "sprite_base": "sport_bag_orange",
+      "col": 8,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "gear",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 9,
+          "name": "sport_bag_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_ball_brown",
+      "sprite_base": "sport_ball_brown",
+      "col": 9,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 21,
+          "name": "sport_ball_brown"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_ball_earth",
+      "sprite_base": "sport_ball_earth",
+      "col": 10,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 21,
+          "name": "sport_ball_earth"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_ball_red",
+      "sprite_base": "sport_ball_red",
+      "col": 8,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 21,
+          "name": "sport_ball_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_gravel_blue",
+      "sprite_base": "sport_gravel_blue",
+      "col": 14,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "surface"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 20,
+          "name": "sport_gravel_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_gravel_blue2",
+      "sprite_base": "sport_gravel_blue2",
+      "col": 13,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "surface"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 23,
+          "name": "sport_gravel_blue2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_gravel_blue3",
+      "sprite_base": "sport_gravel_blue3",
+      "col": 14,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "surface"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 23,
+          "name": "sport_gravel_blue3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_gravel_gray",
+      "sprite_base": "sport_gravel_gray",
+      "col": 13,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "surface"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 20,
+          "name": "sport_gravel_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_gravel_red",
+      "sprite_base": "sport_gravel_red",
+      "col": 12,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "surface"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 20,
+          "name": "sport_gravel_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_helmet_blue",
+      "sprite_base": "sport_helmet_blue",
+      "col": 13,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 8,
+          "name": "sport_helmet_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_helmet_orange",
+      "sprite_base": "sport_helmet_orange",
+      "col": 7,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 8,
+          "name": "sport_helmet_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_helmet_orange_alt",
+      "sprite_base": "sport_helmet_orange_alt",
+      "col": 10,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 8,
+          "name": "sport_helmet_orange_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_helmet_red",
+      "sprite_base": "sport_helmet_red",
+      "col": 14,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        128,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "protective",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 8,
+          "name": "sport_helmet_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_blue",
+      "sprite_base": "sport_mat_blue",
+      "col": 15,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        176,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 11,
+          "name": "sport_mat_blue_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_mat_purple_v189",
+      "sprite_base": "sport_mat_purple",
+      "col": 15,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        160,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "sport",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 10,
+          "name": "sport_mat_purple_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_1",
+      "sprite_base": "sport_poster_1",
+      "col": 0,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 19,
+          "name": "sport_poster_1"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_2",
+      "sprite_base": "sport_poster_2",
+      "col": 1,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 19,
+          "name": "sport_poster_2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_3",
+      "sprite_base": "sport_poster_3",
+      "col": 2,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 19,
+          "name": "sport_poster_3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_4",
+      "sprite_base": "sport_poster_4",
+      "col": 11,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 19,
+          "name": "sport_poster_4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_5",
+      "sprite_base": "sport_poster_5",
+      "col": 12,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 19,
+          "name": "sport_poster_5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_6",
+      "sprite_base": "sport_poster_6",
+      "col": 14,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 19,
+          "name": "sport_poster_6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_1",
+      "sprite_base": "sport_poster_action_1",
+      "col": 14,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 21,
+          "name": "sport_poster_action_1"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_2",
+      "sprite_base": "sport_poster_action_2",
+      "col": 15,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 21,
+          "name": "sport_poster_action_2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_3",
+      "sprite_base": "sport_poster_action_3",
+      "col": 0,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 22,
+          "name": "sport_poster_action_3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_4",
+      "sprite_base": "sport_poster_action_4",
+      "col": 14,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 22,
+          "name": "sport_poster_action_4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_5",
+      "sprite_base": "sport_poster_action_5",
+      "col": 15,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 22,
+          "name": "sport_poster_action_5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_action_6",
+      "sprite_base": "sport_poster_action_6",
+      "col": 0,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 23,
+          "name": "sport_poster_action_6"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_alt",
+      "sprite_base": "sport_poster_alt",
+      "col": 14,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        256,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 16,
+          "name": "sport_poster_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_blue",
+      "sprite_base": "sport_poster_blue",
+      "col": 8,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 19,
+          "name": "sport_poster_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_blue_alt",
+      "sprite_base": "sport_poster_blue_alt",
+      "col": 13,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 19,
+          "name": "sport_poster_blue_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_climbing",
+      "sprite_base": "sport_poster_climbing",
+      "col": 7,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 17,
+          "name": "sport_poster_climbing"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_mixed_1",
+      "sprite_base": "sport_poster_mixed_1",
+      "col": 0,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 20,
+          "name": "sport_poster_mixed_1"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_mixed_2",
+      "sprite_base": "sport_poster_mixed_2",
+      "col": 1,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 20,
+          "name": "sport_poster_mixed_2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_mixed_3",
+      "sprite_base": "sport_poster_mixed_3",
+      "col": 2,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 20,
+          "name": "sport_poster_mixed_3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_mixed_4",
+      "sprite_base": "sport_poster_mixed_4",
+      "col": 3,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 20,
+          "name": "sport_poster_mixed_4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_mixed_5",
+      "sprite_base": "sport_poster_mixed_5",
+      "col": 4,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 20,
+          "name": "sport_poster_mixed_5"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_red",
+      "sprite_base": "sport_poster_red",
+      "col": 9,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 19,
+          "name": "sport_poster_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_skateboard",
+      "sprite_base": "sport_poster_skateboard",
+      "col": 3,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 17,
+          "name": "sport_poster_skateboard"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_skiing",
+      "sprite_base": "sport_poster_skiing",
+      "col": 4,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 17,
+          "name": "sport_poster_skiing"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_trophy",
+      "sprite_base": "sport_poster_trophy",
+      "col": 6,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 17,
+          "name": "sport_poster_trophy"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_water",
+      "sprite_base": "sport_poster_water",
+      "col": 5,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 17,
+          "name": "sport_poster_water"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_poster_white",
+      "sprite_base": "sport_poster_white",
+      "col": 10,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sign",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 19,
+          "name": "sport_poster_white"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_snowglobe",
+      "sprite_base": "sport_snowglobe",
+      "col": 10,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 9,
+          "name": "sport_snowglobe"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_toy_blue",
+      "sprite_base": "sport_toy_blue",
+      "col": 11,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 9,
+          "name": "sport_toy_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_toy_green",
+      "sprite_base": "sport_toy_green",
+      "col": 13,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 9,
+          "name": "sport_toy_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sport_toy_red",
+      "sprite_base": "sport_toy_red",
+      "col": 12,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "toy"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 9,
+          "name": "sport_toy_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_gray",
+      "sprite_base": "synthesizer_gray",
+      "col": 5,
+      "row": 34,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        544,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 34,
+          "name": "synthesizer_gray_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_purple_alt_l",
+      "sprite_base": "synthesizer_purple_alt_l",
+      "col": 5,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        496,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 31,
+          "name": "synthesizer_purple_alt_l"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_purple_alt_r",
+      "sprite_base": "synthesizer_purple_alt_r",
+      "col": 6,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        496,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 31,
+          "name": "synthesizer_purple_alt_r"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_red_v239",
+      "sprite_base": "synthesizer_red",
+      "col": 0,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        272,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 17,
+          "name": "synthesizer_red_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "synthesizer_small",
+      "sprite_base": "synthesizer_small",
+      "col": 11,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        480,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "keyboard",
+        "music"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 30,
+          "name": "synthesizer_small_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tennis_ball",
+      "sprite_base": "tennis_ball",
+      "col": 4,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 9,
+          "name": "tennis_ball"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_end",
+      "sprite_base": "tileset_label2_end",
+      "col": 9,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 30,
+          "name": "tileset_label2_end"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_end2",
+      "sprite_base": "tileset_label2_end2",
+      "col": 10,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 30,
+          "name": "tileset_label2_end2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_f",
+      "sprite_base": "tileset_label2_f",
+      "col": 6,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 30,
+          "name": "tileset_label2_f"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_f2",
+      "sprite_base": "tileset_label2_f2",
+      "col": 7,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 30,
+          "name": "tileset_label2_f2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_s",
+      "sprite_base": "tileset_label2_s",
+      "col": 3,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 30,
+          "name": "tileset_label2_s"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_t",
+      "sprite_base": "tileset_label2_t",
+      "col": 4,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 30,
+          "name": "tileset_label2_t"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label2_u",
+      "sprite_base": "tileset_label2_u",
+      "col": 5,
+      "row": 30,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        480,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 30,
+          "name": "tileset_label2_u"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_a",
+      "sprite_base": "tileset_label_a",
+      "col": 6,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 29,
+          "name": "tileset_label_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_d",
+      "sprite_base": "tileset_label_d",
+      "col": 10,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 29,
+          "name": "tileset_label_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_e",
+      "sprite_base": "tileset_label_e",
+      "col": 4,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 29,
+          "name": "tileset_label_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_e2",
+      "sprite_base": "tileset_label_e2",
+      "col": 9,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 29,
+          "name": "tileset_label_e2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_m",
+      "sprite_base": "tileset_label_m",
+      "col": 7,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 29,
+          "name": "tileset_label_m"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_p",
+      "sprite_base": "tileset_label_p",
+      "col": 8,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 29,
+          "name": "tileset_label_p"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_r",
+      "sprite_base": "tileset_label_r",
+      "col": 3,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 29,
+          "name": "tileset_label_r"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_s",
+      "sprite_base": "tileset_label_s",
+      "col": 11,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 29,
+          "name": "tileset_label_s"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tileset_label_v",
+      "sprite_base": "tileset_label_v",
+      "col": 5,
+      "row": 29,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        464,
+        16,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "meta",
+        "label"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 29,
+          "name": "tileset_label_v"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_bronze_alt",
+      "sprite_base": "trophy_bronze_alt",
+      "col": 7,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 21,
+          "name": "trophy_bronze_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_bronze_cup",
+      "sprite_base": "trophy_bronze_cup",
+      "col": 7,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 22,
+          "name": "trophy_bronze_cup"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_bronze_tall",
+      "sprite_base": "trophy_bronze_tall",
+      "col": 7,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 20,
+          "name": "trophy_bronze_tall"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_framed_large",
+      "sprite_base": "trophy_framed_large",
+      "col": 15,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 19,
+          "name": "trophy_framed_large"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_alt",
+      "sprite_base": "trophy_gold_alt",
+      "col": 5,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 21,
+          "name": "trophy_gold_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_cup",
+      "sprite_base": "trophy_gold_cup",
+      "col": 3,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 22,
+          "name": "trophy_gold_cup"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_cup2",
+      "sprite_base": "trophy_gold_cup2",
+      "col": 5,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 22,
+          "name": "trophy_gold_cup2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_framed",
+      "sprite_base": "trophy_gold_framed",
+      "col": 14,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        240,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 15,
+          "name": "trophy_gold_framed"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_leaf",
+      "sprite_base": "trophy_gold_leaf",
+      "col": 15,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 23,
+          "name": "trophy_gold_leaf"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_medium",
+      "sprite_base": "trophy_gold_medium",
+      "col": 8,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 20,
+          "name": "trophy_gold_medium"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_mini",
+      "sprite_base": "trophy_gold_mini",
+      "col": 7,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 23,
+          "name": "trophy_gold_mini"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_mini2",
+      "sprite_base": "trophy_gold_mini2",
+      "col": 9,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 23,
+          "name": "trophy_gold_mini2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_mini3",
+      "sprite_base": "trophy_gold_mini3",
+      "col": 10,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 23,
+          "name": "trophy_gold_mini3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_mini4",
+      "sprite_base": "trophy_gold_mini4",
+      "col": 11,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 23,
+          "name": "trophy_gold_mini4"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_podium",
+      "sprite_base": "trophy_gold_podium",
+      "col": 0,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        432,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 27,
+          "name": "trophy_gold_podium"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_podium2",
+      "sprite_base": "trophy_gold_podium2",
+      "col": 2,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        432,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 27,
+          "name": "trophy_gold_podium2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_short",
+      "sprite_base": "trophy_gold_short",
+      "col": 1,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 21,
+          "name": "trophy_gold_short"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_squat",
+      "sprite_base": "trophy_gold_squat",
+      "col": 1,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 22,
+          "name": "trophy_gold_squat"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_squat2",
+      "sprite_base": "trophy_gold_squat2",
+      "col": 8,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 22,
+          "name": "trophy_gold_squat2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_squat3",
+      "sprite_base": "trophy_gold_squat3",
+      "col": 10,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 22,
+          "name": "trophy_gold_squat3"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_star",
+      "sprite_base": "trophy_gold_star",
+      "col": 10,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 20,
+          "name": "trophy_gold_star"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_tall",
+      "sprite_base": "trophy_gold_tall",
+      "col": 5,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 20,
+          "name": "trophy_gold_tall"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_tall2",
+      "sprite_base": "trophy_gold_tall2",
+      "col": 3,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 23,
+          "name": "trophy_gold_tall2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_variant",
+      "sprite_base": "trophy_gold_variant",
+      "col": 5,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 23,
+          "name": "trophy_gold_variant"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_gold_wide",
+      "sprite_base": "trophy_gold_wide",
+      "col": 3,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 21,
+          "name": "trophy_gold_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_red_flame",
+      "sprite_base": "trophy_red_flame",
+      "col": 12,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 23,
+          "name": "trophy_red_flame"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_alt",
+      "sprite_base": "trophy_silver_alt",
+      "col": 6,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 21,
+          "name": "trophy_silver_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_cup",
+      "sprite_base": "trophy_silver_cup",
+      "col": 4,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 22,
+          "name": "trophy_silver_cup"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_cup2",
+      "sprite_base": "trophy_silver_cup2",
+      "col": 6,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 22,
+          "name": "trophy_silver_cup2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_medium",
+      "sprite_base": "trophy_silver_medium",
+      "col": 9,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 20,
+          "name": "trophy_silver_medium"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_mini",
+      "sprite_base": "trophy_silver_mini",
+      "col": 8,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 23,
+          "name": "trophy_silver_mini"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_podium",
+      "sprite_base": "trophy_silver_podium",
+      "col": 1,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        432,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 27,
+          "name": "trophy_silver_podium"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_short",
+      "sprite_base": "trophy_silver_short",
+      "col": 2,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 21,
+          "name": "trophy_silver_short"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_small",
+      "sprite_base": "trophy_silver_small",
+      "col": 8,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 17,
+          "name": "trophy_silver_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_squat",
+      "sprite_base": "trophy_silver_squat",
+      "col": 2,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 22,
+          "name": "trophy_silver_squat"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_squat2",
+      "sprite_base": "trophy_silver_squat2",
+      "col": 9,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 22,
+          "name": "trophy_silver_squat2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_tall",
+      "sprite_base": "trophy_silver_tall",
+      "col": 6,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 20,
+          "name": "trophy_silver_tall"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_tall2",
+      "sprite_base": "trophy_silver_tall2",
+      "col": 4,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 23,
+          "name": "trophy_silver_tall2"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_silver_wide",
+      "sprite_base": "trophy_silver_wide",
+      "col": 4,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        336,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 21,
+          "name": "trophy_silver_wide"
+        }
+      ]
+    },
+    {
+      "sprite_name": "trophy_sword",
+      "sprite_base": "trophy_sword",
+      "col": 11,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "sport"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 20,
+          "name": "trophy_sword"
+        }
+      ]
+    },
+    {
+      "sprite_name": "violin_bow_v319",
+      "sprite_base": "violin_bow",
+      "col": 0,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "violin"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 12,
+          "name": "violin_bow_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "violin_bow_v320",
+      "sprite_base": "violin_bow",
+      "col": 2,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "music",
+        "violin"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 12,
+          "name": "violin_bow_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "volleyball_ball",
+      "sprite_base": "volleyball_ball",
+      "col": 1,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        144,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "sport",
+        "ball"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 9,
+          "name": "volleyball_ball"
+        }
+      ]
+    }
+  ]
+}

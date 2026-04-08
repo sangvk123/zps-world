@@ -1,0 +1,25 @@
+# Godot
+.godot/
+*.import
+!*.png.import
+!*.svg.import
+
+# Node.js
+node_modules/
+backend/node_modules/
+server/node_modules/
+
+# Build output (keep public/ for deploy)
+backend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Env
+.env
+.env.local

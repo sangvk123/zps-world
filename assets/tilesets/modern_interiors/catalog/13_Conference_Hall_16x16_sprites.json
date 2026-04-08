@@ -1,0 +1,3252 @@
+{
+  "tileset": "13_Conference_Hall_16x16.png",
+  "tile_size": 16,
+  "grid": [
+    16,
+    12
+  ],
+  "input_tiles": 132,
+  "total_sprites": 103,
+  "single_tile_count": 85,
+  "multi_sprite_count": 18,
+  "multi_sprites": [
+    {
+      "sprite_name": "whiteboard",
+      "sprite_base": "whiteboard",
+      "col": 10,
+      "row": 1,
+      "w": 4,
+      "h": 3,
+      "tile_count": 10,
+      "density": 0.833,
+      "px_rect": [
+        160,
+        16,
+        64,
+        48
+      ],
+      "category": "furniture",
+      "tags": [
+        "whiteboard",
+        "white",
+        "office",
+        "board"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 1,
+          "name": "whiteboard_top_left"
+        },
+        {
+          "col": 11,
+          "row": 1,
+          "name": "whiteboard_top_center"
+        },
+        {
+          "col": 12,
+          "row": 1,
+          "name": "whiteboard_top_right"
+        },
+        {
+          "col": 10,
+          "row": 2,
+          "name": "whiteboard_mid_left"
+        },
+        {
+          "col": 11,
+          "row": 2,
+          "name": "whiteboard_mid_center"
+        },
+        {
+          "col": 12,
+          "row": 2,
+          "name": "whiteboard_mid_right"
+        },
+        {
+          "col": 13,
+          "row": 2,
+          "name": "whiteboard_bottom_left"
+        },
+        {
+          "col": 10,
+          "row": 3,
+          "name": "whiteboard_bottom_center_left"
+        },
+        {
+          "col": 11,
+          "row": 3,
+          "name": "whiteboard_bottom_center"
+        },
+        {
+          "col": 12,
+          "row": 3,
+          "name": "whiteboard_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "table_edge_white",
+      "sprite_base": "table_edge_white",
+      "col": 10,
+      "row": 0,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        0,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "conference",
+        "white",
+        "table",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 0,
+          "name": "table_edge_white_left"
+        },
+        {
+          "col": 11,
+          "row": 0,
+          "name": "table_edge_white_center"
+        },
+        {
+          "col": 12,
+          "row": 0,
+          "name": "table_edge_white_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_panel_blue",
+      "sprite_base": "wall_panel_blue",
+      "col": 9,
+      "row": 4,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        64,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "blue",
+        "wall",
+        "horizontal"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 4,
+          "name": "wall_panel_blue_left"
+        },
+        {
+          "col": 10,
+          "row": 4,
+          "name": "wall_panel_blue_center"
+        },
+        {
+          "col": 11,
+          "row": 4,
+          "name": "wall_panel_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_wall_panel_v101",
+      "sprite_base": "wooden_wall_panel",
+      "col": 1,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        96,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "vertical",
+        "panel",
+        "wall",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 6,
+          "name": "wooden_wall_panel_left"
+        },
+        {
+          "col": 2,
+          "row": 6,
+          "name": "wooden_wall_panel_center"
+        },
+        {
+          "col": 3,
+          "row": 6,
+          "name": "wooden_wall_panel_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_v7",
+      "sprite_base": "conference_chair",
+      "col": 6,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        0,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "back",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 0,
+          "name": "conference_chair_back_tl"
+        },
+        {
+          "col": 7,
+          "row": 0,
+          "name": "conference_chair_back_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_v8",
+      "sprite_base": "conference_chair",
+      "col": 8,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        16,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "seat",
+        "conference",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 1,
+          "name": "conference_chair_seat_left"
+        },
+        {
+          "col": 9,
+          "row": 1,
+          "name": "conference_chair_seat_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_v9",
+      "sprite_base": "conference_chair",
+      "col": 10,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        96,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "armrest",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 6,
+          "name": "conference_chair_armrest_left"
+        },
+        {
+          "col": 11,
+          "row": 6,
+          "name": "conference_chair_armrest_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_front",
+      "sprite_base": "conference_chair_front",
+      "col": 6,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        96,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "armrest",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 6,
+          "name": "conference_chair_front_left"
+        },
+        {
+          "col": 7,
+          "row": 6,
+          "name": "conference_chair_front_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_table",
+      "sprite_base": "conference_table",
+      "col": 4,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        80,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "top",
+        "wood",
+        "table",
+        "conference"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 5,
+          "name": "conference_table_top_left"
+        },
+        {
+          "col": 5,
+          "row": 5,
+          "name": "conference_table_top_center"
+        }
+      ]
+    },
+    {
+      "sprite_name": "credenza_front",
+      "sprite_base": "credenza_front",
+      "col": 9,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        80,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cabinet",
+        "credenza",
+        "storage",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 5,
+          "name": "credenza_front_left"
+        },
+        {
+          "col": 10,
+          "row": 5,
+          "name": "credenza_front_center"
+        }
+      ]
+    },
+    {
+      "sprite_name": "portrait_painting",
+      "sprite_base": "portrait_painting",
+      "col": 14,
+      "row": 2,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        32,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "wall",
+        "portrait",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 2,
+          "name": "portrait_painting_left"
+        },
+        {
+          "col": 15,
+          "row": 2,
+          "name": "portrait_painting_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_v50",
+      "sprite_base": "projector",
+      "col": 0,
+      "row": 8,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        128,
+        16,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "screen",
+        "oval",
+        "white",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 8,
+          "name": "projector_screen_tl"
+        },
+        {
+          "col": 0,
+          "row": 9,
+          "name": "projector_screen_mid_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_bar",
+      "sprite_base": "shelf_bar",
+      "col": 3,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        48,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "white",
+        "horizontal",
+        "bar"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 3,
+          "name": "shelf_bar_left"
+        },
+        {
+          "col": 4,
+          "row": 3,
+          "name": "shelf_bar_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "snack_box",
+      "sprite_base": "snack_box",
+      "col": 12,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        128,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "box",
+        "food",
+        "snack",
+        "conference"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 8,
+          "name": "snack_box_left"
+        },
+        {
+          "col": 13,
+          "row": 8,
+          "name": "snack_box_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "whiteboard_extra",
+      "sprite_base": "whiteboard_extra",
+      "col": 14,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        48,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "whiteboard",
+        "white",
+        "office",
+        "board"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 3,
+          "name": "whiteboard_extra_left"
+        },
+        {
+          "col": 15,
+          "row": 3,
+          "name": "whiteboard_extra_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden",
+      "sprite_base": "wooden",
+      "col": 1,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        48,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "brown",
+        "entrance",
+        "door",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 3,
+          "name": "wooden_door_left"
+        },
+        {
+          "col": 2,
+          "row": 3,
+          "name": "wooden_door_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_door_panel",
+      "sprite_base": "wooden_door_panel",
+      "col": 7,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        48,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "brown",
+        "panel",
+        "door",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 3,
+          "name": "wooden_door_panel_left"
+        },
+        {
+          "col": 8,
+          "row": 3,
+          "name": "wooden_door_panel_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor",
+      "sprite_base": "wooden_floor",
+      "col": 1,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        16,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 1,
+          "name": "wooden_floor_left"
+        },
+        {
+          "col": 2,
+          "row": 1,
+          "name": "wooden_floor_center"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "bulletin_board_green_red",
+      "sprite_base": "bulletin_board_green_red",
+      "col": 5,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "notice",
+        "board",
+        "bulletin",
+        "office"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 3,
+          "name": "bulletin_board_green_red"
+        }
+      ]
+    },
+    {
+      "sprite_name": "carpet_blue",
+      "sprite_base": "carpet_blue",
+      "col": 14,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        64,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "floor",
+        "blue",
+        "rug",
+        "carpet"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 4,
+          "name": "carpet_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "carpet_gray_checkered",
+      "sprite_base": "carpet_gray_checkered",
+      "col": 15,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        64,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "checkered",
+        "gray",
+        "rug",
+        "carpet"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 4,
+          "name": "carpet_gray_checkered"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_cushion_beige",
+      "sprite_base": "chair_cushion_beige",
+      "col": 3,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "cushion",
+        "seating",
+        "beige"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 0,
+          "name": "chair_cushion_beige"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_cushion_gray",
+      "sprite_base": "chair_cushion_gray",
+      "col": 4,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "cushion",
+        "gray",
+        "seating"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 0,
+          "name": "chair_cushion_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_cushion_yellow",
+      "sprite_base": "chair_cushion_yellow",
+      "col": 2,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "cushion",
+        "seating",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 0,
+          "name": "chair_cushion_yellow"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_decorative_piece",
+      "sprite_base": "chair_decorative_piece",
+      "col": 9,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        96,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "piece",
+        "conference",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 6,
+          "name": "chair_decorative_piece"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_back_alt",
+      "sprite_base": "conference_chair_back_alt",
+      "col": 8,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "back",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 0,
+          "name": "conference_chair_back_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_connector",
+      "sprite_base": "conference_chair_connector",
+      "col": 8,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        96,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "brown",
+        "conference",
+        "connector"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 6,
+          "name": "conference_chair_connector"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_leg_orange",
+      "sprite_base": "conference_chair_leg_orange",
+      "col": 6,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "leg",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 1,
+          "name": "conference_chair_leg_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_seat_front",
+      "sprite_base": "conference_chair_seat_front",
+      "col": 7,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "seat",
+        "conference",
+        "front"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 1,
+          "name": "conference_chair_seat_front"
+        }
+      ]
+    },
+    {
+      "sprite_name": "conference_chair_with_bag",
+      "sprite_base": "conference_chair_with_bag",
+      "col": 11,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        128,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "bag",
+        "conference",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 8,
+          "name": "conference_chair_with_bag"
+        }
+      ]
+    },
+    {
+      "sprite_name": "credenza",
+      "sprite_base": "credenza",
+      "col": 13,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "storage",
+        "credenza",
+        "wood",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 4,
+          "name": "credenza_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "credenza_with_trophy",
+      "sprite_base": "credenza_with_trophy",
+      "col": 11,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "credenza",
+        "decoration",
+        "trophy",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 5,
+          "name": "credenza_with_trophy"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curved_seating",
+      "sprite_base": "curved_seating",
+      "col": 0,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "conference",
+        "curved",
+        "seating",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "curved_seating_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "desk_microphone",
+      "sprite_base": "desk_microphone",
+      "col": 13,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        0,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "electronics",
+        "conference",
+        "microphone",
+        "desk"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 0,
+          "name": "desk_microphone"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_blue_front",
+      "sprite_base": "door_blue_front",
+      "col": 6,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        80,
+        16,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "modern",
+        "blue",
+        "door",
+        "front"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 5,
+          "name": "door_blue_front"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_blue_gold_trim",
+      "sprite_base": "door_blue_gold_trim",
+      "col": 7,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        80,
+        16,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "trim",
+        "blue",
+        "door",
+        "gold"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 5,
+          "name": "door_blue_gold_trim"
+        }
+      ]
+    },
+    {
+      "sprite_name": "exit_sign_green",
+      "sprite_base": "exit_sign_green",
+      "col": 5,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        32,
+        16,
+        16
+      ],
+      "category": "sign",
+      "tags": [
+        "emergency",
+        "sign",
+        "green",
+        "exit"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 2,
+          "name": "exit_sign_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fire_extinguisher",
+      "sprite_base": "fire_extinguisher",
+      "col": 12,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "red",
+        "extinguisher",
+        "fire",
+        "safety"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 7,
+          "name": "fire_extinguisher"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fire_extinguisher_stand",
+      "sprite_base": "fire_extinguisher_stand",
+      "col": 13,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "stand",
+        "extinguisher",
+        "fire",
+        "safety"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 7,
+          "name": "fire_extinguisher_stand"
+        }
+      ]
+    },
+    {
+      "sprite_name": "framed_picture_blue",
+      "sprite_base": "framed_picture_blue",
+      "col": 7,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "blue",
+        "wall",
+        "frame",
+        "picture"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "framed_picture_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "framed_picture_red_gold",
+      "sprite_base": "framed_picture_red_gold",
+      "col": 5,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "red",
+        "wall",
+        "frame",
+        "picture"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 4,
+          "name": "framed_picture_red_gold"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_floor_tile_a",
+      "sprite_base": "gray_floor_tile_a",
+      "col": 0,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 10,
+          "name": "gray_floor_tile_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_floor_tile_b",
+      "sprite_base": "gray_floor_tile_b",
+      "col": 1,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 10,
+          "name": "gray_floor_tile_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_floor_tile_c",
+      "sprite_base": "gray_floor_tile_c",
+      "col": 2,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 10,
+          "name": "gray_floor_tile_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_floor_tile_d",
+      "sprite_base": "gray_floor_tile_d",
+      "col": 3,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 10,
+          "name": "gray_floor_tile_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_floor_tile_edge",
+      "sprite_base": "gray_floor_tile_edge",
+      "col": 4,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "gray",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 10,
+          "name": "gray_floor_tile_edge"
+        }
+      ]
+    },
+    {
+      "sprite_name": "laptop_on_table",
+      "sprite_base": "laptop_on_table",
+      "col": 5,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "laptop",
+        "computer",
+        "electronics",
+        "desk"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 0,
+          "name": "laptop_on_table"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_a",
+      "sprite_base": "light_floor_tile_a",
+      "col": 0,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 7,
+          "name": "light_floor_tile_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_b",
+      "sprite_base": "light_floor_tile_b",
+      "col": 1,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 7,
+          "name": "light_floor_tile_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_c",
+      "sprite_base": "light_floor_tile_c",
+      "col": 2,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 7,
+          "name": "light_floor_tile_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_d",
+      "sprite_base": "light_floor_tile_d",
+      "col": 3,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 7,
+          "name": "light_floor_tile_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_e",
+      "sprite_base": "light_floor_tile_e",
+      "col": 5,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 7,
+          "name": "light_floor_tile_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_f",
+      "sprite_base": "light_floor_tile_f",
+      "col": 6,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 7,
+          "name": "light_floor_tile_f"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_g",
+      "sprite_base": "light_floor_tile_g",
+      "col": 7,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 7,
+          "name": "light_floor_tile_g"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_h",
+      "sprite_base": "light_floor_tile_h",
+      "col": 8,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 7,
+          "name": "light_floor_tile_h"
+        }
+      ]
+    },
+    {
+      "sprite_name": "light_floor_tile_i",
+      "sprite_base": "light_floor_tile_i",
+      "col": 9,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        112,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "tile",
+        "floor",
+        "light",
+        "gray"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 7,
+          "name": "light_floor_tile_i"
+        }
+      ]
+    },
+    {
+      "sprite_name": "markers_pens",
+      "sprite_base": "markers_pens",
+      "col": 7,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pens",
+        "office",
+        "stationery",
+        "markers"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 2,
+          "name": "markers_pens"
+        }
+      ]
+    },
+    {
+      "sprite_name": "monitor",
+      "sprite_base": "monitor",
+      "col": 9,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        0,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "monitor",
+        "electronics",
+        "screen",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 0,
+          "name": "monitor_screen"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pens_stationery",
+      "sprite_base": "pens_stationery",
+      "col": 8,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pens",
+        "office",
+        "stationery",
+        "desk"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 2,
+          "name": "pens_stationery"
+        }
+      ]
+    },
+    {
+      "sprite_name": "podium_arch",
+      "sprite_base": "podium_arch",
+      "col": 11,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "stage",
+        "arch",
+        "podium",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 7,
+          "name": "podium_arch_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_v49",
+      "sprite_base": "projector",
+      "col": 15,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        112,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 7,
+          "name": "projector_screen_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_v51",
+      "sprite_base": "projector",
+      "col": 4,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "oval",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 9,
+          "name": "projector_screen_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_mid_center_a",
+      "sprite_base": "projector_screen_mid_center_a",
+      "col": 1,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "oval",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 9,
+          "name": "projector_screen_mid_center_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_mid_center_b",
+      "sprite_base": "projector_screen_mid_center_b",
+      "col": 2,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "oval",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 9,
+          "name": "projector_screen_mid_center_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_mid_center_c",
+      "sprite_base": "projector_screen_mid_center_c",
+      "col": 3,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        144,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "oval",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 9,
+          "name": "projector_screen_mid_center_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_top_center_a",
+      "sprite_base": "projector_screen_top_center_a",
+      "col": 1,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 8,
+          "name": "projector_screen_top_center_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_top_center_b",
+      "sprite_base": "projector_screen_top_center_b",
+      "col": 2,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 8,
+          "name": "projector_screen_top_center_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_top_center_c",
+      "sprite_base": "projector_screen_top_center_c",
+      "col": 3,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 8,
+          "name": "projector_screen_top_center_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_screen_top_center_d",
+      "sprite_base": "projector_screen_top_center_d",
+      "col": 4,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "panel",
+        "white",
+        "screen",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 8,
+          "name": "projector_screen_top_center_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "projector_small",
+      "sprite_base": "projector_small",
+      "col": 5,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        16,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "electronics",
+        "device",
+        "conference",
+        "projector"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 1,
+          "name": "projector_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_floor_diagonal_a",
+      "sprite_base": "stage_floor_diagonal_a",
+      "col": 5,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "stage",
+        "floor",
+        "wood",
+        "diagonal"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 8,
+          "name": "stage_floor_diagonal_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_floor_diagonal_b",
+      "sprite_base": "stage_floor_diagonal_b",
+      "col": 6,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "stage",
+        "floor",
+        "wood",
+        "diagonal"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 8,
+          "name": "stage_floor_diagonal_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_floor_diagonal_c",
+      "sprite_base": "stage_floor_diagonal_c",
+      "col": 7,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "stage",
+        "floor",
+        "wood",
+        "diagonal"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 8,
+          "name": "stage_floor_diagonal_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_floor_diagonal_d",
+      "sprite_base": "stage_floor_diagonal_d",
+      "col": 8,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "stage",
+        "floor",
+        "wood",
+        "diagonal"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 8,
+          "name": "stage_floor_diagonal_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stage_floor_diagonal_e",
+      "sprite_base": "stage_floor_diagonal_e",
+      "col": 9,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        128,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "stage",
+        "floor",
+        "wood",
+        "diagonal"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 8,
+          "name": "stage_floor_diagonal_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vending_machine_front",
+      "sprite_base": "vending_machine_front",
+      "col": 14,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        128,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "machine",
+        "appliance",
+        "food",
+        "vending"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 8,
+          "name": "vending_machine_front"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vending_machine_side",
+      "sprite_base": "vending_machine_side",
+      "col": 15,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        128,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "machine",
+        "appliance",
+        "side",
+        "vending"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 8,
+          "name": "vending_machine_side"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_corner_dark",
+      "sprite_base": "wall_corner_dark",
+      "col": 15,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        144,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "dark",
+        "trim",
+        "wall",
+        "corner"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 9,
+          "name": "wall_corner_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_dark_empty",
+      "sprite_base": "wall_dark_empty",
+      "col": 6,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        32,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "background",
+        "wall",
+        "empty",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 2,
+          "name": "wall_dark_empty"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_dark_panel",
+      "sprite_base": "wall_dark_panel",
+      "col": 13,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "trim",
+        "wall",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 1,
+          "name": "wall_dark_panel"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_dark_trim",
+      "sprite_base": "wall_dark_trim",
+      "col": 14,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        16,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "trim",
+        "wall",
+        "edge",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 1,
+          "name": "wall_dark_trim"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_decoration_striped",
+      "sprite_base": "wall_decoration_striped",
+      "col": 6,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "wall",
+        "blue",
+        "striped",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 3,
+          "name": "wall_decoration_striped"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_light_fixture",
+      "sprite_base": "wall_light_fixture",
+      "col": 12,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        96,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "wall",
+        "light",
+        "lamp",
+        "fixture"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 6,
+          "name": "wall_light_fixture"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_panel_with",
+      "sprite_base": "wall_panel_with",
+      "col": 14,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        144,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "screen",
+        "wall",
+        "panel",
+        "monitor"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 9,
+          "name": "wall_panel_with_screen"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_sconce",
+      "sprite_base": "wall_sconce",
+      "col": 13,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        96,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "sconce",
+        "light",
+        "wall",
+        "fixture"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 6,
+          "name": "wall_sconce"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_top_dark",
+      "sprite_base": "wall_top_dark",
+      "col": 14,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        0,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "top",
+        "trim",
+        "wall",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 0,
+          "name": "wall_top_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_top_light_edge",
+      "sprite_base": "wall_top_light_edge",
+      "col": 5,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        96,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "top",
+        "light",
+        "wall",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 6,
+          "name": "wall_top_light_edge"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_trim_side",
+      "sprite_base": "wall_trim_side",
+      "col": 12,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        80,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "trim",
+        "wall",
+        "side",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 5,
+          "name": "wall_trim_side"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wood_trim_piece",
+      "sprite_base": "wood_trim_piece",
+      "col": 8,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        80,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "trim",
+        "edge",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 5,
+          "name": "wood_trim_piece"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_bottom_edge",
+      "sprite_base": "wooden_floor_bottom_edge",
+      "col": 3,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "edge",
+        "wood",
+        "bottom"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 1,
+          "name": "wooden_floor_bottom_edge"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_corner",
+      "sprite_base": "wooden_floor_corner",
+      "col": 0,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "corner",
+        "wood",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 4,
+          "name": "wooden_floor_corner_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_exit_sign",
+      "sprite_base": "wooden_floor_exit_sign",
+      "col": 4,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "sign",
+        "wood",
+        "exit"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 2,
+          "name": "wooden_floor_exit_sign_base"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_a",
+      "sprite_base": "wooden_floor_plank_a",
+      "col": 1,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 4,
+          "name": "wooden_floor_plank_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_b",
+      "sprite_base": "wooden_floor_plank_b",
+      "col": 2,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 4,
+          "name": "wooden_floor_plank_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_c",
+      "sprite_base": "wooden_floor_plank_c",
+      "col": 3,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 4,
+          "name": "wooden_floor_plank_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_d",
+      "sprite_base": "wooden_floor_plank_d",
+      "col": 4,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        64,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 4,
+          "name": "wooden_floor_plank_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_a",
+      "sprite_base": "wooden_floor_tile_a",
+      "col": 0,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "wooden_floor_tile_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_b",
+      "sprite_base": "wooden_floor_tile_b",
+      "col": 1,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 2,
+          "name": "wooden_floor_tile_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_c",
+      "sprite_base": "wooden_floor_tile_c",
+      "col": 2,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 2,
+          "name": "wooden_floor_tile_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_d",
+      "sprite_base": "wooden_floor_tile_d",
+      "col": 3,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        32,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 2,
+          "name": "wooden_floor_tile_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_wall_left_edge",
+      "sprite_base": "wooden_wall_left_edge",
+      "col": 1,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "vertical",
+        "wall",
+        "wood",
+        "edge"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 0,
+          "name": "wooden_wall_left_edge"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_wall_panel_v100",
+      "sprite_base": "wooden_wall_panel",
+      "col": 6,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        64,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "brown",
+        "panel",
+        "wall",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 4,
+          "name": "wooden_wall_panel"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_wall_panel_corner",
+      "sprite_base": "wooden_wall_panel_corner",
+      "col": 0,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        96,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "wall",
+        "wood",
+        "corner"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 6,
+          "name": "wooden_wall_panel_corner"
+        }
+      ]
+    }
+  ]
+}

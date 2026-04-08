@@ -1,0 +1,2756 @@
+{
+  "tileset": "7_Art_16x16.png",
+  "tile_size": 16,
+  "grid": [
+    16,
+    7
+  ],
+  "input_tiles": 101,
+  "total_sprites": 92,
+  "single_tile_count": 86,
+  "multi_sprite_count": 6,
+  "multi_sprites": [
+    {
+      "sprite_name": "trophy",
+      "sprite_base": "trophy",
+      "col": 5,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        48,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "center",
+        "left",
+        "right",
+        "trophy"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 3,
+          "name": "trophy_left"
+        },
+        {
+          "col": 6,
+          "row": 3,
+          "name": "trophy_center"
+        },
+        {
+          "col": 7,
+          "row": 3,
+          "name": "trophy_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_chest",
+      "sprite_base": "wooden_chest",
+      "col": 9,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        48,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "drawer",
+        "wood",
+        "top",
+        "top-right",
+        "top-left"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 3,
+          "name": "wooden_chest_top_left"
+        },
+        {
+          "col": 10,
+          "row": 3,
+          "name": "wooden_chest_top_center"
+        },
+        {
+          "col": 11,
+          "row": 3,
+          "name": "wooden_chest_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_counter",
+      "sprite_base": "wooden_counter",
+      "col": 2,
+      "row": 5,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        80,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "center",
+        "left",
+        "right",
+        "counter"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 5,
+          "name": "wooden_counter_left"
+        },
+        {
+          "col": 3,
+          "row": 5,
+          "name": "wooden_counter_center"
+        },
+        {
+          "col": 4,
+          "row": 5,
+          "name": "wooden_counter_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "large_art_display",
+      "sprite_base": "large_art_display",
+      "col": 10,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        16,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "multi-tile",
+        "display",
+        "left",
+        "right"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 1,
+          "name": "large_art_display_left"
+        },
+        {
+          "col": 11,
+          "row": 1,
+          "name": "large_art_display_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_bracket",
+      "sprite_base": "shelf_bracket",
+      "col": 1,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        64,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "bracket",
+        "right",
+        "left"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 4,
+          "name": "shelf_bracket_left"
+        },
+        {
+          "col": 2,
+          "row": 4,
+          "name": "shelf_bracket_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_art_splatter",
+      "sprite_base": "wall_art_splatter",
+      "col": 14,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        80,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "left",
+        "splatter",
+        "right",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 5,
+          "name": "wall_art_splatter_left"
+        },
+        {
+          "col": 15,
+          "row": 5,
+          "name": "wall_art_splatter_right"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "bonsai_tree",
+      "sprite_base": "bonsai_tree",
+      "col": 14,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        16,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "tree",
+        "bonsai"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 1,
+          "name": "bonsai_tree"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bottle_trophy",
+      "sprite_base": "bottle_trophy",
+      "col": 9,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "bottle",
+        "award",
+        "trophy"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 2,
+          "name": "bottle_trophy"
+        }
+      ]
+    },
+    {
+      "sprite_name": "canvas_painting_colorful",
+      "sprite_base": "canvas_painting_colorful",
+      "col": 12,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "canvas",
+        "painting",
+        "wall-art"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 2,
+          "name": "canvas_painting_colorful"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceramic_pot_brown",
+      "sprite_base": "ceramic_pot_brown",
+      "col": 0,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "brown",
+        "vase",
+        "pot",
+        "ceramic"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "ceramic_pot_brown"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceramic_pot_cyan",
+      "sprite_base": "ceramic_pot_cyan",
+      "col": 2,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "pot",
+        "ceramic",
+        "cyan"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 3,
+          "name": "ceramic_pot_cyan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceramic_pot_dark",
+      "sprite_base": "ceramic_pot_dark",
+      "col": 3,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "pot",
+        "ceramic",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 3,
+          "name": "ceramic_pot_dark"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceramic_pot_orange",
+      "sprite_base": "ceramic_pot_orange",
+      "col": 1,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "pot",
+        "ceramic",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 3,
+          "name": "ceramic_pot_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "crab_figurine_a",
+      "sprite_base": "crab_figurine_a",
+      "col": 12,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "crab",
+        "creature",
+        "collectible",
+        "figurine",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 6,
+          "name": "crab_figurine_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "crab_figurine_b",
+      "sprite_base": "crab_figurine_b",
+      "col": 13,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "creature",
+        "figurine",
+        "crab",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 6,
+          "name": "crab_figurine_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "crab_figurine_c",
+      "sprite_base": "crab_figurine_c",
+      "col": 14,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "creature",
+        "figurine",
+        "crab",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 6,
+          "name": "crab_figurine_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cute_figurine_purple",
+      "sprite_base": "cute_figurine_purple",
+      "col": 10,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cute",
+        "figurine",
+        "purple"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 2,
+          "name": "cute_figurine_purple"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dark_figurine_trophy",
+      "sprite_base": "dark_figurine_trophy",
+      "col": 11,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "figurine",
+        "trophy",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 2,
+          "name": "dark_figurine_trophy"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_art_a",
+      "sprite_base": "display_cabinet_art_a",
+      "col": 10,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "game",
+        "display",
+        "art",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 4,
+          "name": "display_cabinet_art_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_art_b",
+      "sprite_base": "display_cabinet_art_b",
+      "col": 11,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "colorful",
+        "art",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 4,
+          "name": "display_cabinet_art_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_art_c",
+      "sprite_base": "display_cabinet_art_c",
+      "col": 14,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "art",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 4,
+          "name": "display_cabinet_art_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_checkerboard",
+      "sprite_base": "display_cabinet_checkerboard",
+      "col": 15,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "checkerboard",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 4,
+          "name": "display_cabinet_checkerboard"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_game_art",
+      "sprite_base": "display_cabinet_game_art",
+      "col": 13,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "game-art",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 4,
+          "name": "display_cabinet_game_art"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_cabinet_pixel_art",
+      "sprite_base": "display_cabinet_pixel_art",
+      "col": 12,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "pixel-art",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 4,
+          "name": "display_cabinet_pixel_art"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_case",
+      "sprite_base": "display_case",
+      "col": 3,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "case"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 2,
+          "name": "display_case_shelf"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_case_pixel_grid",
+      "sprite_base": "display_case_pixel_grid",
+      "col": 9,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "pixel-grid",
+        "display",
+        "case",
+        "blue"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 5,
+          "name": "display_case_pixel_grid"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_mannequin_a",
+      "sprite_base": "display_mannequin_a",
+      "col": 4,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "display",
+        "mannequin"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 1,
+          "name": "display_mannequin_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_mannequin_b",
+      "sprite_base": "display_mannequin_b",
+      "col": 5,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "display",
+        "mannequin"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 1,
+          "name": "display_mannequin_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_mannequin_c",
+      "sprite_base": "display_mannequin_c",
+      "col": 6,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "display",
+        "mannequin"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 1,
+          "name": "display_mannequin_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_mannequin_d",
+      "sprite_base": "display_mannequin_d",
+      "col": 7,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "display",
+        "mannequin"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 1,
+          "name": "display_mannequin_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_rack_a",
+      "sprite_base": "display_rack_a",
+      "col": 5,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "rack"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 5,
+          "name": "display_rack_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_rack_b",
+      "sprite_base": "display_rack_b",
+      "col": 6,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "rack"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 5,
+          "name": "display_rack_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_rack_c",
+      "sprite_base": "display_rack_c",
+      "col": 7,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        80,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "rack"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 5,
+          "name": "display_rack_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_blue_b",
+      "sprite_base": "display_shelf_blue_b",
+      "col": 8,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "blue"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 0,
+          "name": "display_shelf_blue_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_blue_items",
+      "sprite_base": "display_shelf_blue_items",
+      "col": 6,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "blue"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 0,
+          "name": "display_shelf_blue_items"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_red_blue",
+      "sprite_base": "display_shelf_red_blue",
+      "col": 7,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "blue",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 0,
+          "name": "display_shelf_red_blue"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_top_a",
+      "sprite_base": "display_shelf_top_a",
+      "col": 3,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 0,
+          "name": "display_shelf_top_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_top_b",
+      "sprite_base": "display_shelf_top_b",
+      "col": 4,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 0,
+          "name": "display_shelf_top_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_shelf_top_c",
+      "sprite_base": "display_shelf_top_c",
+      "col": 5,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "display",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 0,
+          "name": "display_shelf_top_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_top_piece",
+      "sprite_base": "display_top_piece",
+      "col": 13,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 1,
+          "name": "display_top_piece"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_with_ornament",
+      "sprite_base": "display_with_ornament",
+      "col": 12,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "display",
+        "ornament"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 1,
+          "name": "display_with_ornament"
+        }
+      ]
+    },
+    {
+      "sprite_name": "envelope_letter",
+      "sprite_base": "envelope_letter",
+      "col": 8,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "letter",
+        "envelope",
+        "mail"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 3,
+          "name": "envelope_letter"
+        }
+      ]
+    },
+    {
+      "sprite_name": "figure_with_plant",
+      "sprite_base": "figure_with_plant",
+      "col": 9,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "plant",
+        "figure",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 1,
+          "name": "figure_with_plant"
+        }
+      ]
+    },
+    {
+      "sprite_name": "framed_art_colorful_a",
+      "sprite_base": "framed_art_colorful_a",
+      "col": 2,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "colorful",
+        "frame"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 6,
+          "name": "framed_art_colorful_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "framed_art_colorful_b",
+      "sprite_base": "framed_art_colorful_b",
+      "col": 3,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "colorful",
+        "frame"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 6,
+          "name": "framed_art_colorful_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "framed_art_colorful_c",
+      "sprite_base": "framed_art_colorful_c",
+      "col": 4,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "colorful",
+        "frame"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 6,
+          "name": "framed_art_colorful_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "large_robot_statue_v41",
+      "sprite_base": "large_robot_statue",
+      "col": 1,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "statue",
+        "multi-tile",
+        "robot",
+        "top-left"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 1,
+          "name": "large_robot_statue_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "large_robot_statue_v42",
+      "sprite_base": "large_robot_statue",
+      "col": 3,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "statue",
+        "multi-tile",
+        "top-right",
+        "robot"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 1,
+          "name": "large_robot_statue_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "large_robot_statue_colorful",
+      "sprite_base": "large_robot_statue_colorful",
+      "col": 2,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "statue",
+        "multi-tile",
+        "robot",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 1,
+          "name": "large_robot_statue_colorful"
+        }
+      ]
+    },
+    {
+      "sprite_name": "loot_box_orange",
+      "sprite_base": "loot_box_orange",
+      "col": 9,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "game",
+        "box",
+        "loot-box",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 4,
+          "name": "loot_box_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mech_figure_green",
+      "sprite_base": "mech_figure_green",
+      "col": 14,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "green",
+        "mech",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 0,
+          "name": "mech_figure_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ornate_trophy",
+      "sprite_base": "ornate_trophy",
+      "col": 4,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        48,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "award",
+        "base",
+        "trophy",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 3,
+          "name": "ornate_trophy_base"
+        }
+      ]
+    },
+    {
+      "sprite_name": "paint_palette_splatter",
+      "sprite_base": "paint_palette_splatter",
+      "col": 8,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "colorful",
+        "palette",
+        "paint",
+        "splatter",
+        "art-tool"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 6,
+          "name": "paint_palette_splatter"
+        }
+      ]
+    },
+    {
+      "sprite_name": "paintbrush_splatter_a",
+      "sprite_base": "paintbrush_splatter_a",
+      "col": 5,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "paint",
+        "brush",
+        "art-tool",
+        "splatter"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 6,
+          "name": "paintbrush_splatter_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "paintbrush_splatter_b",
+      "sprite_base": "paintbrush_splatter_b",
+      "col": 6,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "paint",
+        "brush",
+        "art-tool",
+        "splatter"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 6,
+          "name": "paintbrush_splatter_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "paintbrush_splatter_c",
+      "sprite_base": "paintbrush_splatter_c",
+      "col": 7,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        96,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "paint",
+        "brush",
+        "art-tool",
+        "splatter"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 6,
+          "name": "paintbrush_splatter_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "potted_plant_small",
+      "sprite_base": "potted_plant_small",
+      "col": 15,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        48,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "pot",
+        "small"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 3,
+          "name": "potted_plant_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_armor_gray",
+      "sprite_base": "robot_armor_gray",
+      "col": 12,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "figure",
+        "armor",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 0,
+          "name": "robot_armor_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_armor_white",
+      "sprite_base": "robot_armor_white",
+      "col": 10,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "white",
+        "figure",
+        "armor",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 0,
+          "name": "robot_armor_white"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_armor_yellow",
+      "sprite_base": "robot_armor_yellow",
+      "col": 11,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "yellow",
+        "figure",
+        "armor",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 0,
+          "name": "robot_armor_yellow"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_figure_colorful",
+      "sprite_base": "robot_figure_colorful",
+      "col": 2,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "robot",
+        "figure",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 0,
+          "name": "robot_figure_colorful"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_figure_gray",
+      "sprite_base": "robot_figure_gray",
+      "col": 1,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "robot",
+        "figure",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 0,
+          "name": "robot_figure_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "robot_figure_green",
+      "sprite_base": "robot_figure_green",
+      "col": 13,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        0,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "green",
+        "figure",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 0,
+          "name": "robot_figure_green"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rounded_silver_item",
+      "sprite_base": "rounded_silver_item",
+      "col": 8,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "silver",
+        "rounded"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 4,
+          "name": "rounded_silver_item"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_bracket_a",
+      "sprite_base": "shelf_bracket_a",
+      "col": 1,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "bracket"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 2,
+          "name": "shelf_bracket_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_bracket_brown",
+      "sprite_base": "shelf_bracket_brown",
+      "col": 0,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "bracket",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "shelf_bracket_brown"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_decorative_orange",
+      "sprite_base": "shelf_decorative_orange",
+      "col": 6,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 4,
+          "name": "shelf_decorative_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_decorative_tan",
+      "sprite_base": "shelf_decorative_tan",
+      "col": 7,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "tan"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "shelf_decorative_tan"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_ledge_a",
+      "sprite_base": "shelf_ledge_a",
+      "col": 5,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "ledge"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 2,
+          "name": "shelf_ledge_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_ledge_gray",
+      "sprite_base": "shelf_ledge_gray",
+      "col": 6,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "gray",
+        "ledge"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 2,
+          "name": "shelf_ledge_gray"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_plank_b",
+      "sprite_base": "shelf_plank_b",
+      "col": 4,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "plank"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 4,
+          "name": "shelf_plank_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_plank_brown",
+      "sprite_base": "shelf_plank_brown",
+      "col": 3,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "plank",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 4,
+          "name": "shelf_plank_brown"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_plank_with_item",
+      "sprite_base": "shelf_plank_with_item",
+      "col": 5,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "plank",
+        "item"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 4,
+          "name": "shelf_plank_with_item"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_segment_a",
+      "sprite_base": "shelf_segment_a",
+      "col": 4,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "segment"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 2,
+          "name": "shelf_segment_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_with_orange",
+      "sprite_base": "shelf_with_orange",
+      "col": 7,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 2,
+          "name": "shelf_with_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_with_plant",
+      "sprite_base": "shelf_with_plant",
+      "col": 8,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "plant",
+        "green"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 2,
+          "name": "shelf_with_plant"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_with_yellow_detail",
+      "sprite_base": "shelf_with_yellow_detail",
+      "col": 2,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 2,
+          "name": "shelf_with_yellow_detail"
+        }
+      ]
+    },
+    {
+      "sprite_name": "silver_capsule_item",
+      "sprite_base": "silver_capsule_item",
+      "col": 0,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        64,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "silver",
+        "capsule"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 4,
+          "name": "silver_capsule_item"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_collectible_figure",
+      "sprite_base": "small_collectible_figure",
+      "col": 8,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "small",
+        "figure",
+        "collectible"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 1,
+          "name": "small_collectible_figure"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_robot_figurine_a",
+      "sprite_base": "small_robot_figurine_a",
+      "col": 0,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "figurine",
+        "small",
+        "robot"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 5,
+          "name": "small_robot_figurine_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_robot_figurine_b",
+      "sprite_base": "small_robot_figurine_b",
+      "col": 1,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "figurine",
+        "small",
+        "robot"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 5,
+          "name": "small_robot_figurine_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "spider_creature_figurine",
+      "sprite_base": "spider_creature_figurine",
+      "col": 8,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "creature",
+        "collectible",
+        "figurine",
+        "spider"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 5,
+          "name": "spider_creature_figurine"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_art_frame_b",
+      "sprite_base": "wall_art_frame_b",
+      "col": 11,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "wall",
+        "frame"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 5,
+          "name": "wall_art_frame_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_art_frame_orange",
+      "sprite_base": "wall_art_frame_orange",
+      "col": 10,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "art",
+        "wall",
+        "frame",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 5,
+          "name": "wall_art_frame_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_art_red_orange",
+      "sprite_base": "wall_art_red_orange",
+      "col": 13,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "red",
+        "wall",
+        "art",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 5,
+          "name": "wall_art_red_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_painting_checkered",
+      "sprite_base": "wall_painting_checkered",
+      "col": 15,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "checkered",
+        "painting",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 2,
+          "name": "wall_painting_checkered"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_painting_large_colorful",
+      "sprite_base": "wall_painting_large_colorful",
+      "col": 12,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        80,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "colorful",
+        "painting",
+        "wall",
+        "large"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 5,
+          "name": "wall_painting_large_colorful"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_painting_multicolor",
+      "sprite_base": "wall_painting_multicolor",
+      "col": 14,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "multicolor",
+        "painting",
+        "wall"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 2,
+          "name": "wall_painting_multicolor"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_painting_red_orange",
+      "sprite_base": "wall_painting_red_orange",
+      "col": 13,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        32,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "wall",
+        "red",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 2,
+          "name": "wall_painting_red_orange"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_chest_front",
+      "sprite_base": "wooden_chest_front",
+      "col": 13,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        48,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "drawer",
+        "wood",
+        "front"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 3,
+          "name": "wooden_chest_front"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_chest_right_side",
+      "sprite_base": "wooden_chest_right_side",
+      "col": 12,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        48,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "drawer",
+        "wood",
+        "side"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 3,
+          "name": "wooden_chest_right_side"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_chest_section",
+      "sprite_base": "wooden_chest_section",
+      "col": 14,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        48,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "drawer",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 3,
+          "name": "wooden_chest_section"
+        }
+      ]
+    }
+  ]
+}

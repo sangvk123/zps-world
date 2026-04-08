@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://employee_001"]
+
+[ext_resource type="Script" path="res://scripts/npc/Employee.gd" id="1_employee"]
+
+[node name="Employee" type="CharacterBody2D"]
+script = ExtResource("1_employee")
+collision_layer = 4
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="OutfitLayer" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="ClassBadge" type="TextureRect" parent="."]
+position = Vector2(-4, -30)
+size = Vector2(8, 8)
+
+[node name="Nameplate" type="Label" parent="."]
+position = Vector2(-30, -34)
+size = Vector2(60, 12)
+horizontal_alignment = 1
+
+[node name="StatusDot" type="Control" parent="."]
+position = Vector2(6, -32)
+custom_minimum_size = Vector2(6, 6)
+
+[node name="InteractHint" type="Control" parent="."]
+position = Vector2(-20, -46)
+visible = false
+
+[node name="ChatBubbleContainer" type="Control" parent="."]
+position = Vector2(-40, -70)
+size = Vector2(80, 40)

@@ -1,0 +1,8140 @@
+{
+  "tileset": "2_LivingRoom_16x16.png",
+  "tile_size": 16,
+  "grid": [
+    16,
+    45
+  ],
+  "input_tiles": 554,
+  "total_sprites": 214,
+  "single_tile_count": 71,
+  "multi_sprite_count": 143,
+  "multi_sprites": [
+    {
+      "sprite_name": "carpet_orange",
+      "sprite_base": "carpet_orange",
+      "col": 6,
+      "row": 15,
+      "w": 5,
+      "h": 2,
+      "tile_count": 6,
+      "density": 0.6,
+      "px_rect": [
+        96,
+        240,
+        80,
+        32
+      ],
+      "category": "rug",
+      "tags": [
+        "living",
+        "rug",
+        "carpet",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 15,
+          "name": "carpet_orange_tl"
+        },
+        {
+          "col": 7,
+          "row": 15,
+          "name": "carpet_orange_top_center"
+        },
+        {
+          "col": 8,
+          "row": 15,
+          "name": "carpet_orange_tr"
+        },
+        {
+          "col": 9,
+          "row": 15,
+          "name": "carpet_orange_bl"
+        },
+        {
+          "col": 10,
+          "row": 15,
+          "name": "carpet_orange_bottom_center"
+        },
+        {
+          "col": 9,
+          "row": 16,
+          "name": "carpet_orange_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dresser_v63",
+      "sprite_base": "dresser",
+      "col": 13,
+      "row": 40,
+      "w": 3,
+      "h": 3,
+      "tile_count": 5,
+      "density": 0.556,
+      "px_rect": [
+        208,
+        640,
+        48,
+        48
+      ],
+      "category": "furniture",
+      "tags": [
+        "storage",
+        "dresser",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 40,
+          "name": "dresser_tl"
+        },
+        {
+          "col": 15,
+          "row": 41,
+          "name": "dresser_tr"
+        },
+        {
+          "col": 13,
+          "row": 42,
+          "name": "dresser_center_left"
+        },
+        {
+          "col": 14,
+          "row": 42,
+          "name": "dresser_center_right"
+        },
+        {
+          "col": 15,
+          "row": 42,
+          "name": "dresser_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bookshelf_plants",
+      "sprite_base": "bookshelf_plants",
+      "col": 9,
+      "row": 28,
+      "w": 4,
+      "h": 2,
+      "tile_count": 6,
+      "density": 0.75,
+      "px_rect": [
+        144,
+        448,
+        64,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "plants",
+        "living",
+        "bookshelf",
+        "books"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 28,
+          "name": "bookshelf_plants_tl"
+        },
+        {
+          "col": 10,
+          "row": 28,
+          "name": "bookshelf_plants_tr"
+        },
+        {
+          "col": 11,
+          "row": 28,
+          "name": "bookshelf_plants_center_left"
+        },
+        {
+          "col": 12,
+          "row": 28,
+          "name": "bookshelf_plants_center_right"
+        },
+        {
+          "col": 11,
+          "row": 29,
+          "name": "bookshelf_plants_bl"
+        },
+        {
+          "col": 12,
+          "row": 29,
+          "name": "bookshelf_plants_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_stand",
+      "sprite_base": "tv_stand",
+      "col": 2,
+      "row": 1,
+      "w": 4,
+      "h": 2,
+      "tile_count": 6,
+      "density": 0.75,
+      "px_rect": [
+        32,
+        16,
+        64,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "tv",
+        "entertainment",
+        "stand",
+        "bottom",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 1,
+          "name": "tv_stand_top_left"
+        },
+        {
+          "col": 4,
+          "row": 1,
+          "name": "tv_stand_top_center"
+        },
+        {
+          "col": 5,
+          "row": 1,
+          "name": "tv_stand_top_right"
+        },
+        {
+          "col": 2,
+          "row": 2,
+          "name": "tv_stand_bottom_left"
+        },
+        {
+          "col": 3,
+          "row": 2,
+          "name": "tv_stand_bottom_center"
+        },
+        {
+          "col": 4,
+          "row": 2,
+          "name": "tv_stand_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bookshelf_deep",
+      "sprite_base": "bookshelf_deep",
+      "col": 8,
+      "row": 26,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        416,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "deep",
+        "living",
+        "books",
+        "bookshelf"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 26,
+          "name": "bookshelf_deep_tl"
+        },
+        {
+          "col": 9,
+          "row": 26,
+          "name": "bookshelf_deep_tr"
+        },
+        {
+          "col": 10,
+          "row": 26,
+          "name": "bookshelf_deep_center_left"
+        },
+        {
+          "col": 11,
+          "row": 26,
+          "name": "bookshelf_deep_center_right"
+        },
+        {
+          "col": 12,
+          "row": 26,
+          "name": "bookshelf_deep_bl"
+        },
+        {
+          "col": 13,
+          "row": 26,
+          "name": "bookshelf_deep_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_display",
+      "sprite_base": "cabinet_display",
+      "col": 4,
+      "row": 37,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        592,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "wood",
+        "living",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 37,
+          "name": "cabinet_display_tl"
+        },
+        {
+          "col": 5,
+          "row": 37,
+          "name": "cabinet_display_tr"
+        },
+        {
+          "col": 6,
+          "row": 37,
+          "name": "cabinet_display_center_left"
+        },
+        {
+          "col": 7,
+          "row": 37,
+          "name": "cabinet_display_center_right"
+        },
+        {
+          "col": 8,
+          "row": 37,
+          "name": "cabinet_display_bl"
+        },
+        {
+          "col": 9,
+          "row": 37,
+          "name": "cabinet_display_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "carpet_beige",
+      "sprite_base": "carpet_beige",
+      "col": 0,
+      "row": 15,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        240,
+        96,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "beige",
+        "living",
+        "rug",
+        "carpet"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 15,
+          "name": "carpet_beige_tl"
+        },
+        {
+          "col": 1,
+          "row": 15,
+          "name": "carpet_beige_top_center"
+        },
+        {
+          "col": 2,
+          "row": 15,
+          "name": "carpet_beige_tr"
+        },
+        {
+          "col": 3,
+          "row": 15,
+          "name": "carpet_beige_bl"
+        },
+        {
+          "col": 4,
+          "row": 15,
+          "name": "carpet_beige_bottom_center"
+        },
+        {
+          "col": 5,
+          "row": 15,
+          "name": "carpet_beige_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "clock_wall",
+      "sprite_base": "clock_wall",
+      "col": 0,
+      "row": 13,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        0,
+        208,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "wall",
+        "clock",
+        "living",
+        "round"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 13,
+          "name": "clock_wall_tl"
+        },
+        {
+          "col": 1,
+          "row": 13,
+          "name": "clock_wall_tr"
+        },
+        {
+          "col": 2,
+          "row": 13,
+          "name": "clock_wall_bl"
+        },
+        {
+          "col": 0,
+          "row": 14,
+          "name": "clock_wall_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coffee_table_wood",
+      "sprite_base": "coffee_table_wood",
+      "col": 0,
+      "row": 7,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        112,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "coffee",
+        "table",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 7,
+          "name": "coffee_table_wood_tl"
+        },
+        {
+          "col": 1,
+          "row": 7,
+          "name": "coffee_table_wood_top_center"
+        },
+        {
+          "col": 2,
+          "row": 7,
+          "name": "coffee_table_wood_tr"
+        },
+        {
+          "col": 3,
+          "row": 7,
+          "name": "coffee_table_wood_bl"
+        },
+        {
+          "col": 4,
+          "row": 7,
+          "name": "coffee_table_wood_bottom_center"
+        },
+        {
+          "col": 5,
+          "row": 7,
+          "name": "coffee_table_wood_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "console_table",
+      "sprite_base": "console_table",
+      "col": 0,
+      "row": 3,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "console",
+        "table",
+        "wood",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "console_table_tl"
+        },
+        {
+          "col": 1,
+          "row": 3,
+          "name": "console_table_tr"
+        },
+        {
+          "col": 2,
+          "row": 3,
+          "name": "console_table_center_left"
+        },
+        {
+          "col": 3,
+          "row": 3,
+          "name": "console_table_center_right"
+        },
+        {
+          "col": 4,
+          "row": 3,
+          "name": "console_table_bl"
+        },
+        {
+          "col": 5,
+          "row": 3,
+          "name": "console_table_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "couch_ornate",
+      "sprite_base": "couch_ornate",
+      "col": 12,
+      "row": 20,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        192,
+        320,
+        48,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "couch",
+        "wood",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 20,
+          "name": "couch_ornate_top"
+        },
+        {
+          "col": 12,
+          "row": 21,
+          "name": "couch_ornate_bottom_left"
+        },
+        {
+          "col": 13,
+          "row": 21,
+          "name": "couch_ornate_bottom_center"
+        },
+        {
+          "col": 14,
+          "row": 21,
+          "name": "couch_ornate_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dresser_v2",
+      "sprite_base": "dresser_v2",
+      "col": 13,
+      "row": 43,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        208,
+        688,
+        48,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "dresser",
+        "v2",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 43,
+          "name": "dresser_v2_tl"
+        },
+        {
+          "col": 14,
+          "row": 43,
+          "name": "dresser_v2_tr"
+        },
+        {
+          "col": 15,
+          "row": 43,
+          "name": "dresser_v2_bl"
+        },
+        {
+          "col": 14,
+          "row": 44,
+          "name": "dresser_v2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace",
+      "sprite_base": "fireplace",
+      "col": 3,
+      "row": 5,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        80,
+        48,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "ornate",
+        "wood",
+        "fireplace",
+        "bottom",
+        "top"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 5,
+          "name": "fireplace_top_left"
+        },
+        {
+          "col": 4,
+          "row": 5,
+          "name": "fireplace_top_center"
+        },
+        {
+          "col": 5,
+          "row": 5,
+          "name": "fireplace_top_right"
+        },
+        {
+          "col": 3,
+          "row": 6,
+          "name": "fireplace_bottom_left"
+        },
+        {
+          "col": 4,
+          "row": 6,
+          "name": "fireplace_bottom_center"
+        },
+        {
+          "col": 5,
+          "row": 6,
+          "name": "fireplace_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace_electric",
+      "sprite_base": "fireplace_electric",
+      "col": 4,
+      "row": 25,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        64,
+        400,
+        48,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "modern",
+        "living",
+        "electric",
+        "fireplace"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 25,
+          "name": "fireplace_electric_tl"
+        },
+        {
+          "col": 5,
+          "row": 25,
+          "name": "fireplace_electric_tr"
+        },
+        {
+          "col": 5,
+          "row": 26,
+          "name": "fireplace_electric_bl"
+        },
+        {
+          "col": 6,
+          "row": 26,
+          "name": "fireplace_electric_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace_surround",
+      "sprite_base": "fireplace_surround",
+      "col": 0,
+      "row": 5,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        80,
+        48,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "brown",
+        "wood",
+        "fireplace",
+        "surround"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 5,
+          "name": "fireplace_surround_tl"
+        },
+        {
+          "col": 1,
+          "row": 5,
+          "name": "fireplace_surround_top_center"
+        },
+        {
+          "col": 2,
+          "row": 5,
+          "name": "fireplace_surround_tr"
+        },
+        {
+          "col": 0,
+          "row": 6,
+          "name": "fireplace_surround_bl"
+        },
+        {
+          "col": 1,
+          "row": 6,
+          "name": "fireplace_surround_bottom_center"
+        },
+        {
+          "col": 2,
+          "row": 6,
+          "name": "fireplace_surround_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "floor_lamp_tall",
+      "sprite_base": "floor_lamp_tall",
+      "col": 13,
+      "row": 24,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        208,
+        384,
+        48,
+        32
+      ],
+      "category": "light",
+      "tags": [
+        "floor",
+        "tall",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 24,
+          "name": "floor_lamp_tall_tl"
+        },
+        {
+          "col": 14,
+          "row": 24,
+          "name": "floor_lamp_tall_tr"
+        },
+        {
+          "col": 15,
+          "row": 24,
+          "name": "floor_lamp_tall_bl"
+        },
+        {
+          "col": 14,
+          "row": 25,
+          "name": "floor_lamp_tall_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "grandfather_clock",
+      "sprite_base": "grandfather_clock",
+      "col": 9,
+      "row": 40,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        640,
+        96,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "grandfather",
+        "wood",
+        "clock",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 40,
+          "name": "grandfather_clock_tl"
+        },
+        {
+          "col": 10,
+          "row": 40,
+          "name": "grandfather_clock_tr"
+        },
+        {
+          "col": 11,
+          "row": 40,
+          "name": "grandfather_clock_center_left"
+        },
+        {
+          "col": 12,
+          "row": 40,
+          "name": "grandfather_clock_center_right"
+        },
+        {
+          "col": 13,
+          "row": 40,
+          "name": "grandfather_clock_bl"
+        },
+        {
+          "col": 14,
+          "row": 40,
+          "name": "grandfather_clock_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano",
+      "sprite_base": "piano",
+      "col": 9,
+      "row": 41,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        656,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "instrument",
+        "piano",
+        "music",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 41,
+          "name": "piano_tl"
+        },
+        {
+          "col": 10,
+          "row": 41,
+          "name": "piano_top_center"
+        },
+        {
+          "col": 11,
+          "row": 41,
+          "name": "piano_tr"
+        },
+        {
+          "col": 12,
+          "row": 41,
+          "name": "piano_bl"
+        },
+        {
+          "col": 13,
+          "row": 41,
+          "name": "piano_bottom_center"
+        },
+        {
+          "col": 14,
+          "row": 41,
+          "name": "piano_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "plant_painting",
+      "sprite_base": "plant_painting",
+      "col": 13,
+      "row": 28,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        208,
+        448,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "plant",
+        "painting",
+        "living",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 28,
+          "name": "plant_painting_tl"
+        },
+        {
+          "col": 14,
+          "row": 28,
+          "name": "plant_painting_tr"
+        },
+        {
+          "col": 15,
+          "row": 28,
+          "name": "plant_painting_bl"
+        },
+        {
+          "col": 13,
+          "row": 29,
+          "name": "plant_painting_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_beige",
+      "sprite_base": "rug_beige",
+      "col": 9,
+      "row": 8,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        128,
+        96,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "beige",
+        "living",
+        "rug",
+        "carpet"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 8,
+          "name": "rug_beige_tl"
+        },
+        {
+          "col": 10,
+          "row": 8,
+          "name": "rug_beige_top_center"
+        },
+        {
+          "col": 11,
+          "row": 8,
+          "name": "rug_beige_tr"
+        },
+        {
+          "col": 12,
+          "row": 8,
+          "name": "rug_beige_bl"
+        },
+        {
+          "col": 13,
+          "row": 8,
+          "name": "rug_beige_bottom_center"
+        },
+        {
+          "col": 14,
+          "row": 8,
+          "name": "rug_beige_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_dark",
+      "sprite_base": "sofa_dark",
+      "col": 0,
+      "row": 28,
+      "w": 3,
+      "h": 2,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        448,
+        48,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gray",
+        "sofa",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 28,
+          "name": "sofa_dark_tl"
+        },
+        {
+          "col": 1,
+          "row": 28,
+          "name": "sofa_dark_top_center"
+        },
+        {
+          "col": 2,
+          "row": 28,
+          "name": "sofa_dark_tr"
+        },
+        {
+          "col": 0,
+          "row": 29,
+          "name": "sofa_dark_bl"
+        },
+        {
+          "col": 1,
+          "row": 29,
+          "name": "sofa_dark_bottom_center"
+        },
+        {
+          "col": 2,
+          "row": 29,
+          "name": "sofa_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_long",
+      "sprite_base": "shelf_long",
+      "col": 8,
+      "row": 27,
+      "w": 5,
+      "h": 1,
+      "tile_count": 5,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        432,
+        80,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "living",
+        "books",
+        "long"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 27,
+          "name": "shelf_long_tl"
+        },
+        {
+          "col": 9,
+          "row": 27,
+          "name": "shelf_long_tr"
+        },
+        {
+          "col": 10,
+          "row": 27,
+          "name": "shelf_long_center_left"
+        },
+        {
+          "col": 11,
+          "row": 27,
+          "name": "shelf_long_center_right"
+        },
+        {
+          "col": 12,
+          "row": 27,
+          "name": "shelf_long_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "armchair_wood",
+      "sprite_base": "armchair_wood",
+      "col": 0,
+      "row": 9,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        144,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "brown",
+        "wood",
+        "seating",
+        "armchair"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 9,
+          "name": "armchair_wood_tl"
+        },
+        {
+          "col": 1,
+          "row": 9,
+          "name": "armchair_wood_tr"
+        },
+        {
+          "col": 2,
+          "row": 9,
+          "name": "armchair_wood_bl"
+        },
+        {
+          "col": 3,
+          "row": 9,
+          "name": "armchair_wood_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "blind_shade",
+      "sprite_base": "blind_shade",
+      "col": 12,
+      "row": 35,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        560,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "cream",
+        "blind",
+        "shade"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 35,
+          "name": "blind_shade_tl"
+        },
+        {
+          "col": 13,
+          "row": 35,
+          "name": "blind_shade_tr"
+        },
+        {
+          "col": 14,
+          "row": 35,
+          "name": "blind_shade_bl"
+        },
+        {
+          "col": 15,
+          "row": 35,
+          "name": "blind_shade_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "blinds",
+      "sprite_base": "blinds",
+      "col": 8,
+      "row": 35,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        560,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "blinds",
+        "white",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 35,
+          "name": "blinds_tl"
+        },
+        {
+          "col": 9,
+          "row": 35,
+          "name": "blinds_tr"
+        },
+        {
+          "col": 10,
+          "row": 35,
+          "name": "blinds_bl"
+        },
+        {
+          "col": 11,
+          "row": 35,
+          "name": "blinds_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bookshelf_alt",
+      "sprite_base": "bookshelf_alt",
+      "col": 10,
+      "row": 25,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        400,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "alt",
+        "living",
+        "books",
+        "bookshelf"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 25,
+          "name": "bookshelf_alt_left_top"
+        },
+        {
+          "col": 11,
+          "row": 25,
+          "name": "bookshelf_alt_right_top"
+        },
+        {
+          "col": 12,
+          "row": 25,
+          "name": "bookshelf_alt_left_bottom"
+        },
+        {
+          "col": 13,
+          "row": 25,
+          "name": "bookshelf_alt_right_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bookshelf_brown",
+      "sprite_base": "bookshelf_brown",
+      "col": 10,
+      "row": 16,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        256,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "living",
+        "brown",
+        "bookshelf",
+        "books"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 16,
+          "name": "bookshelf_brown_tl"
+        },
+        {
+          "col": 11,
+          "row": 16,
+          "name": "bookshelf_brown_tr"
+        },
+        {
+          "col": 12,
+          "row": 16,
+          "name": "bookshelf_brown_bl"
+        },
+        {
+          "col": 13,
+          "row": 16,
+          "name": "bookshelf_brown_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bookshelf_full",
+      "sprite_base": "bookshelf_full",
+      "col": 6,
+      "row": 25,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        400,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "full",
+        "living",
+        "books",
+        "bookshelf"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 25,
+          "name": "bookshelf_full_left_top"
+        },
+        {
+          "col": 7,
+          "row": 25,
+          "name": "bookshelf_full_right_top"
+        },
+        {
+          "col": 8,
+          "row": 25,
+          "name": "bookshelf_full_left_bottom"
+        },
+        {
+          "col": 9,
+          "row": 25,
+          "name": "bookshelf_full_right_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_brown",
+      "sprite_base": "cabinet_brown",
+      "col": 10,
+      "row": 14,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        224,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "storage",
+        "brown",
+        "living",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 14,
+          "name": "cabinet_brown_tl"
+        },
+        {
+          "col": 11,
+          "row": 14,
+          "name": "cabinet_brown_tr"
+        },
+        {
+          "col": 12,
+          "row": 14,
+          "name": "cabinet_brown_bl"
+        },
+        {
+          "col": 13,
+          "row": 14,
+          "name": "cabinet_brown_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_display_v2",
+      "sprite_base": "cabinet_display_v2",
+      "col": 5,
+      "row": 38,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        608,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "v2",
+        "living",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 38,
+          "name": "cabinet_display_v2_tl"
+        },
+        {
+          "col": 6,
+          "row": 38,
+          "name": "cabinet_display_v2_tr"
+        },
+        {
+          "col": 7,
+          "row": 38,
+          "name": "cabinet_display_v2_bl"
+        },
+        {
+          "col": 8,
+          "row": 38,
+          "name": "cabinet_display_v2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_ornate",
+      "sprite_base": "cabinet_ornate",
+      "col": 0,
+      "row": 19,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        304,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "ornate",
+        "wood",
+        "living",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 19,
+          "name": "cabinet_ornate_tl"
+        },
+        {
+          "col": 1,
+          "row": 19,
+          "name": "cabinet_ornate_tr"
+        },
+        {
+          "col": 2,
+          "row": 19,
+          "name": "cabinet_ornate_bl"
+        },
+        {
+          "col": 3,
+          "row": 19,
+          "name": "cabinet_ornate_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coffee_table_beige",
+      "sprite_base": "coffee_table_beige",
+      "col": 11,
+      "row": 11,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        176,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "beige",
+        "coffee",
+        "table",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 11,
+          "name": "coffee_table_beige_tl"
+        },
+        {
+          "col": 12,
+          "row": 11,
+          "name": "coffee_table_beige_tr"
+        },
+        {
+          "col": 13,
+          "row": 11,
+          "name": "coffee_table_beige_bl"
+        },
+        {
+          "col": 14,
+          "row": 11,
+          "name": "coffee_table_beige_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coffee_table_dark_v34",
+      "sprite_base": "coffee_table_dark",
+      "col": 14,
+      "row": 13,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        224,
+        208,
+        32,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "coffee",
+        "table",
+        "living",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 13,
+          "name": "coffee_table_dark_tl"
+        },
+        {
+          "col": 14,
+          "row": 14,
+          "name": "coffee_table_dark_tr"
+        },
+        {
+          "col": 15,
+          "row": 14,
+          "name": "coffee_table_dark_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coffee_table_wood_v2",
+      "sprite_base": "coffee_table_wood_v2",
+      "col": 0,
+      "row": 8,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        128,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "coffee",
+        "v2",
+        "table"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 8,
+          "name": "coffee_table_wood_v2_tl"
+        },
+        {
+          "col": 1,
+          "row": 8,
+          "name": "coffee_table_wood_v2_tr"
+        },
+        {
+          "col": 2,
+          "row": 8,
+          "name": "coffee_table_wood_v2_bl"
+        },
+        {
+          "col": 3,
+          "row": 8,
+          "name": "coffee_table_wood_v2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_single_gold",
+      "sprite_base": "door_single_gold",
+      "col": 9,
+      "row": 2,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        32,
+        64,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "ornate",
+        "door",
+        "gold",
+        "single"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 2,
+          "name": "door_single_gold_tl"
+        },
+        {
+          "col": 10,
+          "row": 2,
+          "name": "door_single_gold_tr"
+        },
+        {
+          "col": 11,
+          "row": 2,
+          "name": "door_single_gold_bl"
+        },
+        {
+          "col": 12,
+          "row": 2,
+          "name": "door_single_gold_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_wood",
+      "sprite_base": "door_wood",
+      "col": 7,
+      "row": 3,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        48,
+        64,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "brown",
+        "door",
+        "wood",
+        "single"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 3,
+          "name": "door_wood_tl"
+        },
+        {
+          "col": 8,
+          "row": 3,
+          "name": "door_wood_tr"
+        },
+        {
+          "col": 9,
+          "row": 3,
+          "name": "door_wood_bl"
+        },
+        {
+          "col": 10,
+          "row": 3,
+          "name": "door_wood_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "double_door_gold",
+      "sprite_base": "double_door_gold",
+      "col": 5,
+      "row": 2,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        32,
+        64,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "gold",
+        "door",
+        "double",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 2,
+          "name": "double_door_gold_tl"
+        },
+        {
+          "col": 6,
+          "row": 2,
+          "name": "double_door_gold_tr"
+        },
+        {
+          "col": 7,
+          "row": 2,
+          "name": "double_door_gold_bl"
+        },
+        {
+          "col": 8,
+          "row": 2,
+          "name": "double_door_gold_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_floor_with_shade",
+      "sprite_base": "lamp_floor_with_shade",
+      "col": 8,
+      "row": 5,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        80,
+        64,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "floor",
+        "living",
+        "shade",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 5,
+          "name": "lamp_floor_with_shade_tl"
+        },
+        {
+          "col": 9,
+          "row": 5,
+          "name": "lamp_floor_with_shade_tr"
+        },
+        {
+          "col": 10,
+          "row": 5,
+          "name": "lamp_floor_with_shade_bl"
+        },
+        {
+          "col": 11,
+          "row": 5,
+          "name": "lamp_floor_with_shade_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "music_stand",
+      "sprite_base": "music_stand",
+      "col": 9,
+      "row": 43,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        688,
+        32,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "stand",
+        "music",
+        "living",
+        "instrument"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 43,
+          "name": "music_stand_tl"
+        },
+        {
+          "col": 10,
+          "row": 43,
+          "name": "music_stand_tr"
+        },
+        {
+          "col": 9,
+          "row": 44,
+          "name": "music_stand_bl"
+        },
+        {
+          "col": 10,
+          "row": 44,
+          "name": "music_stand_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "painting_landscape",
+      "sprite_base": "painting_landscape",
+      "col": 5,
+      "row": 12,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        192,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "landscape",
+        "living",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 12,
+          "name": "painting_landscape_tl"
+        },
+        {
+          "col": 6,
+          "row": 12,
+          "name": "painting_landscape_tr"
+        },
+        {
+          "col": 7,
+          "row": 12,
+          "name": "painting_landscape_bl"
+        },
+        {
+          "col": 8,
+          "row": 12,
+          "name": "painting_landscape_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "piano_stool",
+      "sprite_base": "piano_stool",
+      "col": 9,
+      "row": 42,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        672,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "music",
+        "piano",
+        "stool",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 42,
+          "name": "piano_stool_tl"
+        },
+        {
+          "col": 10,
+          "row": 42,
+          "name": "piano_stool_tr"
+        },
+        {
+          "col": 11,
+          "row": 42,
+          "name": "piano_stool_bl"
+        },
+        {
+          "col": 12,
+          "row": 42,
+          "name": "piano_stool_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_cream",
+      "sprite_base": "pillar_cream",
+      "col": 11,
+      "row": 36,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        576,
+        64,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "cream",
+        "wall",
+        "pillar",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 36,
+          "name": "pillar_cream_tl"
+        },
+        {
+          "col": 12,
+          "row": 36,
+          "name": "pillar_cream_tr"
+        },
+        {
+          "col": 13,
+          "row": 36,
+          "name": "pillar_cream_bl"
+        },
+        {
+          "col": 14,
+          "row": 36,
+          "name": "pillar_cream_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_yellow_v109",
+      "sprite_base": "pillar_yellow",
+      "col": 3,
+      "row": 37,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        48,
+        592,
+        32,
+        32
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "pillar",
+        "yellow",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 37,
+          "name": "pillar_yellow_tr"
+        },
+        {
+          "col": 3,
+          "row": 38,
+          "name": "pillar_yellow_bl"
+        },
+        {
+          "col": 4,
+          "row": 38,
+          "name": "pillar_yellow_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "plant_large",
+      "sprite_base": "plant_large",
+      "col": 10,
+      "row": 0,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        0,
+        64,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "tropical",
+        "plant",
+        "green",
+        "large"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 0,
+          "name": "plant_large_tl"
+        },
+        {
+          "col": 11,
+          "row": 0,
+          "name": "plant_large_tr"
+        },
+        {
+          "col": 12,
+          "row": 0,
+          "name": "plant_large_bl"
+        },
+        {
+          "col": 13,
+          "row": 0,
+          "name": "plant_large_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "potted_plant",
+      "sprite_base": "potted_plant",
+      "col": 11,
+      "row": 4,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        64,
+        64,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "small",
+        "decoration",
+        "potted"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 4,
+          "name": "potted_plant_tl"
+        },
+        {
+          "col": 12,
+          "row": 4,
+          "name": "potted_plant_tr"
+        },
+        {
+          "col": 13,
+          "row": 4,
+          "name": "potted_plant_bl"
+        },
+        {
+          "col": 14,
+          "row": 4,
+          "name": "potted_plant_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_dark",
+      "sprite_base": "rug_dark",
+      "col": 7,
+      "row": 29,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        464,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 29,
+          "name": "rug_dark_tl"
+        },
+        {
+          "col": 8,
+          "row": 29,
+          "name": "rug_dark_tr"
+        },
+        {
+          "col": 9,
+          "row": 29,
+          "name": "rug_dark_bl"
+        },
+        {
+          "col": 10,
+          "row": 29,
+          "name": "rug_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_diamond",
+      "sprite_base": "rug_diamond",
+      "col": 0,
+      "row": 11,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        176,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "living",
+        "diamond",
+        "rug",
+        "pattern"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 11,
+          "name": "rug_diamond_tl"
+        },
+        {
+          "col": 1,
+          "row": 11,
+          "name": "rug_diamond_tr"
+        },
+        {
+          "col": 2,
+          "row": 11,
+          "name": "rug_diamond_bl"
+        },
+        {
+          "col": 3,
+          "row": 11,
+          "name": "rug_diamond_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_ornate",
+      "sprite_base": "rug_ornate",
+      "col": 8,
+      "row": 6,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        96,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "gold",
+        "rug",
+        "carpet",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 6,
+          "name": "rug_ornate_tl"
+        },
+        {
+          "col": 9,
+          "row": 6,
+          "name": "rug_ornate_tr"
+        },
+        {
+          "col": 10,
+          "row": 6,
+          "name": "rug_ornate_bl"
+        },
+        {
+          "col": 11,
+          "row": 6,
+          "name": "rug_ornate_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_v2",
+      "sprite_base": "rug_v2",
+      "col": 3,
+      "row": 29,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        464,
+        64,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "v2",
+        "rug",
+        "living",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 29,
+          "name": "rug_v2_tl"
+        },
+        {
+          "col": 4,
+          "row": 29,
+          "name": "rug_v2_tr"
+        },
+        {
+          "col": 5,
+          "row": 29,
+          "name": "rug_v2_bl"
+        },
+        {
+          "col": 6,
+          "row": 29,
+          "name": "rug_v2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_floating",
+      "sprite_base": "shelf_floating",
+      "col": 10,
+      "row": 37,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        592,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "wall",
+        "floating",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 37,
+          "name": "shelf_floating_tl"
+        },
+        {
+          "col": 11,
+          "row": 37,
+          "name": "shelf_floating_tr"
+        },
+        {
+          "col": 12,
+          "row": 37,
+          "name": "shelf_floating_bl"
+        },
+        {
+          "col": 13,
+          "row": 37,
+          "name": "shelf_floating_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_with_plants",
+      "sprite_base": "shelf_with_plants",
+      "col": 0,
+      "row": 27,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        432,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "plants",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 27,
+          "name": "shelf_with_plants_tl"
+        },
+        {
+          "col": 1,
+          "row": 27,
+          "name": "shelf_with_plants_tr"
+        },
+        {
+          "col": 2,
+          "row": 27,
+          "name": "shelf_with_plants_bl"
+        },
+        {
+          "col": 3,
+          "row": 27,
+          "name": "shelf_with_plants_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "side_table",
+      "sprite_base": "side_table",
+      "col": 9,
+      "row": 24,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        384,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "table",
+        "side",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 24,
+          "name": "side_table_tl"
+        },
+        {
+          "col": 10,
+          "row": 24,
+          "name": "side_table_tr"
+        },
+        {
+          "col": 11,
+          "row": 24,
+          "name": "side_table_bl"
+        },
+        {
+          "col": 12,
+          "row": 24,
+          "name": "side_table_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_table",
+      "sprite_base": "small_table",
+      "col": 2,
+      "row": 4,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        64,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table",
+        "small",
+        "wood",
+        "coffee"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 4,
+          "name": "small_table_tl"
+        },
+        {
+          "col": 3,
+          "row": 4,
+          "name": "small_table_tr"
+        },
+        {
+          "col": 4,
+          "row": 4,
+          "name": "small_table_bl"
+        },
+        {
+          "col": 5,
+          "row": 4,
+          "name": "small_table_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa",
+      "sprite_base": "sofa",
+      "col": 11,
+      "row": 7,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        112,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "beige",
+        "pillow",
+        "seating",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 7,
+          "name": "sofa_pillow_tl"
+        },
+        {
+          "col": 12,
+          "row": 7,
+          "name": "sofa_pillow_tr"
+        },
+        {
+          "col": 13,
+          "row": 7,
+          "name": "sofa_pillow_bl"
+        },
+        {
+          "col": 14,
+          "row": 7,
+          "name": "sofa_pillow_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_blue",
+      "sprite_base": "sofa_blue",
+      "col": 7,
+      "row": 9,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        144,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "blue",
+        "seating",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 9,
+          "name": "sofa_blue_cushion_tl"
+        },
+        {
+          "col": 8,
+          "row": 9,
+          "name": "sofa_blue_cushion_tr"
+        },
+        {
+          "col": 9,
+          "row": 9,
+          "name": "sofa_blue_cushion_bl"
+        },
+        {
+          "col": 10,
+          "row": 9,
+          "name": "sofa_blue_cushion_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_brown",
+      "sprite_base": "sofa_brown",
+      "col": 12,
+      "row": 12,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        192,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "seating",
+        "brown",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 12,
+          "name": "sofa_brown_cushion_tl"
+        },
+        {
+          "col": 13,
+          "row": 12,
+          "name": "sofa_brown_cushion_tr"
+        },
+        {
+          "col": 14,
+          "row": 12,
+          "name": "sofa_brown_cushion_bl"
+        },
+        {
+          "col": 15,
+          "row": 12,
+          "name": "sofa_brown_cushion_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_gray_v140",
+      "sprite_base": "sofa_gray",
+      "col": 4,
+      "row": 11,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        176,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gray",
+        "living",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 11,
+          "name": "sofa_gray_tl"
+        },
+        {
+          "col": 5,
+          "row": 11,
+          "name": "sofa_gray_top_center"
+        },
+        {
+          "col": 6,
+          "row": 11,
+          "name": "sofa_gray_tr"
+        },
+        {
+          "col": 7,
+          "row": 11,
+          "name": "sofa_gray_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_ornate",
+      "sprite_base": "sofa_ornate",
+      "col": 12,
+      "row": 18,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        288,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "wood",
+        "sofa",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 18,
+          "name": "sofa_ornate_tl"
+        },
+        {
+          "col": 13,
+          "row": 18,
+          "name": "sofa_ornate_tr"
+        },
+        {
+          "col": 14,
+          "row": 18,
+          "name": "sofa_ornate_bl"
+        },
+        {
+          "col": 15,
+          "row": 18,
+          "name": "sofa_ornate_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_red",
+      "sprite_base": "sofa_red",
+      "col": 11,
+      "row": 13,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        208,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "red",
+        "seating",
+        "living",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 13,
+          "name": "sofa_red_tl"
+        },
+        {
+          "col": 12,
+          "row": 13,
+          "name": "sofa_red_tr"
+        },
+        {
+          "col": 13,
+          "row": 13,
+          "name": "sofa_red_bl"
+        },
+        {
+          "col": 14,
+          "row": 13,
+          "name": "sofa_red_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_v4_v154",
+      "sprite_base": "sofa_v4",
+      "col": 14,
+      "row": 30,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        224,
+        480,
+        32,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "v4",
+        "gray",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 30,
+          "name": "sofa_v4_tl"
+        },
+        {
+          "col": 15,
+          "row": 30,
+          "name": "sofa_v4_tr"
+        },
+        {
+          "col": 14,
+          "row": 31,
+          "name": "sofa_v4_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_ottoman",
+      "sprite_base": "storage_ottoman",
+      "col": 6,
+      "row": 39,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        624,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "ottoman",
+        "storage",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 39,
+          "name": "storage_ottoman_tl"
+        },
+        {
+          "col": 7,
+          "row": 39,
+          "name": "storage_ottoman_tr"
+        },
+        {
+          "col": 8,
+          "row": 39,
+          "name": "storage_ottoman_bl"
+        },
+        {
+          "col": 9,
+          "row": 39,
+          "name": "storage_ottoman_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "table_checkered",
+      "sprite_base": "table_checkered",
+      "col": 12,
+      "row": 19,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        304,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "checkered",
+        "blue",
+        "table",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 19,
+          "name": "table_checkered_tl"
+        },
+        {
+          "col": 13,
+          "row": 19,
+          "name": "table_checkered_tr"
+        },
+        {
+          "col": 14,
+          "row": 19,
+          "name": "table_checkered_bl"
+        },
+        {
+          "col": 15,
+          "row": 19,
+          "name": "table_checkered_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "table_orange",
+      "sprite_base": "table_orange",
+      "col": 4,
+      "row": 19,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        304,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table",
+        "living",
+        "dining",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 19,
+          "name": "table_orange_tl"
+        },
+        {
+          "col": 5,
+          "row": 19,
+          "name": "table_orange_tr"
+        },
+        {
+          "col": 6,
+          "row": 19,
+          "name": "table_orange_bl"
+        },
+        {
+          "col": 7,
+          "row": 19,
+          "name": "table_orange_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_v165",
+      "sprite_base": "tv",
+      "col": 6,
+      "row": 30,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        480,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "tv",
+        "entertainment",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 30,
+          "name": "tv_shelf_tl"
+        },
+        {
+          "col": 7,
+          "row": 30,
+          "name": "tv_shelf_tr"
+        },
+        {
+          "col": 8,
+          "row": 30,
+          "name": "tv_shelf_bl"
+        },
+        {
+          "col": 9,
+          "row": 30,
+          "name": "tv_shelf_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_stand_v2",
+      "sprite_base": "tv_stand_v2",
+      "col": 2,
+      "row": 30,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        480,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "tv",
+        "entertainment",
+        "v2",
+        "stand"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 30,
+          "name": "tv_stand_v2_tl"
+        },
+        {
+          "col": 3,
+          "row": 30,
+          "name": "tv_stand_v2_tr"
+        },
+        {
+          "col": 4,
+          "row": 30,
+          "name": "tv_stand_v2_bl"
+        },
+        {
+          "col": 5,
+          "row": 30,
+          "name": "tv_stand_v2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_painting",
+      "sprite_base": "wall_painting",
+      "col": 0,
+      "row": 22,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        352,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "wall",
+        "living",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 22,
+          "name": "wall_painting_tl"
+        },
+        {
+          "col": 1,
+          "row": 22,
+          "name": "wall_painting_tr"
+        },
+        {
+          "col": 0,
+          "row": 23,
+          "name": "wall_painting_bl"
+        },
+        {
+          "col": 1,
+          "row": 23,
+          "name": "wall_painting_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wardrobe",
+      "sprite_base": "wardrobe",
+      "col": 12,
+      "row": 39,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        624,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "storage",
+        "living",
+        "wardrobe"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 39,
+          "name": "wardrobe_tl"
+        },
+        {
+          "col": 13,
+          "row": 39,
+          "name": "wardrobe_tr"
+        },
+        {
+          "col": 14,
+          "row": 39,
+          "name": "wardrobe_bl"
+        },
+        {
+          "col": 15,
+          "row": 39,
+          "name": "wardrobe_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_balcony",
+      "sprite_base": "window_balcony",
+      "col": 6,
+      "row": 34,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        544,
+        64,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "living",
+        "balcony",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 34,
+          "name": "window_balcony_tl"
+        },
+        {
+          "col": 7,
+          "row": 34,
+          "name": "window_balcony_tr"
+        },
+        {
+          "col": 8,
+          "row": 34,
+          "name": "window_balcony_bl"
+        },
+        {
+          "col": 9,
+          "row": 34,
+          "name": "window_balcony_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_curtain",
+      "sprite_base": "window_curtain",
+      "col": 0,
+      "row": 17,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        272,
+        32,
+        32
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "curtain",
+        "tall",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 17,
+          "name": "window_curtain_tl"
+        },
+        {
+          "col": 1,
+          "row": 17,
+          "name": "window_curtain_tr"
+        },
+        {
+          "col": 0,
+          "row": 18,
+          "name": "window_curtain_bl"
+        },
+        {
+          "col": 1,
+          "row": 18,
+          "name": "window_curtain_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_framed",
+      "sprite_base": "window_framed",
+      "col": 1,
+      "row": 26,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        416,
+        64,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "living",
+        "framed",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 26,
+          "name": "window_framed_tl"
+        },
+        {
+          "col": 2,
+          "row": 26,
+          "name": "window_framed_tr"
+        },
+        {
+          "col": 3,
+          "row": 26,
+          "name": "window_framed_bl"
+        },
+        {
+          "col": 4,
+          "row": 26,
+          "name": "window_framed_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_small",
+      "sprite_base": "window_small",
+      "col": 2,
+      "row": 18,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        288,
+        64,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "small",
+        "living",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 18,
+          "name": "window_small_tl"
+        },
+        {
+          "col": 3,
+          "row": 18,
+          "name": "window_small_tr"
+        },
+        {
+          "col": 4,
+          "row": 18,
+          "name": "window_small_bl"
+        },
+        {
+          "col": 5,
+          "row": 18,
+          "name": "window_small_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "world_map",
+      "sprite_base": "world_map",
+      "col": 9,
+      "row": 23,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        368,
+        64,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "world",
+        "map",
+        "wall",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 23,
+          "name": "world_map_tl"
+        },
+        {
+          "col": 10,
+          "row": 23,
+          "name": "world_map_tr"
+        },
+        {
+          "col": 11,
+          "row": 23,
+          "name": "world_map_bl"
+        },
+        {
+          "col": 12,
+          "row": 23,
+          "name": "world_map_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "armchair_blue_v1",
+      "sprite_base": "armchair_blue",
+      "col": 2,
+      "row": 12,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        192,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "blue",
+        "seating",
+        "armchair",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 12,
+          "name": "armchair_blue_tr"
+        },
+        {
+          "col": 3,
+          "row": 12,
+          "name": "armchair_blue_bl"
+        },
+        {
+          "col": 4,
+          "row": 12,
+          "name": "armchair_blue_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "beige_sofa_v4",
+      "sprite_base": "beige_sofa",
+      "col": 8,
+      "row": 7,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        112,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "beige",
+        "seating",
+        "living",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 7,
+          "name": "beige_sofa_tl"
+        },
+        {
+          "col": 9,
+          "row": 7,
+          "name": "beige_sofa_top_center"
+        },
+        {
+          "col": 10,
+          "row": 7,
+          "name": "beige_sofa_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "beige_sofa_v5",
+      "sprite_base": "beige_sofa",
+      "col": 4,
+      "row": 8,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        128,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "beige",
+        "seating",
+        "living",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 8,
+          "name": "beige_sofa_bl"
+        },
+        {
+          "col": 5,
+          "row": 8,
+          "name": "beige_sofa_bottom_center"
+        },
+        {
+          "col": 6,
+          "row": 8,
+          "name": "beige_sofa_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_blue",
+      "sprite_base": "curtain_blue",
+      "col": 6,
+      "row": 16,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        256,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "blue",
+        "long"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 16,
+          "name": "curtain_blue_top"
+        },
+        {
+          "col": 7,
+          "row": 16,
+          "name": "curtain_blue_center"
+        },
+        {
+          "col": 8,
+          "row": 16,
+          "name": "curtain_blue_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_gold",
+      "sprite_base": "curtain_gold",
+      "col": 3,
+      "row": 16,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        256,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "gold",
+        "long"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 16,
+          "name": "curtain_gold_top"
+        },
+        {
+          "col": 4,
+          "row": 16,
+          "name": "curtain_gold_center"
+        },
+        {
+          "col": 5,
+          "row": 16,
+          "name": "curtain_gold_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_light",
+      "sprite_base": "curtain_light",
+      "col": 10,
+      "row": 34,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        544,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "light",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 34,
+          "name": "curtain_light_top"
+        },
+        {
+          "col": 11,
+          "row": 34,
+          "name": "curtain_light_center"
+        },
+        {
+          "col": 12,
+          "row": 34,
+          "name": "curtain_light_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_long_purple",
+      "sprite_base": "curtain_long_purple",
+      "col": 0,
+      "row": 16,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        256,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "purple",
+        "long"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 16,
+          "name": "curtain_long_purple_top"
+        },
+        {
+          "col": 1,
+          "row": 16,
+          "name": "curtain_long_purple_center"
+        },
+        {
+          "col": 2,
+          "row": 16,
+          "name": "curtain_long_purple_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_pink",
+      "sprite_base": "curtain_pink",
+      "col": 11,
+      "row": 33,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        528,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "pink",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 33,
+          "name": "curtain_pink_top"
+        },
+        {
+          "col": 12,
+          "row": 33,
+          "name": "curtain_pink_center"
+        },
+        {
+          "col": 13,
+          "row": 33,
+          "name": "curtain_pink_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_red",
+      "sprite_base": "curtain_red",
+      "col": 5,
+      "row": 33,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        528,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "living",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 33,
+          "name": "curtain_red_top"
+        },
+        {
+          "col": 6,
+          "row": 33,
+          "name": "curtain_red_center"
+        },
+        {
+          "col": 7,
+          "row": 33,
+          "name": "curtain_red_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_sheer",
+      "sprite_base": "curtain_sheer",
+      "col": 5,
+      "row": 35,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        560,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "white",
+        "sheer"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 35,
+          "name": "curtain_sheer_left"
+        },
+        {
+          "col": 6,
+          "row": 35,
+          "name": "curtain_sheer_center"
+        },
+        {
+          "col": 7,
+          "row": 35,
+          "name": "curtain_sheer_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "curtain_teal",
+      "sprite_base": "curtain_teal",
+      "col": 8,
+      "row": 33,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        528,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "window",
+        "curtain",
+        "teal",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 33,
+          "name": "curtain_teal_top"
+        },
+        {
+          "col": 9,
+          "row": 33,
+          "name": "curtain_teal_center"
+        },
+        {
+          "col": 10,
+          "row": 33,
+          "name": "curtain_teal_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "desk_wood_v48",
+      "sprite_base": "desk_wood",
+      "col": 5,
+      "row": 13,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        208,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "living",
+        "wood",
+        "desk",
+        "study"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 13,
+          "name": "desk_wood_tl"
+        },
+        {
+          "col": 6,
+          "row": 13,
+          "name": "desk_wood_top_center"
+        },
+        {
+          "col": 7,
+          "row": 13,
+          "name": "desk_wood_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "desk_wood_v49",
+      "sprite_base": "desk_wood",
+      "col": 1,
+      "row": 14,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        224,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "living",
+        "wood",
+        "desk",
+        "study"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 14,
+          "name": "desk_wood_bl"
+        },
+        {
+          "col": 2,
+          "row": 14,
+          "name": "desk_wood_bottom_center"
+        },
+        {
+          "col": 3,
+          "row": 14,
+          "name": "desk_wood_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "desk_wood_with_pc_v50",
+      "sprite_base": "desk_wood_with_pc",
+      "col": 8,
+      "row": 13,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        208,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "living",
+        "computer",
+        "pc",
+        "desk"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 13,
+          "name": "desk_wood_with_pc_tl"
+        },
+        {
+          "col": 9,
+          "row": 13,
+          "name": "desk_wood_with_pc_tr"
+        },
+        {
+          "col": 10,
+          "row": 13,
+          "name": "desk_wood_with_pc_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "globe_v2",
+      "sprite_base": "globe_v2",
+      "col": 0,
+      "row": 25,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        400,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "world",
+        "globe",
+        "v2",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 25,
+          "name": "globe_v2_tl"
+        },
+        {
+          "col": 1,
+          "row": 25,
+          "name": "globe_v2_tr"
+        },
+        {
+          "col": 2,
+          "row": 25,
+          "name": "globe_v2_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mirror_small",
+      "sprite_base": "mirror_small",
+      "col": 6,
+      "row": 24,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        384,
+        48,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "wall",
+        "mirror",
+        "small",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 24,
+          "name": "mirror_small_tl"
+        },
+        {
+          "col": 7,
+          "row": 24,
+          "name": "mirror_small_tr"
+        },
+        {
+          "col": 8,
+          "row": 24,
+          "name": "mirror_small_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "monitor_v93",
+      "sprite_base": "monitor",
+      "col": 11,
+      "row": 31,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        496,
+        48,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "monitor",
+        "electronics",
+        "screen",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 31,
+          "name": "monitor_screen_tr"
+        },
+        {
+          "col": 12,
+          "row": 31,
+          "name": "monitor_screen_bl"
+        },
+        {
+          "col": 13,
+          "row": 31,
+          "name": "monitor_screen_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_stone_v106",
+      "sprite_base": "pillar_stone",
+      "col": 13,
+      "row": 38,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        608,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "stone",
+        "pillar",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 38,
+          "name": "pillar_stone_tl"
+        },
+        {
+          "col": 14,
+          "row": 38,
+          "name": "pillar_stone_tr"
+        },
+        {
+          "col": 15,
+          "row": 38,
+          "name": "pillar_stone_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "side_table_with_lamp",
+      "sprite_base": "side_table_with_lamp",
+      "col": 12,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        96,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "wood",
+        "table",
+        "side",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 6,
+          "name": "side_table_with_lamp_tl"
+        },
+        {
+          "col": 13,
+          "row": 6,
+          "name": "side_table_with_lamp_tr"
+        },
+        {
+          "col": 14,
+          "row": 6,
+          "name": "side_table_with_lamp_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_front",
+      "sprite_base": "sofa_front",
+      "col": 10,
+      "row": 1,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        16,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "seating",
+        "gold",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 1,
+          "name": "sofa_front_cushion_tl"
+        },
+        {
+          "col": 11,
+          "row": 1,
+          "name": "sofa_front_cushion_center"
+        },
+        {
+          "col": 12,
+          "row": 1,
+          "name": "sofa_front_cushion_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_v4_v155",
+      "sprite_base": "sofa_v4",
+      "col": 0,
+      "row": 31,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        496,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "v4",
+        "gray",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 31,
+          "name": "sofa_v4_center_left"
+        },
+        {
+          "col": 1,
+          "row": 31,
+          "name": "sofa_v4_center_right"
+        },
+        {
+          "col": 2,
+          "row": 31,
+          "name": "sofa_v4_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_blue",
+      "sprite_base": "vase_blue",
+      "col": 11,
+      "row": 17,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        272,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "blue",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 17,
+          "name": "vase_blue_tl"
+        },
+        {
+          "col": 12,
+          "row": 17,
+          "name": "vase_blue_tr"
+        },
+        {
+          "col": 13,
+          "row": 17,
+          "name": "vase_blue_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_brown",
+      "sprite_base": "vase_brown",
+      "col": 5,
+      "row": 17,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        272,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "living",
+        "brown",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 17,
+          "name": "vase_brown_tl"
+        },
+        {
+          "col": 6,
+          "row": 17,
+          "name": "vase_brown_tr"
+        },
+        {
+          "col": 7,
+          "row": 17,
+          "name": "vase_brown_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_orange",
+      "sprite_base": "vase_orange",
+      "col": 8,
+      "row": 17,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        272,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "living",
+        "decoration",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 17,
+          "name": "vase_orange_tl"
+        },
+        {
+          "col": 9,
+          "row": 17,
+          "name": "vase_orange_tr"
+        },
+        {
+          "col": 10,
+          "row": 17,
+          "name": "vase_orange_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_panel_v183",
+      "sprite_base": "wall_panel",
+      "col": 3,
+      "row": 34,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        544,
+        48,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "wall",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 34,
+          "name": "wall_panel_tr"
+        },
+        {
+          "col": 4,
+          "row": 34,
+          "name": "wall_panel_bl"
+        },
+        {
+          "col": 5,
+          "row": 34,
+          "name": "wall_panel_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_v187",
+      "sprite_base": "window",
+      "col": 6,
+      "row": 23,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        368,
+        48,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "living",
+        "frame",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 23,
+          "name": "window_frame_tr"
+        },
+        {
+          "col": 7,
+          "row": 23,
+          "name": "window_frame_bl"
+        },
+        {
+          "col": 8,
+          "row": 23,
+          "name": "window_frame_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bed_orange",
+      "sprite_base": "bed_orange",
+      "col": 2,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        384,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "bed",
+        "sleeping",
+        "living",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 24,
+          "name": "bed_orange_tl"
+        },
+        {
+          "col": 3,
+          "row": 24,
+          "name": "bed_orange_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bench_dark",
+      "sprite_base": "bench_dark",
+      "col": 13,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        80,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "sitting",
+        "wood",
+        "bench",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 5,
+          "name": "bench_dark_left"
+        },
+        {
+          "col": 14,
+          "row": 5,
+          "name": "bench_dark_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bench_wood",
+      "sprite_base": "bench_wood",
+      "col": 7,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "brown",
+        "wood",
+        "bench",
+        "sitting"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "bench_wood_left"
+        },
+        {
+          "col": 8,
+          "row": 4,
+          "name": "bench_wood_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "candlestick",
+      "sprite_base": "candlestick",
+      "col": 7,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        128,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "living",
+        "light",
+        "decoration",
+        "candlestick"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 8,
+          "name": "candlestick_top"
+        },
+        {
+          "col": 8,
+          "row": 8,
+          "name": "candlestick_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cart_luggage_v23",
+      "sprite_base": "cart_luggage",
+      "col": 9,
+      "row": 38,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        608,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "cart",
+        "luggage",
+        "storage",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 38,
+          "name": "cart_luggage_tl"
+        },
+        {
+          "col": 10,
+          "row": 38,
+          "name": "cart_luggage_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cart_luggage_v24",
+      "sprite_base": "cart_luggage",
+      "col": 4,
+      "row": 39,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        624,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "cart",
+        "luggage",
+        "storage",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 39,
+          "name": "cart_luggage_bl"
+        },
+        {
+          "col": 5,
+          "row": 39,
+          "name": "cart_luggage_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_ornate_v29",
+      "sprite_base": "chair_ornate",
+      "col": 6,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        288,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "wood",
+        "living",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 18,
+          "name": "chair_ornate_tl"
+        },
+        {
+          "col": 7,
+          "row": 18,
+          "name": "chair_ornate_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_ornate_v30",
+      "sprite_base": "chair_ornate",
+      "col": 9,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        288,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "wood",
+        "living",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 18,
+          "name": "chair_ornate_bl"
+        },
+        {
+          "col": 10,
+          "row": 18,
+          "name": "chair_ornate_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "chair_rocking",
+      "sprite_base": "chair_rocking",
+      "col": 10,
+      "row": 39,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        624,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "seating",
+        "living",
+        "rocking"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 39,
+          "name": "chair_rocking_top"
+        },
+        {
+          "col": 11,
+          "row": 39,
+          "name": "chair_rocking_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dining_set_v53",
+      "sprite_base": "dining_set",
+      "col": 9,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        304,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chairs",
+        "set",
+        "dining",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 19,
+          "name": "dining_set_tl"
+        },
+        {
+          "col": 10,
+          "row": 19,
+          "name": "dining_set_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dining_set_v54",
+      "sprite_base": "dining_set",
+      "col": 4,
+      "row": 20,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        320,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chairs",
+        "set",
+        "dining",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 20,
+          "name": "dining_set_bl"
+        },
+        {
+          "col": 5,
+          "row": 20,
+          "name": "dining_set_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_showcase_v55",
+      "sprite_base": "display_showcase",
+      "col": 14,
+      "row": 37,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        592,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "living",
+        "showcase",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 37,
+          "name": "display_showcase_tl"
+        },
+        {
+          "col": 15,
+          "row": 37,
+          "name": "display_showcase_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "display_showcase_v56",
+      "sprite_base": "display_showcase",
+      "col": 11,
+      "row": 38,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        608,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "display",
+        "living",
+        "showcase",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 38,
+          "name": "display_showcase_bl"
+        },
+        {
+          "col": 12,
+          "row": 38,
+          "name": "display_showcase_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_arch_v57",
+      "sprite_base": "door_arch",
+      "col": 0,
+      "row": 32,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        512,
+        16,
+        32
+      ],
+      "category": "door",
+      "tags": [
+        "arch",
+        "door",
+        "wood",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 32,
+          "name": "door_arch_tl"
+        },
+        {
+          "col": 0,
+          "row": 33,
+          "name": "door_arch_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_arch_v58",
+      "sprite_base": "door_arch",
+      "col": 3,
+      "row": 33,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        528,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "arch",
+        "door",
+        "wood",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 33,
+          "name": "door_arch_bl"
+        },
+        {
+          "col": 4,
+          "row": 33,
+          "name": "door_arch_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace_with_diamond",
+      "sprite_base": "fireplace_with_diamond",
+      "col": 7,
+      "row": 5,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        80,
+        16,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "diamond",
+        "decoration",
+        "ornate",
+        "fireplace",
+        "bottom"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 5,
+          "name": "fireplace_with_diamond_top"
+        },
+        {
+          "col": 7,
+          "row": 6,
+          "name": "fireplace_with_diamond_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace_with_flame",
+      "sprite_base": "fireplace_with_flame",
+      "col": 6,
+      "row": 5,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        80,
+        16,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "ornate",
+        "flame",
+        "fireplace",
+        "bottom",
+        "fire"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 5,
+          "name": "fireplace_with_flame_top"
+        },
+        {
+          "col": 6,
+          "row": 6,
+          "name": "fireplace_with_flame_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "floor_lamp",
+      "sprite_base": "floor_lamp",
+      "col": 11,
+      "row": 9,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        144,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "floor",
+        "living",
+        "gold",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 9,
+          "name": "floor_lamp_tl"
+        },
+        {
+          "col": 12,
+          "row": 9,
+          "name": "floor_lamp_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fruit_bowl",
+      "sprite_base": "fruit_bowl",
+      "col": 6,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        112,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "bowl",
+        "fruit",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 7,
+          "name": "fruit_bowl_left"
+        },
+        {
+          "col": 7,
+          "row": 7,
+          "name": "fruit_bowl_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "globe_v77",
+      "sprite_base": "globe",
+      "col": 8,
+      "row": 22,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        352,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "world",
+        "globe",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 22,
+          "name": "globe_tl"
+        },
+        {
+          "col": 9,
+          "row": 22,
+          "name": "globe_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_desk_v81",
+      "sprite_base": "lamp_desk",
+      "col": 5,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        224,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "living",
+        "desk",
+        "gold",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 14,
+          "name": "lamp_desk_tl"
+        },
+        {
+          "col": 6,
+          "row": 14,
+          "name": "lamp_desk_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_desk_v82",
+      "sprite_base": "lamp_desk",
+      "col": 8,
+      "row": 14,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        224,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "living",
+        "desk",
+        "gold",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 14,
+          "name": "lamp_desk_bl"
+        },
+        {
+          "col": 9,
+          "row": 14,
+          "name": "lamp_desk_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_hanging",
+      "sprite_base": "lamp_hanging",
+      "col": 13,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        512,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "ceiling",
+        "living",
+        "lamp",
+        "hanging"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 32,
+          "name": "lamp_hanging_top"
+        },
+        {
+          "col": 14,
+          "row": 32,
+          "name": "lamp_hanging_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mirror_standing_v90",
+      "sprite_base": "mirror_standing",
+      "col": 4,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        384,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "full",
+        "standing",
+        "mirror",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 24,
+          "name": "mirror_standing_tl"
+        },
+        {
+          "col": 5,
+          "row": 24,
+          "name": "mirror_standing_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "npc_sitting",
+      "sprite_base": "npc_sitting",
+      "col": 0,
+      "row": 24,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        384,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "living",
+        "npc",
+        "character",
+        "sitting"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 24,
+          "name": "npc_sitting_left"
+        },
+        {
+          "col": 1,
+          "row": 24,
+          "name": "npc_sitting_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "patchwork_painting_v99",
+      "sprite_base": "patchwork_painting",
+      "col": 14,
+      "row": 26,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        416,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "patchwork",
+        "painting",
+        "colorful",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 26,
+          "name": "patchwork_painting_tl"
+        },
+        {
+          "col": 15,
+          "row": 26,
+          "name": "patchwork_painting_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_v103",
+      "sprite_base": "pillar",
+      "col": 4,
+      "row": 36,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        576,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "top",
+        "gray",
+        "pillar",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 36,
+          "name": "pillar_top_tl"
+        },
+        {
+          "col": 5,
+          "row": 36,
+          "name": "pillar_top_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_v104",
+      "sprite_base": "pillar",
+      "col": 8,
+      "row": 36,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        576,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "body",
+        "gray",
+        "pillar",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 36,
+          "name": "pillar_body_left"
+        },
+        {
+          "col": 9,
+          "row": 36,
+          "name": "pillar_body_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_modern_v143",
+      "sprite_base": "sofa_modern",
+      "col": 2,
+      "row": 21,
+      "w": 1,
+      "h": 2,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        336,
+        16,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "modern",
+        "gray",
+        "seating",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 21,
+          "name": "sofa_modern_tr"
+        },
+        {
+          "col": 2,
+          "row": 22,
+          "name": "sofa_modern_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_purple_v146",
+      "sprite_base": "sofa_purple",
+      "col": 2,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        0,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gold",
+        "purple",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 0,
+          "name": "sofa_purple_left"
+        },
+        {
+          "col": 3,
+          "row": 0,
+          "name": "sofa_purple_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_purple_v147",
+      "sprite_base": "sofa_purple",
+      "col": 0,
+      "row": 1,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        16,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gold",
+        "purple",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 1,
+          "name": "sofa_purple_bl"
+        },
+        {
+          "col": 1,
+          "row": 1,
+          "name": "sofa_purple_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "star_blue",
+      "sprite_base": "star_blue",
+      "col": 4,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        512,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "living",
+        "blue",
+        "star",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 32,
+          "name": "star_blue_left"
+        },
+        {
+          "col": 5,
+          "row": 32,
+          "name": "star_blue_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tree_plant_v162",
+      "sprite_base": "tree_plant",
+      "col": 4,
+      "row": 21,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        336,
+        32,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "tree",
+        "living",
+        "green"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 21,
+          "name": "tree_plant_tl"
+        },
+        {
+          "col": 5,
+          "row": 21,
+          "name": "tree_plant_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tree_plant_v163",
+      "sprite_base": "tree_plant",
+      "col": 13,
+      "row": 22,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        352,
+        32,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "tree",
+        "living",
+        "green"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 22,
+          "name": "tree_plant_bl"
+        },
+        {
+          "col": 14,
+          "row": 22,
+          "name": "tree_plant_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_v164",
+      "sprite_base": "tv",
+      "col": 0,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        480,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "tv",
+        "screen",
+        "entertainment",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 30,
+          "name": "tv_screen_left"
+        },
+        {
+          "col": 1,
+          "row": 30,
+          "name": "tv_screen_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_modern_v168",
+      "sprite_base": "tv_modern",
+      "col": 8,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        512,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "modern",
+        "tv",
+        "screen",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 32,
+          "name": "tv_modern_tl"
+        },
+        {
+          "col": 9,
+          "row": 32,
+          "name": "tv_modern_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_modern_v169",
+      "sprite_base": "tv_modern",
+      "col": 11,
+      "row": 32,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        512,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "modern",
+        "tv",
+        "screen",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 32,
+          "name": "tv_modern_bl"
+        },
+        {
+          "col": 12,
+          "row": 32,
+          "name": "tv_modern_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_stand_dark_v171",
+      "sprite_base": "tv_stand_dark",
+      "col": 14,
+      "row": 29,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        464,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "dark",
+        "tv",
+        "entertainment",
+        "stand"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 29,
+          "name": "tv_stand_dark_tl"
+        },
+        {
+          "col": 15,
+          "row": 29,
+          "name": "tv_stand_dark_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_stand_dark_v172",
+      "sprite_base": "tv_stand_dark",
+      "col": 12,
+      "row": 30,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        480,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "dark",
+        "tv",
+        "entertainment",
+        "stand"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 30,
+          "name": "tv_stand_dark_bl"
+        },
+        {
+          "col": 13,
+          "row": 30,
+          "name": "tv_stand_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_teal",
+      "sprite_base": "vase_teal",
+      "col": 14,
+      "row": 17,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        272,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "vase",
+        "teal",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 17,
+          "name": "vase_teal_tl"
+        },
+        {
+          "col": 15,
+          "row": 17,
+          "name": "vase_teal_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_sconce",
+      "sprite_base": "wall_sconce",
+      "col": 7,
+      "row": 31,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        496,
+        32,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "sconce",
+        "light",
+        "wall",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 31,
+          "name": "wall_sconce_top"
+        },
+        {
+          "col": 8,
+          "row": 31,
+          "name": "wall_sconce_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_arch_v188",
+      "sprite_base": "window_arch",
+      "col": 13,
+      "row": 34,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        544,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "arch",
+        "living",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 34,
+          "name": "window_arch_tl"
+        },
+        {
+          "col": 14,
+          "row": 34,
+          "name": "window_arch_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_arch_v189",
+      "sprite_base": "window_arch",
+      "col": 3,
+      "row": 35,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        560,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "arch",
+        "living",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 35,
+          "name": "window_arch_bl"
+        },
+        {
+          "col": 4,
+          "row": 35,
+          "name": "window_arch_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_tall_v194",
+      "sprite_base": "window_tall",
+      "col": 1,
+      "row": 20,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        320,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "tall",
+        "living",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 20,
+          "name": "window_tall_tl"
+        },
+        {
+          "col": 2,
+          "row": 20,
+          "name": "window_tall_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_tall_v195",
+      "sprite_base": "window_tall",
+      "col": 14,
+      "row": 20,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        320,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "tall",
+        "living",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 20,
+          "name": "window_tall_bl"
+        },
+        {
+          "col": 15,
+          "row": 20,
+          "name": "window_tall_br"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "armchair_blue_v0",
+      "sprite_base": "armchair_blue",
+      "col": 9,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        176,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "blue",
+        "seating",
+        "armchair",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 11,
+          "name": "armchair_blue_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cactus_plant",
+      "sprite_base": "cactus_plant",
+      "col": 12,
+      "row": 5,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        80,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "green",
+        "decoration",
+        "cactus"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 5,
+          "name": "cactus_plant"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cat_sleeping",
+      "sprite_base": "cat_sleeping",
+      "col": 7,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pet",
+        "sleeping",
+        "decoration",
+        "cat"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 20,
+          "name": "cat_sleeping"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceiling_lamp_v26",
+      "sprite_base": "ceiling_lamp",
+      "col": 15,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        128,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "ceiling",
+        "light",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 8,
+          "name": "ceiling_lamp_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceiling_lamp_v27",
+      "sprite_base": "ceiling_lamp",
+      "col": 13,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        144,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "ceiling",
+        "light",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 9,
+          "name": "ceiling_lamp_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "ceiling_lamp_alt",
+      "sprite_base": "ceiling_lamp_alt",
+      "col": 14,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        144,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "alt",
+        "ceiling",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 9,
+          "name": "ceiling_lamp_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coffee_table_dark_v35",
+      "sprite_base": "coffee_table_dark",
+      "col": 14,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        256,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "coffee",
+        "table",
+        "living",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 16,
+          "name": "coffee_table_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "desk_wood_with_pc_v51",
+      "sprite_base": "desk_wood_with_pc",
+      "col": 4,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "living",
+        "computer",
+        "pc",
+        "desk"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 14,
+          "name": "desk_wood_with_pc_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dining_chair",
+      "sprite_base": "dining_chair",
+      "col": 5,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        144,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chair",
+        "back",
+        "dining",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 9,
+          "name": "dining_chair_back"
+        }
+      ]
+    },
+    {
+      "sprite_name": "door_frame_gold",
+      "sprite_base": "door_frame_gold",
+      "col": 6,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        48,
+        16,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "door",
+        "gold",
+        "frame",
+        "ornate"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 3,
+          "name": "door_frame_gold_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dresser_v64",
+      "sprite_base": "dresser",
+      "col": 12,
+      "row": 43,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        688,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "storage",
+        "dresser",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 43,
+          "name": "dresser_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dresser_v2_extra",
+      "sprite_base": "dresser_v2_extra",
+      "col": 15,
+      "row": 44,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        704,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "extra",
+        "dresser",
+        "v2",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 44,
+          "name": "dresser_v2_extra"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fish_in_bowl",
+      "sprite_base": "fish_in_bowl",
+      "col": 6,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "bowl",
+        "fish",
+        "decoration",
+        "aquarium"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 20,
+          "name": "fish_in_bowl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fruit_bowl_on_table",
+      "sprite_base": "fruit_bowl_on_table",
+      "col": 0,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        192,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "bowl",
+        "table",
+        "fruit",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 12,
+          "name": "fruit_bowl_on_table"
+        }
+      ]
+    },
+    {
+      "sprite_name": "globe_v78",
+      "sprite_base": "globe",
+      "col": 2,
+      "row": 23,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        368,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "world",
+        "globe",
+        "living",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 23,
+          "name": "globe_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_floor",
+      "sprite_base": "lamp_floor",
+      "col": 11,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        48,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "floor",
+        "living",
+        "top",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 3,
+          "name": "lamp_floor_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_stand",
+      "sprite_base": "lamp_stand",
+      "col": 15,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        176,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "floor",
+        "stand",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 11,
+          "name": "lamp_stand"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_table_v87",
+      "sprite_base": "lamp_table",
+      "col": 9,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        192,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "table",
+        "light",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 12,
+          "name": "lamp_table_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "lamp_table_v88",
+      "sprite_base": "lamp_table",
+      "col": 11,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        192,
+        16,
+        16
+      ],
+      "category": "light",
+      "tags": [
+        "table",
+        "light",
+        "living",
+        "lamp"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 12,
+          "name": "lamp_table_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "mirror_standing_v91",
+      "sprite_base": "mirror_standing",
+      "col": 3,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        400,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "full",
+        "standing",
+        "mirror",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 25,
+          "name": "mirror_standing_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "monitor_v92",
+      "sprite_base": "monitor",
+      "col": 9,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        496,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "monitor",
+        "electronics",
+        "screen",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 31,
+          "name": "monitor_screen_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "painting_small_v97",
+      "sprite_base": "painting_small",
+      "col": 15,
+      "row": 25,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        400,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "small",
+        "living",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 25,
+          "name": "painting_small_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "painting_small_v98",
+      "sprite_base": "painting_small",
+      "col": 0,
+      "row": 26,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        416,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "painting",
+        "small",
+        "living",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 26,
+          "name": "painting_small_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "patchwork_painting_v100",
+      "sprite_base": "patchwork_painting",
+      "col": 6,
+      "row": 27,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        432,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "patchwork",
+        "painting",
+        "colorful",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 27,
+          "name": "patchwork_painting_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_stone_v107",
+      "sprite_base": "pillar_stone",
+      "col": 3,
+      "row": 39,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        624,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "stone",
+        "pillar",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 39,
+          "name": "pillar_stone_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "pillar_yellow_v108",
+      "sprite_base": "pillar_yellow",
+      "col": 15,
+      "row": 36,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        576,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "wall",
+        "pillar",
+        "yellow",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 36,
+          "name": "pillar_yellow_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "plant_hanging_v110",
+      "sprite_base": "plant_hanging",
+      "col": 14,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        0,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "green",
+        "tropical",
+        "hanging"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 0,
+          "name": "plant_hanging_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "plant_hanging_v111",
+      "sprite_base": "plant_hanging",
+      "col": 8,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        16,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "green",
+        "tropical",
+        "hanging"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 1,
+          "name": "plant_hanging_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "plant_small",
+      "sprite_base": "plant_small",
+      "col": 9,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        16,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "pot",
+        "plant",
+        "green",
+        "small"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 1,
+          "name": "plant_small_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_bottom_a",
+      "sprite_base": "rug_striped_bottom_a",
+      "col": 6,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 28,
+          "name": "rug_striped_bottom_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_bottom_b",
+      "sprite_base": "rug_striped_bottom_b",
+      "col": 7,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 28,
+          "name": "rug_striped_bottom_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_bottom_c",
+      "sprite_base": "rug_striped_bottom_c",
+      "col": 8,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 28,
+          "name": "rug_striped_bottom_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_top_a",
+      "sprite_base": "rug_striped_top_a",
+      "col": 3,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 28,
+          "name": "rug_striped_top_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_top_b",
+      "sprite_base": "rug_striped_top_b",
+      "col": 4,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 28,
+          "name": "rug_striped_top_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "rug_striped_top_c",
+      "sprite_base": "rug_striped_top_c",
+      "col": 5,
+      "row": 28,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        448,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "striped",
+        "rug",
+        "living",
+        "colorful"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 28,
+          "name": "rug_striped_top_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_front_cushion_alt",
+      "sprite_base": "sofa_front_cushion_alt",
+      "col": 13,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "alt",
+        "gold",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 1,
+          "name": "sofa_front_cushion_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_front_piece",
+      "sprite_base": "sofa_front_piece",
+      "col": 7,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "piece",
+        "seating",
+        "sofa",
+        "front"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 1,
+          "name": "sofa_front_piece"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_gray_v141",
+      "sprite_base": "sofa_gray",
+      "col": 1,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        192,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gray",
+        "living",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 12,
+          "name": "sofa_gray_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_modern_v142",
+      "sprite_base": "sofa_modern",
+      "col": 8,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        320,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "modern",
+        "gray",
+        "seating",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 20,
+          "name": "sofa_modern_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_modern_v144",
+      "sprite_base": "sofa_modern",
+      "col": 15,
+      "row": 21,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        336,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "modern",
+        "gray",
+        "seating",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 21,
+          "name": "sofa_modern_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_purple_alt",
+      "sprite_base": "sofa_purple_alt",
+      "col": 4,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        0,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "alt",
+        "seating",
+        "purple",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 0,
+          "name": "sofa_purple_alt"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_purple_front",
+      "sprite_base": "sofa_purple_front",
+      "col": 2,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "purple",
+        "sofa",
+        "front"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 1,
+          "name": "sofa_purple_front_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_round_v151",
+      "sprite_base": "sofa_round",
+      "col": 14,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        16,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gold",
+        "sofa",
+        "round"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 1,
+          "name": "sofa_round_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_round_v152",
+      "sprite_base": "sofa_round",
+      "col": 0,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "gold",
+        "sofa",
+        "round"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "sofa_round_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sofa_side_table",
+      "sprite_base": "sofa_side_table",
+      "col": 1,
+      "row": 2,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        32,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table",
+        "small",
+        "side",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 2,
+          "name": "sofa_side_table"
+        }
+      ]
+    },
+    {
+      "sprite_name": "star_decoration_gold",
+      "sprite_base": "star_decoration_gold",
+      "col": 5,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "living",
+        "gold",
+        "star",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 31,
+          "name": "star_decoration_gold"
+        }
+      ]
+    },
+    {
+      "sprite_name": "star_decoration_yellow",
+      "sprite_base": "star_decoration_yellow",
+      "col": 4,
+      "row": 31,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        496,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "decoration",
+        "living",
+        "star",
+        "yellow"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 31,
+          "name": "star_decoration_yellow"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_cabinet_v166",
+      "sprite_base": "tv_cabinet",
+      "col": 5,
+      "row": 0,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        0,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "electronics",
+        "top",
+        "tv",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 0,
+          "name": "tv_cabinet_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_cabinet_v167",
+      "sprite_base": "tv_cabinet",
+      "col": 6,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        16,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "electronics",
+        "tv",
+        "bottom",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 1,
+          "name": "tv_cabinet_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_blue_alt",
+      "sprite_base": "vase_blue_alt",
+      "col": 12,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "alt",
+        "vase",
+        "blue",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 22,
+          "name": "vase_blue_alt_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_brown_alt",
+      "sprite_base": "vase_brown_alt",
+      "col": 10,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "alt",
+        "vase",
+        "brown",
+        "decoration"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 22,
+          "name": "vase_brown_alt_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "vase_orange_alt",
+      "sprite_base": "vase_orange_alt",
+      "col": 11,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        352,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "alt",
+        "vase",
+        "decoration",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 22,
+          "name": "vase_orange_alt_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_panel_v182",
+      "sprite_base": "wall_panel",
+      "col": 14,
+      "row": 33,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        528,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "panel",
+        "wall",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 33,
+          "name": "wall_panel_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "window_v186",
+      "sprite_base": "window",
+      "col": 15,
+      "row": 22,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        352,
+        16,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "living",
+        "frame",
+        "glass"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 22,
+          "name": "window_frame_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_a",
+      "sprite_base": "wooden_floor_tile_a",
+      "col": 15,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 9,
+          "name": "wooden_floor_tile_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_b",
+      "sprite_base": "wooden_floor_tile_b",
+      "col": 0,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 10,
+          "name": "wooden_floor_tile_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_c",
+      "sprite_base": "wooden_floor_tile_c",
+      "col": 1,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 10,
+          "name": "wooden_floor_tile_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_d",
+      "sprite_base": "wooden_floor_tile_d",
+      "col": 2,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 10,
+          "name": "wooden_floor_tile_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_e",
+      "sprite_base": "wooden_floor_tile_e",
+      "col": 3,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 10,
+          "name": "wooden_floor_tile_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_f",
+      "sprite_base": "wooden_floor_tile_f",
+      "col": 4,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 10,
+          "name": "wooden_floor_tile_f"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_g",
+      "sprite_base": "wooden_floor_tile_g",
+      "col": 5,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 10,
+          "name": "wooden_floor_tile_g"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_h",
+      "sprite_base": "wooden_floor_tile_h",
+      "col": 6,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 10,
+          "name": "wooden_floor_tile_h"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_i",
+      "sprite_base": "wooden_floor_tile_i",
+      "col": 7,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 10,
+          "name": "wooden_floor_tile_i"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_j",
+      "sprite_base": "wooden_floor_tile_j",
+      "col": 8,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 10,
+          "name": "wooden_floor_tile_j"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_k",
+      "sprite_base": "wooden_floor_tile_k",
+      "col": 9,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 10,
+          "name": "wooden_floor_tile_k"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_l",
+      "sprite_base": "wooden_floor_tile_l",
+      "col": 10,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 10,
+          "name": "wooden_floor_tile_l"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_m",
+      "sprite_base": "wooden_floor_tile_m",
+      "col": 11,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 10,
+          "name": "wooden_floor_tile_m"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_n",
+      "sprite_base": "wooden_floor_tile_n",
+      "col": 12,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 10,
+          "name": "wooden_floor_tile_n"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_o",
+      "sprite_base": "wooden_floor_tile_o",
+      "col": 13,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 10,
+          "name": "wooden_floor_tile_o"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_p",
+      "sprite_base": "wooden_floor_tile_p",
+      "col": 14,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 10,
+          "name": "wooden_floor_tile_p"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_tile_q",
+      "sprite_base": "wooden_floor_tile_q",
+      "col": 15,
+      "row": 10,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        160,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "wood",
+        "living"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 10,
+          "name": "wooden_floor_tile_q"
+        }
+      ]
+    }
+  ]
+}

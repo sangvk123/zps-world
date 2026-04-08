@@ -1,0 +1,4627 @@
+{
+  "tileset": "20_Japanese_interiors.png",
+  "tile_size": 16,
+  "grid": [
+    16,
+    32
+  ],
+  "input_tiles": 307,
+  "total_sprites": 123,
+  "single_tile_count": 39,
+  "multi_sprite_count": 84,
+  "multi_sprites": [
+    {
+      "sprite_name": "futon_purple_variant",
+      "sprite_base": "futon_purple_variant",
+      "col": 4,
+      "row": 19,
+      "w": 5,
+      "h": 2,
+      "tile_count": 6,
+      "density": 0.6,
+      "px_rect": [
+        64,
+        304,
+        80,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "variant",
+        "purple",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 19,
+          "name": "futon_purple_variant_tl"
+        },
+        {
+          "col": 7,
+          "row": 19,
+          "name": "futon_purple_variant_top_center"
+        },
+        {
+          "col": 8,
+          "row": 19,
+          "name": "futon_purple_variant_tr"
+        },
+        {
+          "col": 4,
+          "row": 20,
+          "name": "futon_purple_variant_bl"
+        },
+        {
+          "col": 5,
+          "row": 20,
+          "name": "futon_purple_variant_bottom_center"
+        },
+        {
+          "col": 6,
+          "row": 20,
+          "name": "futon_purple_variant_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_mat",
+      "sprite_base": "tatami_mat",
+      "col": 5,
+      "row": 0,
+      "w": 9,
+      "h": 1,
+      "tile_count": 9,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        0,
+        144,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "tatami",
+        "japanese",
+        "mat"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 0,
+          "name": "tatami_mat_tl"
+        },
+        {
+          "col": 6,
+          "row": 0,
+          "name": "tatami_mat_top"
+        },
+        {
+          "col": 7,
+          "row": 0,
+          "name": "tatami_mat_tr"
+        },
+        {
+          "col": 8,
+          "row": 0,
+          "name": "tatami_mat_left"
+        },
+        {
+          "col": 9,
+          "row": 0,
+          "name": "tatami_mat_center"
+        },
+        {
+          "col": 10,
+          "row": 0,
+          "name": "tatami_mat_right"
+        },
+        {
+          "col": 11,
+          "row": 0,
+          "name": "tatami_mat_bl"
+        },
+        {
+          "col": 12,
+          "row": 0,
+          "name": "tatami_mat_bottom"
+        },
+        {
+          "col": 13,
+          "row": 0,
+          "name": "tatami_mat_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bath_tub",
+      "sprite_base": "bath_tub",
+      "col": 0,
+      "row": 17,
+      "w": 8,
+      "h": 1,
+      "tile_count": 8,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        272,
+        128,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "blue",
+        "japanese",
+        "tub",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 17,
+          "name": "bath_tub_tl"
+        },
+        {
+          "col": 1,
+          "row": 17,
+          "name": "bath_tub_top_center_left"
+        },
+        {
+          "col": 2,
+          "row": 17,
+          "name": "bath_tub_top_center_right"
+        },
+        {
+          "col": 3,
+          "row": 17,
+          "name": "bath_tub_tr"
+        },
+        {
+          "col": 4,
+          "row": 17,
+          "name": "bath_tub_bl"
+        },
+        {
+          "col": 5,
+          "row": 17,
+          "name": "bath_tub_bottom_center_left"
+        },
+        {
+          "col": 6,
+          "row": 17,
+          "name": "bath_tub_bottom_center_right"
+        },
+        {
+          "col": 7,
+          "row": 17,
+          "name": "bath_tub_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker",
+      "sprite_base": "coin_locker",
+      "col": 12,
+      "row": 20,
+      "w": 4,
+      "h": 2,
+      "tile_count": 8,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        320,
+        64,
+        32
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 20,
+          "name": "coin_locker_tl"
+        },
+        {
+          "col": 13,
+          "row": 20,
+          "name": "coin_locker_tr"
+        },
+        {
+          "col": 14,
+          "row": 20,
+          "name": "coin_locker_center_left"
+        },
+        {
+          "col": 15,
+          "row": 20,
+          "name": "coin_locker_center_right"
+        },
+        {
+          "col": 12,
+          "row": 21,
+          "name": "coin_locker_bl"
+        },
+        {
+          "col": 13,
+          "row": 21,
+          "name": "coin_locker_br"
+        },
+        {
+          "col": 14,
+          "row": 21,
+          "name": "coin_locker_bottom_left"
+        },
+        {
+          "col": 15,
+          "row": 21,
+          "name": "coin_locker_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_bordered_v88",
+      "sprite_base": "tatami_bordered",
+      "col": 0,
+      "row": 2,
+      "w": 8,
+      "h": 1,
+      "tile_count": 8,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        32,
+        128,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "japanese",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 2,
+          "name": "tatami_bordered_top"
+        },
+        {
+          "col": 1,
+          "row": 2,
+          "name": "tatami_bordered_tr"
+        },
+        {
+          "col": 2,
+          "row": 2,
+          "name": "tatami_bordered_left"
+        },
+        {
+          "col": 3,
+          "row": 2,
+          "name": "tatami_bordered_center"
+        },
+        {
+          "col": 4,
+          "row": 2,
+          "name": "tatami_bordered_right"
+        },
+        {
+          "col": 5,
+          "row": 2,
+          "name": "tatami_bordered_bl"
+        },
+        {
+          "col": 6,
+          "row": 2,
+          "name": "tatami_bordered_bottom"
+        },
+        {
+          "col": 7,
+          "row": 2,
+          "name": "tatami_bordered_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "green_tatami_bordered_v47",
+      "sprite_base": "green_tatami_bordered",
+      "col": 0,
+      "row": 12,
+      "w": 7,
+      "h": 1,
+      "tile_count": 7,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        192,
+        112,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "green",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 12,
+          "name": "green_tatami_bordered_top"
+        },
+        {
+          "col": 1,
+          "row": 12,
+          "name": "green_tatami_bordered_tr"
+        },
+        {
+          "col": 2,
+          "row": 12,
+          "name": "green_tatami_bordered_left"
+        },
+        {
+          "col": 3,
+          "row": 12,
+          "name": "green_tatami_bordered_center"
+        },
+        {
+          "col": 4,
+          "row": 12,
+          "name": "green_tatami_bordered_right"
+        },
+        {
+          "col": 5,
+          "row": 12,
+          "name": "green_tatami_bordered_bl"
+        },
+        {
+          "col": 6,
+          "row": 12,
+          "name": "green_tatami_bordered_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_dark_v90",
+      "sprite_base": "tatami_dark",
+      "col": 5,
+      "row": 1,
+      "w": 7,
+      "h": 1,
+      "tile_count": 7,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        16,
+        112,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "tatami",
+        "mat",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 1,
+          "name": "tatami_dark_tr"
+        },
+        {
+          "col": 6,
+          "row": 1,
+          "name": "tatami_dark_left"
+        },
+        {
+          "col": 7,
+          "row": 1,
+          "name": "tatami_dark_center"
+        },
+        {
+          "col": 8,
+          "row": 1,
+          "name": "tatami_dark_right"
+        },
+        {
+          "col": 9,
+          "row": 1,
+          "name": "tatami_dark_bl"
+        },
+        {
+          "col": 10,
+          "row": 1,
+          "name": "tatami_dark_bottom"
+        },
+        {
+          "col": 11,
+          "row": 1,
+          "name": "tatami_dark_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "armor_stand",
+      "sprite_base": "armor_stand",
+      "col": 13,
+      "row": 16,
+      "w": 3,
+      "h": 2,
+      "tile_count": 4,
+      "density": 0.667,
+      "px_rect": [
+        208,
+        256,
+        48,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "stand",
+        "japanese",
+        "decoration",
+        "armor"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 16,
+          "name": "armor_stand_tl"
+        },
+        {
+          "col": 14,
+          "row": 16,
+          "name": "armor_stand_tr"
+        },
+        {
+          "col": 15,
+          "row": 16,
+          "name": "armor_stand_br"
+        },
+        {
+          "col": 14,
+          "row": 17,
+          "name": "armor_stand_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_purple",
+      "sprite_base": "futon_purple",
+      "col": 0,
+      "row": 18,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        288,
+        96,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "bed",
+        "purple",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 18,
+          "name": "futon_purple_tl"
+        },
+        {
+          "col": 1,
+          "row": 18,
+          "name": "futon_purple_top_center"
+        },
+        {
+          "col": 2,
+          "row": 18,
+          "name": "futon_purple_tr"
+        },
+        {
+          "col": 3,
+          "row": 18,
+          "name": "futon_purple_bl"
+        },
+        {
+          "col": 4,
+          "row": 18,
+          "name": "futon_purple_bottom_center"
+        },
+        {
+          "col": 5,
+          "row": 18,
+          "name": "futon_purple_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_pink_bordered_v93",
+      "sprite_base": "tatami_pink_bordered",
+      "col": 8,
+      "row": 2,
+      "w": 6,
+      "h": 1,
+      "tile_count": 6,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        32,
+        96,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "pink",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 2,
+          "name": "tatami_pink_bordered_tl"
+        },
+        {
+          "col": 9,
+          "row": 2,
+          "name": "tatami_pink_bordered_top"
+        },
+        {
+          "col": 10,
+          "row": 2,
+          "name": "tatami_pink_bordered_tr"
+        },
+        {
+          "col": 11,
+          "row": 2,
+          "name": "tatami_pink_bordered_left"
+        },
+        {
+          "col": 12,
+          "row": 2,
+          "name": "tatami_pink_bordered_center"
+        },
+        {
+          "col": 13,
+          "row": 2,
+          "name": "tatami_pink_bordered_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_shrine",
+      "sprite_base": "altar_shrine",
+      "col": 0,
+      "row": 13,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        208,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "shrine",
+        "religious",
+        "japanese",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 13,
+          "name": "altar_shrine_tl"
+        },
+        {
+          "col": 1,
+          "row": 13,
+          "name": "altar_shrine_tr"
+        },
+        {
+          "col": 0,
+          "row": 14,
+          "name": "altar_shrine_bl"
+        },
+        {
+          "col": 1,
+          "row": 14,
+          "name": "altar_shrine_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_totem",
+      "sprite_base": "altar_totem",
+      "col": 6,
+      "row": 13,
+      "w": 2,
+      "h": 2,
+      "tile_count": 3,
+      "density": 0.75,
+      "px_rect": [
+        96,
+        208,
+        32,
+        32
+      ],
+      "category": "decoration",
+      "tags": [
+        "totem",
+        "decoration",
+        "altar",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 13,
+          "name": "altar_totem_tl"
+        },
+        {
+          "col": 7,
+          "row": 13,
+          "name": "altar_totem_tr"
+        },
+        {
+          "col": 6,
+          "row": 14,
+          "name": "altar_totem_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "arch_window_variant",
+      "sprite_base": "arch_window_variant",
+      "col": 9,
+      "row": 8,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        128,
+        64,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "white",
+        "arch",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 8,
+          "name": "arch_window_variant_tl"
+        },
+        {
+          "col": 10,
+          "row": 8,
+          "name": "arch_window_variant_tr"
+        },
+        {
+          "col": 11,
+          "row": 8,
+          "name": "arch_window_variant_bl"
+        },
+        {
+          "col": 12,
+          "row": 8,
+          "name": "arch_window_variant_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "checkered_floor",
+      "sprite_base": "checkered_floor",
+      "col": 4,
+      "row": 10,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        160,
+        64,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "checkered",
+        "floor",
+        "pattern",
+        "tile"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 10,
+          "name": "checkered_floor_tl"
+        },
+        {
+          "col": 5,
+          "row": 10,
+          "name": "checkered_floor_tr"
+        },
+        {
+          "col": 6,
+          "row": 10,
+          "name": "checkered_floor_bl"
+        },
+        {
+          "col": 7,
+          "row": 10,
+          "name": "checkered_floor_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row3",
+      "sprite_base": "coin_locker_row3",
+      "col": 12,
+      "row": 22,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        352,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 22,
+          "name": "coin_locker_row3_tl"
+        },
+        {
+          "col": 13,
+          "row": 22,
+          "name": "coin_locker_row3_tr"
+        },
+        {
+          "col": 14,
+          "row": 22,
+          "name": "coin_locker_row3_bl"
+        },
+        {
+          "col": 15,
+          "row": 22,
+          "name": "coin_locker_row3_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row4",
+      "sprite_base": "coin_locker_row4",
+      "col": 12,
+      "row": 23,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        368,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 23,
+          "name": "coin_locker_row4_tl"
+        },
+        {
+          "col": 13,
+          "row": 23,
+          "name": "coin_locker_row4_tr"
+        },
+        {
+          "col": 14,
+          "row": 23,
+          "name": "coin_locker_row4_bl"
+        },
+        {
+          "col": 15,
+          "row": 23,
+          "name": "coin_locker_row4_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row5",
+      "sprite_base": "coin_locker_row5",
+      "col": 12,
+      "row": 24,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        384,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 24,
+          "name": "coin_locker_row5_tl"
+        },
+        {
+          "col": 13,
+          "row": 24,
+          "name": "coin_locker_row5_tr"
+        },
+        {
+          "col": 14,
+          "row": 24,
+          "name": "coin_locker_row5_bl"
+        },
+        {
+          "col": 15,
+          "row": 24,
+          "name": "coin_locker_row5_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row6",
+      "sprite_base": "coin_locker_row6",
+      "col": 12,
+      "row": 25,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        400,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 25,
+          "name": "coin_locker_row6_tl"
+        },
+        {
+          "col": 13,
+          "row": 25,
+          "name": "coin_locker_row6_tr"
+        },
+        {
+          "col": 14,
+          "row": 25,
+          "name": "coin_locker_row6_bl"
+        },
+        {
+          "col": 15,
+          "row": 25,
+          "name": "coin_locker_row6_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row7",
+      "sprite_base": "coin_locker_row7",
+      "col": 12,
+      "row": 26,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        416,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 26,
+          "name": "coin_locker_row7_tl"
+        },
+        {
+          "col": 13,
+          "row": 26,
+          "name": "coin_locker_row7_tr"
+        },
+        {
+          "col": 14,
+          "row": 26,
+          "name": "coin_locker_row7_bl"
+        },
+        {
+          "col": 15,
+          "row": 26,
+          "name": "coin_locker_row7_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row8",
+      "sprite_base": "coin_locker_row8",
+      "col": 12,
+      "row": 27,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        432,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 27,
+          "name": "coin_locker_row8_tl"
+        },
+        {
+          "col": 13,
+          "row": 27,
+          "name": "coin_locker_row8_tr"
+        },
+        {
+          "col": 14,
+          "row": 27,
+          "name": "coin_locker_row8_bl"
+        },
+        {
+          "col": 15,
+          "row": 27,
+          "name": "coin_locker_row8_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "japanese_building_exterior",
+      "sprite_base": "japanese_building_exterior",
+      "col": 0,
+      "row": 10,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        160,
+        64,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "building",
+        "exterior",
+        "japanese",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 10,
+          "name": "japanese_building_exterior_tl"
+        },
+        {
+          "col": 1,
+          "row": 10,
+          "name": "japanese_building_exterior_top"
+        },
+        {
+          "col": 2,
+          "row": 10,
+          "name": "japanese_building_exterior_tr"
+        },
+        {
+          "col": 3,
+          "row": 10,
+          "name": "japanese_building_exterior_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "japanese_building_row2",
+      "sprite_base": "japanese_building_row2",
+      "col": 0,
+      "row": 11,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        176,
+        64,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "building",
+        "exterior",
+        "japanese",
+        "architecture"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 11,
+          "name": "japanese_building_row2_left"
+        },
+        {
+          "col": 1,
+          "row": 11,
+          "name": "japanese_building_row2_center"
+        },
+        {
+          "col": 2,
+          "row": 11,
+          "name": "japanese_building_row2_right"
+        },
+        {
+          "col": 3,
+          "row": 11,
+          "name": "japanese_building_row2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "kotatsu_table",
+      "sprite_base": "kotatsu_table",
+      "col": 10,
+      "row": 5,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        80,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table",
+        "japanese",
+        "kotatsu",
+        "heated"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 5,
+          "name": "kotatsu_table_tl"
+        },
+        {
+          "col": 11,
+          "row": 5,
+          "name": "kotatsu_table_tr"
+        },
+        {
+          "col": 12,
+          "row": 5,
+          "name": "kotatsu_table_bl"
+        },
+        {
+          "col": 13,
+          "row": 5,
+          "name": "kotatsu_table_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "onsen_hot_tub",
+      "sprite_base": "onsen_hot_tub",
+      "col": 9,
+      "row": 7,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        112,
+        64,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "hot-tub",
+        "japanese",
+        "onsen",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 7,
+          "name": "onsen_hot_tub_tl"
+        },
+        {
+          "col": 10,
+          "row": 7,
+          "name": "onsen_hot_tub_tr"
+        },
+        {
+          "col": 11,
+          "row": 7,
+          "name": "onsen_hot_tub_bl"
+        },
+        {
+          "col": 12,
+          "row": 7,
+          "name": "onsen_hot_tub_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shelf_item",
+      "sprite_base": "shelf_item",
+      "col": 4,
+      "row": 15,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        240,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "japanese",
+        "storage",
+        "item"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 15,
+          "name": "shelf_item_tl"
+        },
+        {
+          "col": 5,
+          "row": 15,
+          "name": "shelf_item_tr"
+        },
+        {
+          "col": 6,
+          "row": 15,
+          "name": "shelf_item_bl"
+        },
+        {
+          "col": 7,
+          "row": 15,
+          "name": "shelf_item_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sink_gray",
+      "sprite_base": "sink_gray",
+      "col": 0,
+      "row": 19,
+      "w": 2,
+      "h": 2,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        304,
+        32,
+        32
+      ],
+      "category": "fixture",
+      "tags": [
+        "sink",
+        "gray",
+        "japanese",
+        "basin"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 19,
+          "name": "sink_gray_tl"
+        },
+        {
+          "col": 1,
+          "row": 19,
+          "name": "sink_gray_tr"
+        },
+        {
+          "col": 0,
+          "row": 20,
+          "name": "sink_gray_bl"
+        },
+        {
+          "col": 1,
+          "row": 20,
+          "name": "sink_gray_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_chest",
+      "sprite_base": "storage_chest",
+      "col": 8,
+      "row": 10,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        160,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "wood",
+        "storage",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 10,
+          "name": "storage_chest_tl"
+        },
+        {
+          "col": 9,
+          "row": 10,
+          "name": "storage_chest_tr"
+        },
+        {
+          "col": 10,
+          "row": 10,
+          "name": "storage_chest_bl"
+        },
+        {
+          "col": 11,
+          "row": 10,
+          "name": "storage_chest_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_2",
+      "sprite_base": "traditional_sofa_2",
+      "col": 6,
+      "row": 5,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        80,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "seating",
+        "japanese",
+        "brown",
+        "sofa"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 5,
+          "name": "traditional_sofa_2_tl"
+        },
+        {
+          "col": 7,
+          "row": 5,
+          "name": "traditional_sofa_2_tr"
+        },
+        {
+          "col": 8,
+          "row": 5,
+          "name": "traditional_sofa_2_bl"
+        },
+        {
+          "col": 9,
+          "row": 5,
+          "name": "traditional_sofa_2_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_orange",
+      "sprite_base": "traditional_sofa_orange",
+      "col": 12,
+      "row": 4,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        64,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "traditional",
+        "seating",
+        "sofa",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 4,
+          "name": "traditional_sofa_orange_tl"
+        },
+        {
+          "col": 13,
+          "row": 4,
+          "name": "traditional_sofa_orange_tr"
+        },
+        {
+          "col": 14,
+          "row": 4,
+          "name": "traditional_sofa_orange_bl"
+        },
+        {
+          "col": 15,
+          "row": 4,
+          "name": "traditional_sofa_orange_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_cabinet",
+      "sprite_base": "wooden_cabinet",
+      "col": 0,
+      "row": 15,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        240,
+        64,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "storage",
+        "japanese",
+        "wood",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 15,
+          "name": "wooden_cabinet_tl"
+        },
+        {
+          "col": 1,
+          "row": 15,
+          "name": "wooden_cabinet_tr"
+        },
+        {
+          "col": 2,
+          "row": 15,
+          "name": "wooden_cabinet_center_left"
+        },
+        {
+          "col": 3,
+          "row": 15,
+          "name": "wooden_cabinet_center_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor",
+      "sprite_base": "wooden_floor",
+      "col": 10,
+      "row": 18,
+      "w": 4,
+      "h": 1,
+      "tile_count": 4,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        288,
+        64,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 18,
+          "name": "wooden_floor_top_left"
+        },
+        {
+          "col": 11,
+          "row": 18,
+          "name": "wooden_floor_top_right"
+        },
+        {
+          "col": 12,
+          "row": 18,
+          "name": "wooden_floor_bottom_left"
+        },
+        {
+          "col": 13,
+          "row": 18,
+          "name": "wooden_floor_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_v1",
+      "sprite_base": "altar",
+      "col": 11,
+      "row": 14,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        224,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "japanese",
+        "seating",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 14,
+          "name": "altar_cushion_right"
+        },
+        {
+          "col": 12,
+          "row": 14,
+          "name": "altar_cushion_bl"
+        },
+        {
+          "col": 13,
+          "row": 14,
+          "name": "altar_cushion_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "checkered_bath_mat_v18",
+      "sprite_base": "checkered_bath_mat",
+      "col": 13,
+      "row": 7,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        112,
+        48,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "checkered",
+        "japanese",
+        "mat",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 7,
+          "name": "checkered_bath_mat_tl"
+        },
+        {
+          "col": 14,
+          "row": 7,
+          "name": "checkered_bath_mat_tr"
+        },
+        {
+          "col": 15,
+          "row": 7,
+          "name": "checkered_bath_mat_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_sofa_v44",
+      "sprite_base": "gray_sofa",
+      "col": 13,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        96,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "modern",
+        "gray",
+        "sofa",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 6,
+          "name": "gray_sofa_tl"
+        },
+        {
+          "col": 14,
+          "row": 6,
+          "name": "gray_sofa_tr"
+        },
+        {
+          "col": 15,
+          "row": 6,
+          "name": "gray_sofa_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "konro_grill",
+      "sprite_base": "konro_grill",
+      "col": 12,
+      "row": 9,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        144,
+        48,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "konro",
+        "grill",
+        "japanese",
+        "cooking"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 9,
+          "name": "konro_grill_tl"
+        },
+        {
+          "col": 13,
+          "row": 9,
+          "name": "konro_grill_tr"
+        },
+        {
+          "col": 14,
+          "row": 9,
+          "name": "konro_grill_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stone_lantern_v81",
+      "sprite_base": "stone_lantern",
+      "col": 13,
+      "row": 1,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        16,
+        48,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "light",
+        "stone",
+        "lantern",
+        "japanese",
+        "base"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 1,
+          "name": "stone_lantern_right"
+        },
+        {
+          "col": 14,
+          "row": 1,
+          "name": "stone_lantern_base_left"
+        },
+        {
+          "col": 15,
+          "row": 1,
+          "name": "stone_lantern_base_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_pink_bordered_v94",
+      "sprite_base": "tatami_pink_bordered",
+      "col": 0,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        48,
+        48,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "pink",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 3,
+          "name": "tatami_pink_bordered_bl"
+        },
+        {
+          "col": 1,
+          "row": 3,
+          "name": "tatami_pink_bordered_bottom"
+        },
+        {
+          "col": 2,
+          "row": 3,
+          "name": "tatami_pink_bordered_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_bench_v96",
+      "sprite_base": "traditional_bench",
+      "col": 3,
+      "row": 6,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        96,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "wood",
+        "bench",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 6,
+          "name": "traditional_bench_tl"
+        },
+        {
+          "col": 4,
+          "row": 6,
+          "name": "traditional_bench_top_center"
+        },
+        {
+          "col": 5,
+          "row": 6,
+          "name": "traditional_bench_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_v100",
+      "sprite_base": "traditional_sofa",
+      "col": 5,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        48,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "wood",
+        "sofa",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 3,
+          "name": "traditional_sofa_tl"
+        },
+        {
+          "col": 6,
+          "row": 3,
+          "name": "traditional_sofa_top_center"
+        },
+        {
+          "col": 7,
+          "row": 3,
+          "name": "traditional_sofa_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_v101",
+      "sprite_base": "traditional_sofa",
+      "col": 0,
+      "row": 4,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        64,
+        48,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "wood",
+        "sofa",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 4,
+          "name": "traditional_sofa_bl"
+        },
+        {
+          "col": 1,
+          "row": 4,
+          "name": "traditional_sofa_bottom_center"
+        },
+        {
+          "col": 2,
+          "row": 4,
+          "name": "traditional_sofa_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv",
+      "sprite_base": "tv",
+      "col": 12,
+      "row": 3,
+      "w": 3,
+      "h": 1,
+      "tile_count": 3,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        48,
+        48,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "monitor",
+        "tv",
+        "electronics",
+        "screen"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 3,
+          "name": "tv_monitor_left"
+        },
+        {
+          "col": 13,
+          "row": 3,
+          "name": "tv_monitor_center"
+        },
+        {
+          "col": 14,
+          "row": 3,
+          "name": "tv_monitor_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_totem_item",
+      "sprite_base": "altar_totem_item",
+      "col": 8,
+      "row": 13,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        208,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "decoration",
+        "japanese",
+        "item",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 13,
+          "name": "altar_totem_item_left"
+        },
+        {
+          "col": 9,
+          "row": 13,
+          "name": "altar_totem_item_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_totem_item_alt",
+      "sprite_base": "altar_totem_item_alt",
+      "col": 10,
+      "row": 13,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        208,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "decoration",
+        "japanese",
+        "item",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 13,
+          "name": "altar_totem_item_alt_left"
+        },
+        {
+          "col": 11,
+          "row": 13,
+          "name": "altar_totem_item_alt_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "altar_totem_item_alt2",
+      "sprite_base": "altar_totem_item_alt2",
+      "col": 12,
+      "row": 13,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        208,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "decoration",
+        "japanese",
+        "item",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 13,
+          "name": "altar_totem_item_alt2_left"
+        },
+        {
+          "col": 13,
+          "row": 13,
+          "name": "altar_totem_item_alt2_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "appliance_gray",
+      "sprite_base": "appliance_gray",
+      "col": 5,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        128,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "appliance",
+        "gray",
+        "storage",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 8,
+          "name": "appliance_gray_left"
+        },
+        {
+          "col": 6,
+          "row": 8,
+          "name": "appliance_gray_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "arch_window_v8",
+      "sprite_base": "arch_window",
+      "col": 10,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        48,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "white",
+        "arch",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 3,
+          "name": "arch_window_top_left"
+        },
+        {
+          "col": 11,
+          "row": 3,
+          "name": "arch_window_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "arch_window_v9",
+      "sprite_base": "arch_window",
+      "col": 5,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        64,
+        32,
+        16
+      ],
+      "category": "window",
+      "tags": [
+        "window",
+        "white",
+        "arch",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 4,
+          "name": "arch_window_bottom_left"
+        },
+        {
+          "col": 6,
+          "row": 4,
+          "name": "arch_window_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bath_tub_alt_v13",
+      "sprite_base": "bath_tub_alt",
+      "col": 6,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        288,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "gray",
+        "japanese",
+        "tub",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 18,
+          "name": "bath_tub_alt_tl"
+        },
+        {
+          "col": 7,
+          "row": 18,
+          "name": "bath_tub_alt_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bath_tub_alt_v14",
+      "sprite_base": "bath_tub_alt",
+      "col": 2,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        304,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "gray",
+        "japanese",
+        "tub",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 19,
+          "name": "bath_tub_alt_bl"
+        },
+        {
+          "col": 3,
+          "row": 19,
+          "name": "bath_tub_alt_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row10",
+      "sprite_base": "coin_locker_row10",
+      "col": 12,
+      "row": 29,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        464,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 29,
+          "name": "coin_locker_row10_tl"
+        },
+        {
+          "col": 13,
+          "row": 29,
+          "name": "coin_locker_row10_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "coin_locker_row9",
+      "sprite_base": "coin_locker_row9",
+      "col": 12,
+      "row": 28,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        448,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "locker",
+        "japanese",
+        "storage",
+        "coin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 28,
+          "name": "coin_locker_row9_tl"
+        },
+        {
+          "col": 13,
+          "row": 28,
+          "name": "coin_locker_row9_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "dishes_bowl",
+      "sprite_base": "dishes_bowl",
+      "col": 4,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        80,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "bowl",
+        "dishes",
+        "food",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 5,
+          "name": "dishes_bowl_left"
+        },
+        {
+          "col": 5,
+          "row": 5,
+          "name": "dishes_bowl_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_bed_v35",
+      "sprite_base": "futon_bed",
+      "col": 7,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        64,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "sleeping",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 4,
+          "name": "futon_bed_top_left"
+        },
+        {
+          "col": 8,
+          "row": 4,
+          "name": "futon_bed_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_bed_v36",
+      "sprite_base": "futon_bed",
+      "col": 0,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        80,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "sleeping",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 5,
+          "name": "futon_bed_bottom_left"
+        },
+        {
+          "col": 1,
+          "row": 5,
+          "name": "futon_bed_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_bed_with_v37",
+      "sprite_base": "futon_bed_with",
+      "col": 9,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        64,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "pillow",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 4,
+          "name": "futon_bed_with_pillow_tl"
+        },
+        {
+          "col": 10,
+          "row": 4,
+          "name": "futon_bed_with_pillow_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_bed_with_v38",
+      "sprite_base": "futon_bed_with",
+      "col": 2,
+      "row": 5,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        80,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "pillow",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 5,
+          "name": "futon_bed_with_pillow_bl"
+        },
+        {
+          "col": 3,
+          "row": 5,
+          "name": "futon_bed_with_pillow_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_blue_v39",
+      "sprite_base": "futon_blue",
+      "col": 1,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        256,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "blue",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 16,
+          "name": "futon_blue_top_left"
+        },
+        {
+          "col": 2,
+          "row": 16,
+          "name": "futon_blue_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "futon_blue_v40",
+      "sprite_base": "futon_blue",
+      "col": 8,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        256,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "futon",
+        "blue",
+        "bed",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 16,
+          "name": "futon_blue_bottom_left"
+        },
+        {
+          "col": 9,
+          "row": 16,
+          "name": "futon_blue_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "golden_figure",
+      "sprite_base": "golden_figure",
+      "col": 12,
+      "row": 17,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        272,
+        32,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "japanese",
+        "figure",
+        "decoration",
+        "golden"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 17,
+          "name": "golden_figure_left"
+        },
+        {
+          "col": 13,
+          "row": 17,
+          "name": "golden_figure_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "npc_soldier",
+      "sprite_base": "npc_soldier",
+      "col": 11,
+      "row": 16,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        256,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "soldier",
+        "japanese",
+        "npc",
+        "character"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 16,
+          "name": "npc_soldier_left"
+        },
+        {
+          "col": 12,
+          "row": 16,
+          "name": "npc_soldier_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "orange_car_v55",
+      "sprite_base": "orange_car",
+      "col": 5,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        112,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "car",
+        "orange",
+        "top-down",
+        "vehicle"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 7,
+          "name": "orange_car_top_left"
+        },
+        {
+          "col": 6,
+          "row": 7,
+          "name": "orange_car_top_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "orange_car_v56",
+      "sprite_base": "orange_car",
+      "col": 1,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        128,
+        32,
+        16
+      ],
+      "category": "other",
+      "tags": [
+        "car",
+        "orange",
+        "top-down",
+        "vehicle"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 8,
+          "name": "orange_car_bottom_left"
+        },
+        {
+          "col": 2,
+          "row": 8,
+          "name": "orange_car_bottom_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_v68",
+      "sprite_base": "shoji",
+      "col": 12,
+      "row": 10,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        160,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "shoji",
+        "sliding",
+        "door",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 10,
+          "name": "shoji_door_left"
+        },
+        {
+          "col": 13,
+          "row": 10,
+          "name": "shoji_door_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_v69",
+      "sprite_base": "shoji",
+      "col": 4,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        176,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "shoji",
+        "door",
+        "screen",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 11,
+          "name": "shoji_screen_door_tl"
+        },
+        {
+          "col": 5,
+          "row": 11,
+          "name": "shoji_screen_door_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_v70",
+      "sprite_base": "shoji",
+      "col": 8,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        176,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "shoji",
+        "door",
+        "screen",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 11,
+          "name": "shoji_screen_door_bl"
+        },
+        {
+          "col": 9,
+          "row": 11,
+          "name": "shoji_screen_door_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_double",
+      "sprite_base": "shoji_double",
+      "col": 10,
+      "row": 11,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        176,
+        32,
+        16
+      ],
+      "category": "door",
+      "tags": [
+        "shoji",
+        "door",
+        "double",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 11,
+          "name": "shoji_double_door_tl"
+        },
+        {
+          "col": 11,
+          "row": 11,
+          "name": "shoji_double_door_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_screen_grid",
+      "sprite_base": "shoji_screen_grid",
+      "col": 3,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        128,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "shoji",
+        "grid",
+        "screen",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 8,
+          "name": "shoji_screen_grid_tl"
+        },
+        {
+          "col": 4,
+          "row": 8,
+          "name": "shoji_screen_grid_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_screen_wall",
+      "sprite_base": "shoji_screen_wall",
+      "col": 1,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        16,
+        112,
+        32,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "shoji",
+        "wall",
+        "screen",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 1,
+          "row": 7,
+          "name": "shoji_screen_wall_tl"
+        },
+        {
+          "col": 2,
+          "row": 7,
+          "name": "shoji_screen_wall_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sink_basin",
+      "sprite_base": "sink_basin",
+      "col": 10,
+      "row": 12,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        192,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "sink",
+        "blue",
+        "japanese",
+        "basin"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 12,
+          "name": "sink_basin_tl"
+        },
+        {
+          "col": 11,
+          "row": 12,
+          "name": "sink_basin_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sink_basin_green",
+      "sprite_base": "sink_basin_green",
+      "col": 12,
+      "row": 12,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        192,
+        32,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "sink",
+        "green",
+        "japanese",
+        "basin"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 12,
+          "name": "sink_basin_green_tl"
+        },
+        {
+          "col": 13,
+          "row": 12,
+          "name": "sink_basin_green_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_appliance",
+      "sprite_base": "small_appliance",
+      "col": 7,
+      "row": 7,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        112,
+        32,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "appliance",
+        "white",
+        "small",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 7,
+          "name": "small_appliance_left"
+        },
+        {
+          "col": 8,
+          "row": 7,
+          "name": "small_appliance_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_unit_v84",
+      "sprite_base": "storage_unit",
+      "col": 12,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        304,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "storage",
+        "unit",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 19,
+          "name": "storage_unit_tl"
+        },
+        {
+          "col": 13,
+          "row": 19,
+          "name": "storage_unit_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_unit_small",
+      "sprite_base": "storage_unit_small",
+      "col": 14,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        304,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "small",
+        "storage",
+        "unit",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 19,
+          "name": "storage_unit_small_left"
+        },
+        {
+          "col": 15,
+          "row": 19,
+          "name": "storage_unit_small_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_dark_v89",
+      "sprite_base": "tatami_dark",
+      "col": 14,
+      "row": 0,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        0,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "tatami",
+        "mat",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 0,
+          "name": "tatami_dark_tl"
+        },
+        {
+          "col": 15,
+          "row": 0,
+          "name": "tatami_dark_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_green_bordered",
+      "sprite_base": "tatami_green_bordered",
+      "col": 3,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        48,
+        32,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "green",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 3,
+          "name": "tatami_green_bordered_tl"
+        },
+        {
+          "col": 4,
+          "row": 3,
+          "name": "tatami_green_bordered_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tool",
+      "sprite_base": "tool",
+      "col": 0,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        96,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "japanese",
+        "storage",
+        "tools"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 6,
+          "name": "tool_shelf_left"
+        },
+        {
+          "col": 1,
+          "row": 6,
+          "name": "tool_shelf_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_bench_v98",
+      "sprite_base": "traditional_bench",
+      "col": 11,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        96,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "wood",
+        "bench",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 6,
+          "name": "traditional_bench_bottom_center"
+        },
+        {
+          "col": 12,
+          "row": 6,
+          "name": "traditional_bench_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_bench_with_sword",
+      "sprite_base": "traditional_bench_with_sword",
+      "col": 6,
+      "row": 6,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        96,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "sword",
+        "japanese",
+        "bench",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 6,
+          "name": "traditional_bench_with_sword_tl"
+        },
+        {
+          "col": 7,
+          "row": 6,
+          "name": "traditional_bench_with_sword_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_with_plant_v104",
+      "sprite_base": "traditional_sofa_with_plant",
+      "col": 8,
+      "row": 3,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        48,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "plant",
+        "japanese",
+        "sofa",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 3,
+          "name": "traditional_sofa_with_plant_tl"
+        },
+        {
+          "col": 9,
+          "row": 3,
+          "name": "traditional_sofa_with_plant_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_sofa_with_plant_v105",
+      "sprite_base": "traditional_sofa_with_plant",
+      "col": 3,
+      "row": 4,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        64,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "plant",
+        "japanese",
+        "sofa",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 4,
+          "name": "traditional_sofa_with_plant_bl"
+        },
+        {
+          "col": 4,
+          "row": 4,
+          "name": "traditional_sofa_with_plant_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tree_dark_green_v106",
+      "sprite_base": "tree_dark_green",
+      "col": 13,
+      "row": 8,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        128,
+        32,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "tree",
+        "japanese",
+        "green",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 8,
+          "name": "tree_dark_green_tl"
+        },
+        {
+          "col": 14,
+          "row": 8,
+          "name": "tree_dark_green_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tree_dark_green_v107",
+      "sprite_base": "tree_dark_green",
+      "col": 0,
+      "row": 9,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        144,
+        32,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "tree",
+        "japanese",
+        "green",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 9,
+          "name": "tree_dark_green_bl"
+        },
+        {
+          "col": 1,
+          "row": 9,
+          "name": "tree_dark_green_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_hung_v110",
+      "sprite_base": "wall_hung",
+      "col": 14,
+      "row": 18,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        288,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "hung",
+        "wall",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 18,
+          "name": "wall_hung_shelf_tl"
+        },
+        {
+          "col": 15,
+          "row": 18,
+          "name": "wall_hung_shelf_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wall_hung_v111",
+      "sprite_base": "wall_hung",
+      "col": 10,
+      "row": 19,
+      "w": 2,
+      "h": 1,
+      "tile_count": 2,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        304,
+        32,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "hung",
+        "wall",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 19,
+          "name": "wall_hung_shelf_bl"
+        },
+        {
+          "col": 11,
+          "row": 19,
+          "name": "wall_hung_shelf_br"
+        }
+      ]
+    }
+  ],
+  "single_tiles": [
+    {
+      "sprite_name": "altar_v0",
+      "sprite_base": "altar",
+      "col": 14,
+      "row": 13,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        208,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "cushion",
+        "japanese",
+        "seating",
+        "altar"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 13,
+          "name": "altar_cushion_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "bonsai_plant",
+      "sprite_base": "bonsai_plant",
+      "col": 4,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        112,
+        16,
+        16
+      ],
+      "category": "plant",
+      "tags": [
+        "plant",
+        "japanese",
+        "decoration",
+        "bonsai"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 7,
+          "name": "bonsai_plant"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_with_bowls_v16",
+      "sprite_base": "cabinet_with_bowls",
+      "col": 8,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        192,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "bowls",
+        "japanese",
+        "storage",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 12,
+          "name": "cabinet_with_bowls_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "cabinet_with_bowls_v17",
+      "sprite_base": "cabinet_with_bowls",
+      "col": 14,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "bowls",
+        "japanese",
+        "storage",
+        "cabinet"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 14,
+          "name": "cabinet_with_bowls_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "checkered_bath_mat_v19",
+      "sprite_base": "checkered_bath_mat",
+      "col": 0,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        128,
+        16,
+        16
+      ],
+      "category": "rug",
+      "tags": [
+        "checkered",
+        "japanese",
+        "mat",
+        "bath"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 8,
+          "name": "checkered_bath_mat_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "fireplace_front",
+      "sprite_base": "fireplace_front",
+      "col": 7,
+      "row": 8,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        128,
+        16,
+        16
+      ],
+      "category": "fixture",
+      "tags": [
+        "fire",
+        "heat",
+        "fireplace",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 8,
+          "name": "fireplace_front"
+        }
+      ]
+    },
+    {
+      "sprite_name": "flower_painting_v32",
+      "sprite_base": "flower_painting",
+      "col": 11,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        240,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "flower",
+        "painting",
+        "japanese",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 15,
+          "name": "flower_painting_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "flower_painting_v33",
+      "sprite_base": "flower_painting",
+      "col": 5,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        256,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "flower",
+        "painting",
+        "japanese",
+        "art"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 16,
+          "name": "flower_painting_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "flower_painting_alt",
+      "sprite_base": "flower_painting_alt",
+      "col": 8,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "flower",
+        "painting",
+        "japanese",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 17,
+          "name": "flower_painting_alt_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "gray_sofa_v45",
+      "sprite_base": "gray_sofa",
+      "col": 0,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        0,
+        112,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "modern",
+        "gray",
+        "sofa",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 0,
+          "row": 7,
+          "name": "gray_sofa_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "green_tatami_bordered_v46",
+      "sprite_base": "green_tatami_bordered",
+      "col": 13,
+      "row": 11,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        176,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "green",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 11,
+          "name": "green_tatami_bordered_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "green_tatami_bordered_v48",
+      "sprite_base": "green_tatami_bordered",
+      "col": 14,
+      "row": 12,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        192,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "green",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 12,
+          "name": "green_tatami_bordered_br"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_corner_brush_stroke",
+      "sprite_base": "red_corner_brush_stroke",
+      "col": 12,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        240,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "stroke",
+        "brush",
+        "red",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 15,
+          "name": "red_corner_brush_stroke"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_corner_line",
+      "sprite_base": "red_corner_line",
+      "col": 9,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        272,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "red",
+        "corner",
+        "line",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 17,
+          "name": "red_corner_line"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_pole",
+      "sprite_base": "red_pole",
+      "col": 3,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pole",
+        "base",
+        "red",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 20,
+          "name": "red_pole_base"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_vertical_pole_corner",
+      "sprite_base": "red_vertical_pole_corner",
+      "col": 9,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        144,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pole",
+        "corner",
+        "red",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 9,
+          "row": 18,
+          "name": "red_vertical_pole_corner"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_vertical_pole_straight",
+      "sprite_base": "red_vertical_pole_straight",
+      "col": 5,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "pole",
+        "japanese",
+        "straight",
+        "red"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 19,
+          "name": "red_vertical_pole_straight"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_vertical_stripe_v62",
+      "sprite_base": "red_vertical_stripe",
+      "col": 13,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        208,
+        240,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "wall",
+        "stripe",
+        "red",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 13,
+          "row": 15,
+          "name": "red_vertical_stripe_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "red_vertical_stripe_v63",
+      "sprite_base": "red_vertical_stripe",
+      "col": 6,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        256,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "wall",
+        "stripe",
+        "red",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 16,
+          "name": "red_vertical_stripe_right"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sakura_painting_v64",
+      "sprite_base": "sakura_painting",
+      "col": 8,
+      "row": 18,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        288,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cherry",
+        "painting",
+        "japanese",
+        "sakura"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 18,
+          "name": "sakura_painting_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sakura_painting_v65",
+      "sprite_base": "sakura_painting",
+      "col": 4,
+      "row": 19,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        304,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cherry",
+        "painting",
+        "japanese",
+        "sakura"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 19,
+          "name": "sakura_painting_tr"
+        }
+      ]
+    },
+    {
+      "sprite_name": "sakura_painting_v66",
+      "sprite_base": "sakura_painting",
+      "col": 2,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        320,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "cherry",
+        "painting",
+        "japanese",
+        "sakura"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 20,
+          "name": "sakura_painting_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "shoji_curtain",
+      "sprite_base": "shoji_curtain",
+      "col": 3,
+      "row": 7,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        112,
+        16,
+        16
+      ],
+      "category": "wall",
+      "tags": [
+        "shoji",
+        "curtain",
+        "japanese",
+        "window"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 7,
+          "name": "shoji_curtain_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "small_orange_table",
+      "sprite_base": "small_orange_table",
+      "col": 11,
+      "row": 4,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        176,
+        64,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "table",
+        "japanese",
+        "low",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 11,
+          "row": 4,
+          "name": "small_orange_table"
+        }
+      ]
+    },
+    {
+      "sprite_name": "stone_lantern_v80",
+      "sprite_base": "stone_lantern",
+      "col": 3,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        16,
+        16,
+        16
+      ],
+      "category": "decoration",
+      "tags": [
+        "lantern",
+        "light",
+        "stone",
+        "japanese"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 1,
+          "name": "stone_lantern_left"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_chest_b",
+      "sprite_base": "storage_chest_b",
+      "col": 8,
+      "row": 14,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        224,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "chest",
+        "wood",
+        "storage",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 14,
+          "name": "storage_chest_b_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "storage_unit_v85",
+      "sprite_base": "storage_unit",
+      "col": 7,
+      "row": 20,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        320,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "storage",
+        "unit",
+        "dark"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 20,
+          "name": "storage_unit_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tatami_bordered_v87",
+      "sprite_base": "tatami_bordered",
+      "col": 12,
+      "row": 1,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        192,
+        16,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "bordered",
+        "tatami",
+        "japanese",
+        "floor"
+      ],
+      "tiles": [
+        {
+          "col": 12,
+          "row": 1,
+          "name": "tatami_bordered_tl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "traditional_bench_v97",
+      "sprite_base": "traditional_bench",
+      "col": 8,
+      "row": 6,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        128,
+        96,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "japanese",
+        "wood",
+        "bench",
+        "orange"
+      ],
+      "tiles": [
+        {
+          "col": 8,
+          "row": 6,
+          "name": "traditional_bench_bl"
+        }
+      ]
+    },
+    {
+      "sprite_name": "tv_monitor_small",
+      "sprite_base": "tv_monitor_small",
+      "col": 15,
+      "row": 3,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        48,
+        16,
+        16
+      ],
+      "category": "appliance",
+      "tags": [
+        "monitor",
+        "tv",
+        "electronics",
+        "small"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 3,
+          "name": "tv_monitor_small"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_v112",
+      "sprite_base": "wooden",
+      "col": 14,
+      "row": 15,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        224,
+        240,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "storage",
+        "wood",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 14,
+          "row": 15,
+          "name": "wooden_shelf_top"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_v113",
+      "sprite_base": "wooden",
+      "col": 10,
+      "row": 16,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        160,
+        256,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "storage",
+        "wood",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 10,
+          "row": 16,
+          "name": "wooden_shelf_bottom"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_a",
+      "sprite_base": "wooden_floor_plank_a",
+      "col": 2,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        32,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 2,
+          "row": 9,
+          "name": "wooden_floor_plank_a"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_b",
+      "sprite_base": "wooden_floor_plank_b",
+      "col": 3,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        48,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 3,
+          "row": 9,
+          "name": "wooden_floor_plank_b"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_c",
+      "sprite_base": "wooden_floor_plank_c",
+      "col": 4,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        64,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 4,
+          "row": 9,
+          "name": "wooden_floor_plank_c"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_d",
+      "sprite_base": "wooden_floor_plank_d",
+      "col": 5,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        80,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 5,
+          "row": 9,
+          "name": "wooden_floor_plank_d"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_e",
+      "sprite_base": "wooden_floor_plank_e",
+      "col": 6,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        96,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 6,
+          "row": 9,
+          "name": "wooden_floor_plank_e"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_floor_plank_f",
+      "sprite_base": "wooden_floor_plank_f",
+      "col": 7,
+      "row": 9,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        112,
+        144,
+        16,
+        16
+      ],
+      "category": "floor",
+      "tags": [
+        "floor",
+        "plank",
+        "japanese",
+        "wood"
+      ],
+      "tiles": [
+        {
+          "col": 7,
+          "row": 9,
+          "name": "wooden_floor_plank_f"
+        }
+      ]
+    },
+    {
+      "sprite_name": "wooden_shelf_side",
+      "sprite_base": "wooden_shelf_side",
+      "col": 15,
+      "row": 17,
+      "w": 1,
+      "h": 1,
+      "tile_count": 1,
+      "density": 1.0,
+      "px_rect": [
+        240,
+        272,
+        16,
+        16
+      ],
+      "category": "furniture",
+      "tags": [
+        "shelf",
+        "side",
+        "wood",
+        "brown"
+      ],
+      "tiles": [
+        {
+          "col": 15,
+          "row": 17,
+          "name": "wooden_shelf_side"
+        }
+      ]
+    }
+  ]
+}

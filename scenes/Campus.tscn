@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://campus_001"]
+
+[ext_resource type="Script" path="res://scripts/world/Campus.gd" id="1_campus_script"]
+[ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="2_hud"]
+
+[node name="Campus" type="Node2D"]
+script = ExtResource("1_campus_script")
+
+[node name="HUDLayer" type="CanvasLayer" parent="."]
+script = ExtResource("2_hud")

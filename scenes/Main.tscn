@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://main_001"]
+
+[ext_resource type="PackedScene" path="res://scenes/Office.tscn" id="1_officescene"]
+[ext_resource type="Script" path="res://scripts/ui/HUD.gd" id="2_hud"]
+
+[node name="Main" type="Node"]
+
+[node name="Office" parent="." instance=ExtResource("1_officescene")]
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("2_hud")

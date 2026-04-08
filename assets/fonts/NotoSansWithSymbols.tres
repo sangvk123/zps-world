@@ -1,0 +1,8 @@
+[gd_resource type="FontFile" format=3]
+
+[sub_resource type="FontFile" id="symbols"]
+font_path = "res://assets/fonts/NotoSansSymbols-Regular.ttf"
+
+[resource]
+font_path = "res://assets/fonts/NotoSans-Regular.ttf"
+fallbacks = [SubResource("symbols")]
