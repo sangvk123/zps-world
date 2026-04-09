@@ -28,7 +28,7 @@ async function bootstrap(): Promise<void> {
   app.enableCors({
     origin: [...defaultOrigins, ...extraOrigins],
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'bypass-tunnel-reminder'],
   });
 
   // Validate all incoming request bodies automatically

@@ -12,7 +12,7 @@ extends Node
 signal response_received(endpoint: String, data: Variant)
 signal error(endpoint: String, message: String)
 
-var base_url: String = "http://localhost:3000"
+var base_url: String = "https://zps-world-production.up.railway.app"
 var jwt_token: String = ""
 
 # Tracks which HTTPRequest node maps to which endpoint so we can route responses

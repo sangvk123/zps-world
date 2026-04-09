@@ -16,7 +16,7 @@ signal emote_received(from_id: String, emote: String)
 signal status_changed(id: String, status: String, message: String)
 
 # ── Config ──
-var server_url: String = "ws://localhost:3001"
+var server_url: String = "wss://accurate-forgiveness-production.up.railway.app"
 var _ws: WebSocketPeer = null
 var _connected: bool = false
 var _send_interval: float = 0.05   # 50ms
