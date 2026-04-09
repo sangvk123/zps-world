@@ -1,6 +1,7 @@
 ## LoginDialog.gd
 ## Full-screen login overlay — shown at startup when not logged in.
-## POST /auth/login với {domain, password} → PlayerData.apply_login_data() → tự xóa.
+## - Desktop / native: Godot UI (LineEdit + Button)
+## - Web platform: HTML native input overlay (mobile keyboard support)
 
 extends Control
 class_name LoginDialog
@@ -10,22 +11,61 @@ var _password_field: LineEdit = null
 var _error_label: Label = null
 var _login_btn: Button = null
 var _loading: bool = false
+var _use_html: bool = false   # true on web — uses HTML overlay instead of Godot UI
 
 func _ready() -> void:
-	# Force fill the whole viewport — CanvasLayer children don't auto-size
 	var vp := get_viewport()
 	if vp:
 		var vr := vp.get_visible_rect()
 		position = vr.position
 		size = vr.size
 	mouse_filter = Control.MOUSE_FILTER_STOP
+
+	# On mobile web: use HTML native form so mobile keyboards work reliably
+	# Desktop web keeps the Godot UI; native platforms always use Godot UI
+	if OS.has_feature("web") and _is_mobile_web():
+		_use_html = true
+		_show_html_form()
+		set_process(true)
+		return
+
+	# Native / desktop
 	_build_ui()
-	# Pre-fill domain từ session trước
 	if PlayerData.zps_callsign != "":
 		_domain_field.text = PlayerData.zps_callsign
 		_password_field.grab_focus()
 	else:
 		_domain_field.grab_focus()
+
+# ── Web: show HTML overlay via JavaScriptBridge ──────────────────────────────
+static func _is_mobile_web() -> bool:
+	# Check viewport width AND touch support via JS
+	var w = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
+	if w is float and (w as float) < 900.0:
+		return true
+	# Also detect touch-primary devices regardless of width
+	var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+	return has_touch == true
+
+func _show_html_form() -> void:
+	var api_url  := HttpManager.base_url
+	var pre_fill := PlayerData.zps_callsign.replace("'", "")
+	JavaScriptBridge.eval(
+		"if(window.zpsShowLogin){window.zpsShowLogin('" + api_url + "','" + pre_fill + "');}"
+	)
+
+func _process(_delta: float) -> void:
+	if not _use_html:
+		return
+	var res = JavaScriptBridge.eval("window._zpsLoginResult||''")
+	if res is String and (res as String) != "":
+		JavaScriptBridge.eval("window._zpsLoginResult=null;")
+		var data = JSON.parse_string(res as String)
+		if data is Dictionary and (data as Dictionary).has("access_token"):
+			var d := data as Dictionary
+			PlayerData.apply_login_data(d.get("access_token", ""), d.get("employee", {}))
+			JavaScriptBridge.eval("if(window.zpsHideLogin)window.zpsHideLogin();")
+			queue_free()
 
 func _build_ui() -> void:
 	# Get viewport size — used for absolute positioning (anchors don't work

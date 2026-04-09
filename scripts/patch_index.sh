@@ -136,6 +136,65 @@ def inject_bar(m):
 if 'zpsBar' not in html:
     html = PROGRESS_PAT.sub(inject_bar, html, count=1)
 
+# 4. Inject HTML mobile login overlay (before </body>)
+if 'zps-login-overlay' not in html:
+    LOGIN_HTML = r"""
+	<!-- ZPS World HTML Login Overlay — mobile-friendly native inputs -->
+	<div id="zps-login-overlay" style="display:none;position:fixed;inset:0;z-index:9999;background:#09090f;align-items:center;justify-content:center;font-family:'Segoe UI','Noto Sans',Arial,sans-serif;">
+		<div style="background:#0d0d1a;border:1px solid rgba(232,201,122,0.45);border-radius:14px;padding:32px 28px;width:min(400px,92vw);box-sizing:border-box;display:flex;flex-direction:column;gap:14px;">
+			<h2 style="color:#e8c97a;text-align:center;margin:0;font-size:1.55rem;letter-spacing:0.1em;">ZPS World</h2>
+			<p style="color:#7777aa;text-align:center;margin:0;font-size:0.85rem;">Đăng nhập bằng domain nội bộ</p>
+			<div style="width:100%;height:1px;background:rgba(255,255,255,0.08);"></div>
+			<label style="color:#aab0cc;font-size:0.83rem;margin-bottom:-8px;">Domain / Callsign</label>
+			<input id="zps-domain" type="text" placeholder="vd: sangvk, hieupt"
+				autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false"
+				style="width:100%;box-sizing:border-box;background:#0a0a18;border:1px solid #2a2a4a;border-radius:8px;color:#e0e0f0;font-size:1.05rem;padding:14px 14px;outline:none;-webkit-tap-highlight-color:transparent;-webkit-appearance:none;">
+			<label style="color:#aab0cc;font-size:0.83rem;margin-bottom:-8px;">Mật khẩu</label>
+			<input id="zps-password" type="password" placeholder="••••••••"
+				autocomplete="current-password"
+				style="width:100%;box-sizing:border-box;background:#0a0a18;border:1px solid #2a2a4a;border-radius:8px;color:#e0e0f0;font-size:1.05rem;padding:14px 14px;outline:none;-webkit-tap-highlight-color:transparent;-webkit-appearance:none;">
+			<div id="zps-login-err" style="color:#f07878;font-size:0.82rem;text-align:center;min-height:18px;display:none;"></div>
+			<button id="zps-login-btn"
+				style="width:100%;padding:16px;background:#1a3e78;border:none;border-radius:8px;color:#fff;font-size:1.05rem;font-family:inherit;font-weight:600;cursor:pointer;letter-spacing:0.04em;-webkit-tap-highlight-color:transparent;touch-action:manipulation;margin-top:4px;">
+				Vào ZPS World
+			</button>
+		</div>
+	</div>
+	<script>
+	(function(){
+		var overlay=document.getElementById('zps-login-overlay');
+		var domainIn=document.getElementById('zps-domain');
+		var passIn=document.getElementById('zps-password');
+		var errDiv=document.getElementById('zps-login-err');
+		var btn=document.getElementById('zps-login-btn');
+		var _api='';
+		window.zpsShowLogin=function(apiBase,preFill){
+			_api=apiBase||'';
+			if(preFill)domainIn.value=preFill;
+			overlay.style.display='flex';
+			setTimeout(function(){(preFill?passIn:domainIn).focus();},200);
+		};
+		window.zpsHideLogin=function(){overlay.style.display='none';};
+		function showErr(m){errDiv.textContent=m;errDiv.style.display='block';}
+		async function doLogin(){
+			var d=domainIn.value.trim(),p=passIn.value;
+			if(!d||!p){showErr('Vui lòng nhập đầy đủ domain và mật khẩu.');return;}
+			btn.textContent='Đang đăng nhập…';btn.disabled=true;errDiv.style.display='none';
+			try{
+				var r=await fetch(_api+'/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({domain:d,password:p})});
+				var data=await r.json();
+				if(data.access_token){window._zpsLoginResult=JSON.stringify(data);}
+				else{showErr(data.error||'Domain hoặc mật khẩu không đúng.');}
+			}catch(e){showErr('Không kết nối được server API.');}
+			btn.textContent='Vào ZPS World';btn.disabled=false;
+		}
+		btn.addEventListener('click',doLogin);
+		passIn.addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
+		domainIn.addEventListener('keydown',function(e){if(e.key==='Enter')passIn.focus();});
+	})();
+	</script>"""
+    html = html.replace('</body>', LOGIN_HTML + '\n\t</body>')
+
 html_path.write_text(html, encoding="utf-8")
 print("✓ index.html patched with ZPS World loading screen")
 PYEOF
