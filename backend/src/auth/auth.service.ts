@@ -8,6 +8,7 @@ export interface EmployeeProfile {
   name: string;
   department: string;
   title: string;
+  nameplate_title: string;
   zps_class: string;
   char_id: number;
   is_online: boolean;
@@ -22,6 +23,7 @@ interface AccountEntry {
   name: string;
   department: string;
   title: string;
+  nameplate_title?: string;
   zps_class: string;
   char_id: number;
 }
@@ -57,12 +59,14 @@ function accountToProfile(acc: AccountEntry): EmployeeProfile {
   const deptOutfit: Record<string, string> = {
     Engineering: 'work_casual', Design: 'creative', Product: 'formal',
     HR: 'work_casual', Data: 'work_casual', Marketing: 'creative',
+    'Game Design': 'creative', Multimedia: 'creative',
   };
   return {
     id: acc.id,
     name: acc.name,
     department: acc.department,
     title: acc.title,
+    nameplate_title: acc.nameplate_title ?? acc.title,
     zps_class: acc.zps_class ?? 'artisan',
     char_id: acc.char_id ?? 0,
     is_online: true,
@@ -113,11 +117,13 @@ function buildNpcEmployees(): Record<string, EmployeeProfile> {
     const isMale = rand() < 0.4;
     const first = isMale ? pick(maleFirst, rand()) : pick(femaleFirst, rand());
     const dept = pick(depts, rand());
+    const npcTitle = pick(deptTitles[dept], rand());
     npcs[id] = {
       id,
       name: `${pick(lastNames, rand())} ${first}`,
       department: dept,
-      title: pick(deptTitles[dept], rand()),
+      title: npcTitle,
+      nameplate_title: npcTitle,
       zps_class: deptClass[dept],
       char_id: Math.floor(rand() * 60) + 1,
       is_online: rand() < 0.7,

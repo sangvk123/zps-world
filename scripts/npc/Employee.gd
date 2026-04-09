@@ -165,7 +165,12 @@ func _build_visuals() -> void:
 	_nav_agent.name = "NavAgent"
 	_nav_agent.path_desired_distance = 4.0
 	_nav_agent.target_desired_distance = 4.0
-	_nav_agent.radius = 6.0
+	_nav_agent.radius = 7.0
+	# ORCA avoidance — ngăn NPC xếp chồng lên nhau
+	_nav_agent.avoidance_enabled  = true
+	_nav_agent.neighbor_distance  = 30.0
+	_nav_agent.max_neighbors      = 8
+	_nav_agent.time_horizon_agents = 0.5
 	add_child(_nav_agent)
 
 # ─────────────────────────────────────────────
@@ -313,10 +318,20 @@ func nav_move_toward(target: Vector2, arrive_dist: float = 5.0) -> bool:
 				# Dùng intended direction để facing — không bị ảnh hưởng bởi collision deflection
 				update_npc_facing(intended_dir)
 				return false
+
 		# No path yet / path finished / zero-length nav step → move directly
-		var intended_dir := direct_dir * wander_speed
+		# Thêm lateral jitter để tránh nhiều NPC cùng đi vào 1 điểm trên tường
+		var jitter_angle := (randf() - 0.5) * 0.8  # ±0.4 radian (~±23°)
+		var jittered_dir := direct_dir.rotated(jitter_angle)
+		var intended_dir := jittered_dir * wander_speed
 		velocity = intended_dir
 		move_and_slide()
+		# Wall-hit detection: nếu velocity sau slide nhỏ hơn nhiều so với intended → đang bị cản
+		# Thêm perpendicular push để NPC thoát khỏi tường
+		if velocity.length() < wander_speed * 0.25:
+			var perp := direct_dir.rotated(PI * 0.5 * sign(randf() - 0.5))
+			velocity = perp * wander_speed * 0.7
+			move_and_slide()
 		update_npc_facing(intended_dir)
 	else:
 		var intended_dir := direct_dir * wander_speed

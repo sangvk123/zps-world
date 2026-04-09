@@ -15,6 +15,7 @@ var player_id: String = ""
 var display_name: String = ""
 var department: String = ""
 var hr_title: String = ""
+var nameplate_title: String = ""
 var zps_callsign: String = ""
 var zps_class: String = "artisan"
 
@@ -208,6 +209,7 @@ func save_data() -> void:
 	config.set_value("identity", "display_name", display_name)
 	config.set_value("identity", "department", department)
 	config.set_value("identity", "hr_title", hr_title)
+	config.set_value("identity", "nameplate_title", nameplate_title)
 	config.set_value("identity", "zps_callsign", zps_callsign)
 	config.set_value("identity", "zps_class", zps_class)
 	config.set_value("auth", "jwt_token", jwt_token_cached)
@@ -238,6 +240,7 @@ func load_data() -> void:
 	display_name = config.get_value("identity", "display_name", display_name)
 	department = config.get_value("identity", "department", department)
 	hr_title = config.get_value("identity", "hr_title", hr_title)
+	nameplate_title = config.get_value("identity", "nameplate_title", hr_title)
 	zps_callsign = config.get_value("identity", "zps_callsign", zps_callsign)
 	zps_class = config.get_value("identity", "zps_class", zps_class)
 	jwt_token_cached = config.get_value("auth", "jwt_token", "")
@@ -272,7 +275,8 @@ func apply_login_data(token: String, emp: Dictionary) -> void:
 	player_id    = emp.get("id",         "unknown")
 	display_name = emp.get("name",        "")
 	department   = emp.get("department",  "")
-	hr_title     = emp.get("title",       "")
+	hr_title         = emp.get("title",           "")
+	nameplate_title  = emp.get("nameplate_title", hr_title)
 	zps_class    = emp.get("zps_class",   "artisan")
 	zps_callsign = emp.get("id",          player_id)
 	var char_id: int = emp.get("char_id", 0)

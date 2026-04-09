@@ -142,7 +142,7 @@ func _ready() -> void:
 		var dialog := LoginDialog.new()
 		add_child(dialog)
 		# Update player card after login completes
-		PlayerData.login_complete.connect(func(): _update_player_card(), CONNECT_ONE_SHOT)
+		PlayerData.login_complete.connect(func(): _update_player_card())
 
 # ─────────────────────────────────────────────
 # Build all UI programmatically

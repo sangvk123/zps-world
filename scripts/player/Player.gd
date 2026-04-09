@@ -35,6 +35,8 @@ func _ready() -> void:
 	_build_visuals()
 	_build_interaction_area()
 	NetworkManager.chat_received.connect(_on_chat_received_bubble)
+	# Refresh nameplate whenever a (re-)login completes
+	PlayerData.login_complete.connect(_refresh_nameplate)
 	# Connect to multiplayer server only after login is complete
 	if PlayerData.is_logged_in:
 		_connect_to_server()
@@ -95,7 +97,7 @@ func _build_visuals() -> void:
 	# Title label (golden, căn giữa)
 	var title_lbl := Label.new()
 	title_lbl.name = "TitleLabel"
-	title_lbl.text = PlayerData.hr_title
+	title_lbl.text = PlayerData.nameplate_title
 	title_lbl.add_theme_font_size_override("font_size", 7)
 	title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title_lbl.custom_minimum_size = Vector2(80, 0)
@@ -371,6 +373,15 @@ func say(text: String, duration: float = 4.0) -> void:
 	get_tree().create_timer(duration).timeout.connect(
 		func(): if is_instance_valid(bubble): bubble.queue_free()
 	)
+
+func _refresh_nameplate() -> void:
+	if nameplate:
+		var _dn := PlayerData.display_name
+		var _sep := _dn.find(" - ")
+		nameplate.text = _dn.left(_sep) if _sep > 0 else _dn
+	var title_node := get_node_or_null("TitleLabel") as Label
+	if title_node:
+		title_node.text = PlayerData.nameplate_title
 
 func _on_chat_received_bubble(from_id: String, text: String, _ts: int) -> void:
 	if from_id == PlayerData.player_id:
