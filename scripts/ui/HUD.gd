@@ -137,12 +137,13 @@ func _ready() -> void:
 	add_child(_chat_log_node)
 	NetworkManager.emote_received.connect(_on_emote_toast)
 
+	# Always refresh UI on (re-)login — covers both first-login and logout→re-login
+	PlayerData.login_complete.connect(_on_login_complete_refresh_ui)
+
 	# ── Login dialog — shown on top of everything if not yet logged in ──
 	if not PlayerData.is_logged_in:
 		var dialog := LoginDialog.new()
 		add_child(dialog)
-		# Update player card after login completes
-		PlayerData.login_complete.connect(func(): _update_player_card())
 
 # ─────────────────────────────────────────────
 # Build all UI programmatically
@@ -1916,6 +1917,13 @@ func close_interaction_dialog() -> void:
 # ─────────────────────────────────────────────
 # Player card update
 # ─────────────────────────────────────────────
+func _on_login_complete_refresh_ui() -> void:
+	_update_player_card()
+	# Destroy profile panel so it rebuilds with fresh account data on next open
+	if _char_profile_panel != null:
+		_char_profile_panel.queue_free()
+		_char_profile_panel = null
+
 func _update_player_card() -> void:
 	if pc_name == null: return
 	# Outside: show only domain name (part before " - " if present)
@@ -2391,12 +2399,10 @@ func _cp_section_sep() -> Control:
 	return sep
 
 func _toggle_char_profile() -> void:
-	if _char_profile_panel == null: return
+	# Rebuild if destroyed by re-login refresh
+	if _char_profile_panel == null:
+		_build_char_profile_panel()
 	_char_profile_panel.visible = not _char_profile_panel.visible
-	# Refresh name in case PlayerData changed
-	if _char_profile_panel.visible:
-		var p := _char_profile_panel.get_node_or_null("Panel/VBoxContainer/HBoxContainer/PanelContainer/VBoxContainer/ProfileName")
-		if p and p is Label: p.text = PlayerData.display_name
 	if current_player_ref:
 		current_player_ref.set_busy(_char_profile_panel.visible)
 
