@@ -138,7 +138,7 @@ func _ready() -> void:
 
 	# ── Login dialog — shown on top of everything if not yet logged in ──
 	if not PlayerData.is_logged_in:
-		var dialog := load("res://scripts/ui/LoginDialog.gd").new()
+		var dialog: Control = load("res://scripts/ui/LoginDialog.gd").new()
 		add_child(dialog)
 		# Update player card after login completes
 		PlayerData.login_complete.connect(func(): _update_player_card(), CONNECT_ONE_SHOT)
