@@ -191,6 +191,16 @@ func update_desk_layout(layout: Array) -> void:
 	if not HttpManager.jwt_token.is_empty():
 		HttpManager.post("players/me/desk", {"desk_layout": desk_decorations})
 
+## Xóa session hiện tại — gọi từ nút Đăng xuất trong Player Profile
+func logout() -> void:
+	is_logged_in = false
+	jwt_token_cached = ""
+	HttpManager.jwt_token = ""
+	var config := ConfigFile.new()
+	config.load(SAVE_PATH)
+	config.set_value("auth", "jwt_token", "")
+	config.save(SAVE_PATH)
+
 # ── Persistence ──
 func save_data() -> void:
 	var config = ConfigFile.new()

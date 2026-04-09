@@ -41,6 +41,7 @@ var current_player_ref: Node = null
 
 # ── Char-profile panel ──
 var _char_profile_panel: Control = null
+var _char_gen_panel: Control = null
 
 # ── AI Avatar Maker — iframe overlay ──
 var _avatar_maker_panel: Control = null   # desktop fallback only
@@ -1660,6 +1661,108 @@ func _toggle_avatar_customizer() -> void:
 	if current_player_ref:
 		current_player_ref.set_busy(avatar_customizer.visible)
 
+# ── Character Generator panel (Ngoại hình) ────────────────────────────────────
+func _toggle_char_gen_panel() -> void:
+	if _char_gen_panel == null:
+		_char_gen_panel = _build_char_gen_panel()
+		add_child(_char_gen_panel)
+	_char_gen_panel.visible = not _char_gen_panel.visible
+	if current_player_ref:
+		current_player_ref.set_busy(_char_gen_panel.visible)
+
+func _build_char_gen_panel() -> Control:
+	var root := Control.new()
+	root.set_anchors_preset(Control.PRESET_FULL_RECT)
+	root.name = "CharGenPanel"
+
+	# Dim bg
+	var bg := ColorRect.new()
+	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	bg.color = Color(0, 0, 0, 0.65)
+	bg.gui_input.connect(func(ev: InputEvent):
+		if ev is InputEventMouseButton and ev.pressed: _toggle_char_gen_panel()
+	)
+	root.add_child(bg)
+
+	# Panel
+	var panel := PanelContainer.new()
+	panel.anchor_left = 0.5; panel.anchor_right = 0.5
+	panel.anchor_top = 0.5; panel.anchor_bottom = 0.5
+	panel.offset_left = -300; panel.offset_right = 300
+	panel.offset_top = -220; panel.offset_bottom = 220
+	var ps := StyleBoxFlat.new()
+	ps.bg_color = Color(0.07, 0.06, 0.12)
+	ps.set_corner_radius_all(12)
+	ps.set_border_width_all(2); ps.border_color = Color(0.55, 0.45, 0.90)
+	ps.content_margin_left = 20; ps.content_margin_right = 20
+	ps.content_margin_top = 16; ps.content_margin_bottom = 16
+	panel.add_theme_stylebox_override("panel", ps)
+	root.add_child(panel)
+
+	var vbox := VBoxContainer.new()
+	vbox.add_theme_constant_override("separation", 10)
+	panel.add_child(vbox)
+
+	# Header
+	var hdr := HBoxContainer.new()
+	var title_lbl := _make_label("NGOẠI HÌNH NHÂN VẬT", 14, Color(0.75, 0.65, 1.0), true)
+	title_lbl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hdr.add_child(title_lbl)
+	hdr.add_child(_make_x_btn(_toggle_char_gen_panel))
+	vbox.add_child(hdr)
+	vbox.add_child(ColorRect.new()) # thin separator
+	(vbox.get_child(vbox.get_child_count() - 1) as ColorRect).color = Color(0.55, 0.45, 0.90, 0.35)
+	(vbox.get_child(vbox.get_child_count() - 1) as ColorRect).custom_minimum_size = Vector2(0, 1)
+
+	# Icon area
+	var icon_row := HBoxContainer.new()
+	icon_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	var icon_lbl := _make_label("🎮", 36, Color.WHITE)
+	icon_row.add_child(icon_lbl)
+	vbox.add_child(icon_row)
+
+	vbox.add_child(_make_label("Character Generator", 13, Color(0.90, 0.85, 1.0), true))
+	vbox.add_child(_make_label(
+		"Công cụ tạo sprite nhân vật 2D cho ZPS World.\nChạy trên Windows — không thể mở trực tiếp trong trình duyệt.",
+		10, Color(0.75, 0.75, 0.85)))
+
+	var sep2 := ColorRect.new()
+	sep2.color = Color(0.4, 0.35, 0.7, 0.30)
+	sep2.custom_minimum_size = Vector2(0, 1)
+	vbox.add_child(sep2)
+
+	# Info box
+	var info_panel := PanelContainer.new()
+	var ips := StyleBoxFlat.new()
+	ips.bg_color = Color(0.10, 0.08, 0.18); ips.set_corner_radius_all(6)
+	ips.set_border_width_all(1); ips.border_color = Color(0.40, 0.35, 0.65)
+	ips.content_margin_left = 12; ips.content_margin_right = 12
+	ips.content_margin_top = 8; ips.content_margin_bottom = 8
+	info_panel.add_theme_stylebox_override("panel", ips)
+	var info_vbox := VBoxContainer.new()
+	info_vbox.add_theme_constant_override("separation", 6)
+	info_panel.add_child(info_vbox)
+	var steps: Array[String] = [
+		"1. Chạy CharacterGenerator.exe trên Windows",
+		"2. Tuỳ chỉnh nhân vật → Export sprite sheet (PNG)",
+		"3. Đặt file vào assets/sprites/ và cập nhật AvatarRenderer",
+	]
+	for step_str: String in steps:
+		info_vbox.add_child(_make_label(step_str, 9, Color(0.80, 0.82, 0.95)))
+	vbox.add_child(info_panel)
+
+	# Buttons row
+	var btn_row := HBoxContainer.new()
+	btn_row.alignment = BoxContainer.ALIGNMENT_END
+	btn_row.add_theme_constant_override("separation", 8)
+	var close_b := Button.new()
+	close_b.text = "Đóng"
+	close_b.pressed.connect(_toggle_char_gen_panel)
+	btn_row.add_child(close_b)
+	vbox.add_child(btn_row)
+
+	return root
+
 func _toggle_web_chat_panel() -> void:
 	if web_chat_panel == null: return
 	if web_chat_panel.visible:
@@ -1889,7 +1992,7 @@ func _build_char_profile_panel() -> void:
 	panel.anchor_left = 0.5; panel.anchor_right = 0.5
 	panel.anchor_top = 0.5; panel.anchor_bottom = 0.5
 	panel.offset_left = -390; panel.offset_right = 390
-	panel.offset_top = -270; panel.offset_bottom = 270
+	panel.offset_top = -320; panel.offset_bottom = 320
 	var ps = StyleBoxFlat.new()
 	ps.bg_color = Color(0.06, 0.05, 0.10)
 	ps.set_border_width_all(2); ps.border_color = Color(0.65, 0.52, 0.20)
@@ -2065,16 +2168,39 @@ void fragment() {
 
 	left.add_child(HSeparator.new())
 
+	# ── Logout button ──
+	var logout_btn := Button.new()
+	logout_btn.text = "Đăng xuất"
+	logout_btn.add_theme_font_size_override("font_size", 10)
+	logout_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	var logout_s := StyleBoxFlat.new()
+	logout_s.bg_color = Color(0.25, 0.06, 0.06)
+	logout_s.border_color = Color(0.65, 0.18, 0.18)
+	logout_s.set_border_width_all(1); logout_s.set_corner_radius_all(5)
+	logout_s.content_margin_top = 4; logout_s.content_margin_bottom = 4
+	logout_btn.add_theme_stylebox_override("normal", logout_s)
+	logout_btn.add_theme_color_override("font_color", Color(1.0, 0.62, 0.62))
+	logout_btn.pressed.connect(func():
+		_toggle_char_profile()
+		PlayerData.logout()
+		var _dlg := LoginDialog.new()
+		add_child(_dlg)
+	)
+	left.add_child(logout_btn)
+
+	left.add_child(HSeparator.new())
+
 	# ── Character sprite display ──
 	left.add_child(_make_label("NHÂN VẬT", 9, Color(0.55, 0.80, 0.95), true))
+	const _CS_W := 140; const _CS_H := 160
 	var char_sprite_frame = Control.new()
-	char_sprite_frame.custom_minimum_size = Vector2(80, 96)
+	char_sprite_frame.custom_minimum_size = Vector2(_CS_W, _CS_H)
 	var char_sv_container = SubViewportContainer.new()
-	char_sv_container.size = Vector2(80, 96)
-	char_sv_container.custom_minimum_size = Vector2(80, 96)
+	char_sv_container.size = Vector2(_CS_W, _CS_H)
+	char_sv_container.custom_minimum_size = Vector2(_CS_W, _CS_H)
 	char_sv_container.stretch = true
 	var char_sv = SubViewport.new()
-	char_sv.size = Vector2i(80, 96)
+	char_sv.size = Vector2i(_CS_W, _CS_H)
 	char_sv.transparent_bg = true
 	char_sv.render_target_update_mode = SubViewport.UPDATE_ALWAYS
 	var char_bg = ColorRect.new()
@@ -2089,12 +2215,12 @@ void fragment() {
 	if preview_sprite == null:
 		preview_sprite = _AR.make_sprite(_char_player_data.get("department", "default"))
 	if preview_sprite:
-		preview_sprite.position = Vector2(40, 80)
-		preview_sprite.scale *= 2.5
+		preview_sprite.position = Vector2(_CS_W / 2, _CS_H - 10)
+		preview_sprite.scale *= 4.0
 		char_sv.add_child(preview_sprite)
 	else:
 		var fb = Label.new(); fb.text = PlayerData.display_name.left(2).to_upper()
-		fb.add_theme_font_size_override("font_size", 22)
+		fb.add_theme_font_size_override("font_size", 38)
 		fb.add_theme_color_override("font_color", Color(0.90, 0.75, 0.30))
 		fb.set_anchors_preset(Control.PRESET_CENTER)
 		char_sv.add_child(fb)
@@ -2120,7 +2246,7 @@ void fragment() {
 	btn_appearance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	btn_appearance.pressed.connect(func():
 		_toggle_char_profile()
-		_toggle_avatar_customizer()
+		_toggle_char_gen_panel()
 	)
 	var action_row = HBoxContainer.new()
 	action_row.add_theme_constant_override("separation", 4)
