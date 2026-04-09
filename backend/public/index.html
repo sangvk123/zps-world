@@ -137,7 +137,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":30785112,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":["liblimboai.web.template_release.wasm32.nothreads.wasm"],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":30787000,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":["liblimboai.web.template_release.wasm32.nothreads.wasm"],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -300,6 +300,48 @@ const engine = new Engine(GODOT_CONFIG);
 		btn.addEventListener('click',doLogin);
 		passIn.addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
 		domainIn.addEventListener('keydown',function(e){if(e.key==='Enter')passIn.focus();});
+	})();
+	</script>
+	
+	<!-- ZPS World Virtual Joystick — mobile only -->
+	<div id="zps-joystick-base" style="display:none;position:fixed;bottom:32px;left:32px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.10);border:2px solid rgba(255,255,255,0.22);z-index:9998;touch-action:none;">
+	  <div id="zps-joystick-thumb" style="position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.38);top:36px;left:36px;pointer-events:none;"></div>
+	</div>
+	<script>
+	(function(){
+	  var base=document.getElementById('zps-joystick-base');
+	  var thumb=document.getElementById('zps-joystick-thumb');
+	  var baseR=60,thumbR=24;
+	  window._zpsJoystick={x:0,y:0};
+	  function isMobile(){return('ontouchstart' in window)||navigator.maxTouchPoints>0;}
+	  function show(){if(isMobile())base.style.display='block';}
+	  document.addEventListener('DOMContentLoaded',show);
+	  setTimeout(show,500);
+	  var originX=0,originY=0,active=false;
+	  base.addEventListener('touchstart',function(e){
+	    e.preventDefault();
+	    var t=e.targetTouches[0];
+	    var rect=base.getBoundingClientRect();
+	    originX=rect.left+baseR; originY=rect.top+baseR;
+	    active=true; moveThumb(t.clientX,t.clientY);
+	  },{passive:false});
+	  document.addEventListener('touchmove',function(e){
+	    if(!active)return; e.preventDefault();
+	    var t=e.targetTouches[0]; moveThumb(t.clientX,t.clientY);
+	  },{passive:false});
+	  document.addEventListener('touchend',function(){
+	    if(!active)return; active=false;
+	    thumb.style.left=(baseR-thumbR)+'px'; thumb.style.top=(baseR-thumbR)+'px';
+	    window._zpsJoystick={x:0,y:0};
+	  });
+	  function moveThumb(cx,cy){
+	    var dx=cx-originX, dy=cy-originY;
+	    var dist=Math.sqrt(dx*dx+dy*dy);
+	    var max=baseR-thumbR;
+	    if(dist>max){var s=max/dist;dx*=s;dy*=s;}
+	    thumb.style.left=(baseR-thumbR+dx)+'px'; thumb.style.top=(baseR-thumbR+dy)+'px';
+	    window._zpsJoystick={x:dx/max, y:dy/max};
+	  }
 	})();
 	</script>
 	</body>

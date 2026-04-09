@@ -71,6 +71,9 @@ var _roster_backdrop: Control = null
 var _emote_menu: Control = null
 var _emote_toast_stack: VBoxContainer = null
 
+# ── Mobile / touch detection ──
+var _is_mobile: bool = false
+
 # ── Minimap layout constants (mirrors ZPS_Layout_Campus.png 1193×896 px) ──
 const _MINIMAP_W: int = 1193 # world pixels (map width)
 const _MINIMAP_H: int = 896 # world pixels (map height)
@@ -120,6 +123,11 @@ const _ZONE_DISPLAY_NAMES: Dictionary = {
 
 func _ready() -> void:
 	add_to_group("hud")
+	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
+	if OS.has_feature("web"):
+		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
+		var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+		_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
 	_build_ui()
 	_update_player_card()
 
@@ -178,6 +186,8 @@ func _build_player_card() -> void:
 	player_card.add_theme_stylebox_override("panel", style)
 	player_card.position = Vector2(12, 12)
 	player_card.custom_minimum_size = Vector2(180, 0)
+	if _is_mobile:
+		player_card.custom_minimum_size = Vector2(200, 0)
 
 	# Layout ngang: portrait ben trai + info ben phai
 	var hbox = HBoxContainer.new()
@@ -194,10 +204,10 @@ func _build_player_card() -> void:
 	var vbox = VBoxContainer.new()
 	vbox.add_theme_constant_override("separation", 2)
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	pc_name = _make_label("", 13, Color.WHITE, true)
-	pc_title = _make_label("", 9, Color(0.7, 0.7, 0.7))
-	pc_class = _make_label("", 9, Color(0.7, 0.6, 1.0))
-	pc_outfit = _make_label("", 9, Color(0.6, 0.9, 0.6))
+	pc_name = _make_label("", 13 if not _is_mobile else 15, Color.WHITE, true)
+	pc_title = _make_label("", 9 if not _is_mobile else 11, Color(0.7, 0.7, 0.7))
+	pc_class = _make_label("", 9 if not _is_mobile else 11, Color(0.7, 0.6, 1.0))
+	pc_outfit = _make_label("", 9 if not _is_mobile else 11, Color(0.6, 0.9, 0.6))
 	vbox.add_child(pc_name); vbox.add_child(pc_title)
 	vbox.add_child(pc_class); vbox.add_child(pc_outfit)
 	hbox.add_child(vbox)
@@ -268,6 +278,8 @@ func _build_help_button() -> void:
 	var btn = Button.new()
 	btn.text = "?"
 	btn.size = Vector2(36, 32)
+	if _is_mobile:
+		btn.custom_minimum_size = Vector2(44, 44)
 	var bs = StyleBoxFlat.new()
 	bs.bg_color = Color(0.12, 0.12, 0.22, 0.90)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
@@ -474,6 +486,8 @@ func _build_ai_chat_bar() -> void:
 	var toggle_btn = Button.new()
 	toggle_btn.text = "[AI]"
 	toggle_btn.size = Vector2(44, 32)
+	if _is_mobile:
+		toggle_btn.custom_minimum_size = Vector2(44, 44)
 	var ts = StyleBoxFlat.new()
 	ts.bg_color = Color(0.10, 0.10, 0.22, 0.92)
 	ts.set_corner_radius_all(8); ts.set_border_width_all(1)
@@ -686,6 +700,8 @@ func _build_web_chat_panel() -> void:
 	var btn := Button.new()
 	btn.text = ""
 	btn.size = Vector2(44, 32)
+	if _is_mobile:
+		btn.custom_minimum_size = Vector2(44, 44)
 	var bs := StyleBoxFlat.new()
 	bs.bg_color = Color(0.10, 0.14, 0.22, 0.92)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
@@ -2429,6 +2445,8 @@ func _build_roster_panel() -> void:
 	_roster_toggle_btn = Button.new()
 	_roster_toggle_btn.text = "Online"
 	_roster_toggle_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
+	if _is_mobile:
+		_roster_toggle_btn.custom_minimum_size = Vector2(0, 44)
 	_roster_toggle_btn.pressed.connect(_toggle_roster)
 	btn_anchor.add_child(_roster_toggle_btn)
 	add_child(btn_anchor)

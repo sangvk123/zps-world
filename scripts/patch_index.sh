@@ -195,6 +195,52 @@ if 'zps-login-overlay' not in html:
 	</script>"""
     html = html.replace('</body>', LOGIN_HTML + '\n\t</body>')
 
+# 5. Inject virtual joystick (mobile only)
+if 'zps-joystick-base' not in html:
+    JOYSTICK_HTML = r"""
+	<!-- ZPS World Virtual Joystick — mobile only -->
+	<div id="zps-joystick-base" style="display:none;position:fixed;bottom:32px;left:32px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.10);border:2px solid rgba(255,255,255,0.22);z-index:9998;touch-action:none;">
+	  <div id="zps-joystick-thumb" style="position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.38);top:36px;left:36px;pointer-events:none;"></div>
+	</div>
+	<script>
+	(function(){
+	  var base=document.getElementById('zps-joystick-base');
+	  var thumb=document.getElementById('zps-joystick-thumb');
+	  var baseR=60,thumbR=24;
+	  window._zpsJoystick={x:0,y:0};
+	  function isMobile(){return('ontouchstart' in window)||navigator.maxTouchPoints>0;}
+	  function show(){if(isMobile())base.style.display='block';}
+	  document.addEventListener('DOMContentLoaded',show);
+	  setTimeout(show,500);
+	  var originX=0,originY=0,active=false;
+	  base.addEventListener('touchstart',function(e){
+	    e.preventDefault();
+	    var t=e.targetTouches[0];
+	    var rect=base.getBoundingClientRect();
+	    originX=rect.left+baseR; originY=rect.top+baseR;
+	    active=true; moveThumb(t.clientX,t.clientY);
+	  },{passive:false});
+	  document.addEventListener('touchmove',function(e){
+	    if(!active)return; e.preventDefault();
+	    var t=e.targetTouches[0]; moveThumb(t.clientX,t.clientY);
+	  },{passive:false});
+	  document.addEventListener('touchend',function(){
+	    if(!active)return; active=false;
+	    thumb.style.left=(baseR-thumbR)+'px'; thumb.style.top=(baseR-thumbR)+'px';
+	    window._zpsJoystick={x:0,y:0};
+	  });
+	  function moveThumb(cx,cy){
+	    var dx=cx-originX, dy=cy-originY;
+	    var dist=Math.sqrt(dx*dx+dy*dy);
+	    var max=baseR-thumbR;
+	    if(dist>max){var s=max/dist;dx*=s;dy*=s;}
+	    thumb.style.left=(baseR-thumbR+dx)+'px'; thumb.style.top=(baseR-thumbR+dy)+'px';
+	    window._zpsJoystick={x:dx/max, y:dy/max};
+	  }
+	})();
+	</script>"""
+    html = html.replace('</body>', JOYSTICK_HTML + '\n\t</body>')
+
 html_path.write_text(html, encoding="utf-8")
 print("✓ index.html patched with ZPS World loading screen")
 PYEOF

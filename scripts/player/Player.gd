@@ -232,6 +232,25 @@ func _physics_process(_delta: float) -> void:
 		_update_animation(_intended_vel)
 		return
 
+	# ── Joystick input (mobile web) ──
+	if OS.has_feature("web"):
+		var js_raw = JavaScriptBridge.eval("(window._zpsJoystick&&(window._zpsJoystick.x||window._zpsJoystick.y))?JSON.stringify(window._zpsJoystick):''")
+		if js_raw is String and (js_raw as String) != "":
+			var jd = JSON.parse_string(js_raw as String)
+			if jd is Dictionary:
+				var jx: float = float((jd as Dictionary).get("x", 0))
+				var jy: float = float((jd as Dictionary).get("y", 0))
+				var jdir := Vector2(jx, jy)
+				if jdir.length() > 0.15:
+					_click_moving = false
+					velocity = jdir.normalized() * move_speed
+					var _iv := velocity
+					move_and_slide()
+					if NetworkManager.is_connected_to_server():
+						NetworkManager.queue_position(global_position)
+					_update_animation(_iv)
+					return
+
 	# ── WASD movement ──
 	var speed = run_speed if Input.is_key_pressed(KEY_SHIFT) else move_speed
 	var dir = Vector2(

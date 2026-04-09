@@ -21,6 +21,14 @@ var _target_zoom: float = 2.5
 func _ready() -> void:
 	# Sync with zoom set from code (e.g. Office._setup_camera)
 	_target_zoom = zoom.x
+	# Mobile: allow zooming out further
+	if OS.has_feature("web"):
+		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
+		var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+		var is_mobile: bool = (mw is float and (mw as float) < 900.0) or has_touch == true
+		if is_mobile:
+			zoom_min = 0.5
+			zoom_max = 2.5
 
 func _input(event: InputEvent) -> void:
 	# ── Right-mouse pan ──

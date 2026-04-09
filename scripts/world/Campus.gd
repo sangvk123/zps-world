@@ -277,7 +277,15 @@ func _spawn_player() -> void:
 
 	var cam := Camera2D.new()
 	cam.name = "PlayerCamera"
-	cam.zoom = Vector2(3.0, 3.0)
+	# Mobile gets a zoomed-out view for better navigation
+	var initial_zoom := 3.0
+	if OS.has_feature("web"):
+		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
+		var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+		var is_mobile: bool = (mw is float and (mw as float) < 900.0) or has_touch == true
+		if is_mobile:
+			initial_zoom = 1.8
+	cam.zoom = Vector2(initial_zoom, initial_zoom)
 	cam.limit_left   = 0
 	cam.limit_top    = 0
 	cam.limit_right  = int(MAP_W)
