@@ -28,19 +28,24 @@ func _ready() -> void:
 		_domain_field.grab_focus()
 
 func _build_ui() -> void:
-	# ── Nền tối ──
+	# Get viewport size — used for absolute positioning (anchors don't work
+	# on Controls inside CanvasLayer because the parent has no intrinsic size)
+	var vp_size := Vector2(1280, 720)
+	if get_viewport():
+		vp_size = get_viewport().get_visible_rect().size
+
+	# ── Nền tối — absolute size ──
 	var bg := ColorRect.new()
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	bg.position = Vector2.ZERO
+	bg.size = vp_size
 	bg.color = Color(0.04, 0.04, 0.10, 0.97)
 	add_child(bg)
 
-	# ── Card trung tâm — dùng custom_minimum_size để responsive ──
+	# ── Card trung tâm — absolute position from viewport size ──
+	const CARD_W := 400.0
 	var card := PanelContainer.new()
-	card.anchor_left  = 0.5; card.anchor_right  = 0.5
-	card.anchor_top   = 0.5; card.anchor_bottom = 0.5
-	card.offset_left  = -200; card.offset_right  = 200
-	card.offset_top   = -180; card.offset_bottom = 180
 	card.custom_minimum_size = Vector2(380, 0)
+	card.position = Vector2((vp_size.x - CARD_W) / 2.0, vp_size.y * 0.18)
 	var ps := StyleBoxFlat.new()
 	ps.bg_color = Color(0.08, 0.08, 0.16, 0.98)
 	ps.set_corner_radius_all(12)
