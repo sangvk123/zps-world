@@ -14,6 +14,10 @@ var _loading: bool = false
 func _ready() -> void:
 	set_anchors_preset(Control.PRESET_FULL_RECT)
 	mouse_filter = Control.MOUSE_FILTER_STOP
+	# Defer one frame so parent layout is resolved → card centers correctly
+	call_deferred("_setup")
+
+func _setup() -> void:
 	_build_ui()
 	# Pre-fill domain từ session trước
 	if PlayerData.zps_callsign != "":
@@ -34,7 +38,7 @@ func _build_ui() -> void:
 	card.anchor_left  = 0.5; card.anchor_right  = 0.5
 	card.anchor_top   = 0.5; card.anchor_bottom = 0.5
 	card.offset_left  = -200; card.offset_right  = 200
-	card.offset_top   = -0;   card.offset_bottom = 0
+	card.offset_top   = -180; card.offset_bottom = 180
 	card.custom_minimum_size = Vector2(380, 0)
 	var ps := StyleBoxFlat.new()
 	ps.bg_color = Color(0.08, 0.08, 0.16, 0.98)
