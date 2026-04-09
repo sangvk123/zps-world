@@ -79,6 +79,7 @@ func _make_request_node() -> HTTPRequest:
 
 func _build_headers() -> Array:
 	var headers: Array = []
+	headers.append("bypass-tunnel-reminder: 1")  # bypass localtunnel interstitial
 	if jwt_token != "":
 		headers.append("Authorization: Bearer %s" % jwt_token)
 	return headers
