@@ -12,12 +12,13 @@ var _login_btn: Button = null
 var _loading: bool = false
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	# Force fill the whole viewport — CanvasLayer children don't auto-size
+	var vp := get_viewport()
+	if vp:
+		var vr := vp.get_visible_rect()
+		position = vr.position
+		size = vr.size
 	mouse_filter = Control.MOUSE_FILTER_STOP
-	# Defer one frame so parent layout is resolved → card centers correctly
-	call_deferred("_setup")
-
-func _setup() -> void:
 	_build_ui()
 	# Pre-fill domain từ session trước
 	if PlayerData.zps_callsign != "":
