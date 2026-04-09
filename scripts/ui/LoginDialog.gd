@@ -29,12 +29,13 @@ func _build_ui() -> void:
 	bg.color = Color(0.04, 0.04, 0.10, 0.97)
 	add_child(bg)
 
-	# ── Card trung tâm ──
+	# ── Card trung tâm — dùng custom_minimum_size để responsive ──
 	var card := PanelContainer.new()
 	card.anchor_left  = 0.5; card.anchor_right  = 0.5
 	card.anchor_top   = 0.5; card.anchor_bottom = 0.5
-	card.offset_left  = -180; card.offset_right  = 180
-	card.offset_top   = -220; card.offset_bottom = 220
+	card.offset_left  = -200; card.offset_right  = 200
+	card.offset_top   = -0;   card.offset_bottom = 0
+	card.custom_minimum_size = Vector2(380, 0)
 	var ps := StyleBoxFlat.new()
 	ps.bg_color = Color(0.08, 0.08, 0.16, 0.98)
 	ps.set_corner_radius_all(12)

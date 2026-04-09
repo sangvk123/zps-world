@@ -81,42 +81,18 @@ var _hitbox_rects: Array[Rect2] = []   # populated by _build_hitboxes(), used by
 
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color(0.08, 0.10, 0.06))
-	_show_login_dialog()
+	if PlayerData.is_logged_in:
+		_after_login()
+	else:
+		# HUD will show LoginDialog — wait for login_complete then load world
+		PlayerData.login_complete.connect(_after_login, CONNECT_ONE_SHOT)
 
 
-## Set to false to show the real login dialog (EmployeeID + DevSecret).
-const AUTO_LOGIN := true
-
-func _show_login_dialog() -> void:
-	if AUTO_LOGIN:
-		_on_login_skipped()
-		return
-	var dialog: CanvasLayer = load("res://scripts/ui/LoginDialog.gd").new()
-	dialog.name = "LoginDialog"
-	add_child(dialog)
-	dialog.login_success.connect(_on_login_success)
-	dialog.login_skipped.connect(_on_login_skipped)
-
-
-func _on_login_success(employee: Dictionary) -> void:
-	# Update PlayerData with real employee fields from JWT
-	PlayerData.player_id = employee.get("id", PlayerData.player_id)
-	PlayerData.display_name = employee.get("name", PlayerData.display_name)
-	PlayerData.department = employee.get("department", PlayerData.department)
-	PlayerData.hr_title = employee.get("title", PlayerData.hr_title)
-	var avatar: Dictionary = employee.get("avatar", {})
-	if not avatar.is_empty():
-		PlayerData.avatar_config.merge(avatar, true)
-	_remove_login_dialog()
-	# Load employee list from REST before starting the world
+func _after_login() -> void:
+	# Load employee list from REST API before starting the world
 	HttpManager.response_received.connect(_on_employees_loaded, CONNECT_ONE_SHOT)
 	HttpManager.error.connect(_on_employees_load_error, CONNECT_ONE_SHOT)
 	HttpManager.get_request("employees")
-
-
-func _on_login_skipped() -> void:
-	_remove_login_dialog()
-	_start_world()
 
 
 func _on_employees_loaded(endpoint: String, data: Variant) -> void:
@@ -145,12 +121,6 @@ func _on_employees_load_error(_endpoint: String, _message: String) -> void:
 	# If loading fails just use existing mock data and continue
 	push_warning("[Campus] Failed to load employees from REST — using mock data")
 	_start_world()
-
-
-func _remove_login_dialog() -> void:
-	var dialog := get_node_or_null("LoginDialog")
-	if dialog:
-		dialog.queue_free()
 
 
 func _start_world() -> void:

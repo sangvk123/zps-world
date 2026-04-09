@@ -57,6 +57,15 @@ func _ready() -> void:
 	_setup_behavior_tree()
 	if AIAgent.has_signal("response_ready"):
 		AIAgent.response_ready.connect(_on_ai_response)
+	# Register dot on minimap
+	var hud: Node = get_tree().get_first_node_in_group("hud")
+	if hud and hud.has_method("minimap_add_npc_dot"):
+		hud.minimap_add_npc_dot(employee_id, is_online)
+
+func _exit_tree() -> void:
+	var hud: Node = get_tree().get_first_node_in_group("hud")
+	if hud and hud.has_method("minimap_remove_npc_dot"):
+		hud.minimap_remove_npc_dot(employee_id)
 
 # ─────────────────────────────────────────────
 # Build visual nodes (no .tscn required)

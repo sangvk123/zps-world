@@ -1428,27 +1428,33 @@ func _update_minimap() -> void:
 			_minimap_cam_rect.position = Vector2(cx, cy)
 			_minimap_cam_rect.size     = Vector2(cw, ch)
 
-	# Update NPC dots — create on first sight, update position each frame
+	# NPC dots: position-only update (dots created/removed via minimap_add/remove_npc_dot)
 	if _minimap_map_area == null: return
-	var employees := get_tree().get_nodes_in_group("employees")
-	for emp_node in employees:
-		var emp_id: String = emp_node.employee_id if "employee_id" in emp_node else ""
-		if emp_id.is_empty(): continue
-		if not _minimap_npc_dots.has(emp_id):
-			var dot := ColorRect.new()
-			dot.size = Vector2(4, 4)
-			dot.z_index = 5
-			# online → green, offline → gray
-			var is_online: bool = emp_node.is_online if "is_online" in emp_node else false
-			dot.color = Color(0.2, 0.9, 0.3) if is_online else Color(0.45, 0.45, 0.45)
-			_minimap_map_area.add_child(dot)
-			_minimap_npc_dots[emp_id] = dot
+	for emp_id in _minimap_npc_dots.keys():
 		var npc_dot: ColorRect = _minimap_npc_dots[emp_id]
-		if is_instance_valid(emp_node):
+		# Find the employee node via cached group lookup
+		var emp_node: Node = null
+		for n in get_tree().get_nodes_in_group("employees"):
+			if "employee_id" in n and n.employee_id == emp_id:
+				emp_node = n
+				break
+		if emp_node != null and is_instance_valid(emp_node):
 			npc_dot.position = _world_to_minimap(emp_node.global_position, 4.0)
-		else:
-			npc_dot.queue_free()
-			_minimap_npc_dots.erase(emp_id)
+
+func minimap_add_npc_dot(emp_id: String, is_online: bool) -> void:
+	if _minimap_map_area == null or _minimap_npc_dots.has(emp_id): return
+	var dot := ColorRect.new()
+	dot.size = Vector2(4, 4)
+	dot.z_index = 5
+	dot.color = Color(0.2, 0.9, 0.3) if is_online else Color(0.45, 0.45, 0.45)
+	_minimap_map_area.add_child(dot)
+	_minimap_npc_dots[emp_id] = dot
+
+func minimap_remove_npc_dot(emp_id: String) -> void:
+	if not _minimap_npc_dots.has(emp_id): return
+	var dot: ColorRect = _minimap_npc_dots[emp_id]
+	if is_instance_valid(dot): dot.queue_free()
+	_minimap_npc_dots.erase(emp_id)
 
 func _update_zone_from_player() -> void:
 	if _zone_label == null or current_player_ref == null: return

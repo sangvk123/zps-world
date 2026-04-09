@@ -45,6 +45,12 @@ func _ready() -> void:
 	NetworkManager.emote_received.connect(_on_emote_received)
 	NetworkManager.chat_received.connect(_on_chat_received)
 
+func _exit_tree() -> void:
+	if NetworkManager.emote_received.is_connected(_on_emote_received):
+		NetworkManager.emote_received.disconnect(_on_emote_received)
+	if NetworkManager.chat_received.is_connected(_on_chat_received):
+		NetworkManager.chat_received.disconnect(_on_chat_received)
+
 func _build_visuals() -> void:
 	_body_rect = ColorRect.new()
 	_body_rect.size = Vector2(12, 16)
@@ -54,7 +60,9 @@ func _build_visuals() -> void:
 
 	_nameplate = Label.new()
 	_nameplate.text = display_name
-	_nameplate.position = Vector2(-30, -28)
+	_nameplate.position = Vector2(-40, -30)
+	_nameplate.custom_minimum_size = Vector2(80, 0)
+	_nameplate.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_nameplate.add_theme_font_size_override("font_size", 9)
 	add_child(_nameplate)
 
@@ -110,7 +118,8 @@ func set_target_position(x: float, y: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	if not is_npc_mode:
-		global_position = global_position.lerp(_target_pos, minf(LERP_SPEED * delta, 1.0))
+		# move_toward caps speed properly without overshooting
+		global_position = global_position.move_toward(_target_pos, LERP_SPEED * 10.0 * delta)
 
 	if _emote_timer > 0.0:
 		_emote_timer -= delta
