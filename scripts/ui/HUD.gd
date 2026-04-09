@@ -2039,7 +2039,11 @@ func _build_char_profile_panel() -> void:
 	var left_panel = PanelContainer.new()
 	left_panel.add_theme_stylebox_override("panel", left_style)
 	left_panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	left_panel.add_child(left); body.add_child(left_panel)
+	var left_scroll := ScrollContainer.new()
+	left_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	left_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	left_scroll.add_child(left)
+	left_panel.add_child(left_scroll); body.add_child(left_panel)
 
 	# Avatar frame — SubViewport + circular shader clip
 	const _AV_OGV := "res://assets/avatars/avatar-animation-sangvk.ogv"
@@ -2174,12 +2178,15 @@ void fragment() {
 	logout_btn.add_theme_font_size_override("font_size", 10)
 	logout_btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var logout_s := StyleBoxFlat.new()
-	logout_s.bg_color = Color(0.25, 0.06, 0.06)
-	logout_s.border_color = Color(0.65, 0.18, 0.18)
+	logout_s.bg_color = Color(0.52, 0.08, 0.08)
+	logout_s.border_color = Color(0.90, 0.25, 0.25)
 	logout_s.set_border_width_all(1); logout_s.set_corner_radius_all(5)
-	logout_s.content_margin_top = 4; logout_s.content_margin_bottom = 4
+	logout_s.content_margin_top = 5; logout_s.content_margin_bottom = 5
+	var logout_hover := logout_s.duplicate() as StyleBoxFlat
+	logout_hover.bg_color = Color(0.70, 0.12, 0.12)
 	logout_btn.add_theme_stylebox_override("normal", logout_s)
-	logout_btn.add_theme_color_override("font_color", Color(1.0, 0.62, 0.62))
+	logout_btn.add_theme_stylebox_override("hover", logout_hover)
+	logout_btn.add_theme_color_override("font_color", Color(1.0, 0.85, 0.85))
 	logout_btn.pressed.connect(func():
 		_toggle_char_profile()
 		PlayerData.logout()
