@@ -4,6 +4,8 @@
 
 extends CanvasLayer
 
+const _AR = preload("res://scripts/world/AvatarRenderer.gd")
+
 # ── Runtime panel references (created in _ready) ──
 var workspace_panel: Control = null
 var avatar_customizer: Control = null
@@ -17,6 +19,9 @@ var pc_outfit: Label = null
 # ── Minimap ──
 var _minimap_container: Control = null
 var _minimap_player_dot: Control = null
+var _minimap_map_area: Control = null          # container for dots
+var _minimap_npc_dots: Dictionary = {}         # emp_id → ColorRect
+var _minimap_cam_rect: Panel = null            # RTS-style camera viewport rect
 
 # ── Zone indicator ──
 var _zone_label: Label = null
@@ -25,6 +30,7 @@ var _last_zone: String = ""
 # ── Help button + popup ──
 var _help_popup: Control = null
 var _help_popup_open: bool = false
+var _help_backdrop: Control = null
 
 # ── Sprint/task indicator (top bar) ──
 var _sprint_label: Label = null
@@ -36,6 +42,11 @@ var current_player_ref: Node = null
 # ── Char-profile panel ──
 var _char_profile_panel: Control = null
 
+# ── AI Avatar Maker — iframe overlay ──
+var _avatar_maker_panel: Control = null   # desktop fallback only
+var _avatar_iframe_created: bool = false
+var _avatar_iframe_visible: bool = false
+
 # ── Workspace tab reference (for programmatic tab switching) ──
 var _workspace_tabs: TabContainer = null
 
@@ -45,11 +56,15 @@ var _web_is_platform: bool = false
 var _web_chat_iframe_created: bool = false
 var _chat_box: Control = null # desktop chat panel box (for slide animation)
 
+# ── In-game ChatLog reference ──
+var _chat_log_node: Control = null
+
 # ── Online roster ──
 var _roster_panel: Control = null
 var _roster_list: VBoxContainer = null
 var _roster_toggle_btn: Button = null
 var _roster_open: bool = false
+var _roster_backdrop: Control = null
 
 # ── Sprint 4 additions ──
 var _emote_menu: Control = null
@@ -117,8 +132,8 @@ func _ready() -> void:
 	_build_roster_panel()
 	# Chat log panel
 	var chat_log_scene = load("res://scripts/ui/ChatLog.gd")
-	var chat_log = chat_log_scene.new()
-	add_child(chat_log)
+	_chat_log_node = chat_log_scene.new()
+	add_child(_chat_log_node)
 	NetworkManager.emote_received.connect(_on_emote_toast)
 
 # ─────────────────────────────────────────────
@@ -234,7 +249,45 @@ func _build_sprint_indicator() -> void:
 
 # ── Help button (bottom-center "?" → expands popup) ──
 func _build_help_button() -> void:
-	# Popup panel (hidden by default)
+	# "?" toggle button — added first so popup/backdrop render above it
+	var btn_anchor = Control.new()
+	btn_anchor.anchor_left = 0.5; btn_anchor.anchor_right = 0.5
+	btn_anchor.anchor_top = 1.0; btn_anchor.anchor_bottom = 1.0
+	btn_anchor.offset_left = -18; btn_anchor.offset_right = 18
+	btn_anchor.offset_top = -40; btn_anchor.offset_bottom = -8
+
+	var btn = Button.new()
+	btn.text = "?"
+	btn.size = Vector2(36, 32)
+	var bs = StyleBoxFlat.new()
+	bs.bg_color = Color(0.12, 0.12, 0.22, 0.90)
+	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
+	bs.border_color = Color(0.4, 0.4, 0.6)
+	btn.add_theme_stylebox_override("normal", bs)
+	btn.add_theme_color_override("font_color", Color(0.8, 0.8, 1.0))
+	btn.add_theme_font_size_override("font_size", 16)
+	btn.pressed.connect(func():
+		_help_popup_open = not _help_popup_open
+		_help_popup.visible = _help_popup_open
+		_help_backdrop.visible = _help_popup_open
+	)
+	btn_anchor.add_child(btn)
+	add_child(btn_anchor)
+
+	# Backdrop for click-outside — added after button, before popup
+	_help_backdrop = Control.new()
+	_help_backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_help_backdrop.mouse_filter = Control.MOUSE_FILTER_STOP
+	_help_backdrop.visible = false
+	_help_backdrop.gui_input.connect(func(ev: InputEvent):
+		if ev is InputEventMouseButton and ev.pressed:
+			_help_popup_open = false
+			_help_popup.visible = false
+			_help_backdrop.visible = false
+	)
+	add_child(_help_backdrop)
+
+	# Popup panel — added last so it renders on top of backdrop and button
 	_help_popup = PanelContainer.new()
 	var ps = StyleBoxFlat.new()
 	ps.bg_color = Color(0.06, 0.06, 0.12, 0.93)
@@ -274,30 +327,6 @@ func _build_help_button() -> void:
 	_help_popup.add_child(vbox)
 	add_child(_help_popup)
 
-	# "?" toggle button
-	var btn_anchor = Control.new()
-	btn_anchor.anchor_left = 0.5; btn_anchor.anchor_right = 0.5
-	btn_anchor.anchor_top = 1.0; btn_anchor.anchor_bottom = 1.0
-	btn_anchor.offset_left = -18; btn_anchor.offset_right = 18
-	btn_anchor.offset_top = -40; btn_anchor.offset_bottom = -8
-
-	var btn = Button.new()
-	btn.text = "?"
-	btn.size = Vector2(36, 32)
-	var bs = StyleBoxFlat.new()
-	bs.bg_color = Color(0.12, 0.12, 0.22, 0.90)
-	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
-	bs.border_color = Color(0.4, 0.4, 0.6)
-	btn.add_theme_stylebox_override("normal", bs)
-	btn.add_theme_color_override("font_color", Color(0.8, 0.8, 1.0))
-	btn.add_theme_font_size_override("font_size", 16)
-	btn.pressed.connect(func():
-		_help_popup_open = not _help_popup_open
-		_help_popup.visible = _help_popup_open
-	)
-	btn_anchor.add_child(btn)
-	add_child(btn_anchor)
-
 # ── Minimap (bottom-right, 120×96 px) ──
 func _build_minimap() -> void:
 	_minimap_container = Control.new()
@@ -332,12 +361,13 @@ func _build_minimap() -> void:
 	map_area.size = Vector2(_MAP_PX_W, _MAP_PX_H)
 	map_area.clip_contents = true
 
-	# Draw campus PNG scaled to minimap size
+	# Draw campus PNG scaled to minimap size — anchor FULL_RECT so Godot layout
+	# enforces the Control size on the TextureRect (plain .size = won't work in Control parent)
 	const _CAMPUS_IMG := "res://assets/maps/ZPS_Layout_Campus.png"
 	var map_tex_rect := TextureRect.new()
-	map_tex_rect.position = Vector2(0, 0)
-	map_tex_rect.size = Vector2(_MAP_PX_W, _MAP_PX_H)
-	map_tex_rect.stretch_mode = TextureRect.STRETCH_SCALE
+	map_tex_rect.set_anchors_preset(Control.PRESET_FULL_RECT)  # fill map_area exactly
+	map_tex_rect.stretch_mode = TextureRect.STRETCH_SCALE       # scale full image to fit
+	map_tex_rect.expand_mode  = TextureRect.EXPAND_IGNORE_SIZE  # allow shrinking below natural size
 	map_tex_rect.texture_filter = CanvasItem.TEXTURE_FILTER_LINEAR
 	# Load with fallback (PNG may not be imported yet)
 	var campus_tex: Texture2D = null
@@ -352,11 +382,24 @@ func _build_minimap() -> void:
 	map_tex_rect.texture = campus_tex
 	map_area.add_child(map_tex_rect)
 
-	# Player dot (white, 3×3 px)
+	_minimap_map_area = map_area
+
+	# ── RTS camera viewport rect ──
+	_minimap_cam_rect = Panel.new()
+	_minimap_cam_rect.z_index = 8
+	var cam_style := StyleBoxFlat.new()
+	cam_style.bg_color        = Color(1.0, 1.0, 1.0, 0.08)   # very subtle fill
+	cam_style.set_border_width_all(1)
+	cam_style.border_color    = Color(1.0, 1.0, 0.6, 0.90)   # bright yellow border
+	_minimap_cam_rect.add_theme_stylebox_override("panel", cam_style)
+	map_area.add_child(_minimap_cam_rect)
+
+	# Player dot — bright cyan, 6×6 px, on top of camera rect
 	_minimap_player_dot = ColorRect.new()
-	_minimap_player_dot.color = Color.WHITE
-	_minimap_player_dot.size = Vector2(3, 3)
+	_minimap_player_dot.color = Color(0.2, 1.0, 0.8)
+	_minimap_player_dot.size = Vector2(6, 6)
 	_minimap_player_dot.position = Vector2(0, 0)
+	_minimap_player_dot.z_index = 10
 	map_area.add_child(_minimap_player_dot)
 
 	_minimap_container.add_child(map_area)
@@ -380,6 +423,37 @@ func _build_notification_stack() -> void:
 var _ai_bar_open: bool = false
 var _ai_bar_panel: Control = null
 var _ai_bar_log: VBoxContainer = null
+var _ai_bar_backdrop: Control = null
+
+# ── Nút ✕ thống nhất cho mọi panel ──
+func _make_x_btn(on_press: Callable) -> Button:
+	var btn := Button.new()
+	btn.text = "✕"
+	btn.add_theme_font_size_override("font_size", 11)
+	btn.add_theme_color_override("font_color", Color(1.0, 0.5, 0.5))
+	var st := StyleBoxFlat.new()
+	st.bg_color = Color(0.28, 0.06, 0.06, 0.85)
+	st.set_corner_radius_all(5); st.set_border_width_all(0)
+	btn.add_theme_stylebox_override("normal", st)
+	var st_hov := StyleBoxFlat.new()
+	st_hov.bg_color = Color(0.65, 0.08, 0.08); st_hov.set_corner_radius_all(5)
+	btn.add_theme_stylebox_override("hover", st_hov)
+	btn.pressed.connect(on_press)
+	return btn
+
+# ── Đóng AI / Workspace / Online — chỉ 1 cửa sổ mở 1 lúc ──
+func _close_side_panels() -> void:
+	if _ai_bar_open:
+		_ai_bar_open = false
+		if _ai_bar_panel:    _ai_bar_panel.visible    = false
+		if _ai_bar_backdrop: _ai_bar_backdrop.visible = false
+	if workspace_panel and workspace_panel.visible:
+		workspace_panel.visible = false
+		if current_player_ref: current_player_ref.set_busy(false)
+	if _roster_open:
+		_roster_open = false
+		if _roster_panel:    _roster_panel.visible    = false
+		if _roster_backdrop: _roster_backdrop.visible = false
 
 func _build_ai_chat_bar() -> void:
 	# Toggle button (top-right, below notification area)
@@ -397,12 +471,20 @@ func _build_ai_chat_bar() -> void:
 	ts.border_color = Color(0.4, 0.4, 0.7)
 	toggle_btn.add_theme_stylebox_override("normal", ts)
 	toggle_btn.add_theme_font_size_override("font_size", 14)
-	toggle_btn.pressed.connect(func():
-		_ai_bar_open = not _ai_bar_open
-		if _ai_bar_panel: _ai_bar_panel.visible = _ai_bar_open
-	)
+	toggle_btn.pressed.connect(_toggle_ai_bar)
 	toggle_anchor.add_child(toggle_btn)
 	add_child(toggle_anchor)
+
+	# Backdrop — click-outside closes AI panel
+	_ai_bar_backdrop = Control.new()
+	_ai_bar_backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_ai_bar_backdrop.mouse_filter = Control.MOUSE_FILTER_STOP
+	_ai_bar_backdrop.visible = false
+	_ai_bar_backdrop.gui_input.connect(func(ev: InputEvent):
+		if ev is InputEventMouseButton and ev.button_index == MOUSE_BUTTON_LEFT and ev.pressed:
+			_toggle_ai_bar()
+	)
+	add_child(_ai_bar_backdrop)
 
 	# Panel
 	_ai_bar_panel = Control.new()
@@ -411,7 +493,7 @@ func _build_ai_chat_bar() -> void:
 	_ai_bar_panel.offset_left = -300; _ai_bar_panel.offset_right = 0
 	_ai_bar_panel.offset_top = 46; _ai_bar_panel.offset_bottom = -200
 	_ai_bar_panel.visible = false
-	_ai_bar_panel.mouse_filter = Control.MOUSE_FILTER_STOP # block click-through
+	_ai_bar_panel.mouse_filter = Control.MOUSE_FILTER_STOP
 
 	var bg = PanelContainer.new()
 	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -427,8 +509,13 @@ func _build_ai_chat_bar() -> void:
 	col.set_anchors_preset(Control.PRESET_FULL_RECT)
 	col.add_theme_constant_override("separation", 6)
 
-	# Title
-	col.add_child(_make_label("[AI] ZPS AI Assistant", 11, Color(0.7, 0.8, 1.0), true))
+	# Header row với nút ✕
+	var ai_hdr = HBoxContainer.new()
+	var ai_ttl = _make_label("[AI] ZPS AI Assistant", 11, Color(0.7, 0.8, 1.0), true)
+	ai_ttl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	ai_hdr.add_child(ai_ttl)
+	ai_hdr.add_child(_make_x_btn(_toggle_ai_bar))
+	col.add_child(ai_hdr)
 	col.add_child(HSeparator.new())
 
 	# Quick actions
@@ -596,7 +683,8 @@ func _build_web_chat_panel() -> void:
 	bs.border_color = Color(0.3, 0.5, 0.7)
 	btn.add_theme_stylebox_override("normal", bs)
 	btn.add_theme_font_size_override("font_size", 14)
-	btn.tooltip_text = "Chat Workspace [C]"
+	btn.text = ""
+	btn.tooltip_text = "Workspace Chat"
 	btn.pressed.connect(_toggle_web_chat_panel)
 	anchor.add_child(btn)
 	add_child(anchor)
@@ -639,11 +727,9 @@ func _create_workspace_panel_inline() -> Control:
 	# Header
 	var header = HBoxContainer.new()
 	var title = _make_label(" Workspace Panel", 16, Color(0.9, 0.8, 0.5), true)
-	var close_btn = Button.new(); close_btn.text = "X"
-	close_btn.pressed.connect(func(): _toggle_workspace_panel())
+	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header.add_child(title)
-	header.add_spacer(false)
-	header.add_child(close_btn)
+	header.add_child(_make_x_btn(func(): _toggle_workspace_panel()))
 	vbox.add_child(header)
 
 	# Separator
@@ -1034,11 +1120,10 @@ func _build_avatar_customizer() -> void:
 	var vbox = VBoxContainer.new()
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	var hdr = HBoxContainer.new()
-	hdr.add_child(_make_label("Avatar Customizer", 15, Color(0.9,0.8,0.5), true))
-	hdr.add_spacer(false)
-	var close_btn = Button.new(); close_btn.text = "X"
-	close_btn.pressed.connect(func(): _toggle_avatar_customizer())
-	hdr.add_child(close_btn)
+	var ac_ttl = _make_label("Avatar Customizer", 15, Color(0.9,0.8,0.5), true)
+	ac_ttl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	hdr.add_child(ac_ttl)
+	hdr.add_child(_make_x_btn(func(): _toggle_avatar_customizer()))
 	vbox.add_child(hdr)
 	vbox.add_child(HSeparator.new())
 
@@ -1300,13 +1385,63 @@ func _update_zone_indicator_position() -> void:
 	else:
 		zone_node.position.y = 90
 
+func _world_to_minimap(world_pos: Vector2, dot_size: float) -> Vector2:
+	var half := dot_size * 0.5
+	var x := clampf(world_pos.x * _MAP_PX_W / _MINIMAP_W - half, 0.0, _MAP_PX_W - dot_size)
+	var y := clampf(world_pos.y * _MAP_PX_H / _MINIMAP_H - half, 0.0, _MAP_PX_H - dot_size)
+	return Vector2(x, y)
+
 func _update_minimap() -> void:
 	if _minimap_player_dot == null or current_player_ref == null: return
-	var world_pos: Vector2 = current_player_ref.global_position
-	# World is in pixel space — map directly to minimap display pixels
-	var dot_x: float = world_pos.x * _MAP_PX_W / _MINIMAP_W - 1.5
-	var dot_y: float = world_pos.y * _MAP_PX_H / _MINIMAP_H - 1.5
-	_minimap_player_dot.position = Vector2(dot_x, dot_y)
+	# Update player dot
+	_minimap_player_dot.position = _world_to_minimap(current_player_ref.global_position, 6.0)
+
+	# ── RTS camera viewport rect ──
+	if _minimap_cam_rect != null:
+		var cam: Camera2D = get_viewport().get_camera_2d()
+		if cam != null:
+			var vp_size: Vector2 = get_viewport().get_visible_rect().size
+			var zoom: Vector2    = cam.zoom
+			# Visible world size = viewport pixels / zoom
+			var world_w: float = vp_size.x / zoom.x
+			var world_h: float = vp_size.y / zoom.y
+			# Top-left corner in world space (camera.global_position = center of view)
+			var world_left: float = cam.global_position.x - world_w * 0.5
+			var world_top:  float = cam.global_position.y - world_h * 0.5
+			# Convert to minimap pixel space
+			var rx: float = world_left * _MAP_PX_W / _MINIMAP_W
+			var ry: float = world_top  * _MAP_PX_H / _MINIMAP_H
+			var rw: float = world_w    * _MAP_PX_W / _MINIMAP_W
+			var rh: float = world_h    * _MAP_PX_H / _MINIMAP_H
+			# Clamp to map_area bounds
+			var cx: float = clampf(rx, 0.0, _MAP_PX_W)
+			var cy: float = clampf(ry, 0.0, _MAP_PX_H)
+			var cw: float = clampf(rw, 4.0, _MAP_PX_W - cx)
+			var ch: float = clampf(rh, 4.0, _MAP_PX_H - cy)
+			_minimap_cam_rect.position = Vector2(cx, cy)
+			_minimap_cam_rect.size     = Vector2(cw, ch)
+
+	# Update NPC dots — create on first sight, update position each frame
+	if _minimap_map_area == null: return
+	var employees := get_tree().get_nodes_in_group("employees")
+	for emp_node in employees:
+		var emp_id: String = emp_node.employee_id if "employee_id" in emp_node else ""
+		if emp_id.is_empty(): continue
+		if not _minimap_npc_dots.has(emp_id):
+			var dot := ColorRect.new()
+			dot.size = Vector2(4, 4)
+			dot.z_index = 5
+			# online → green, offline → gray
+			var is_online: bool = emp_node.is_online if "is_online" in emp_node else false
+			dot.color = Color(0.2, 0.9, 0.3) if is_online else Color(0.45, 0.45, 0.45)
+			_minimap_map_area.add_child(dot)
+			_minimap_npc_dots[emp_id] = dot
+		var npc_dot: ColorRect = _minimap_npc_dots[emp_id]
+		if is_instance_valid(emp_node):
+			npc_dot.position = _world_to_minimap(emp_node.global_position, 4.0)
+		else:
+			npc_dot.queue_free()
+			_minimap_npc_dots.erase(emp_id)
 
 func _update_zone_from_player() -> void:
 	if _zone_label == null or current_player_ref == null: return
@@ -1363,17 +1498,148 @@ func _input(event: InputEvent) -> void:
 		if event.keycode == KEY_H:
 			_toggle_workspace_panel()
 		elif event.keycode == KEY_C and not event.shift_pressed and not event.ctrl_pressed:
-			_toggle_web_chat_panel()
+			var _focus := get_viewport().gui_get_focus_owner()
+			if _focus == null or not (_focus is LineEdit):
+				_toggle_ingame_chat()
 		elif event.keycode == KEY_A and event.shift_pressed:
 			_toggle_avatar_customizer()
 		elif event.keycode == KEY_Q:
 			_toggle_emote_menu()
 
+func _toggle_ingame_chat() -> void:
+	if _chat_log_node and _chat_log_node.has_method("toggle"):
+		_chat_log_node.toggle()
+
+func _toggle_ai_bar() -> void:
+	var was_open := _ai_bar_open
+	_close_side_panels()
+	if not was_open:
+		_ai_bar_open = true
+		if _ai_bar_panel:    _ai_bar_panel.visible    = true
+		if _ai_bar_backdrop: _ai_bar_backdrop.visible = true
+
 func _toggle_workspace_panel() -> void:
 	if workspace_panel == null: return
-	workspace_panel.visible = not workspace_panel.visible
+	var was_open := workspace_panel.visible
+	_close_side_panels()
+	if not was_open:
+		workspace_panel.visible = true
+		if current_player_ref: current_player_ref.set_busy(true)
+
+func _toggle_avatar_maker() -> void:
+	_avatar_iframe_visible = not _avatar_iframe_visible
+	if _web_is_platform:
+		_avatar_iframe_ensure()
+		_avatar_iframe_set_visible(_avatar_iframe_visible)
+		if _avatar_iframe_visible:
+			_avatar_iframe_poll_close()
+	else:
+		if _avatar_maker_panel == null:
+			_avatar_maker_panel = _build_avatar_maker_desktop_info()
+			add_child(_avatar_maker_panel)
+		_avatar_maker_panel.visible = _avatar_iframe_visible
 	if current_player_ref:
-		current_player_ref.set_busy(workspace_panel.visible)
+		current_player_ref.set_busy(_avatar_iframe_visible)
+
+# Tạo iframe overlay trong DOM — avatar-maker-green.vercel.app
+# JavaScriptBridge.eval() là API chuẩn Godot 4 Web. Tất cả strings hardcoded.
+func _avatar_iframe_ensure() -> void:
+	if _avatar_iframe_created: return
+	_avatar_iframe_created = true
+	var js: String = (
+		"(function(){"
+		+ "if(document.getElementById('zps-av-overlay'))return;"
+		+ "var ov=document.createElement('div');"
+		+ "ov.id='zps-av-overlay';"
+		+ "ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,0.78);z-index:500;display:none;';"
+		+ "var panel=document.createElement('div');"
+		+ "panel.style.cssText='position:absolute;top:3%;left:4%;width:92%;height:94%;display:flex;flex-direction:column;background:#1a1a2e;border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.7);';"
+		+ "var hdr=document.createElement('div');"
+		+ "hdr.style.cssText='display:flex;align-items:center;justify-content:space-between;padding:8px 16px;background:#16213e;flex-shrink:0;border-bottom:1px solid #e8c97a44;';"
+		+ "var ttl=document.createElement('span');"
+		+ "ttl.textContent='AI Avatar Maker';"
+		+ "ttl.style.cssText='color:#e8c97a;font-weight:bold;font-size:15px;font-family:sans-serif;';"
+		+ "var xbtn=document.createElement('button');"
+		+ "xbtn.textContent='Dong X';"
+		+ "xbtn.style.cssText='background:#c0392b;color:#fff;border:none;padding:5px 14px;border-radius:5px;cursor:pointer;font-size:13px;font-family:sans-serif;';"
+		+ "xbtn.onmouseenter=function(){this.style.background='#e74c3c';};"
+		+ "xbtn.onmouseleave=function(){this.style.background='#c0392b';};"
+		+ "xbtn.onclick=function(){window._zps_av_close_req=1;};"
+		+ "hdr.appendChild(ttl);hdr.appendChild(xbtn);"
+		+ "var f=document.createElement('iframe');"
+		+ "f.id='zps-av-iframe';"
+		+ "f.src='https://avatar-maker-green.vercel.app';"
+		+ "f.allow='camera;microphone;clipboard-write';"
+		+ "f.style.cssText='flex:1;border:none;';"
+		+ "panel.appendChild(hdr);panel.appendChild(f);"
+		+ "ov.appendChild(panel);"
+		+ "document.body.appendChild(ov);"
+		+ "window._zps_av_close_req=0;"
+		# Click backdrop (ngoài panel) cũng đóng
+		+ "ov.addEventListener('click',function(e){if(e.target===ov)window._zps_av_close_req=1;});"
+		+ "})();"
+	)
+	JavaScriptBridge.eval(js)
+
+func _avatar_iframe_set_visible(show: bool) -> void:
+	var display := "flex" if show else "none"
+	JavaScriptBridge.eval(
+		"var ov=document.getElementById('zps-av-overlay');"
+		+ "if(ov)ov.style.display='" + display + "';"
+		+ "window._zps_av_close_req=0;"
+	)
+
+# Poll mỗi 0.3s — detect khi user bấm Dong X hoặc click backdrop trong JS
+func _avatar_iframe_poll_close() -> void:
+	if not _avatar_iframe_visible: return
+	# Dùng số nguyên (0/1) thay bool để tránh type mismatch khi JavaScriptBridge convert
+	var req = JavaScriptBridge.eval("window._zps_av_close_req|0")
+	if req != null and int(req) == 1:
+		_avatar_iframe_visible = false
+		_avatar_iframe_set_visible(false)
+		if current_player_ref: current_player_ref.set_busy(false)
+		return
+	get_tree().create_timer(0.3).timeout.connect(_avatar_iframe_poll_close)
+
+# Desktop fallback — iframe chỉ chạy trên web build
+func _build_avatar_maker_desktop_info() -> Control:
+	var root = Control.new()
+	root.set_anchors_preset(Control.PRESET_FULL_RECT)
+	root.name = "AvatarMakerDesktopInfo"
+	var bg = ColorRect.new()
+	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	bg.color = Color(0, 0, 0, 0.6)
+	bg.gui_input.connect(func(ev: InputEvent):
+		if ev is InputEventMouseButton and ev.pressed:
+			_avatar_iframe_visible = false
+			root.visible = false
+			if current_player_ref: current_player_ref.set_busy(false)
+	)
+	root.add_child(bg)
+	var panel = PanelContainer.new()
+	panel.anchor_left = 0.5; panel.anchor_right = 0.5
+	panel.anchor_top = 0.5; panel.anchor_bottom = 0.5
+	panel.offset_left = -200; panel.offset_right = 200
+	panel.offset_top = -80;   panel.offset_bottom = 80
+	var ps = StyleBoxFlat.new()
+	ps.bg_color = Color(0.07, 0.07, 0.13)
+	ps.set_corner_radius_all(10); ps.set_border_width_all(1)
+	ps.border_color = Color(0.65, 0.52, 0.20)
+	panel.add_theme_stylebox_override("panel", ps)
+	var vb = VBoxContainer.new()
+	vb.add_theme_constant_override("separation", 10)
+	panel.add_child(vb)
+	vb.add_child(_make_label("AI Avatar Maker", 13, Color(0.9, 0.8, 0.5), true))
+	vb.add_child(_make_label("Chi hoat dong tren Web build.\nMo http://localhost:3000 de su dung.", 10, Color(0.75, 0.75, 0.75)))
+	var close_b = Button.new(); close_b.text = "Dong"
+	close_b.pressed.connect(func():
+		_avatar_iframe_visible = false
+		root.visible = false
+		if current_player_ref: current_player_ref.set_busy(false)
+	)
+	vb.add_child(close_b)
+	root.add_child(panel)
+	return root
 
 func _toggle_avatar_customizer() -> void:
 	if avatar_customizer == null: return
@@ -1637,11 +1903,7 @@ func _build_char_profile_panel() -> void:
 	var h_title = _make_label("PLAYER PROFILE", 13, Color(0.90, 0.75, 0.30), true)
 	h_title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	header_row.add_child(h_title)
-	var close_btn = Button.new(); close_btn.text = "X"; close_btn.flat = true
-	close_btn.add_theme_color_override("font_color", Color(0.7, 0.7, 0.7))
-	close_btn.add_theme_font_size_override("font_size", 14)
-	close_btn.pressed.connect(_toggle_char_profile)
-	header_row.add_child(close_btn)
+	header_row.add_child(_make_x_btn(_toggle_char_profile))
 	header_bg.add_child(header_row); outer.add_child(header_bg)
 
 	# ── Body (left avatar column + right content) ──
@@ -1740,15 +2002,15 @@ void fragment() {
 	av_click_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
 	av_click_btn.flat = true
 	av_click_btn.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-	av_click_btn.tooltip_text = "Click để tạo Avatar mới"
+	av_click_btn.tooltip_text = "Click để tạo AI Avatar mới"
 	av_click_btn.pressed.connect(func():
 		_toggle_char_profile()
-		_toggle_avatar_customizer()
+		_toggle_avatar_maker()
 	)
 	av_frame.add_child(av_click_btn)
 
 	# "Edit" hint label below avatar
-	var edit_hint = _make_label("[ Tạo Avatar ]", 8, Color(0.65, 0.52, 0.20))
+	var edit_hint = _make_label("[ Tạo AI Avatar ]", 8, Color(0.65, 0.52, 0.20))
 	edit_hint.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	edit_hint.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 	left.add_child(av_frame)
@@ -1787,6 +2049,71 @@ void fragment() {
 	status_opt.add_item(" Không xác định")
 	status_opt.add_theme_font_size_override("font_size", 10)
 	left.add_child(status_opt)
+
+	left.add_child(HSeparator.new())
+
+	# ── Character sprite display ──
+	left.add_child(_make_label("NHÂN VẬT", 9, Color(0.55, 0.80, 0.95), true))
+	var char_sprite_frame = Control.new()
+	char_sprite_frame.custom_minimum_size = Vector2(80, 96)
+	var char_sv_container = SubViewportContainer.new()
+	char_sv_container.size = Vector2(80, 96)
+	char_sv_container.custom_minimum_size = Vector2(80, 96)
+	char_sv_container.stretch = true
+	var char_sv = SubViewport.new()
+	char_sv.size = Vector2i(80, 96)
+	char_sv.transparent_bg = true
+	char_sv.render_target_update_mode = SubViewport.UPDATE_ALWAYS
+	var char_bg = ColorRect.new()
+	char_bg.color = Color(0.10, 0.08, 0.16)
+	char_bg.set_anchors_preset(Control.PRESET_FULL_RECT)
+	char_sv.add_child(char_bg)
+	# Render player sprite inside sub-viewport
+	var _char_player_data: Dictionary = GameManager.get_employee(PlayerData.player_id) if \
+		GameManager.has_method("get_employee") else {}
+	_char_player_data["department"] = PlayerData.department
+	var preview_sprite = _AR.make_anim_sprite_for_npc(_char_player_data)
+	if preview_sprite == null:
+		preview_sprite = _AR.make_sprite(_char_player_data.get("department", "default"))
+	if preview_sprite:
+		preview_sprite.position = Vector2(40, 80)
+		preview_sprite.scale *= 2.5
+		char_sv.add_child(preview_sprite)
+	else:
+		var fb = Label.new(); fb.text = PlayerData.display_name.left(2).to_upper()
+		fb.add_theme_font_size_override("font_size", 22)
+		fb.add_theme_color_override("font_color", Color(0.90, 0.75, 0.30))
+		fb.set_anchors_preset(Control.PRESET_CENTER)
+		char_sv.add_child(fb)
+	char_sv_container.add_child(char_sv)
+	char_sprite_frame.add_child(char_sv_container)
+	var char_sprite_row = HBoxContainer.new()
+	char_sprite_row.alignment = BoxContainer.ALIGNMENT_CENTER
+	char_sprite_row.add_child(char_sprite_frame)
+	left.add_child(char_sprite_row)
+
+	# ── Action buttons: AI Avatar + Thay đổi ngoại hình ──
+	var btn_ai_avatar = Button.new()
+	btn_ai_avatar.text = "AI Avatar"
+	btn_ai_avatar.add_theme_font_size_override("font_size", 9)
+	btn_ai_avatar.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	btn_ai_avatar.pressed.connect(func():
+		_toggle_char_profile()
+		_toggle_avatar_maker()
+	)
+	var btn_appearance = Button.new()
+	btn_appearance.text = "Ngoại hình"
+	btn_appearance.add_theme_font_size_override("font_size", 9)
+	btn_appearance.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	btn_appearance.pressed.connect(func():
+		_toggle_char_profile()
+		_toggle_avatar_customizer()
+	)
+	var action_row = HBoxContainer.new()
+	action_row.add_theme_constant_override("separation", 4)
+	action_row.add_child(btn_ai_avatar)
+	action_row.add_child(btn_appearance)
+	left.add_child(action_row)
 
 	# Right content
 	var right = VBoxContainer.new()
@@ -1941,28 +2268,61 @@ func _roster_short_name(full_name: String) -> String:
 	return full_name
 
 func _build_roster_panel() -> void:
-	# Toggle button — top-right area
+	# Toggle button — anchor top-right, left of [AI] button group
+	var btn_anchor = Control.new()
+	btn_anchor.anchor_left = 1.0; btn_anchor.anchor_right = 1.0
+	btn_anchor.anchor_top = 0.0;  btn_anchor.anchor_bottom = 0.0
+	btn_anchor.offset_left = -200; btn_anchor.offset_right = -152
+	btn_anchor.offset_top = 8;    btn_anchor.offset_bottom = 36
 	_roster_toggle_btn = Button.new()
 	_roster_toggle_btn.text = "Online"
-	_roster_toggle_btn.position = Vector2(1100, 8)
-	_roster_toggle_btn.size = Vector2(90, 28)
+	_roster_toggle_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
 	_roster_toggle_btn.pressed.connect(_toggle_roster)
-	add_child(_roster_toggle_btn)
+	btn_anchor.add_child(_roster_toggle_btn)
+	add_child(btn_anchor)
 
-	# Panel
+	# Backdrop — click-outside closes roster
+	_roster_backdrop = Control.new()
+	_roster_backdrop.set_anchors_preset(Control.PRESET_FULL_RECT)
+	_roster_backdrop.mouse_filter = Control.MOUSE_FILTER_STOP
+	_roster_backdrop.visible = false
+	_roster_backdrop.gui_input.connect(func(ev: InputEvent):
+		if ev is InputEventMouseButton and ev.button_index == MOUSE_BUTTON_LEFT and ev.pressed:
+			_toggle_roster()
+	)
+	add_child(_roster_backdrop)
+
+	# Panel — anchor top-right corner, drops down below button
 	_roster_panel = PanelContainer.new()
-	_roster_panel.position = Vector2(1000, 40)
-	_roster_panel.size = Vector2(270, 300)
+	_roster_panel.anchor_left = 1.0; _roster_panel.anchor_right = 1.0
+	_roster_panel.anchor_top = 0.0;  _roster_panel.anchor_bottom = 0.0
+	_roster_panel.offset_left = -278; _roster_panel.offset_right = -8
+	_roster_panel.offset_top = 44;   _roster_panel.offset_bottom = 360
 	_roster_panel.visible = false
 	add_child(_roster_panel)
 
-	var scroll = ScrollContainer.new()
-	scroll.size = Vector2(270, 300)
-	_roster_panel.add_child(scroll)
+	var rvbox = VBoxContainer.new()
+	rvbox.set_anchors_preset(Control.PRESET_FULL_RECT)
+	rvbox.add_theme_constant_override("separation", 2)
+	_roster_panel.add_child(rvbox)
 
+	# Header với nút ✕
+	var r_hdr = HBoxContainer.new()
+	r_hdr.add_theme_constant_override("separation", 4)
+	var r_ttl = _make_label("Đang online", 10, Color(0.85, 0.95, 1.0), true)
+	r_ttl.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	r_hdr.add_child(r_ttl)
+	r_hdr.add_child(_make_x_btn(_toggle_roster))
+	rvbox.add_child(r_hdr)
+	rvbox.add_child(HSeparator.new())
+
+	var scroll = ScrollContainer.new()
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_roster_list = VBoxContainer.new()
 	_roster_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(_roster_list)
+	rvbox.add_child(scroll)
 
 	# Connect to network events
 	NetworkManager.roster_received.connect(_on_roster_update)
@@ -1971,8 +2331,13 @@ func _build_roster_panel() -> void:
 	NetworkManager.status_changed.connect(func(_id, _s, _m): _refresh_roster())
 
 func _toggle_roster() -> void:
-	_roster_open = !_roster_open
-	_roster_panel.visible = _roster_open
+	var was_open := _roster_open
+	_close_side_panels()
+	if not was_open:
+		_roster_open = true
+		if _roster_panel:    _roster_panel.visible    = true
+		if _roster_backdrop: _roster_backdrop.visible = true
+		_refresh_roster()
 
 func _on_roster_update(_players: Array) -> void:
 	_refresh_roster()

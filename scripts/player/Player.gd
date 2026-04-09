@@ -42,6 +42,7 @@ func _ready() -> void:
 		PlayerData.avatar_config,
 		"main"
 	)
+	NetworkManager.chat_received.connect(_on_chat_received_bubble)
 
 func _build_physics_collision() -> void:
 	var col := CollisionShape2D.new()
@@ -346,3 +347,25 @@ func set_busy(busy: bool) -> void:
 	if busy:
 		_click_moving = false
 		velocity = Vector2.ZERO
+
+# ── Floating chat bubble ──
+func say(text: String, duration: float = 4.0) -> void:
+	var old := get_node_or_null("ChatBubble")
+	if old:
+		old.queue_free()
+	var bubble := Label.new()
+	bubble.name = "ChatBubble"
+	bubble.text = text
+	bubble.add_theme_font_size_override("font_size", 7)
+	bubble.position = Vector2(-30.0, -72.0)
+	bubble.modulate = Color(1.0, 1.0, 0.8)
+	bubble.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	bubble.custom_minimum_size = Vector2(80.0, 0.0)
+	add_child(bubble)
+	get_tree().create_timer(duration).timeout.connect(
+		func(): if is_instance_valid(bubble): bubble.queue_free()
+	)
+
+func _on_chat_received_bubble(from_id: String, text: String, _ts: int) -> void:
+	if from_id == PlayerData.player_id:
+		say(text)

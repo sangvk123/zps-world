@@ -14,24 +14,27 @@ var _is_open: bool = false
 var _messages: Array[Dictionary] = []   # {from, text, ts}
 
 func _ready() -> void:
+	add_to_group("chat_log")
 	set_process_input(true)
 	_build_ui()
 	NetworkManager.chat_received.connect(_on_chat_received)
 
 func _build_ui() -> void:
-	# Panel background
+	# Panel background — anchor to bottom-left so it adapts to any screen height
 	var bg = PanelContainer.new()
-	bg.position = Vector2(10, 380)
-	bg.size = Vector2(340, 240)
+	bg.anchor_left = 0.0;  bg.anchor_right = 0.0
+	bg.anchor_top = 1.0;   bg.anchor_bottom = 1.0
+	bg.offset_left = 10;   bg.offset_right = 350
+	bg.offset_top = -250;  bg.offset_bottom = -10
 	add_child(bg)
 
 	var vbox = VBoxContainer.new()
-	vbox.size = Vector2(340, 240)
+	vbox.set_anchors_preset(Control.PRESET_FULL_RECT)
 	bg.add_child(vbox)
 
 	_scroll = ScrollContainer.new()
 	_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	_scroll.size = Vector2(340, 200)
+	_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	vbox.add_child(_scroll)
 
 	_log_container = VBoxContainer.new()
@@ -50,16 +53,14 @@ func _build_ui() -> void:
 	bg.visible = false
 	_is_open = false
 
-func _input(event: InputEvent) -> void:
-	if event is InputEventKey and event.pressed:
-		if event.keycode == KEY_C and not _input_field.has_focus():
-			_toggle()
-
-func _toggle() -> void:
+func toggle() -> void:
 	_is_open = !_is_open
 	get_child(0).visible = _is_open
 	if _is_open:
 		_input_field.grab_focus()
+
+func _toggle() -> void:
+	toggle()
 
 func _on_chat_received(from_id: String, text: String, ts: int) -> void:
 	_messages.append({ "from": from_id, "text": text, "ts": ts })
@@ -78,6 +79,5 @@ func _on_send(text: String) -> void:
 	if text.strip_edges().is_empty():
 		return
 	NetworkManager.send_chat(text)
-	# Also show own message locally
-	_on_chat_received(PlayerData.player_id, text, Time.get_unix_time_from_system())
+	# Own message displayed via server echo → chat_received signal (no local duplicate)
 	_input_field.clear()

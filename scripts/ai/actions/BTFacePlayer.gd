@@ -24,7 +24,7 @@ func _tick(_delta: float) -> Status:
 	var player := agent.get_tree().get_first_node_in_group("player") as Node2D
 	if player:
 		var dir := player.global_position - emp.global_position
-		emp.update_npc_facing(dir)
+		emp.face_direction(dir)
 
 	emp.velocity = Vector2.ZERO
 	return RUNNING

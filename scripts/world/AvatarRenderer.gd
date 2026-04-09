@@ -179,22 +179,51 @@ static func make_sprite_for_npc(emp_data: Dictionary) -> Sprite2D:
 #   Sheet layout: 24 frames, 6 per direction, row 0.
 # ─────────────────────────────────────────────
 ## Sheet layout: 384×32, 24 frames. south=0-5, north=6-11, west=12-17; east=flip west.
+## Nếu sheet chỉ có 4 frames (64 px, ví dụ idle fallback), chỉ dùng south direction.
 static func _fill_directional_anims(
 		frames: SpriteFrames, sheet: Texture2D,
 		prefix: String, fps: float) -> void:
-	var dirs: Dictionary = {"south": 0, "north": 6, "west": 12}
+	# Tính số frames theo chiều ngang của sheet
+	var sheet_w: int = sheet.get_width()
+	var total_frames: int = int(sheet_w / FRAME_W)   # e.g. 384/16=24, 64/16=4
+	# dirs phụ thuộc vào số frames: ≥18 → 3 hướng, ≥12 → 2 hướng (south+north), <12 → chỉ south
+	var dirs: Dictionary
+	if total_frames >= 18:
+		dirs = {"south": 0, "north": 6, "west": 12}
+	elif total_frames >= 12:
+		dirs = {"south": 0, "north": 6}
+	else:
+		dirs = {"south": 0}
+	var frames_per_dir: int = min(6, total_frames)
 	for dir: String in dirs:
 		var start: int = dirs[dir]
+		# Bỏ qua nếu start vượt quá số frames có sẵn
+		if start >= total_frames:
+			continue
 		var anim_name: String = prefix + "_" + dir
 		frames.add_animation(anim_name)
 		frames.set_animation_speed(anim_name, fps)
 		frames.set_animation_loop(anim_name, true)
-		for i: int in 6:
+		for i: int in frames_per_dir:
+			var frame_idx: int = start + i
+			if frame_idx >= total_frames:
+				break
 			var atlas := AtlasTexture.new()
 			atlas.atlas = sheet
-			atlas.region = Rect2((start + i) * FRAME_W, 0, FRAME_W, FRAME_H)
-			atlas.filter_clip = not OS.has_feature("web")  # web GLES: disable to prevent pixel bleeding
+			atlas.region = Rect2(frame_idx * FRAME_W, 0, FRAME_W, FRAME_H)
+			atlas.filter_clip = true
 			frames.add_frame(anim_name, atlas)
+	# Đảm bảo luôn có đủ 3 hướng để update_npc_facing không bị lỗi
+	# Nếu thiếu north/west → alias sang south
+	for fallback_dir: String in ["north", "west"]:
+		var anim_name: String = prefix + "_" + fallback_dir
+		var south_name: String = prefix + "_south"
+		if not frames.has_animation(anim_name) and frames.has_animation(south_name):
+			frames.add_animation(anim_name)
+			frames.set_animation_speed(anim_name, fps)
+			frames.set_animation_loop(anim_name, true)
+			for fi: int in frames.get_frame_count(south_name):
+				frames.add_frame(anim_name, frames.get_frame_texture(south_name, fi))
 
 static func make_anim_sprite_for_npc(emp_data: Dictionary) -> AnimatedSprite2D:
 	var role: String = emp_data.get("department", "default").to_lower()
