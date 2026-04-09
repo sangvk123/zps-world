@@ -6,7 +6,7 @@ class_name BTPickWanderTarget
 extends BTAction
 
 const MARGIN           := 12.0   # padding khỏi edge của zone
-const CROSS_ZONE_CHANCE := 0.25   # xác suất đi sang zone khác
+const CROSS_ZONE_CHANCE := 0.10   # xác suất đi sang zone khác (giảm từ 25% → 10%)
 # Map bounds (matches Campus.gd MAP_W / MAP_H)
 const MAP_MIN := Vector2(20.0, 20.0)
 const MAP_MAX := Vector2(1173.0, 876.0)
