@@ -137,7 +137,7 @@ body {
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":30787000,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":["liblimboai.web.template_release.wasm32.nothreads.wasm"],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":30786824,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":["liblimboai.web.template_release.wasm32.nothreads.wasm"],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -303,45 +303,76 @@ const engine = new Engine(GODOT_CONFIG);
 	})();
 	</script>
 	
-	<!-- ZPS World Virtual Joystick — mobile only -->
-	<div id="zps-joystick-base" style="display:none;position:fixed;bottom:32px;left:32px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.10);border:2px solid rgba(255,255,255,0.22);z-index:9998;touch-action:none;">
-	  <div id="zps-joystick-thumb" style="position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.38);top:36px;left:36px;pointer-events:none;"></div>
+	<!-- ZPS World Dynamic Joystick + Pinch Zoom — mobile only -->
+	<div id="zps-joystick-base" style="display:none;position:fixed;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.12);border:2px solid rgba(255,255,255,0.30);z-index:9998;pointer-events:none;transform:translate(-50%,-50%);">
+		<div id="zps-joystick-thumb" style="position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.45);top:36px;left:36px;pointer-events:none;"></div>
 	</div>
 	<script>
 	(function(){
-	  var base=document.getElementById('zps-joystick-base');
-	  var thumb=document.getElementById('zps-joystick-thumb');
-	  var baseR=60,thumbR=24;
-	  window._zpsJoystick={x:0,y:0};
-	  function isMobile(){return('ontouchstart' in window)||navigator.maxTouchPoints>0;}
-	  function show(){if(isMobile())base.style.display='block';}
-	  document.addEventListener('DOMContentLoaded',show);
-	  setTimeout(show,500);
-	  var originX=0,originY=0,active=false;
-	  base.addEventListener('touchstart',function(e){
-	    e.preventDefault();
-	    var t=e.targetTouches[0];
-	    var rect=base.getBoundingClientRect();
-	    originX=rect.left+baseR; originY=rect.top+baseR;
-	    active=true; moveThumb(t.clientX,t.clientY);
-	  },{passive:false});
-	  document.addEventListener('touchmove',function(e){
-	    if(!active)return; e.preventDefault();
-	    var t=e.targetTouches[0]; moveThumb(t.clientX,t.clientY);
-	  },{passive:false});
-	  document.addEventListener('touchend',function(){
-	    if(!active)return; active=false;
-	    thumb.style.left=(baseR-thumbR)+'px'; thumb.style.top=(baseR-thumbR)+'px';
-	    window._zpsJoystick={x:0,y:0};
-	  });
-	  function moveThumb(cx,cy){
-	    var dx=cx-originX, dy=cy-originY;
-	    var dist=Math.sqrt(dx*dx+dy*dy);
-	    var max=baseR-thumbR;
-	    if(dist>max){var s=max/dist;dx*=s;dy*=s;}
-	    thumb.style.left=(baseR-thumbR+dx)+'px'; thumb.style.top=(baseR-thumbR+dy)+'px';
-	    window._zpsJoystick={x:dx/max, y:dy/max};
-	  }
+		function isMobile(){return('ontouchstart' in window)||navigator.maxTouchPoints>0;}
+		if(!isMobile()) return;
+		var base=document.getElementById('zps-joystick-base');
+		var thumb=document.getElementById('zps-joystick-thumb');
+		var baseR=60,thumbR=24,MAX_R=36;
+		window._zpsJoystick={x:0,y:0};
+		window._zpsPinchZoom=0;
+		setTimeout(function(){var c=document.querySelector('canvas');if(c)c.style.touchAction='none';},800);
+		var joyId=null,joyActive=false,startX=0,startY=0;
+		var pinchId2=null,pinchDist=0;
+		var DRAG_THRESHOLD=18;
+		function getT(id,list){for(var i=0;i<list.length;i++)if(list[i].identifier===id)return list[i];return null;}
+		function activateJoy(ox,oy){
+			joyActive=true;
+			base.style.left=ox+'px';base.style.top=oy+'px';base.style.display='block';
+			thumb.style.left=(baseR-thumbR)+'px';thumb.style.top=(baseR-thumbR)+'px';
+		}
+		function updateJoy(dx,dy){
+			var d=Math.sqrt(dx*dx+dy*dy);
+			var nx=dx,ny=dy;
+			if(d>MAX_R){nx=dx/d*MAX_R;ny=dy/d*MAX_R;}
+			thumb.style.left=(baseR-thumbR+nx)+'px';thumb.style.top=(baseR-thumbR+ny)+'px';
+			window._zpsJoystick={x:Math.max(-1,Math.min(1,dx/MAX_R)),y:Math.max(-1,Math.min(1,dy/MAX_R))};
+		}
+		document.addEventListener('touchstart',function(e){
+			if(e.target.closest&&e.target.closest('#zps-login-overlay'))return;
+			for(var i=0;i<e.changedTouches.length;i++){
+				var t=e.changedTouches[i];
+				if(joyId===null){joyId=t.identifier;joyActive=false;startX=t.clientX;startY=t.clientY;}
+				else if(pinchId2===null){
+					pinchId2=t.identifier;
+					var t1=getT(joyId,e.touches);
+					if(t1){var dx=t1.clientX-t.clientX,dy=t1.clientY-t.clientY;pinchDist=Math.sqrt(dx*dx+dy*dy);}
+					joyActive=false;base.style.display='none';window._zpsJoystick={x:0,y:0};
+				}
+			}
+		},{passive:true});
+		document.addEventListener('touchmove',function(e){
+			if(e.target.closest&&e.target.closest('#zps-login-overlay'))return;
+			var used=false;
+			for(var i=0;i<e.changedTouches.length;i++){
+				var t=e.changedTouches[i];
+				if(t.identifier===joyId&&pinchId2===null){
+					var dx=t.clientX-startX,dy=t.clientY-startY;
+					if(!joyActive&&Math.sqrt(dx*dx+dy*dy)>DRAG_THRESHOLD)activateJoy(startX,startY);
+					if(joyActive){updateJoy(dx,dy);used=true;}
+				}else if(pinchId2!==null){
+					var t1=getT(joyId,e.touches),t2=getT(pinchId2,e.touches);
+					if(t1&&t2){var pdx=t1.clientX-t2.clientX,pdy=t1.clientY-t2.clientY;var d=Math.sqrt(pdx*pdx+pdy*pdy);if(pinchDist>0)window._zpsPinchZoom=(d-pinchDist)/pinchDist;pinchDist=d;used=true;}
+				}
+			}
+			if(used)e.preventDefault();
+		},{passive:false});
+		document.addEventListener('touchend',function(e){
+			for(var i=0;i<e.changedTouches.length;i++){
+				var t=e.changedTouches[i];
+				if(t.identifier===joyId){joyId=null;joyActive=false;base.style.display='none';window._zpsJoystick={x:0,y:0};}
+				else if(t.identifier===pinchId2){pinchId2=null;window._zpsPinchZoom=0;}
+			}
+		},{passive:true});
+		document.addEventListener('touchcancel',function(){
+			joyId=null;joyActive=false;pinchId2=null;base.style.display='none';
+			window._zpsJoystick={x:0,y:0};window._zpsPinchZoom=0;
+		},{passive:true});
 	})();
 	</script>
 	</body>

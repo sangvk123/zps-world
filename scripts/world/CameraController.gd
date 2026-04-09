@@ -17,18 +17,17 @@ var _is_panning: bool = false
 var _pan_start_mouse: Vector2 = Vector2.ZERO
 var _pan_start_offset: Vector2 = Vector2.ZERO
 var _target_zoom: float = 2.5
+var _is_mobile: bool = false
 
 func _ready() -> void:
-	# Sync with zoom set from code (e.g. Office._setup_camera)
 	_target_zoom = zoom.x
-	# Mobile: allow zooming out further
 	if OS.has_feature("web"):
 		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
-		var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
-		var is_mobile: bool = (mw is float and (mw as float) < 900.0) or has_touch == true
-		if is_mobile:
+		var ht = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+		_is_mobile = (mw is float and (mw as float) < 900.0) or ht == true
+		if _is_mobile:
 			zoom_min = 0.5
-			zoom_max = 2.5
+			zoom_max = 4.0
 
 func _input(event: InputEvent) -> void:
 	# ── Right-mouse pan ──
@@ -57,5 +56,10 @@ func _input(event: InputEvent) -> void:
 		_is_panning = false
 
 func _process(delta: float) -> void:
-	# Smooth zoom lerp
 	zoom = zoom.lerp(Vector2(_target_zoom, _target_zoom), zoom_lerp_speed * delta)
+	# Pinch-to-zoom (mobile web only)
+	if _is_mobile:
+		var pinch = JavaScriptBridge.eval("window._zpsPinchZoom||0")
+		if pinch is float and absf(pinch as float) > 0.001:
+			_target_zoom = clamp(_target_zoom + (pinch as float) * 6.0, zoom_min, zoom_max)
+			JavaScriptBridge.eval("window._zpsPinchZoom=0")
