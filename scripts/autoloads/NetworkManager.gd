@@ -16,7 +16,16 @@ signal emote_received(from_id: String, emote: String)
 signal status_changed(id: String, status: String, message: String)
 
 # ── Config ──
-var server_url: String = "ws://localhost:3001"
+var server_url: String = _resolve_ws_url()
+
+static func _resolve_ws_url() -> String:
+	# On web: read ?ws=wss://... URL param so GitHub Pages can point to Railway WS
+	if OS.has_feature("web"):
+		var js_snippet := "(function(){ var p=new URLSearchParams(window.location.search).get('ws'); return p||''; })()"
+		var js_result = JavaScriptBridge.eval(js_snippet)
+		if js_result is String and (js_result as String) != "":
+			return js_result as String
+	return "ws://localhost:3001"
 var _ws: WebSocketPeer = null
 var _connected: bool = false
 var _send_interval: float = 0.05   # 50ms

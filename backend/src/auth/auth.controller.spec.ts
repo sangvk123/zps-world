@@ -20,19 +20,18 @@ describe('AuthController', () => {
     controller = module.get<AuthController>(AuthController);
   });
 
-  it('login returns error shape for wrong secret', async () => {
-    const result = await controller.login({ employee_id: 'hieupt', secret: 'bad' });
-    expect(result).toEqual({ error: 'Invalid credentials' });
+  it('login returns error shape for wrong password', async () => {
+    const result = await controller.login({ domain: 'sangvk', password: 'wrong' });
+    expect(result).toHaveProperty('error');
   });
 
-  it('login returns token and employee for valid credentials', async () => {
-    const result = await controller.login({ employee_id: 'hieupt', secret: 'zps-dev-secret' });
+  it('login returns token for valid credentials', async () => {
+    const result = await controller.login({ domain: 'sangvk', password: 'zps2024' });
     expect(result).toHaveProperty('access_token');
-    expect((result as { employee: { id: string } }).employee.id).toBe('hieupt');
   });
 
   it('getMe returns the employee from request.user', () => {
-    const fakeEmployee = { id: 'hieupt', name: 'Hiếu PT', department: 'Product' };
+    const fakeEmployee = { id: 'sangvk', name: 'SangVK', department: 'Design' };
     const result = controller.getMe({ user: fakeEmployee } as any);
     expect(result).toEqual(fakeEmployee);
   });

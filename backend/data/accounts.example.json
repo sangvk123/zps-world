@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sangvk",
+    "domain": "sangvk",
+    "password": "your-password-here",
+    "name": "SangVK - Vũ Khánh Sang",
+    "department": "Design",
+    "title": "Master of The Watch",
+    "zps_class": "artisan",
+    "char_id": 1
+  },
+  {
+    "id": "hieupt",
+    "domain": "hieupt",
+    "password": "another-password",
+    "name": "Hiếu PT",
+    "department": "Product",
+    "title": "CPO — Chief Product Officer",
+    "zps_class": "strategist",
+    "char_id": 2
+  }
+]

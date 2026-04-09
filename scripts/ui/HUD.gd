@@ -136,6 +136,13 @@ func _ready() -> void:
 	add_child(_chat_log_node)
 	NetworkManager.emote_received.connect(_on_emote_toast)
 
+	# ── Login dialog — shown on top of everything if not yet logged in ──
+	if not PlayerData.is_logged_in:
+		var dialog := load("res://scripts/ui/LoginDialog.gd").new()
+		add_child(dialog)
+		# Update player card after login completes
+		PlayerData.login_complete.connect(func(): _update_player_card(), CONNECT_ONE_SHOT)
+
 # ─────────────────────────────────────────────
 # Build all UI programmatically
 # ─────────────────────────────────────────────

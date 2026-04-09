@@ -34,7 +34,14 @@ func _ready() -> void:
 	_build_physics_collision()
 	_build_visuals()
 	_build_interaction_area()
-	# Connect to multiplayer server
+	NetworkManager.chat_received.connect(_on_chat_received_bubble)
+	# Connect to multiplayer server only after login is complete
+	if PlayerData.is_logged_in:
+		_connect_to_server()
+	else:
+		PlayerData.login_complete.connect(_connect_to_server, CONNECT_ONE_SHOT)
+
+func _connect_to_server() -> void:
 	NetworkManager.connect_to_server(
 		PlayerData.player_id,
 		global_position.x,
@@ -42,7 +49,6 @@ func _ready() -> void:
 		PlayerData.avatar_config,
 		"main"
 	)
-	NetworkManager.chat_received.connect(_on_chat_received_bubble)
 
 func _build_physics_collision() -> void:
 	var col := CollisionShape2D.new()

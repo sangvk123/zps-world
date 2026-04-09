@@ -12,8 +12,18 @@ extends Node
 signal response_received(endpoint: String, data: Variant)
 signal error(endpoint: String, message: String)
 
-var base_url: String = "http://localhost:3000"
+var base_url: String = _resolve_api_url()
 var jwt_token: String = ""
+
+static func _resolve_api_url() -> String:
+	# On web: read ?api=https://... URL param so GitHub Pages can point to Railway
+	if OS.has_feature("web"):
+		var js_result = JavaScriptBridge.eval(
+			"(function(){ var p=new URLSearchParams(window.location.search).get('api'); return p||''; })()"
+		)
+		if js_result is String and (js_result as String) != "":
+			return js_result as String
+	return "http://localhost:3000"
 
 # Tracks which HTTPRequest node maps to which endpoint so we can route responses
 var _pending: Dictionary = {}   # HTTPRequest node → endpoint String

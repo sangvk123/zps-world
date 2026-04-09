@@ -23,3 +23,6 @@ Thumbs.db
 # Env
 .env
 .env.local
+
+# Accounts (contains passwords — never commit, use accounts.example.json as template)
+backend/data/accounts.json

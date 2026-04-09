@@ -4,12 +4,18 @@
 
 extends Node
 
+signal login_complete
+
+# ── Auth state ──
+var is_logged_in: bool = false
+var jwt_token_cached: String = ""
+
 # ── Core identity ──
-var player_id: String = "player"
-var display_name: String = "SangVK - Vũ Khánh Sang"
-var department: String = "Design"
-var hr_title: String = "Master of The Watch"
-var zps_callsign: String = "SangVK"  # Domain name shown in-game
+var player_id: String = ""
+var display_name: String = ""
+var department: String = ""
+var hr_title: String = ""
+var zps_callsign: String = ""
 var zps_class: String = "artisan"
 
 # ── Avatar config (matches AvatarData resource structure) ──
@@ -64,7 +70,8 @@ func _ready() -> void:
 	load_data()
 	_set_todays_outfit()
 	set_process(true)
-	print("[PlayerData] Loaded — Player: %s (%s)" % [display_name, hr_title])
+	if display_name != "":
+		print("[PlayerData] Loaded — Player: %s (%s)" % [display_name, hr_title])
 
 # ── Outfit rotation ──
 func _set_todays_outfit() -> void:
@@ -193,6 +200,7 @@ func save_data() -> void:
 	config.set_value("identity", "hr_title", hr_title)
 	config.set_value("identity", "zps_callsign", zps_callsign)
 	config.set_value("identity", "zps_class", zps_class)
+	config.set_value("auth", "jwt_token", jwt_token_cached)
 	config.set_value("avatar", "config", avatar_config)
 	config.set_value("outfit", "unlocked", unlocked_outfits)
 	config.set_value("outfit", "schedule", outfit_schedule)
@@ -222,6 +230,7 @@ func load_data() -> void:
 	hr_title = config.get_value("identity", "hr_title", hr_title)
 	zps_callsign = config.get_value("identity", "zps_callsign", zps_callsign)
 	zps_class = config.get_value("identity", "zps_class", zps_class)
+	jwt_token_cached = config.get_value("auth", "jwt_token", "")
 	avatar_config = config.get_value("avatar", "config", avatar_config)
 	unlocked_outfits = config.get_value("outfit", "unlocked", unlocked_outfits)
 	outfit_schedule = config.get_value("outfit", "schedule", outfit_schedule)
@@ -237,18 +246,29 @@ func load_data() -> void:
 	ai_agent_context = config.get_value("prefs", "ai_agent_context", ai_agent_context)
 	avatar_portrait_base64 = config.get_value("portrait", "base64", "")
 	avatar_portrait_style = config.get_value("portrait", "style", "")
-	# Migrate old default names
-	if display_name in ["New Member", "Bạn", ""]:
-		display_name = "SangVK - Vũ Khánh Sang"
-		hr_title = "Master of The Watch"
-		zps_callsign = "SangVK"
-		save_data()
-	elif zps_callsign == "":
-		zps_callsign = "SangVK"
-		save_data()
+	# If we have a saved jwt, mark as logged in (session restore)
+	if jwt_token_cached != "" and player_id != "":
+		HttpManager.jwt_token = jwt_token_cached
+		is_logged_in = true
 
 func _first_run_setup() -> void:
-	# Will be handled by onboarding scene in full version
-	display_name = "SangVK - Vũ Khánh Sang"
-	hr_title = "Master of the Watch"
+	# No default identity — LoginDialog will call apply_login_data() after auth
+	pass
+
+## Called by LoginDialog after successful POST /auth/login
+func apply_login_data(token: String, emp: Dictionary) -> void:
+	jwt_token_cached = token
+	HttpManager.jwt_token = token
+	player_id    = emp.get("id",         "unknown")
+	display_name = emp.get("name",        "")
+	department   = emp.get("department",  "")
+	hr_title     = emp.get("title",       "")
+	zps_class    = emp.get("zps_class",   "artisan")
+	zps_callsign = emp.get("id",          player_id)
+	var char_id: int = emp.get("char_id", 0)
+	avatar_config["char_id"]   = char_id
+	avatar_config["outfit_id"] = emp.get("avatar", {}).get("outfit_id", "work_casual")
+	is_logged_in = true
 	save_data()
+	_set_todays_outfit()
+	login_complete.emit()

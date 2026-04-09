@@ -18,9 +18,15 @@ async function bootstrap(): Promise<void> {
   const publicDir = path.join(__dirname, '..', 'public');
   app.useStaticAssets(publicDir);
 
-  // Allow Godot game served from :3000 + WebSocket server on :3001
+  // Allow Godot game served from :3000, GitHub Pages, and custom origins via env var
+  const defaultOrigins = [
+    'http://localhost:3000', 'http://localhost:3001',
+    'http://127.0.0.1:3000', 'http://127.0.0.1:3001',
+    'https://sangvk123.github.io',
+  ];
+  const extraOrigins = (process.env['ALLOWED_ORIGINS'] ?? '').split(',').filter(Boolean);
   app.enableCors({
-    origin: ['http://localhost:3000', 'http://localhost:3001', 'http://127.0.0.1:3000', 'http://127.0.0.1:3001'],
+    origin: [...defaultOrigins, ...extraOrigins],
     methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   });

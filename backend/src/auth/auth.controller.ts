@@ -12,8 +12,8 @@ export class AuthController {
   async login(
     @Body() dto: LoginDto,
   ): Promise<{ access_token: string; employee: EmployeeProfile } | { error: string }> {
-    const result = await this.authService.login(dto.employee_id, dto.secret);
-    if (!result) return { error: 'Invalid credentials' };
+    const result = await this.authService.login(dto.domain, dto.password);
+    if (!result) return { error: 'Domain hoặc mật khẩu không đúng' };
     return result;
   }
 
