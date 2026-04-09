@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sangvk",
+    "domain": "sangvk",
+    "password": "demo",
+    "name": "SangVK - Vũ Khánh Sang",
+    "department": "Game Design",
+    "title": "Senior Game Designer",
+    "nameplate_title": "Master of The Watch",
+    "zps_class": "artisan",
+    "char_id": 1
+  },
+  {
+    "id": "hieupt",
+    "domain": "hieupt",
+    "password": "demo",
+    "name": "Hiếu PT",
+    "department": "Engineering",
+    "title": "Senior Technical Manager",
+    "nameplate_title": "Grand Artificer",
+    "zps_class": "engineer",
+    "char_id": 2
+  },
+  {
+    "id": "duongpq",
+    "domain": "duongpq",
+    "password": "demo",
+    "name": "Dương PQ",
+    "department": "Multimedia",
+    "title": "Art Manager",
+    "nameplate_title": "Warden of Visions",
+    "zps_class": "artisan",
+    "char_id": 3
+  }
+]
