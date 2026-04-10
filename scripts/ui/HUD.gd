@@ -73,6 +73,7 @@ var _emote_toast_stack: VBoxContainer = null
 
 # ── Mobile / touch detection ──
 var _is_mobile: bool = false
+var _hud_built: bool = false
 
 # ── Minimap layout constants (mirrors ZPS_Layout_Campus.png 1193×896 px) ──
 const _MINIMAP_W: int = 1193 # world pixels (map width)
@@ -130,12 +131,19 @@ func _js_query(code: String) -> Variant:
 func _ready() -> void:
 	add_to_group("hud")
 	print("[HUD] _ready() start")
-	# Use call_deferred so CanvasLayer viewport is initialized before building UI.
-	# More reliable than await process_frame which can hang in cross-origin iframes
-	# (requestAnimationFrame throttled when canvas lacks focus).
 	call_deferred("_init_hud")
 
+# Fallback: if call_deferred doesn't fire (rare edge case without gdextensions),
+# _process guarantees init runs on first game loop tick.
+func _process(_delta: float) -> void:
+	if not _hud_built:
+		_init_hud()
+	set_process(false)
+
 func _init_hud() -> void:
+	if _hud_built:
+		return
+	_hud_built = true
 	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
 	var mw = _js_query("window.innerWidth||screen.width||0")
 	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
