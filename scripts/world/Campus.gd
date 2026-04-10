@@ -280,14 +280,16 @@ func _spawn_player() -> void:
 
 	var cam := Camera2D.new()
 	cam.name = "PlayerCamera"
-	# Mobile portrait: smaller canvas → needs lower zoom to see enough of the world
-	var initial_zoom := 3.0
-	if OS.has_feature("web"):
-		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
-		var ht = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
-		var is_mob: bool = (mw is float and (mw as float) < 900.0) or ht == true
-		if is_mob:
-			initial_zoom = 2.0
+	# With stretch_mode=canvas_items + aspect=expand, the Godot viewport height can be much
+	# larger than MAP_H on portrait mobile (e.g. iPhone 375×812 → vp 1280×2771).
+	# At zoom=2.0 the camera window would be 2771/2=1385 world units tall — larger than MAP_H(896)
+	# → camera limits invert → entire world off-screen → black canvas.
+	# Fix: ensure zoom >= godot_vp_h / MAP_H so the camera window always fits within the map.
+	var vp_size := get_viewport().get_visible_rect().size
+	var min_zoom_h: float = vp_size.y / MAP_H   # height constraint
+	var min_zoom_w: float = vp_size.x / MAP_W   # width  constraint (usually fine)
+	var initial_zoom: float = maxf(maxf(min_zoom_h, min_zoom_w) * 1.15, 3.0)
+	print("[Campus] zoom=%s (vp=%s map=%s×%s)" % [initial_zoom, vp_size, MAP_W, MAP_H])
 	cam.zoom = Vector2(initial_zoom, initial_zoom)
 	cam.limit_left   = 0
 	cam.limit_top    = 0
