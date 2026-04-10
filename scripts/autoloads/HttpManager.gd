@@ -72,6 +72,7 @@ func patch(endpoint: String, body: Dictionary) -> void:
 func _make_request_node() -> HTTPRequest:
 	var node := HTTPRequest.new()
 	node.use_threads = not OS.has_feature("web")  # threads OK on desktop, disabled on web (SharedArrayBuffer)
+	node.timeout = 10.0  # 10-second timeout — prevents infinite black screen on Railway cold starts
 	add_child(node)
 	node.request_completed.connect(_on_request_completed.bind(node))
 	return node

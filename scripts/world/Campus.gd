@@ -89,7 +89,10 @@ func _ready() -> void:
 
 
 func _after_login() -> void:
-	# Load employee list from REST API before starting the world
+	# Start the world immediately — no waiting for the employees API.
+	# This prevents black screen when Railway.app is cold-starting (slow first response).
+	_start_world()
+	# Fetch real employee data async; updates GameManager.employees when ready.
 	HttpManager.response_received.connect(_on_employees_loaded, CONNECT_ONE_SHOT)
 	HttpManager.error.connect(_on_employees_load_error, CONNECT_ONE_SHOT)
 	HttpManager.get_request("employees")
@@ -114,13 +117,12 @@ func _on_employees_loaded(endpoint: String, data: Variant) -> void:
 			"avatar": PlayerData.avatar_config,
 			"current_task": "Exploring ZPS World",
 		}
-	_start_world()
+	# World is already running — no second _start_world() needed
 
 
 func _on_employees_load_error(_endpoint: String, _message: String) -> void:
-	# If loading fails just use existing mock data and continue
 	push_warning("[Campus] Failed to load employees from REST — using mock data")
-	_start_world()
+	# World is already running — no action needed
 
 
 func _start_world() -> void:
