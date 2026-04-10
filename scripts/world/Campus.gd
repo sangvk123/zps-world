@@ -82,6 +82,11 @@ var _hitbox_rects: Array[Rect2] = []   # populated by _build_hitboxes(), used by
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color(0.08, 0.10, 0.06))
 	print("[Campus] _ready() — is_logged_in: %s" % PlayerData.is_logged_in)
+	# Workaround: Godot 4.6 web render loop may stop after first frame when the
+	# browser viewport exactly matches the project size (no resize event fires).
+	# Force a resize event after 50ms to restart the loop in that edge case.
+	if OS.has_feature("web"):
+		JavaScriptBridge.eval("setTimeout(function(){window.dispatchEvent(new Event('resize'))},50)")
 	if PlayerData.is_logged_in:
 		_after_login()
 	else:
