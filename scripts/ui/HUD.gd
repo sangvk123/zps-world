@@ -129,13 +129,14 @@ func _js_query(code: String) -> Variant:
 
 func _ready() -> void:
 	add_to_group("hud")
-	print("[HUD] _ready() start — awaiting frame")
-	# Wait one frame so the web canvas is fully sized before building HUD layout.
-	# Without this, anchor-based Controls (minimap, sprint bar, etc.) get positioned
-	# based on the initial (pre-resize) viewport size and end up off-screen.
-	await get_tree().process_frame
+	print("[HUD] _ready() start")
+	# Use call_deferred so CanvasLayer viewport is initialized before building UI.
+	# More reliable than await process_frame which can hang in cross-origin iframes
+	# (requestAnimationFrame throttled when canvas lacks focus).
+	call_deferred("_init_hud")
+
+func _init_hud() -> void:
 	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
-	# _js_query() ensures desktop HUD builds even if JS bridge returns null
 	var mw = _js_query("window.innerWidth||screen.width||0")
 	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
 	_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
@@ -261,7 +262,9 @@ func _build_sprint_indicator() -> void:
 	var container = PanelContainer.new()
 	container.anchor_left = 0.5; container.anchor_right = 0.5
 	container.anchor_top = 0.0; container.anchor_bottom = 0.0
-	container.offset_left = -200; container.offset_right = 200
+	# Mobile: narrower to avoid overlapping the button column on the right
+	var hw := 100 if _is_mobile else 200
+	container.offset_left = -hw; container.offset_right = hw
 	container.offset_top = 8; container.offset_bottom = 34
 
 	var style = StyleBoxFlat.new()
@@ -287,21 +290,27 @@ func _build_help_button() -> void:
 	var btn_anchor = Control.new()
 	btn_anchor.anchor_left = 0.5; btn_anchor.anchor_right = 0.5
 	btn_anchor.anchor_top = 1.0; btn_anchor.anchor_bottom = 1.0
-	btn_anchor.offset_left = -18; btn_anchor.offset_right = 18
-	btn_anchor.offset_top = -40; btn_anchor.offset_bottom = -8
+	if _is_mobile:
+		btn_anchor.offset_left = -32; btn_anchor.offset_right = 32
+		btn_anchor.offset_top = -72; btn_anchor.offset_bottom = -8
+	else:
+		btn_anchor.offset_left = -18; btn_anchor.offset_right = 18
+		btn_anchor.offset_top = -40; btn_anchor.offset_bottom = -8
 
 	var btn = Button.new()
 	btn.text = "?"
-	btn.size = Vector2(36, 32)
 	if _is_mobile:
-		btn.custom_minimum_size = Vector2(60, 56)
+		btn.set_anchors_preset(Control.PRESET_FULL_RECT)
+		btn.add_theme_font_size_override("font_size", 22)
+	else:
+		btn.size = Vector2(36, 32)
+		btn.add_theme_font_size_override("font_size", 16)
 	var bs = StyleBoxFlat.new()
 	bs.bg_color = Color(0.12, 0.12, 0.22, 0.90)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
 	bs.border_color = Color(0.4, 0.4, 0.6)
 	btn.add_theme_stylebox_override("normal", bs)
 	btn.add_theme_color_override("font_color", Color(0.8, 0.8, 1.0))
-	btn.add_theme_font_size_override("font_size", 16)
 	btn.pressed.connect(func():
 		_help_popup_open = not _help_popup_open
 		_help_popup.visible = _help_popup_open
@@ -492,23 +501,31 @@ func _close_side_panels() -> void:
 		if _roster_backdrop: _roster_backdrop.visible = false
 
 func _build_ai_chat_bar() -> void:
-	# Toggle button (top-right, below notification area)
+	# Toggle button (top-right)
+	# Mobile: vertical stack — AI is slot 3 (below Online=slot1, Chat=slot2)
+	# Desktop: horizontal row at y=8..40
 	var toggle_anchor = Control.new()
 	toggle_anchor.anchor_left = 1.0; toggle_anchor.anchor_right = 1.0
 	toggle_anchor.anchor_top = 0.0; toggle_anchor.anchor_bottom = 0.0
-	toggle_anchor.offset_left = -52; toggle_anchor.offset_right = -8
-	toggle_anchor.offset_top = 8; toggle_anchor.offset_bottom = 40
+	if _is_mobile:
+		toggle_anchor.offset_left = -68; toggle_anchor.offset_right = -4
+		toggle_anchor.offset_top = 8 + 60 * 2; toggle_anchor.offset_bottom = 8 + 60 * 3
+	else:
+		toggle_anchor.offset_left = -52; toggle_anchor.offset_right = -8
+		toggle_anchor.offset_top = 8; toggle_anchor.offset_bottom = 40
 	var toggle_btn = Button.new()
 	toggle_btn.text = "[AI]"
-	toggle_btn.size = Vector2(44, 32)
 	if _is_mobile:
-		toggle_btn.custom_minimum_size = Vector2(60, 56)
+		toggle_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
+		toggle_btn.add_theme_font_size_override("font_size", 16)
+	else:
+		toggle_btn.size = Vector2(44, 32)
+		toggle_btn.add_theme_font_size_override("font_size", 14)
 	var ts = StyleBoxFlat.new()
 	ts.bg_color = Color(0.10, 0.10, 0.22, 0.92)
 	ts.set_corner_radius_all(8); ts.set_border_width_all(1)
 	ts.border_color = Color(0.4, 0.4, 0.7)
 	toggle_btn.add_theme_stylebox_override("normal", ts)
-	toggle_btn.add_theme_font_size_override("font_size", 14)
 	toggle_btn.pressed.connect(_toggle_ai_bar)
 	toggle_anchor.add_child(toggle_btn)
 	add_child(toggle_anchor)
@@ -705,26 +722,32 @@ func _build_web_chat_panel() -> void:
 
 	add_child(web_chat_panel)
 
-	# Toggle button — placed left of the [AI] AI button
+	# Toggle button — Mobile: vertical stack slot 2; Desktop: left of [AI]
 	var anchor := Control.new()
 	anchor.anchor_left = 1.0; anchor.anchor_right = 1.0
 	anchor.anchor_top = 0.0; anchor.anchor_bottom = 0.0
-	anchor.offset_left = -98; anchor.offset_right = -54
-	anchor.offset_top = 8; anchor.offset_bottom = 40
+	if _is_mobile:
+		anchor.offset_left = -68; anchor.offset_right = -4
+		anchor.offset_top = 8 + 60; anchor.offset_bottom = 8 + 60 * 2
+	else:
+		anchor.offset_left = -98; anchor.offset_right = -54
+		anchor.offset_top = 8; anchor.offset_bottom = 40
 
 	var btn := Button.new()
-	btn.text = ""
-	btn.size = Vector2(44, 32)
+	btn.tooltip_text = "Workspace Chat"
 	if _is_mobile:
-		btn.custom_minimum_size = Vector2(60, 56)
+		btn.text = ""
+		btn.set_anchors_preset(Control.PRESET_FULL_RECT)
+		btn.add_theme_font_size_override("font_size", 18)
+	else:
+		btn.text = ""
+		btn.size = Vector2(44, 32)
+		btn.add_theme_font_size_override("font_size", 14)
 	var bs := StyleBoxFlat.new()
 	bs.bg_color = Color(0.10, 0.14, 0.22, 0.92)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
 	bs.border_color = Color(0.3, 0.5, 0.7)
 	btn.add_theme_stylebox_override("normal", bs)
-	btn.add_theme_font_size_override("font_size", 14)
-	btn.text = ""
-	btn.tooltip_text = "Workspace Chat"
 	btn.pressed.connect(_toggle_web_chat_panel)
 	anchor.add_child(btn)
 	add_child(anchor)
@@ -2451,17 +2474,21 @@ func _roster_short_name(full_name: String) -> String:
 	return full_name
 
 func _build_roster_panel() -> void:
-	# Toggle button — anchor top-right, left of [AI] button group
+	# Toggle button — Mobile: vertical stack slot 1 (top); Desktop: left of button group
 	var btn_anchor = Control.new()
 	btn_anchor.anchor_left = 1.0; btn_anchor.anchor_right = 1.0
 	btn_anchor.anchor_top = 0.0;  btn_anchor.anchor_bottom = 0.0
-	btn_anchor.offset_left = -200; btn_anchor.offset_right = -152
-	btn_anchor.offset_top = 8;    btn_anchor.offset_bottom = 36
+	if _is_mobile:
+		btn_anchor.offset_left = -68; btn_anchor.offset_right = -4
+		btn_anchor.offset_top = 8; btn_anchor.offset_bottom = 8 + 60
+	else:
+		btn_anchor.offset_left = -200; btn_anchor.offset_right = -152
+		btn_anchor.offset_top = 8;    btn_anchor.offset_bottom = 36
 	_roster_toggle_btn = Button.new()
 	_roster_toggle_btn.text = "Online"
 	_roster_toggle_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
 	if _is_mobile:
-		_roster_toggle_btn.custom_minimum_size = Vector2(0, 56)
+		_roster_toggle_btn.add_theme_font_size_override("font_size", 12)
 	_roster_toggle_btn.pressed.connect(_toggle_roster)
 	btn_anchor.add_child(_roster_toggle_btn)
 	add_child(btn_anchor)
