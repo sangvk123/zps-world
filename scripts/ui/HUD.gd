@@ -138,12 +138,16 @@ func _init_hud() -> void:
 	if _hud_built:
 		return
 	_hud_built = true
+	print("[HUD] D1 before mw query")
 	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
 	var mw = _js_query("window.innerWidth||screen.width||0")
+	print("[HUD] D2 mw=%s" % mw)
 	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+	print("[HUD] D3 has_touch=%s" % has_touch)
 	_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
 	print("[HUD] mobile=%s mw=%s" % [_is_mobile, mw])
 	_build_ui()
+	print("[HUD] D4 _build_ui done")
 	_update_player_card()
 
 	GameManager.notification_received.connect(_on_notification)
