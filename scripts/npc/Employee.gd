@@ -8,16 +8,6 @@ extends CharacterBody2D
 
 const _AR = preload("res://scripts/world/AvatarRenderer.gd")
 
-# ── LimboAI behavior scripts ──
-const _BTIsTalking        = preload("res://scripts/ai/conditions/BTIsTalking.gd")
-const _BTIsPlayerNearby   = preload("res://scripts/ai/conditions/BTIsPlayerNearby.gd")
-const _BTIdleInPlace      = preload("res://scripts/ai/actions/BTIdleInPlace.gd")
-const _BTPickWanderTarget = preload("res://scripts/ai/actions/BTPickWanderTarget.gd")
-const _BTWalkToTarget     = preload("res://scripts/ai/actions/BTWalkToTarget.gd")
-const _BTFacePlayer       = preload("res://scripts/ai/actions/BTFacePlayer.gd")
-const _BTChatWithNPC      = preload("res://scripts/ai/actions/BTChatWithNPC.gd")
-const _BTSitAtDesk        = preload("res://scripts/ai/actions/BTSitAtDesk.gd")
-const _BTLookAround       = preload("res://scripts/ai/actions/BTLookAround.gd")
 
 # ── Config (set before adding to scene tree) ──
 @export var employee_id: String = "emp_001"
@@ -46,6 +36,24 @@ var is_special: bool = false
 var _facing:      String = "south"
 var _facing_flip: bool   = false
 
+# ── GDScript state machine (replaces LimboAI behavior tree) ──
+const _SM_DETECT_RANGE    := 60.0
+const _SM_CROSS_ZONE      := 0.10
+const _SM_MAP_MIN         := Vector2(20.0, 20.0)
+const _SM_MAP_MAX         := Vector2(1173.0, 876.0)
+
+var _sm_state:           String  = "idle"
+var _sm_timer:           float   = 0.0
+var _sm_target:          Vector2 = Vector2.ZERO
+var _sm_partner:         Node2D  = null
+var _sm_sit_dur:         float   = 0.0
+var _sm_chat_dur:        float   = 0.0
+var _sm_look_total:      float   = 0.0
+var _sm_look_turn:       float   = 0.0
+var _sm_walk_timer:      float   = 0.0
+var _sm_stuck_timer:     float   = 0.0
+var _sm_stuck_last_dist: float   = INF
+
 
 # ─────────────────────────────────────────────
 func _ready() -> void:
@@ -54,7 +62,7 @@ func _ready() -> void:
 	collision_mask  = 5   # Collides with layer 1 (world) + layer 3 (other NPCs)
 	_build_visuals()
 	_load_employee_data()
-	_setup_behavior_tree()
+	_sm_start()
 	if AIAgent.has_signal("response_ready"):
 		AIAgent.response_ready.connect(_on_ai_response)
 	# Register dot on minimap
@@ -366,78 +374,167 @@ func say(message: String, _duration: float = 3.0) -> void:
 	)
 
 # ─────────────────────────────────────────────
-# LimboAI Behavior Tree setup
+# GDScript state machine (no LimboAI dependency)
+# Replicates the original BTDynamicSelector behavior:
+#   P1 (highest): Talking → stand still
+#   P2:           Player nearby → face player
+#   P3:           Random activity (chat / sit / look / wander)
 # ─────────────────────────────────────────────
-func _setup_behavior_tree() -> void:
-	# ── Build tree structure ──
-	# BTDynamicSelector: re-evaluates ALL children from start every tick
-	# → higher-priority branches (P1, P2) can interrupt lower ones (P3)
-	var root := BTDynamicSelector.new()
+func _sm_start() -> void:
+	_sm_state = "idle"
+	_sm_timer = randf_range(0.5, 2.0)   # stagger startup across NPCs
+	set_physics_process(true)
 
-	# P1: Talking branch — đứng yên khi đang chat
-	# BTDynamicSequence: re-checks BTIsTalking every tick so it can exit when talking ends
-	var talking_seq := BTDynamicSequence.new()
-	var idle_inf := _BTIdleInPlace.new()
-	idle_inf.wait_min = 0.0
-	idle_inf.wait_max = 0.0   # vô hạn
-	talking_seq.add_child(_BTIsTalking.new())
-	talking_seq.add_child(idle_inf)
-	root.add_child(talking_seq)
+func _physics_process(delta: float) -> void:
+	# P1: Talking — highest priority
+	if is_being_talked_to:
+		if _sm_state != "talking":
+			_sm_cleanup()
+			velocity = Vector2.ZERO
+			update_npc_facing(Vector2.ZERO)
+			_sm_state = "talking"
+		return
+	elif _sm_state == "talking":
+		_sm_state = "idle"
+		_sm_timer = randf_range(0.5, 1.5)
 
-	# P2: React branch — nhìn player khi gần
-	# BTDynamicSequence: re-checks BTIsPlayerNearby so BTFacePlayer exits when player leaves
-	var react_seq := BTDynamicSequence.new()
-	react_seq.add_child(_BTIsPlayerNearby.new())
-	react_seq.add_child(_BTFacePlayer.new())
-	root.add_child(react_seq)
+	# P2: Player nearby — face and show hint
+	var player := get_tree().get_first_node_in_group("player") as Node2D
+	var near := player != null and global_position.distance_to(player.global_position) <= _SM_DETECT_RANGE
+	if near:
+		if _sm_state != "face_player":
+			_sm_cleanup()
+			velocity = Vector2.ZERO
+			show_interact_hint()
+			_sm_state = "face_player"
+		face_direction(player.global_position - global_position)
+		velocity = Vector2.ZERO
+		return
+	elif _sm_state == "face_player":
+		hide_interact_hint()
+		_sm_state = "idle"
+		_sm_timer = randf_range(0.5, 1.5)
 
-	# P3: Activity branch — idle ngắn rồi random-chọn hoạt động
-	# BTRandomSelector thử các nhánh con theo thứ tự NGẪU NHIÊN:
-	#   A. Chat với NPC gần đó (FAIL nếu không tìm được partner)
-	#   B. Ngồi làm việc tại bàn
-	#   C. Nhìn quanh tại chỗ
-	#   D. Wander trong zone
-	#   E. Wander cross-zone (copy D — 25% chance của BTPickWanderTarget tự chọn điểm xa)
-	var act_sel := BTRandomSelector.new()
+	# P3: Activities
+	match _sm_state:
+		"idle":
+			velocity = Vector2.ZERO
+			update_npc_facing(Vector2.ZERO)
+			_sm_timer -= delta
+			if _sm_timer <= 0.0:
+				_sm_pick_activity()
 
-	act_sel.add_child(_BTChatWithNPC.new())    # A: pair chat
+		"wander":
+			_sm_walk_timer  += delta
+			_sm_stuck_timer += delta
+			if _sm_walk_timer >= 7.0:   # hard timeout
+				velocity = Vector2.ZERO; update_npc_facing(Vector2.ZERO)
+				_sm_state = "idle";     _sm_timer = randf_range(0.5, 1.5)
+				return
+			if _sm_stuck_timer >= 1.0:
+				var d := global_position.distance_to(_sm_target)
+				if _sm_stuck_last_dist == INF:
+					_sm_stuck_last_dist = d
+				elif _sm_stuck_last_dist - d < 6.0:
+					velocity = Vector2.ZERO; update_npc_facing(Vector2.ZERO)
+					_sm_state = "idle";     _sm_timer = randf_range(0.5, 1.5)
+					return
+				else:
+					_sm_stuck_last_dist = d
+				_sm_stuck_timer = 0.0
+			if nav_move_toward(_sm_target):
+				update_npc_facing(Vector2.ZERO)
+				_sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5)
 
-	act_sel.add_child(_BTSitAtDesk.new())      # B: sit and work
+		"look_around":
+			velocity = Vector2.ZERO
+			_sm_look_total -= delta
+			if _sm_look_total <= 0.0:
+				_sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5); return
+			_sm_look_turn -= delta
+			if _sm_look_turn <= 0.0:
+				_sm_look_turn = 0.9
+				var angle := float(randi() % 8) * (TAU / 8.0)
+				face_direction(Vector2(cos(angle), sin(angle)))
 
-	act_sel.add_child(_BTLookAround.new())     # C: look around in place
+		"sit_walk":
+			if nav_move_toward(_sm_target, 5.0):
+				_sm_state = "sit_work"; _sm_timer = _sm_sit_dur; start_sit()
 
-	var wander_a := BTSequence.new()           # D: wander (standard)
-	wander_a.add_child(_BTPickWanderTarget.new())
-	wander_a.add_child(_BTWalkToTarget.new())
-	act_sel.add_child(wander_a)
+		"sit_work":
+			_sm_timer -= delta
+			if _sm_timer <= 0.0:
+				stop_sit(); _sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5)
 
-	var wander_b := BTSequence.new()           # E: extra wander weight
-	wander_b.add_child(_BTPickWanderTarget.new())
-	wander_b.add_child(_BTWalkToTarget.new())
-	act_sel.add_child(wander_b)
+		"chat_approach":
+			if not is_instance_valid(_sm_partner):
+				_sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5); return
+			_sm_walk_timer += delta
+			if _sm_walk_timer > 8.0:
+				_sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5); return
+			if nav_move_toward(_sm_partner.global_position, 14.0):
+				update_npc_facing((_sm_partner.global_position - global_position).normalized())
+				_sm_state = "chatting"; _sm_timer = _sm_chat_dur
 
-	var p3_seq := BTSequence.new()
-	var idle_wait := _BTIdleInPlace.new()
-	idle_wait.wait_min = 0.5
-	idle_wait.wait_max = 1.5
-	p3_seq.add_child(idle_wait)
-	p3_seq.add_child(act_sel)
-	root.add_child(p3_seq)
+		"chatting":
+			if is_instance_valid(_sm_partner):
+				velocity = Vector2.ZERO
+				update_npc_facing((_sm_partner.global_position - global_position).normalized())
+			_sm_timer -= delta
+			if _sm_timer <= 0.0:
+				_sm_partner = null; _sm_state = "idle"; _sm_timer = randf_range(0.5, 1.5)
 
-	# ── Setup BTPlayer ──
-	# Add WITHOUT behavior_tree first so _try_initialize() returns early (silent).
-	# Then set owner (Employee) so LimboAI can detect the scene root.
-	# Assigning behavior_tree last re-triggers _try_initialize() with owner already set.
-	var bt_player := BTPlayer.new()
-	bt_player.update_mode = BTPlayer.UpdateMode.PHYSICS
-	add_child(bt_player)       # _ready() fires → _try_initialize → no BT → silent early exit
-	bt_player.owner = self     # now owner is valid (node already in tree)
+func _sm_cleanup() -> void:
+	if _sm_state in ["sit_walk", "sit_work"]: stop_sit()
+	elif _sm_state == "face_player": hide_interact_hint()
+	_sm_partner = null
 
-	# ── Init blackboard BEFORE assigning BT (blackboard must exist at init time) ──
-	bt_player.blackboard.set_var("zone_rect", zone_rect)
-	bt_player.blackboard.set_var("wander_target", position)
-	bt_player.blackboard.set_var("idle_remaining", 0.0)
+func _sm_pick_activity() -> void:
+	match randi() % 5:
+		0: _sm_try_chat()
+		1: _sm_start_sit()
+		2:
+			_sm_state = "look_around"
+			_sm_look_total = randf_range(3.0, 6.0)
+			_sm_look_turn  = 0.0
+		_: _sm_start_wander()   # 2/5 weight
 
-	var bt := BehaviorTree.new()
-	bt.root_task = root
-	bt_player.behavior_tree = bt  # triggers _try_initialize again — owner set → success
+func _sm_try_chat() -> void:
+	var nearest: Node2D = null
+	var nearest_dist := 80.0
+	for body: Node in get_tree().get_nodes_in_group("employees"):
+		if body == self: continue
+		var other := body as Employee
+		if other == null or other.is_being_talked_to: continue
+		var d := global_position.distance_to(other.global_position)
+		if d < nearest_dist: nearest_dist = d; nearest = other
+	if nearest == null: _sm_start_wander(); return
+	_sm_partner    = nearest
+	_sm_chat_dur   = randf_range(4.0, 10.0)
+	_sm_walk_timer = 0.0
+	_sm_state      = "chat_approach"
+
+func _sm_start_sit() -> void:
+	_sm_sit_dur = randf_range(15.0, 40.0)
+	var m := 20.0
+	_sm_target = zone_rect.get_center() if not zone_rect.has_area() else \
+		Vector2(randf_range(zone_rect.position.x + m, zone_rect.end.x - m),
+				randf_range(zone_rect.position.y + m, zone_rect.end.y - m))
+	_sm_state = "sit_walk"
+
+func _sm_start_wander() -> void:
+	if zone_rect.has_area() and randf() < _SM_CROSS_ZONE:
+		var wide := zone_rect.grow(100.0)
+		wide.position = wide.position.clamp(_SM_MAP_MIN, _SM_MAP_MAX)
+		wide = wide.intersection(Rect2(_SM_MAP_MIN, _SM_MAP_MAX - _SM_MAP_MIN))
+		if wide.has_area():
+			_sm_target = Vector2(randf_range(wide.position.x, wide.end.x),
+								 randf_range(wide.position.y, wide.end.y))
+			_sm_walk_timer = 0.0; _sm_stuck_timer = 0.0; _sm_stuck_last_dist = INF
+			_sm_state = "wander"; return
+	var m := 12.0
+	_sm_target = zone_rect.get_center() if not zone_rect.has_area() else \
+		Vector2(randf_range(zone_rect.position.x + m, zone_rect.end.x - m),
+				randf_range(zone_rect.position.y + m, zone_rect.end.y - m))
+	_sm_walk_timer = 0.0; _sm_stuck_timer = 0.0; _sm_stuck_last_dist = INF
+	_sm_state = "wander"
