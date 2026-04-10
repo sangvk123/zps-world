@@ -129,6 +129,10 @@ func _js_query(code: String) -> Variant:
 
 func _ready() -> void:
 	add_to_group("hud")
+	# Wait one frame so the web canvas is fully sized before building HUD layout.
+	# Without this, anchor-based Controls (minimap, sprint bar, etc.) get positioned
+	# based on the initial (pre-resize) viewport size and end up off-screen.
+	await get_tree().process_frame
 	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
 	# _js_query() ensures desktop HUD builds even if JS bridge returns null
 	var mw = _js_query("window.innerWidth||screen.width||0")
@@ -193,7 +197,7 @@ func _build_player_card() -> void:
 	player_card.position = Vector2(12, 12)
 	player_card.custom_minimum_size = Vector2(180, 0)
 	if _is_mobile:
-		player_card.custom_minimum_size = Vector2(200, 0)
+		player_card.custom_minimum_size = Vector2(260, 0)
 
 	# Layout ngang: portrait ben trai + info ben phai
 	var hbox = HBoxContainer.new()
@@ -210,10 +214,10 @@ func _build_player_card() -> void:
 	var vbox = VBoxContainer.new()
 	vbox.add_theme_constant_override("separation", 2)
 	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	pc_name = _make_label("", 13 if not _is_mobile else 15, Color.WHITE, true)
-	pc_title = _make_label("", 9 if not _is_mobile else 11, Color(0.7, 0.7, 0.7))
-	pc_class = _make_label("", 9 if not _is_mobile else 11, Color(0.7, 0.6, 1.0))
-	pc_outfit = _make_label("", 9 if not _is_mobile else 11, Color(0.6, 0.9, 0.6))
+	pc_name = _make_label("", 13 if not _is_mobile else 20, Color.WHITE, true)
+	pc_title = _make_label("", 9 if not _is_mobile else 15, Color(0.7, 0.7, 0.7))
+	pc_class = _make_label("", 9 if not _is_mobile else 15, Color(0.7, 0.6, 1.0))
+	pc_outfit = _make_label("", 9 if not _is_mobile else 15, Color(0.6, 0.9, 0.6))
 	vbox.add_child(pc_name); vbox.add_child(pc_title)
 	vbox.add_child(pc_class); vbox.add_child(pc_outfit)
 	hbox.add_child(vbox)
@@ -264,7 +268,7 @@ func _build_sprint_indicator() -> void:
 	style.content_margin_top = 4; style.content_margin_bottom = 4
 	container.add_theme_stylebox_override("panel", style)
 
-	_sprint_label = _make_label("", 10, Color(0.85, 0.80, 0.50))
+	_sprint_label = _make_label("", 10 if not _is_mobile else 15, Color(0.85, 0.80, 0.50))
 	_sprint_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	_sprint_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	container.add_child(_sprint_label)
@@ -285,7 +289,7 @@ func _build_help_button() -> void:
 	btn.text = "?"
 	btn.size = Vector2(36, 32)
 	if _is_mobile:
-		btn.custom_minimum_size = Vector2(44, 44)
+		btn.custom_minimum_size = Vector2(60, 56)
 	var bs = StyleBoxFlat.new()
 	bs.bg_color = Color(0.12, 0.12, 0.22, 0.90)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
@@ -493,7 +497,7 @@ func _build_ai_chat_bar() -> void:
 	toggle_btn.text = "[AI]"
 	toggle_btn.size = Vector2(44, 32)
 	if _is_mobile:
-		toggle_btn.custom_minimum_size = Vector2(44, 44)
+		toggle_btn.custom_minimum_size = Vector2(60, 56)
 	var ts = StyleBoxFlat.new()
 	ts.bg_color = Color(0.10, 0.10, 0.22, 0.92)
 	ts.set_corner_radius_all(8); ts.set_border_width_all(1)
@@ -707,7 +711,7 @@ func _build_web_chat_panel() -> void:
 	btn.text = ""
 	btn.size = Vector2(44, 32)
 	if _is_mobile:
-		btn.custom_minimum_size = Vector2(44, 44)
+		btn.custom_minimum_size = Vector2(60, 56)
 	var bs := StyleBoxFlat.new()
 	bs.bg_color = Color(0.10, 0.14, 0.22, 0.92)
 	bs.set_corner_radius_all(8); bs.set_border_width_all(1)
@@ -2452,7 +2456,7 @@ func _build_roster_panel() -> void:
 	_roster_toggle_btn.text = "Online"
 	_roster_toggle_btn.set_anchors_preset(Control.PRESET_FULL_RECT)
 	if _is_mobile:
-		_roster_toggle_btn.custom_minimum_size = Vector2(0, 44)
+		_roster_toggle_btn.custom_minimum_size = Vector2(0, 56)
 	_roster_toggle_btn.pressed.connect(_toggle_roster)
 	btn_anchor.add_child(_roster_toggle_btn)
 	add_child(btn_anchor)
