@@ -133,13 +133,6 @@ func _ready() -> void:
 	print("[HUD] _ready() start")
 	call_deferred("_init_hud")
 
-# Fallback: if call_deferred doesn't fire (rare edge case without gdextensions),
-# _process guarantees init runs on first game loop tick.
-func _process(_delta: float) -> void:
-	if not _hud_built:
-		_init_hud()
-	set_process(false)
-
 func _init_hud() -> void:
 	if _hud_built:
 		return
@@ -1443,6 +1436,8 @@ func _add_chat_msg(parent: VBoxContainer, sender: String, message: String, is_pl
 # Per-frame updates
 # ─────────────────────────────────────────────
 func _process(_delta: float) -> void:
+	if not _hud_built:
+		_init_hud()
 	_update_zone_indicator_position()
 	_update_minimap()
 	_update_zone_from_player()
