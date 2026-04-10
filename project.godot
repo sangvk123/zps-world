@@ -42,7 +42,7 @@ project/assembly_name="ZPS World"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ldtk-importer/plugin.cfg", "res://addons/limboai/plugin.cfg")
+enabled=PackedStringArray("res://addons/ldtk-importer/plugin.cfg")
 
 [input]
 
