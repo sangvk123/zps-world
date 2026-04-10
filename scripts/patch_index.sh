@@ -272,6 +272,26 @@ if 'zps-joystick-base' not in html:
 	</script>"""
     html = html.replace('</body>', JOYSTICK_HTML + '\n\t</body>')
 
+# 6. Prevent browser pinch-zoom (which CSS-scales the canvas → blurry).
+#    In-game pinch is handled by window._zpsPinchZoom in CameraController.
+if 'zps-no-browser-zoom' not in html:
+    NO_ZOOM_JS = r"""
+	<meta name="zps-no-browser-zoom" content="1">
+	<script>
+	(function(){
+		if(!(('ontouchstart' in window)||navigator.maxTouchPoints>0)) return;
+		// Block browser pinch zoom so in-game camera handles it instead
+		document.addEventListener('gesturestart', function(e){e.preventDefault();}, {passive:false});
+		document.addEventListener('gesturechange', function(e){e.preventDefault();}, {passive:false});
+		document.addEventListener('gestureend', function(e){e.preventDefault();}, {passive:false});
+		// Fallback: block touchmove with >1 touch that isn't our joystick handler
+		document.addEventListener('touchmove', function(e){
+			if(e.touches.length > 1){e.preventDefault();}
+		}, {passive:false});
+	})();
+	</script>"""
+    html = html.replace('</head>', NO_ZOOM_JS + '\n\t</head>')
+
 html_path.write_text(html, encoding="utf-8")
 print("✓ index.html patched with ZPS World loading screen")
 PYEOF
