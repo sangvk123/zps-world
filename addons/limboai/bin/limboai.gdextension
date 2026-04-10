@@ -29,9 +29,6 @@ ios.debug.arm64 = "res://addons/limboai/bin/liblimboai.ios.editor.arm64.dylib"
 ios.release.arm64 = "res://addons/limboai/bin/liblimboai.ios.template_release.arm64.dylib"
 ios.debug.simulator = "res://addons/limboai/bin/liblimboai.ios.editor.universal.dylib"
 ios.release.simulator = "res://addons/limboai/bin/liblimboai.ios.template_release.universal.dylib"
-# web entries removed — NPC behavior replaced with GDScript state machine (no WASM dependency)
-# web.debug.wasm32 = ...
-# web.release.wasm32 = ...
 
 [icons]
 
