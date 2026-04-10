@@ -134,6 +134,7 @@ func _ready() -> void:
 	call_deferred("_init_hud")
 
 func _init_hud() -> void:
+	print("[HUD] _init_hud ENTERED hud_built=%s" % _hud_built)
 	if _hud_built:
 		return
 	_hud_built = true
