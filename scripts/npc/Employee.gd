@@ -113,16 +113,16 @@ func _build_visuals() -> void:
 	# ── Nameplate ──
 	_nameplate = Label.new()
 	_nameplate.name = "Nameplate"
-	_nameplate.add_theme_font_size_override("font_size", 8)
-	_nameplate.position = Vector2(-22.0, -40.0)
+	_nameplate.add_theme_font_size_override("font_size", 11)
+	_nameplate.position = Vector2(-28.0, -42.0)
 	_nameplate.modulate = Color(0.9, 0.95, 1.0)
 	add_child(_nameplate)
 
 	# ── Title label (special NPCs only — hidden by default) ──
 	_title_label = Label.new()
 	_title_label.name = "TitleLabel"
-	_title_label.add_theme_font_size_override("font_size", 6)
-	_title_label.position = Vector2(-22.0, -31.0)
+	_title_label.add_theme_font_size_override("font_size", 9)
+	_title_label.position = Vector2(-28.0, -31.0)
 	_title_label.modulate = Color(1.0, 0.85, 0.35, 0.85)
 	_title_label.visible = false
 	add_child(_title_label)
@@ -130,9 +130,9 @@ func _build_visuals() -> void:
 	# ── Interact hint ──
 	_interact_hint = Label.new()
 	_interact_hint.name = "InteractHint"
-	_interact_hint.text = "[E/Click] Talk"
-	_interact_hint.add_theme_font_size_override("font_size", 7)
-	_interact_hint.position = Vector2(-24.0, -52.0)
+	_interact_hint.text = "[Click] Talk"
+	_interact_hint.add_theme_font_size_override("font_size", 11)
+	_interact_hint.position = Vector2(-24.0, -54.0)
 	_interact_hint.modulate = Color(1.0, 0.9, 0.4)
 	_interact_hint.visible = false
 	add_child(_interact_hint)
@@ -355,7 +355,7 @@ func say(message: String, _duration: float = 3.0) -> void:
 	# Simple overhead label bubble (no scene file required)
 	var bubble := Label.new()
 	bubble.text = message
-	bubble.add_theme_font_size_override("font_size", 7)
+	bubble.add_theme_font_size_override("font_size", 9)
 	bubble.position = Vector2(-30.0, -68.0)
 	bubble.modulate = Color(1.0, 1.0, 0.8)
 	bubble.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART

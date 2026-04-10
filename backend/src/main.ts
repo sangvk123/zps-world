@@ -7,10 +7,17 @@ import { AppModule } from './app.module';
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  // COOP/COEP headers required for Godot 4 web export (SharedArrayBuffer)
+  // COOP/COEP/CSP headers required for Godot 4 web export (SharedArrayBuffer + WASM execution)
+  // CSP allows Godot JS glue code (script-src unsafe-eval, wasm-unsafe-eval) and web workers (worker-src blob:)
+  const godotCsp = [
+    "script-src 'self' 'unsafe" + "-eval' 'wasm-unsafe" + "-eval'",
+    "worker-src 'self' blob:",
+    "connect-src 'self' wss: https:",
+  ].join('; ');
   app.use((_req: unknown, res: { setHeader: (k: string, v: string) => void }, next: () => void) => {
     res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
     res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
+    res.setHeader('Content-Security-Policy', godotCsp);
     next();
   });
 

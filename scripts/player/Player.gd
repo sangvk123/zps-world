@@ -87,7 +87,7 @@ func _build_visuals() -> void:
 	var _dn := PlayerData.display_name
 	var _sep := _dn.find(" - ")
 	nameplate.text = _dn.left(_sep) if _sep > 0 else _dn
-	nameplate.add_theme_font_size_override("font_size", 8)
+	nameplate.add_theme_font_size_override("font_size", 11)
 	nameplate.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	nameplate.custom_minimum_size = Vector2(80, 0)
 	nameplate.position = Vector2(-40, -40)
@@ -98,7 +98,7 @@ func _build_visuals() -> void:
 	var title_lbl := Label.new()
 	title_lbl.name = "TitleLabel"
 	title_lbl.text = PlayerData.nameplate_title
-	title_lbl.add_theme_font_size_override("font_size", 7)
+	title_lbl.add_theme_font_size_override("font_size", 9)
 	title_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	title_lbl.custom_minimum_size = Vector2(80, 0)
 	title_lbl.position = Vector2(-40, -30)
@@ -108,9 +108,9 @@ func _build_visuals() -> void:
 	# Interact hint (shown when near interactable)
 	interact_hint = Label.new()
 	interact_hint.name = "InteractHint"
-	interact_hint.text = "[E] Talk"
-	interact_hint.add_theme_font_size_override("font_size", 8)
-	interact_hint.position = Vector2(-18, -62)
+	interact_hint.text = "[Click] Talk"
+	interact_hint.add_theme_font_size_override("font_size", 11)
+	interact_hint.position = Vector2(-22, -62)
 	interact_hint.modulate = Color(1.0, 0.9, 0.4)
 	interact_hint.visible = false
 	add_child(interact_hint)
@@ -383,7 +383,7 @@ func say(text: String, duration: float = 4.0) -> void:
 	var bubble := Label.new()
 	bubble.name = "ChatBubble"
 	bubble.text = text
-	bubble.add_theme_font_size_override("font_size", 7)
+	bubble.add_theme_font_size_override("font_size", 9)
 	bubble.position = Vector2(-30.0, -72.0)
 	bubble.modulate = Color(1.0, 1.0, 0.8)
 	bubble.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART

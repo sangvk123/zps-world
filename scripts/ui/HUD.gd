@@ -121,13 +121,19 @@ const _ZONE_DISPLAY_NAMES: Dictionary = {
 	"marketing_hub":     "Marketing Hub",
 }
 
+func _js_query(code: String) -> Variant:
+	# Safe wrapper: returns null if not web or if JS bridge is unavailable
+	if not OS.has_feature("web"):
+		return null
+	return JavaScriptBridge.eval(code)
+
 func _ready() -> void:
 	add_to_group("hud")
 	# Mobile detection — must happen before _build_ui() so layout can use _is_mobile
-	if OS.has_feature("web"):
-		var mw = JavaScriptBridge.eval("window.innerWidth||screen.width||0")
-		var has_touch = JavaScriptBridge.eval("('ontouchstart' in window)||navigator.maxTouchPoints>0")
-		_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
+	# _js_query() ensures desktop HUD builds even if JS bridge returns null
+	var mw = _js_query("window.innerWidth||screen.width||0")
+	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
+	_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
 	_build_ui()
 	_update_player_card()
 

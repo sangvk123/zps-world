@@ -26,71 +26,48 @@ body {
 	outline: none;
 }
 
-/* ── ZPS World Custom Loading Screen ── */
 #status, #status-splash, #status-progress {
 	position: absolute;
 	left: 0;
 	right: 0;
 }
-#status, #status-splash { top: 0; bottom: 0; }
+
+#status, #status-splash {
+	top: 0;
+	bottom: 0;
+}
 
 #status {
-	background: #09090f;
+	background-color: #242424;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
 	visibility: hidden;
-	font-family: 'Segoe UI', 'Noto Sans', Arial, sans-serif;
 }
 
-#status-splash { display: none !important; }
-
-#zps-loading-title {
-	color: #e8c97a;
-	font-size: 2.2rem;
-	font-weight: 700;
-	letter-spacing: 0.12em;
-	text-shadow: 0 0 28px rgba(232,201,122,0.40);
+#status-splash {
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
 }
 
-#zps-loading-sub {
-	color: #6677aa;
-	font-size: 0.82rem;
-	letter-spacing: 0.06em;
-}
-
-#zps-bar-wrap {
-	width: 300px;
-	height: 5px;
-	background: rgba(255,255,255,0.07);
-	border-radius: 3px;
-	overflow: hidden;
-}
-
-#zps-bar-fill {
-	height: 100%;
-	width: 0%;
-	background: linear-gradient(90deg, #3a66ee, #e8c97a);
-	border-radius: 3px;
-	transition: width 0.25s ease;
-}
-
-#status-progress { display: none !important; }
-
-#status-notice {
+#status-splash.show-image--false {
 	display: none;
-	background: #2a0e14;
-	border-radius: 8px;
-	border: 1px solid #8b2533;
-	color: #e0e0e0;
-	font-family: 'Segoe UI', Arial, sans-serif;
-	font-size: 0.85rem;
-	line-height: 1.4;
-	max-width: 380px;
-	padding: 1rem 1.4rem;
-	text-align: center;
+}
+
+#status-splash.fullsize--true {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+#status-splash.use-filter--false {
+	image-rendering: pixelated;
+}
+
+#status-progress, #status-notice {
+	display: none;
 }
 
 #status-progress {
@@ -127,17 +104,14 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" style="display:none" src="index.png" alt="">
-			<div id="zps-loading-title">ZPS WORLD</div>
-			<div id="zps-loading-sub">Đang tải...</div>
-			<div id="zps-bar-wrap"><div id="zps-bar-fill"></div></div>
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":30786824,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":["liblimboai.web.template_release.wasm32.nothreads.wasm"],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":91668,"index.wasm":1509558},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
@@ -225,18 +199,12 @@ const engine = new Engine(GODOT_CONFIG);
 		}
 	} else {
 		setStatusMode('progress');
-		const zpsBar = document.getElementById('zps-bar-fill');
-		const zpsSub = document.getElementById('zps-loading-sub');
 		engine.startGame({
 			'onProgress': function (current, total) {
 				if (current > 0 && total > 0) {
-					const pct = Math.round(current / total * 100);
-					if (zpsBar) zpsBar.style.width = pct + '%';
-					if (zpsSub) zpsSub.textContent = 'Đang tải... ' + pct + '%';
 					statusProgress.value = current;
 					statusProgress.max = total;
 				} else {
-					if (zpsBar) zpsBar.style.width = '0%';
 					statusProgress.removeAttribute('value');
 					statusProgress.removeAttribute('max');
 				}
@@ -247,134 +215,6 @@ const engine = new Engine(GODOT_CONFIG);
 	}
 }());
 		</script>
-	
-	<!-- ZPS World HTML Login Overlay — mobile-friendly native inputs -->
-	<div id="zps-login-overlay" style="display:none;position:fixed;inset:0;z-index:9999;background:#09090f;align-items:center;justify-content:center;font-family:'Segoe UI','Noto Sans',Arial,sans-serif;">
-		<div style="background:#0d0d1a;border:1px solid rgba(232,201,122,0.45);border-radius:14px;padding:32px 28px;width:min(400px,92vw);box-sizing:border-box;display:flex;flex-direction:column;gap:14px;">
-			<h2 style="color:#e8c97a;text-align:center;margin:0;font-size:1.55rem;letter-spacing:0.1em;">ZPS World</h2>
-			<p style="color:#7777aa;text-align:center;margin:0;font-size:0.85rem;">Đăng nhập bằng domain nội bộ</p>
-			<div style="width:100%;height:1px;background:rgba(255,255,255,0.08);"></div>
-			<label style="color:#aab0cc;font-size:0.83rem;margin-bottom:-8px;">Domain / Callsign</label>
-			<input id="zps-domain" type="text" placeholder="vd: sangvk, hieupt"
-				autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false"
-				style="width:100%;box-sizing:border-box;background:#0a0a18;border:1px solid #2a2a4a;border-radius:8px;color:#e0e0f0;font-size:1.05rem;padding:14px 14px;outline:none;-webkit-tap-highlight-color:transparent;-webkit-appearance:none;">
-			<label style="color:#aab0cc;font-size:0.83rem;margin-bottom:-8px;">Mật khẩu</label>
-			<input id="zps-password" type="password" placeholder="••••••••"
-				autocomplete="current-password"
-				style="width:100%;box-sizing:border-box;background:#0a0a18;border:1px solid #2a2a4a;border-radius:8px;color:#e0e0f0;font-size:1.05rem;padding:14px 14px;outline:none;-webkit-tap-highlight-color:transparent;-webkit-appearance:none;">
-			<div id="zps-login-err" style="color:#f07878;font-size:0.82rem;text-align:center;min-height:18px;display:none;"></div>
-			<button id="zps-login-btn"
-				style="width:100%;padding:16px;background:#1a3e78;border:none;border-radius:8px;color:#fff;font-size:1.05rem;font-family:inherit;font-weight:600;cursor:pointer;letter-spacing:0.04em;-webkit-tap-highlight-color:transparent;touch-action:manipulation;margin-top:4px;">
-				Vào ZPS World
-			</button>
-		</div>
-	</div>
-	<script>
-	(function(){
-		var overlay=document.getElementById('zps-login-overlay');
-		var domainIn=document.getElementById('zps-domain');
-		var passIn=document.getElementById('zps-password');
-		var errDiv=document.getElementById('zps-login-err');
-		var btn=document.getElementById('zps-login-btn');
-		var _api='';
-		window.zpsShowLogin=function(apiBase,preFill){
-			_api=apiBase||'';
-			if(preFill)domainIn.value=preFill;
-			overlay.style.display='flex';
-			setTimeout(function(){(preFill?passIn:domainIn).focus();},200);
-		};
-		window.zpsHideLogin=function(){overlay.style.display='none';};
-		function showErr(m){errDiv.textContent=m;errDiv.style.display='block';}
-		async function doLogin(){
-			var d=domainIn.value.trim(),p=passIn.value;
-			if(!d||!p){showErr('Vui lòng nhập đầy đủ domain và mật khẩu.');return;}
-			btn.textContent='Đang đăng nhập…';btn.disabled=true;errDiv.style.display='none';
-			try{
-				var r=await fetch(_api+'/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({domain:d,password:p})});
-				var data=await r.json();
-				if(data.access_token){window._zpsLoginResult=JSON.stringify(data);}
-				else{showErr(data.error||'Domain hoặc mật khẩu không đúng.');}
-			}catch(e){showErr('Không kết nối được server API.');}
-			btn.textContent='Vào ZPS World';btn.disabled=false;
-		}
-		btn.addEventListener('click',doLogin);
-		passIn.addEventListener('keydown',function(e){if(e.key==='Enter')doLogin();});
-		domainIn.addEventListener('keydown',function(e){if(e.key==='Enter')passIn.focus();});
-	})();
-	</script>
-	
-	<!-- ZPS World Dynamic Joystick + Pinch Zoom — mobile only -->
-	<div id="zps-joystick-base" style="display:none;position:fixed;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.12);border:2px solid rgba(255,255,255,0.30);z-index:9998;pointer-events:none;transform:translate(-50%,-50%);">
-		<div id="zps-joystick-thumb" style="position:absolute;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.45);top:36px;left:36px;pointer-events:none;"></div>
-	</div>
-	<script>
-	(function(){
-		function isMobile(){return('ontouchstart' in window)||navigator.maxTouchPoints>0;}
-		if(!isMobile()) return;
-		var base=document.getElementById('zps-joystick-base');
-		var thumb=document.getElementById('zps-joystick-thumb');
-		var baseR=60,thumbR=24,MAX_R=36;
-		window._zpsJoystick={x:0,y:0};
-		window._zpsPinchZoom=0;
-		setTimeout(function(){var c=document.querySelector('canvas');if(c)c.style.touchAction='none';},800);
-		var joyId=null,joyActive=false,startX=0,startY=0;
-		var pinchId2=null,pinchDist=0;
-		var DRAG_THRESHOLD=18;
-		function getT(id,list){for(var i=0;i<list.length;i++)if(list[i].identifier===id)return list[i];return null;}
-		function activateJoy(ox,oy){
-			joyActive=true;
-			base.style.left=ox+'px';base.style.top=oy+'px';base.style.display='block';
-			thumb.style.left=(baseR-thumbR)+'px';thumb.style.top=(baseR-thumbR)+'px';
-		}
-		function updateJoy(dx,dy){
-			var d=Math.sqrt(dx*dx+dy*dy);
-			var nx=dx,ny=dy;
-			if(d>MAX_R){nx=dx/d*MAX_R;ny=dy/d*MAX_R;}
-			thumb.style.left=(baseR-thumbR+nx)+'px';thumb.style.top=(baseR-thumbR+ny)+'px';
-			window._zpsJoystick={x:Math.max(-1,Math.min(1,dx/MAX_R)),y:Math.max(-1,Math.min(1,dy/MAX_R))};
-		}
-		document.addEventListener('touchstart',function(e){
-			if(e.target.closest&&e.target.closest('#zps-login-overlay'))return;
-			for(var i=0;i<e.changedTouches.length;i++){
-				var t=e.changedTouches[i];
-				if(joyId===null){joyId=t.identifier;joyActive=false;startX=t.clientX;startY=t.clientY;}
-				else if(pinchId2===null){
-					pinchId2=t.identifier;
-					var t1=getT(joyId,e.touches);
-					if(t1){var dx=t1.clientX-t.clientX,dy=t1.clientY-t.clientY;pinchDist=Math.sqrt(dx*dx+dy*dy);}
-					joyActive=false;base.style.display='none';window._zpsJoystick={x:0,y:0};
-				}
-			}
-		},{passive:true});
-		document.addEventListener('touchmove',function(e){
-			if(e.target.closest&&e.target.closest('#zps-login-overlay'))return;
-			var used=false;
-			for(var i=0;i<e.changedTouches.length;i++){
-				var t=e.changedTouches[i];
-				if(t.identifier===joyId&&pinchId2===null){
-					var dx=t.clientX-startX,dy=t.clientY-startY;
-					if(!joyActive&&Math.sqrt(dx*dx+dy*dy)>DRAG_THRESHOLD)activateJoy(startX,startY);
-					if(joyActive){updateJoy(dx,dy);used=true;}
-				}else if(pinchId2!==null){
-					var t1=getT(joyId,e.touches),t2=getT(pinchId2,e.touches);
-					if(t1&&t2){var pdx=t1.clientX-t2.clientX,pdy=t1.clientY-t2.clientY;var d=Math.sqrt(pdx*pdx+pdy*pdy);if(pinchDist>0)window._zpsPinchZoom=(d-pinchDist)/pinchDist;pinchDist=d;used=true;}
-				}
-			}
-			if(used)e.preventDefault();
-		},{passive:false});
-		document.addEventListener('touchend',function(e){
-			for(var i=0;i<e.changedTouches.length;i++){
-				var t=e.changedTouches[i];
-				if(t.identifier===joyId){joyId=null;joyActive=false;base.style.display='none';window._zpsJoystick={x:0,y:0};}
-				else if(t.identifier===pinchId2){pinchId2=null;window._zpsPinchZoom=0;}
-			}
-		},{passive:true});
-		document.addEventListener('touchcancel',function(){
-			joyId=null;joyActive=false;pinchId2=null;base.style.display='none';
-			window._zpsJoystick={x:0,y:0};window._zpsPinchZoom=0;
-		},{passive:true});
-	})();
-	</script>
 	</body>
 </html>
 
