@@ -144,7 +144,14 @@ func _init_hud() -> void:
 	print("[HUD] D2 mw=%s" % mw)
 	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
 	print("[HUD] D3 has_touch=%s" % has_touch)
-	_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
+	var mw_f: float = float(mw) if mw != null else 0.0
+	print("[HUD] D3b mw_f=%s" % mw_f)
+	var is_m_a: bool = mw_f > 0.0 and mw_f < 900.0
+	print("[HUD] D3c is_m_a=%s" % is_m_a)
+	var is_m_b: bool = bool(has_touch)
+	print("[HUD] D3d is_m_b=%s" % is_m_b)
+	_is_mobile = is_m_a or is_m_b
+	print("[HUD] D3e _is_mobile=%s" % _is_mobile)
 	print("[HUD] mobile=%s mw=%s" % [_is_mobile, mw])
 	_build_ui()
 	print("[HUD] D4 _build_ui done")
