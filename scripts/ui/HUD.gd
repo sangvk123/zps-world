@@ -129,6 +129,7 @@ func _js_query(code: String) -> Variant:
 
 func _ready() -> void:
 	add_to_group("hud")
+	print("[HUD] _ready() start — awaiting frame")
 	# Wait one frame so the web canvas is fully sized before building HUD layout.
 	# Without this, anchor-based Controls (minimap, sprint bar, etc.) get positioned
 	# based on the initial (pre-resize) viewport size and end up off-screen.
@@ -138,6 +139,7 @@ func _ready() -> void:
 	var mw = _js_query("window.innerWidth||screen.width||0")
 	var has_touch = _js_query("('ontouchstart' in window)||navigator.maxTouchPoints>0")
 	_is_mobile = (mw is float and (mw as float) < 900.0) or has_touch == true
+	print("[HUD] mobile=%s mw=%s" % [_is_mobile, mw])
 	_build_ui()
 	_update_player_card()
 
@@ -160,8 +162,11 @@ func _ready() -> void:
 
 	# ── Login dialog — shown on top of everything if not yet logged in ──
 	if not PlayerData.is_logged_in:
+		print("[HUD] Showing LoginDialog")
 		var dialog := LoginDialog.new()
 		add_child(dialog)
+	else:
+		print("[HUD] Already logged in — skip LoginDialog")
 
 # ─────────────────────────────────────────────
 # Build all UI programmatically

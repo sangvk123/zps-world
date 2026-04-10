@@ -15,21 +15,26 @@ var _use_html: bool = false   # true on web — uses HTML overlay instead of God
 
 func _ready() -> void:
 	var vp := get_viewport()
+	var vr_size := Vector2.ZERO
 	if vp:
 		var vr := vp.get_visible_rect()
+		vr_size = vr.size
 		position = vr.position
 		size = vr.size
 	mouse_filter = Control.MOUSE_FILTER_STOP
+	print("[LoginDialog] _ready() vp_size=%s is_web=%s" % [vr_size, OS.has_feature("web")])
 
 	# On mobile web: use HTML native form so mobile keyboards work reliably
 	# Desktop web keeps the Godot UI; native platforms always use Godot UI
 	if OS.has_feature("web") and _is_mobile_web():
 		_use_html = true
+		print("[LoginDialog] using HTML overlay form")
 		_show_html_form()
 		set_process(true)
 		return
 
 	# Native / desktop
+	print("[LoginDialog] building Godot UI form")
 	_build_ui()
 	if PlayerData.zps_callsign != "":
 		_domain_field.text = PlayerData.zps_callsign
