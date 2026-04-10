@@ -1437,6 +1437,7 @@ func _add_chat_msg(parent: VBoxContainer, sender: String, message: String, is_pl
 # ─────────────────────────────────────────────
 func _process(_delta: float) -> void:
 	if not _hud_built:
+		print("[HUD] _process calling _init_hud")
 		_init_hud()
 	_update_zone_indicator_position()
 	_update_minimap()

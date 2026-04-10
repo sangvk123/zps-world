@@ -86,7 +86,10 @@ func _ready() -> void:
 	# browser viewport exactly matches the project size (no resize event fires).
 	# Force a resize event after 50ms to restart the loop in that edge case.
 	if OS.has_feature("web"):
-		JavaScriptBridge.eval("setTimeout(function(){window.dispatchEvent(new Event('resize'))},50)")
+		# Workaround: on desktop viewports Godot's RAF loop may not restart
+		# after the first frame (canvasResizePolicy=2 with no window resize event).
+		# Fire resize events every 100ms for 2s to catch the right timing.
+		JavaScriptBridge.eval("var _grf=setInterval(function(){window.dispatchEvent(new Event('resize'))},100);setTimeout(function(){clearInterval(_grf)},2000)")
 	if PlayerData.is_logged_in:
 		_after_login()
 	else:
